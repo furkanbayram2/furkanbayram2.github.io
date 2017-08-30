@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  
+    <title type="text" xml:lang="en">Şefik Furkan Bayram</title>
+    <link type="application/atom+xml" rel="self" href="http://localhost:3000/atom.xml"/>
+  
+  <link href="http://localhost:3000/"/>
+  <id>http://localhost:3000/</id>
+  <updated>2017-08-31T01:22:59Z</updated>
+  <author>
+    <name>Şefik Furkan Bayram</name>
+    <email>sefikfurkanbayram@gmail.com</email>
+  </author>
+  <rights type="text">Copyright © 2017 Şefik Furkan Bayram. All rights reserved.</rights>
+  
+  <entry>
+  <title type="text">Jekyll Tema Değiştirme ve Klasör Yapısı</title>
+  <link rel="alternate" type="text/html" href="http://localhost:3000/jekyll-tema-degistirme-ve-klasor-yapisi.html" />
+  <id>http://localhost:3000/jekyll-tema-degistirme-ve-klasor-yapisi</id>
+  <published>2017-07-31T04:28:00Z</published>
+  <updated>2017-07-31T04:28:00Z</updated>
+  <content type="html"><![CDATA[ <p>Heerkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.</p>
+
+<h2>Jekyll Klasör Yapısı</h2>
+
+<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
+Oluşturulan bir jekyll projesi genel hatları ile başlangıçta yukarıdaki gibi bir klasör yapısına sahiptir.
+Projemizi oluşturduğumuzda hazır olarak <strong>minima</strong> isimli tema ile gelir ve daha sonra istersek sıfırdan bir tema oluşturabiliriz veya hazır olarak bulunan temaları değiştirerek istediğimiz hale getirebiliriz. Klasör yapısından bahsettikten sonra tema konusuna daha detaylı bir şekilde değineceğim. 
+Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
+
+<h3>_post</h3>
+<p>Bu klasörün altında genelde blog sitesi oluşturulduğunda yayınlanacak yazılar bulunur. Bir post yayınlamak için <kbd>yil-ay-gun-post-ismi.md</kbd> şeklinde bir dosya oluşturmamız gerekir.  <strong>Örneğin:</strong> <kbd>2017-08-31-jekyll-dosya-yapisi-ve-bazi-ipuclari.md</kbd> şeklinde kaydedebiliriz. Projemizi oluşturduğumuz zaman aşağıdaki gibi hazır bir post ile gelir. İsterseniz bu örneği inceleyelim.</p>
+
+<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi_2.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." /></p>
+<ul>
+  <li>layout: Bu dosyanın bir post olduğunu belirtiyoruz.</li>
+  <li>title: Postumuzun başlığı. Örneğin bu postun başlığı “Jekyll Klasör Yapısı ve Tema Değiştirme”dır.</li>
+  <li>date: Postunuzun yayınlama tarihi ve saati.</li>
+  <li>categories: Postunuzun bulunacağı kategori.</li>
+  <li>Diğer kalan kısım ise yazımızın içeriğidir. Farkettiyseniz bu dosyayı <strong>.markdown</strong> uzantısı ile kaydetmiştik. Bunun sebebi yazarken <strong>markdown syntax</strong> kullanmamızdır. Eğer markdown syntax hakkında bilginiz yoksa <a href="https://learn.getgrav.org/content/markdown">buradan</a> bilgi edinebilirsiniz.</li>
+</ul>
+
+<h3>_site</h3>
+<p>Bu kısım proje çalıştırıldıktan sonra oluşur. Burada sitemizin tüm içeriği bulunur. Statik dosyalar burada tutulur. Örneğin, resimler, css ve js dosyaları.</p>
+
+<h3>404.html</h3>
+<p>Kullanıcılar hatalı bir linke yönlendirildiğinde veya adres çubuğuna hatalı bir link girdiklerinde gösterilecek sayfadır. Klasik 404 sayfası oluşturduğumuz gibi html kodları ile bu sayfayı oluşturabiliriz.</p>
+
+<h3>Gemfile</h3>
+<p>Burası ruby ile alakalı olan kısımdır. Plugin yüklemek istersek burayı kullanacağız.</p>
+
+<h3>Gemfile.lock</h3>
+<p>Bilgisayarımızda yüklü olan pluginlerin listesini verir. Ayrıca projemizde kullandığımız pluginleride buradan görebiliriz.</p>
+
+<h3>_config.yml</h3>
+<p>Çok önemli bir kısımdır. Sitemizin alanadı, zaman dilimi, klasör yapısı, plugin ayarları, tema ayarları, sitemizin başlığı, açıklamalar, site sahibi gibi ayarlar buradan yapılır. Buradaki içeriğin çoğunu komut satırından ayarlayabiliriz fakat buradan oluştursak unutma gibi bir problemle karşılaşmaz daha kolay değişiklikler yapabiliriz.</p>
+
+<h3>about.md ve index.md</h3>
+<p>Temanın oluşturduğu dosyalardır. Sitemizde açılış sayfasında <v></v>e hakkımda linkine tıklandığında gösterilecek içerik buradan belirlenir. İlerleyen zamanlarda buraya eklemeler yapabiliriz. Örneğin: Projeler, Kategoriler, Arşiv, Blog.</p>
+
+<h2>Hazır Tema Kullanımı</h2>
+<p>Jekyll ile önceden diğer kullanıcılar tarafından oluşturulmuş bir çok hazır tema vardır. Bu temaları<a href="www.jekyllthemes.com"> buradan</a> görebilirsiniz. Ben örnek olarak <a href="https://mmistakes.github.io/jekyll-theme-basically-basic/">jekyll-theme-basically-basic</a> temasını kullanacağım.</p>
+
+<p>Temayı yüklemek için projemizin bulunduğu klasöre giriyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nano Gemfile //Gemfile dosyasını nano ile terminal ekranında başlatıyoruz.</code></pre></figure>
+
+<p>Gemfile dosyası açıldıktan sonra <strong>gem “minima”, “~&gt; 2.0”</strong> yazısının hemen alt satırına <strong>gem “jekyll-theme-basically-basic”</strong> yazıyoruz. Altına yazmamızın sebebi düzenli gözükmesi için. İsterseniz bu dosya içinde farklı bir yerede yazabilirsiniz. <strong>CTRL + X</strong> tuşlarına basıp çıkan uyarıya <strong>Evet</strong> deyip kaydedip çıkıyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nano _config.yml //_config.yml dosyasını nano ile terminal ekranında başlatıyoruz.</code></pre></figure>
+
+<p>Sayfanın altlarına inip <strong>themes: minima</strong> yazan kısmı buluyoruz ve <strong>minima</strong> kısmını <strong>jekyll-theme-basically-basic</strong> şeklinde değiştiriyoruz. Yine aynı şekilde <strong>CTRL + X</strong> tuşlarına basıp <strong>Evet</strong> deyip kaydedip çıkıyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle install // temamızı yüklüyoruz.
+jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
+
+<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi_3.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." /></p>
+
+<h3><strong>Tebrikler.</strong></h3>
+<p>Yukarıda gördüğünüz gibi temamız değişti. Bundan sonra içerik üretmek veya temayı özelleştirmek sizin zevkinize kalmış. Eğer isterseniz kendinizde sıfırdan bir tema oluşturabilirsiniz.</p>
+
+<p>Yazımı sonuna kadar okuduğunuz için teşekkür ederim. Umarım faydalı bir yazı olmuştur. Görüşmek üzere.</p>
+ ]]></content>
+</entry>
+
+
+  <entry>
+  <title type="text">Jekyll ve Github Pages ile Ücretsiz Blog Oluşturmak</title>
+  <link rel="alternate" type="text/html" href="http://localhost:3000/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html" />
+  <id>http://localhost:3000/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak</id>
+  <published>2017-07-30T05:40:00Z</published>
+  <updated>2017-07-30T05:40:00Z</updated>
+  <content type="html"><![CDATA[ <p>Herkese merhaba. Öncelikle <a href="https://jekyllrb.com/">Jekyll</a> nedir ne işe yarar bize neler sağlar onlardan bahsetmek istiyorum. 
+<a href="https://jekyllrb.com/">Jekyll</a>, Github’ın ruby ile geliştirmiş olduğu statik web sayfalar oluşturmamızı sağlayan bir araçtır. <a href="https://jekyllrb.com/">Jekyll</a>‘nin resmi web sitesine girdiğimizde bizi “Transform your plain text into static websites and blogs.” diye bir yazı karşılıyor. Yani düz metinlerimizi web sitelerine ve bloglara dönüştürebileceğimizden bahsediyor. Tamamen ücretsiz olup hatrı sayılır bir kullanıcı kitlesi vardır. Lafı fazla uzatmadan <a href="https://jekyllrb.com/">Jekyll</a> nasıl kurulur, nasıl çalışır hale getirilir bunlardan bahsetmek istiyorum.</p>
+
+<p><strong>NOT: Debian 9 kullandığım için anlatımımı Linux işletim sistemleri üzerinden gerçekleştireceğim.</strong></p>
+
+<h2>Jekyll Kurulum</h2>
+
+<p><a href="https://jekyllrb.com/">Jekyll</a> ile geliştirme yapabilmek için bilgisayarımızda ruby’nin kurulu olması gerekmektedir.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">su 	// ruby kurulumunu gerçekleştirebilmek için sistemde root olmamız gerekiyor</code></pre></figure>
+
+<p>Bizden sistem parolamızı isteyecektir. Girdikten sonra enter’a basıp devam ediyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get install ruby-full 	// ruby kurulumunu gerçekleştiriyoruz.
+
+<span class="nb">exit</span> 				// root modundan çıkıyoruz.</code></pre></figure>
+
+<p>Ruby kurulumunu gerçekleştirdikten sonra <strong>exit</strong> komutuyla root modundan çıkıyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gem install jekyll 		// jekyll kurulumunu gerçekleştiriyoruz.</code></pre></figure>
+
+<p>NOT: Buraları hızlıca geçmemin sebebi internette çok fazla kaynak ve dökümantasyon olması. Eğer hata alırsanız veya bir sorun ile karşılaşırsanız sosyal medya hesaplarımdan bana ulaşabilirsiniz. Elimden geldiğince yardımcı olmaya çalışırım.</p>
+
+<h2>Jekyll İle İlk Sitemizi Oluşturalım</h2>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">jekyll new proje_adı 		// projemizi oluşturuyoruz.
+	
+<span class="nb">cd </span>proje_adı 			// projemizin bulunduğu klasöre giriyoruz.
+
+jekyll serve 			// projemizi çalıştırıyoruz.</code></pre></figure>
+
+<p><strong>new</strong> komutu ile ilk projemizi oluşturduk. Daha sonra projemizi oluşturduğumuz klasörün içine giriyoruz ve <strong>jekyll serve</strong> komutu ile projemizi çalıştırıyoruz.</p>
+
+<p><img class="img-responsive" src="../static/img/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak.png" /></p>
+
+<p>Yukarıdaki gibi bir çıktı alırsak sitemiz başarılı bir şekilde oluşmuş ve çalışıyor.
+Tarayıcımızı açıp adres çubuğuna, <strong>localhost:4000</strong> yazarsak sitemiz açılacaktır.</p>
+
+<p><img class="img-responsive" src="../static/img/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak_2.png" /></p>
+
+<p>Ve sitemiz hazır. İlerleyen yazılarda projedeki klasörlerin ne işe yaradığını, hazır bir temayı nasıl kullanacağımızı, github üzerinden nasıl yayınlayacağımızı ve kendi alan adımızı nasıl kullanacağımızı anlatacağım.</p>
+
+ ]]></content>
+</entry>
+
+
+
+</feed>

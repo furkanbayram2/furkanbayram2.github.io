@@ -1,0 +1,33 @@
+# top level stuff you probably don't need to touch
+highlighter: rouge
+markdown: kramdown
+rdiscount:
+extensions: [smart]
+permalink: /:title.html
+paginate: 5
+gems: [jekyll-paginate]
+port: 3000
+safe: true
+
+
+# edit here to achieve your personal greatness
+
+url: http://furkanbayram2.github.io
+baseurl: '/'
+title: Şefik Furkan Bayram
+author: Şefik Furkan Bayram
+description: Kişisel Blog ve Yazılım
+avatar: avatar.png
+facebook: profile.php?id=100006148155735
+email: sefikfurkanbayram@gmail.com
+github: furkanbayram2 # username
+twitter: username
+instagram: furkanbayram2
+linkedin: furkan-bayram-143a48116/
+stackoverflow: username   #e.g: users/2735833/proton1h1
+#Comment out if you don't want disqus 
+disqus: username
+google_analytics: UA-96537358-2
+
+# needed for travis-ci build
+exclude: [vendor]
