@@ -9,7 +9,6 @@ gems: [jekyll-paginate]
 port: 3000
 safe: true
 
-
 # edit here to achieve your personal greatness
 
 url: http://furkanbayram2.github.io
@@ -24,10 +23,6 @@ github: furkanbayram2 # username
 twitter: username
 instagram: furkanbayram2
 linkedin: furkan-bayram-143a48116/
-stackoverflow: username   #e.g: users/2735833/proton1h1
-#Comment out if you don't want disqus 
-disqus: username
+disqus: disqus_4bZIHJEcMy
 google_analytics: UA-96537358-2
-
-# needed for travis-ci build
 exclude: [vendor]
