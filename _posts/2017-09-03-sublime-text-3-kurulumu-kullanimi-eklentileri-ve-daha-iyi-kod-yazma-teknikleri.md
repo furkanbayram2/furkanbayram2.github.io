@@ -79,7 +79,7 @@ Bu eklenti dosya adlarını otomatik olarak tamamlıyor ve dosya isimlerini yaza
 
 <h2>2. Autoprefixer</h2>
 
-<img class="img-responsive" src="../static/img/post_image/" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
+<img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler_4.gif" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
 CSS yazarken işlerimizi kolaylaştıracak bir eklenti bu. Örneğin, <strong>transform</strong> özelliğinin chrome veya safari gibi tarayıcılarda çalışması için <strong>-webkit-transform</strong>, IE için ise <strong>-ms-transform</strong> yazmamız gerekiyor. Bu eklenti sayesinde bunları ayrı ayrı yazmıyoruz. 
 
 
