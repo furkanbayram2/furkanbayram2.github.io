@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="author" content="Şefik Furkan Bayram" />
+    <meta name="description" content="Kişisel Blog ve Yazılım">
+    <link rel="favicon" href="/deneme/static/img/favicon.ico">
+    
+      <title>Sublime Text 3 Kurulum, Kullanım ve Eklentiler</title>
+    
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+    crossorigin="anonymous">
+	<!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="/deneme/static/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="/deneme/static/css/syntax.css" />
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-96537358-2', 'auto');
+  ga('send', 'pageview');
+</script>
+  </head>
+  <!-- Main Body-->
+  <body>	  
+  <!-- Back to top button -->
+  <i id="toTop" class="fa fa-chevron-up fa-4x"></i>  
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/deneme/index"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/deneme/blog.html">BLOG</a></li>
+        <li><a href="/deneme/about.html">HAKKIMDA</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>     
+    <div class="container">
+	<div class="blog-post">
+		
+		<h3>
+		<strong><a href="/sublime-text-3-kurulumu-kullanimi-eklentileri-ve-daha-iyi-kod-yazma-teknikleri.html">Sublime Text 3 Kurulum, Kullanım ve Eklentiler</a></strong>
+		</h3>
+	</div>
+	<div class="blog-title">
+		<h4>
+		
+		3
+		Eylül
+		
+	2017
+	<p>Yayınlanma Saati: 05:26</p>
+	&nbsp;&nbsp;
+	
+		<span class="label label-success myLabel">sublimetext</span>
+	
+		<span class="label label-success myLabel">text</span>
+	
+		<span class="label label-success myLabel">editör</span>
+	
+		<span class="label label-success myLabel">sublime text</span>
+	
+		<span class="label label-success myLabel">sublime text 3</span>
+	
+	</h4>
+</div>
+</style>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="blogpost">
+			<p>Herkese merhaba. Uzun zamandır geliştirme yaparken <strong>Brackets</strong> metin editörünü kullanıyordum. Son 1 haftadır bu editörün performansından rahatsızlık duymaya başladım. Bu yüzden yeni bir metin editörü arayışına girdim. En az 3-4 adet editör değiştirdim ve sonunda <strong>Sublime Text 3</strong> kullanmaya karar verdim. Bu yazımda <strong>Linux</strong> işletim sistemine <strong>Sublime Text 3</strong> nasıl kurulur, eklentiler nasıl yüklenir, editör nasıl özelleştiriler vb. konulardan bahsedeceğim.</p>
+
+<h1>Sublime Text 3 Kurulumu</h1>
+
+<p>Terminalimizi açıp aşağıdaki komutları çalıştırıyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3083_amd64.deb 
+
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> sublime-text_build-3083_amd64.deb</code></pre></figure>
+
+<p>Yukarıdaki komutlar ile <strong>Sublime Text 3</strong>‘ü bilgisayarımıza indiriyoruz. Daha sonra ise kurulum işlemini gerçekleştiriyoruz.</p>
+
+<p>YÜkleme işlemi tamamlandıktan sonra komut satırına <strong>subl</strong> yazıp editörümüzü çalıştırıyoruz.</p>
+
+<h1>Sublime Settings</h1>
+
+<p><strong>Sublime Text</strong> tamamen açık kaynak kodlu bir editördür. Yani istediğiniz değişikliği istediğiniz şekilde yapabilirsiniz. Tüm ayarlar <strong>Preferences.sublime-settings</strong> altında bulunur. Burayı açmak için yukarıdaki menüden <strong>Preferences / Settings</strong> diyoruz. Örnek olarak aşağıda kendi <strong>Preferences.sublime-settings</strong> dosyamı paylaşıyorum.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"> <span class="o">{</span>
+	<span class="s2">"bold_folder_labels"</span>: <span class="nb">true</span>,
+	<span class="s2">"color_scheme"</span>: <span class="s2">"Packages/Base16 Color Schemes/Themes/base16-isotope.tmTheme"</span>,
+	<span class="s2">"font_face"</span>: <span class="s2">"Menlo"</span>,
+	<span class="s2">"font_size"</span>: 10,
+	<span class="s2">"highlight_line"</span>: <span class="nb">true</span>,
+	<span class="s2">"ignored_packages"</span>:
+	<span class="o">[</span>
+		<span class="s2">"Vintage"</span>
+	<span class="o">]</span>,
+	<span class="s2">"line_padding_bottom"</span>: 1,
+	<span class="s2">"line_padding_top"</span>: 1,
+	<span class="s2">"theme"</span>: <span class="s2">"Boxy Tomorrow.sublime-theme"</span>,
+	<span class="s2">"theme_sidebar_disclosure"</span>: <span class="nb">true</span>,
+	<span class="s2">"theme_sidebar_font_md"</span>: <span class="nb">true</span>,
+	<span class="s2">"theme_sidebar_size_xxs"</span>: <span class="nb">true</span>,
+	<span class="s2">"theme_unified"</span>: <span class="nb">true</span>
+<span class="o">}</span></code></pre></figure>
+
+<h1>Paket Yöneticisinin Kurulumu</h1>
+
+<p>Eklenti kurulumuna geçmeden önce <strong>paket yöneticisinin</strong> kurulumunu gerçekleştirmemiz gerekiyor.
+Bunun için <a href="https://packagecontrol.io/installation">buraya</a> tıkladıktan sonra açılan sayfadaki <strong>Sublime Text 3</strong> sekmesi altındaki kodları kopyalıyoruz.<br />
+Daha sonra editörümüzü açıp menülerden <strong>View / Show Console</strong> diyoruz. Kopyaladığımız kodları açılan konsol ekranına kopyalıyoruz ve <strong><kbd>ENTER</kbd></strong> tuşuna basıp <strong>paket yöneticisinin</strong> kurulumunu tamamlıyoruz.</p>
+
+<h1>Eklentilerin Kurulumu</h1>
+<p>Eklentilerin kurulumu için editörümüzdeki menüden <strong>Tools / Command Palette</strong> dedikten sonra açılan bölüme <strong>install package</strong> yazıp, <strong>Package Control: Install Package</strong> bölümüne giriyoruz.<br />
+İşte bu açılan kısım eklentilerin listelendiği bölüm. Buradan işimize yarayan, istediğimiz eklentiyi artık yükleyebiliriz.<br />
+Aşağıda, kod yazarken kullandığım, işinizi kolaylaştıracak bazı eklentileri paylaşacağım.</p>
+
+<h2>1. AutoFileName</h2>
+
+<p><img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
+Bu eklenti dosya adlarını otomatik olarak tamamlıyor ve dosya isimlerini yazarken yazım hatası yapmamızı en aza indiriyor. Örneğin <strong>href</strong> etiketlerinde, html içindeki <strong>img</strong> etiketlerinde yol belirtirken veya stil dosyalarında <strong>background-image</strong> için yol belirtirken aynı seviyedeki veya alt seviyelerdeki dosya ve klasörleri görmemizi sağlıyor. Ayrıyetten resimlere ait <strong>yükseklik X genişlik</strong> değerlerinide görebiliyoruz.</p>
+
+<h2>2. Autoprefixer</h2>
+
+<p><img class="img-responsive" src="../static/img/post_image/" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
+CSS yazarken işlerimizi kolaylaştıracak bir eklenti bu. Örneğin, <strong>transform</strong> özelliğinin chrome veya safari gibi tarayıcılarda çalışması için <strong>-webkit-transform</strong>, IE için ise <strong>-ms-transform</strong> yazmamız gerekiyor. Bu eklenti sayesinde bunları ayrı ayrı yazmıyoruz.</p>
+
+<h2>3. BracketHighlighter</h2>
+
+<p><img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler_2.png.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
+Artık parantezi açtım mı, tırnağı kapattım mı derken şaşı olmaya son :) Bu eklenti sayesinde parantezlerin veya tırnak içindeki alanların başlangıç veya bitişlerini çok rahat bulabileceksiniz. Adındanda anlaşılacağı gibi başlangıç ve bitiş kısımlarını belirgin hale getiriyor.</p>
+
+<h2>4. Boxy Theme</h2>
+
+<p>Boxy Theme içinde onlarca tema bulunduruyor. Eğer bu temalar hoşunuza gitmese bile editörünüzü istediğiniz şekilde değiştirebilirsiniz. Menülerin renklerini, yazı fontlarını, yazı renklerini, menü stillerini vb. bir çok özelliği çok basit bir şekilde bu eklenti ile değiştirebilirsiniz.</p>
+
+<h2>5. CSS Extended Completions</h2>
+
+<p><img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler_3.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
+Bir tek <strong>CSS Extended Completions</strong> olsun bana bir şey olmaz :) diyebileceğim bir eklenti. Stil dosyalarınızdaki fonksiyon, class ve id isimlerini html içerisinde kullanırken, daha siz yazmadan otomatik olarak tamamlıyor. Yeni bir CSS freamworküne başlayacağınız zaman bu eklenti bulunmaz bir veli nimet. Yabancısı olduğunuz freamworke, bu eklenti sayesinde kolayca alışabilirsiniz.</p>
+
+<h2>6. Emmet</h2>
+
+<p><strong>Emmet</strong> eklentisini isterseniz uygulamalı olarak açıklayayım.<br />
+<strong>div.ul&gt;li*5</strong> yazıp editörümüzde <strong><kbd>TAB</kbd></strong> tuşuna basarsak çıktı şu şekilde olacaktır.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div&gt;</span>
+ 	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"li"</span><span class="nt">&gt;&lt;/ul&gt;</span>
+ 	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"li"</span><span class="nt">&gt;&lt;/ul&gt;</span>
+ 	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"li"</span><span class="nt">&gt;&lt;/ul&gt;</span>
+ 	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"li"</span><span class="nt">&gt;&lt;/ul&gt;</span>
+ 	<span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"li"</span><span class="nt">&gt;&lt;/ul&gt;</span>
+ <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><strong>Emmet</strong> için ileriki zamanlarda ayrı bir yazı yazacağım. Çünkü tam anlamıyla kullanımı öğrenildiğinde, zamandan baya bir tasarruf etmemizi sağlıyor. İncelemek isterseniz <a href="https://docs.emmet.io/">buradan</a> dökümantasyonuna, <a href="https://docs.emmet.io/cheat-sheet/">şuradan</a> da kısayollara ulaşabilirsiniz.</p>
+
+<h2>5. HTML/CSS/JS Prettify</h2>
+<p>Tek kombinasyon ile html, css ve javascript dosyalarımızı okunabilir, girinti yapısına uygun bir şekilde düzenliyor. Default tuş kombinasyonu <strong><kbd>CTRL + SHİFT + H</kbd></strong><br />
+<strong>NOT: Çalışması için sisteminizde nodejs kurulu olmalıdır.</strong></p>
+
+<p>Evet arkadaşlar yazımızın sonuna geldik. Diğer yazılarda görüşmek üzere, hoşçakalın.</p>
+
+
+			<hr>
+			<div class="paylas">
+				<h5>Bu yazıyı paylaş:</h5>
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					<a class="a2a_button_whatsapp"></a>
+				</div>
+			</div>
+			<hr>
+			<div class="related-posts">
+				<h5>Diğer Yazılar</h5>
+				
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							3
+							Eylül
+							
+						2017
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/deneme//jekyll-tema-degistirme-ve-klasor-yapisi.html">Jekyll Tema Değiştirme ve Klasör Yapısı</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							3
+							Eylül
+							
+						2017
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/deneme//jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html">Jekyll ve Github Pages ile Ücretsiz Blog Oluşturmak</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div id="disqus_thread"></div>
+<script>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sefik-furkan-bayram-kisisel-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        
+
+
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">© Tüm hakları saklıdır. Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="/deneme/static/js/docs.min.js"></script>
+    <script src="/deneme/static/js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/deneme/static/js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+</html>

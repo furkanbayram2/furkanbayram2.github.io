@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll ve Github Pages ile Ücretsiz Blog Oluşturmak
-date: 2017-07-30 02:40:00
+date: 2017-08-30 02:40:00
 tags:
 - github
 - jekyll
@@ -14,7 +14,7 @@ Herkese merhaba. Öncelikle <a href="https://jekyllrb.com/">Jekyll</a> nedir ne 
 
 <strong>NOT: Debian 9 kullandığım için anlatımımı Linux işletim sistemleri üzerinden gerçekleştireceğim.</strong>
 
-<h2>Jekyll Kurulum</h2>
+<h1>Jekyll Kurulum</h1>
 
 <a href="https://jekyllrb.com/">Jekyll</a> ile geliştirme yapabilmek için bilgisayarımızda ruby'nin kurulu olması gerekmektedir.
 
@@ -42,7 +42,7 @@ gem install jekyll 		// jekyll kurulumunu gerçekleştiriyoruz.
 
 NOT: Buraları hızlıca geçmemin sebebi internette çok fazla kaynak ve dökümantasyon olması. Eğer hata alırsanız veya bir sorun ile karşılaşırsanız sosyal medya hesaplarımdan bana ulaşabilirsiniz. Elimden geldiğince yardımcı olmaya çalışırım.
 
-<h2>Jekyll İle İlk Sitemizi Oluşturalım</h2>
+<h1>Jekyll İle İlk Sitemizi Oluşturalım</h1>
 
 {% highlight bash %}
 

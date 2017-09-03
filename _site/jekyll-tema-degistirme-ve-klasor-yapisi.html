@@ -60,7 +60,7 @@
 		<h4>
 		
 		31
-		Temmuz
+		Ağustos
 		
 	2017
 	<p>Yayınlanma Saati: 04:28</p>
@@ -86,14 +86,14 @@
 		<div class="blogpost">
 			<p>Heerkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.</p>
 
-<h2>Jekyll Klasör Yapısı</h2>
+<h1>Jekyll Klasör Yapısı</h1>
 
 <p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
 Oluşturulan bir jekyll projesi genel hatları ile başlangıçta yukarıdaki gibi bir klasör yapısına sahiptir.
 Projemizi oluşturduğumuzda hazır olarak <strong>minima</strong> isimli tema ile gelir ve daha sonra istersek sıfırdan bir tema oluşturabiliriz veya hazır olarak bulunan temaları değiştirerek istediğimiz hale getirebiliriz. Klasör yapısından bahsettikten sonra tema konusuna daha detaylı bir şekilde değineceğim. 
 Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
 
-<h3>_post</h3>
+<h2>_post</h2>
 <p>Bu klasörün altında genelde blog sitesi oluşturulduğunda yayınlanacak yazılar bulunur. Bir post yayınlamak için <kbd>yil-ay-gun-post-ismi.md</kbd> şeklinde bir dosya oluşturmamız gerekir.  <strong>Örneğin:</strong> <kbd>2017-08-31-jekyll-dosya-yapisi-ve-bazi-ipuclari.md</kbd> şeklinde kaydedebiliriz. Projemizi oluşturduğumuz zaman aşağıdaki gibi hazır bir post ile gelir. İsterseniz bu örneği inceleyelim.</p>
 
 <p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi_2.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." /></p>
@@ -105,25 +105,25 @@ Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
   <li>Diğer kalan kısım ise yazımızın içeriğidir. Farkettiyseniz bu dosyayı <strong>.markdown</strong> uzantısı ile kaydetmiştik. Bunun sebebi yazarken <strong>markdown syntax</strong> kullanmamızdır. Eğer markdown syntax hakkında bilginiz yoksa <a href="https://learn.getgrav.org/content/markdown">buradan</a> bilgi edinebilirsiniz.</li>
 </ul>
 
-<h3>_site</h3>
+<h2>_site</h2>
 <p>Bu kısım proje çalıştırıldıktan sonra oluşur. Burada sitemizin tüm içeriği bulunur. Statik dosyalar burada tutulur. Örneğin, resimler, css ve js dosyaları.</p>
 
-<h3>404.html</h3>
+<h2>404.html</h2>
 <p>Kullanıcılar hatalı bir linke yönlendirildiğinde veya adres çubuğuna hatalı bir link girdiklerinde gösterilecek sayfadır. Klasik 404 sayfası oluşturduğumuz gibi html kodları ile bu sayfayı oluşturabiliriz.</p>
 
-<h3>Gemfile</h3>
+<h2>Gemfile</h2>
 <p>Burası ruby ile alakalı olan kısımdır. Plugin yüklemek istersek burayı kullanacağız.</p>
 
-<h3>Gemfile.lock</h3>
+<h2>Gemfile.lock</h2>
 <p>Bilgisayarımızda yüklü olan pluginlerin listesini verir. Ayrıca projemizde kullandığımız pluginleride buradan görebiliriz.</p>
 
-<h3>_config.yml</h3>
+<h2>_config.yml</h2>
 <p>Çok önemli bir kısımdır. Sitemizin alanadı, zaman dilimi, klasör yapısı, plugin ayarları, tema ayarları, sitemizin başlığı, açıklamalar, site sahibi gibi ayarlar buradan yapılır. Buradaki içeriğin çoğunu komut satırından ayarlayabiliriz fakat buradan oluştursak unutma gibi bir problemle karşılaşmaz daha kolay değişiklikler yapabiliriz.</p>
 
-<h3>about.md ve index.md</h3>
+<h2>about.md ve index.md</h2>
 <p>Temanın oluşturduğu dosyalardır. Sitemizde açılış sayfasında <v></v>e hakkımda linkine tıklandığında gösterilecek içerik buradan belirlenir. İlerleyen zamanlarda buraya eklemeler yapabiliriz. Örneğin: Projeler, Kategoriler, Arşiv, Blog.</p>
 
-<h2>Hazır Tema Kullanımı</h2>
+<h1>Hazır Tema Kullanımı</h1>
 <p>Jekyll ile önceden diğer kullanıcılar tarafından oluşturulmuş bir çok hazır tema vardır. Bu temaları<a href="www.jekyllthemes.com"> buradan</a> görebilirsiniz. Ben örnek olarak <a href="https://mmistakes.github.io/jekyll-theme-basically-basic/">jekyll-theme-basically-basic</a> temasını kullanacağım.</p>
 
 <p>Temayı yüklemek için projemizin bulunduğu klasöre giriyoruz.</p>
@@ -141,7 +141,7 @@ jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
 
 <p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi_3.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." /></p>
 
-<h3><strong>Tebrikler.</strong></h3>
+<h2><strong>Tebrikler.</strong></h2>
 <p>Yukarıda gördüğünüz gibi temamız değişti. Bundan sonra içerik üretmek veya temayı özelleştirmek sizin zevkinize kalmış. Eğer isterseniz kendinizde sıfırdan bir tema oluşturabilirsiniz.</p>
 
 <p>Yazımı sonuna kadar okuduğunuz için teşekkür ederim. Umarım faydalı bir yazı olmuştur. Görüşmek üzere.</p>
@@ -165,7 +165,25 @@ jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
 							<h6 style="text-align: right">
 							
 							31
-							Temmuz
+							Ağustos
+							
+						2017
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/deneme//sublime-text-3-kurulumu-kullanimi-eklentileri-ve-daha-iyi-kod-yazma-teknikleri.html">Sublime Text 3 Kurulum, Kullanım ve Eklentiler</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							31
+							Ağustos
 							
 						2017
 						
@@ -220,6 +238,6 @@ s.setAttribute('data-timestamp', +new Date());
     <script src="/deneme/static/js/main.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/deneme/static/js/ie10-viewport-bug-workaround.js"></script>
-    <script id="dsq-count-scr" src="//www-furkanbayram-net.disqus.com/count.js" async></script>
+    
   </body>
 </html>
