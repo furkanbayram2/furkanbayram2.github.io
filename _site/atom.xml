@@ -6,7 +6,7 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2017-09-03T05:26:26Z</updated>
+  <updated>2017-09-03T15:05:20Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
@@ -15,8 +15,8 @@
   
   <entry>
   <title type="text">Sublime Text 3 Kurulum, Kullanım ve Eklentiler</title>
-  <link rel="alternate" type="text/html" href="http://localhost:3000/sublime-text-3-kurulumu-kullanimi-eklentileri-ve-daha-iyi-kod-yazma-teknikleri.html" />
-  <id>http://localhost:3000/sublime-text-3-kurulumu-kullanimi-eklentileri-ve-daha-iyi-kod-yazma-teknikleri</id>
+  <link rel="alternate" type="text/html" href="http://localhost:3000/sublime-text-3-kurulum-kullanim-ve-eklentiler.html" />
+  <id>http://localhost:3000/sublime-text-3-kurulum-kullanim-ve-eklentiler</id>
   <published>2017-09-03T05:26:00Z</published>
   <updated>2017-09-03T05:26:00Z</updated>
   <content type="html"><![CDATA[ <p>Herkese merhaba. Uzun zamandır geliştirme yaparken <strong>Brackets</strong> metin editörünü kullanıyordum. Son 1 haftadır bu editörün performansından rahatsızlık duymaya başladım. Bu yüzden yeni bir metin editörü arayışına girdim. En az 3-4 adet editör değiştirdim ve sonunda <strong>Sublime Text 3</strong> kullanmaya karar verdim. Bu yazımda <strong>Linux</strong> işletim sistemine <strong>Sublime Text 3</strong> nasıl kurulur, eklentiler nasıl yüklenir, editör nasıl özelleştiriler vb. konulardan bahsedeceğim.</p>
@@ -27,7 +27,7 @@
 
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">wget http://c758482.r82.cf2.rackcdn.com/sublime-text_build-3083_amd64.deb 
 
-<span class="nb">sudo </span>dpkg <span class="nt">-i</span> sublime-text_build-3083_amd64.deb</code></pre></figure>
+sudo dpkg -i sublime-text_build-3083_amd64.deb</code></pre></figure>
 
 <p>Yukarıdaki komutlar ile <strong>Sublime Text 3</strong>‘ü bilgisayarımıza indiriyoruz. Daha sonra ise kurulum işlemini gerçekleştiriyoruz.</p>
 
@@ -74,7 +74,7 @@ Bu eklenti dosya adlarını otomatik olarak tamamlıyor ve dosya isimlerini yaza
 
 <h2>2. Autoprefixer</h2>
 
-<p><img class="img-responsive" src="../static/img/post_image/" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
+<p><img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler_4.gif" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
 CSS yazarken işlerimizi kolaylaştıracak bir eklenti bu. Örneğin, <strong>transform</strong> özelliğinin chrome veya safari gibi tarayıcılarda çalışması için <strong>-webkit-transform</strong>, IE için ise <strong>-ms-transform</strong> yazmamız gerekiyor. Bu eklenti sayesinde bunları ayrı ayrı yazmıyoruz.</p>
 
 <h2>3. BracketHighlighter</h2>
