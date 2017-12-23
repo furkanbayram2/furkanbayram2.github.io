@@ -113,6 +113,10 @@ body {
 }
 
 @media (max-width: 767px) {
+    .about-text {
+    font-size: 18px !important;
+    line-height: 35px !important;
+  }
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #6b6b6b;
   }
