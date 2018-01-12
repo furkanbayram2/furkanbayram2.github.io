@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="author" content="Şefik Furkan Bayram" />
+    <meta name="description" content="Kişisel Blog ve Yazılım">
+    <link rel="favicon" href="static/img/favicon.ico">
+    
+      <title>Jekyll Tema Değiştirme ve Klasör Yapısı</title>
+    
+
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+    	<link rel="stylesheet" type="text/css" href="static/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+	<link href="https://fonts.googleapis.com/css?family=Dosis:600|Inconsolata|Indie+Flower|Poppins:500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/syntax.css" />
+	  
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-96537358-2', 'auto');
+  ga('send', 'pageview');
+</script>
+  </head>
+  <!-- Main Body-->
+  <body>	  
+  <!-- Back to top button -->
+  <i id="toTop" class="fa fa-chevron-up fa-4x"></i>  
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="about">HAKKIMDA</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>     
+
+    <div class="container">
+	<div class="blog-post">
+		<h3>
+		<strong><a href="/jekyll-tema-degistirme-ve-klasor-yapisi.html">Jekyll Tema Değiştirme ve Klasör Yapısı</a></strong>
+		</h3>
+	</div>
+	<div class="blog-title">
+		<h4>
+		
+		31
+		Ağustos
+		
+	2017
+	<p>Yayınlanma Saati: 01:28</p>
+	&nbsp;&nbsp;
+	
+		<span class="label label-success myLabel">github</span>
+	
+		<span class="label label-success myLabel">jekyll</span>
+	
+		<span class="label label-success myLabel">blog</span>
+	
+		<span class="label label-success myLabel">ruby</span>
+	
+		<span class="label label-success myLabel">domain</span>
+	
+		<span class="label label-success myLabel">tema</span>
+	
+	</h4>
+</div>
+</style>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="blogpost">
+			<p>Heerkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.</p>
+
+<h1>Jekyll Klasör Yapısı</h1>
+
+<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." />
+Oluşturulan bir jekyll projesi genel hatları ile başlangıçta yukarıdaki gibi bir klasör yapısına sahiptir.
+Projemizi oluşturduğumuzda hazır olarak <strong>minima</strong> isimli tema ile gelir ve daha sonra istersek sıfırdan bir tema oluşturabiliriz veya hazır olarak bulunan temaları değiştirerek istediğimiz hale getirebiliriz. Klasör yapısından bahsettikten sonra tema konusuna daha detaylı bir şekilde değineceğim. 
+Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
+
+<h2>_post</h2>
+<p>Bu klasörün altında genelde blog sitesi oluşturulduğunda yayınlanacak yazılar bulunur. Bir post yayınlamak için <kbd>yil-ay-gun-post-ismi.md</kbd> şeklinde bir dosya oluşturmamız gerekir.  <strong>Örneğin:</strong> <kbd>2017-08-31-jekyll-dosya-yapisi-ve-bazi-ipuclari.md</kbd> şeklinde kaydedebiliriz. Projemizi oluşturduğumuz zaman aşağıdaki gibi hazır bir post ile gelir. İsterseniz bu örneği inceleyelim.</p>
+
+<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi_2.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." /></p>
+<ul>
+  <li>layout: Bu dosyanın bir post olduğunu belirtiyoruz.</li>
+  <li>title: Postumuzun başlığı. Örneğin bu postun başlığı “Jekyll Klasör Yapısı ve Tema Değiştirme”dır.</li>
+  <li>date: Postunuzun yayınlama tarihi ve saati.</li>
+  <li>categories: Postunuzun bulunacağı kategori.</li>
+  <li>Diğer kalan kısım ise yazımızın içeriğidir. Farkettiyseniz bu dosyayı <strong>.markdown</strong> uzantısı ile kaydetmiştik. Bunun sebebi yazarken <strong>markdown syntax</strong> kullanmamızdır. Eğer markdown syntax hakkında bilginiz yoksa <a href="https://learn.getgrav.org/content/markdown">buradan</a> bilgi edinebilirsiniz.</li>
+</ul>
+
+<h2>_site</h2>
+<p>Bu kısım proje çalıştırıldıktan sonra oluşur. Burada sitemizin tüm içeriği bulunur. Statik dosyalar burada tutulur. Örneğin, resimler, css ve js dosyaları.</p>
+
+<h2>404.html</h2>
+<p>Kullanıcılar hatalı bir linke yönlendirildiğinde veya adres çubuğuna hatalı bir link girdiklerinde gösterilecek sayfadır. Klasik 404 sayfası oluşturduğumuz gibi html kodları ile bu sayfayı oluşturabiliriz.</p>
+
+<h2>Gemfile</h2>
+<p>Burası ruby ile alakalı olan kısımdır. Plugin yüklemek istersek burayı kullanacağız.</p>
+
+<h2>Gemfile.lock</h2>
+<p>Bilgisayarımızda yüklü olan pluginlerin listesini verir. Ayrıca projemizde kullandığımız pluginleride buradan görebiliriz.</p>
+
+<h2>_config.yml</h2>
+<p>Çok önemli bir kısımdır. Sitemizin alanadı, zaman dilimi, klasör yapısı, plugin ayarları, tema ayarları, sitemizin başlığı, açıklamalar, site sahibi gibi ayarlar buradan yapılır. Buradaki içeriğin çoğunu komut satırından ayarlayabiliriz fakat buradan oluştursak unutma gibi bir problemle karşılaşmaz daha kolay değişiklikler yapabiliriz.</p>
+
+<h2>about.md ve index.md</h2>
+<p>Temanın oluşturduğu dosyalardır. Sitemizde açılış sayfasında <v></v>e hakkımda linkine tıklandığında gösterilecek içerik buradan belirlenir. İlerleyen zamanlarda buraya eklemeler yapabiliriz. Örneğin: Projeler, Kategoriler, Arşiv, Blog.</p>
+
+<h1>Hazır Tema Kullanımı</h1>
+<p>Jekyll ile önceden diğer kullanıcılar tarafından oluşturulmuş bir çok hazır tema vardır. Bu temaları<a href="www.jekyllthemes.com"> buradan</a> görebilirsiniz. Ben örnek olarak <a href="https://mmistakes.github.io/jekyll-theme-basically-basic/">jekyll-theme-basically-basic</a> temasını kullanacağım.</p>
+
+<p>Temayı yüklemek için projemizin bulunduğu klasöre giriyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nano Gemfile //Gemfile dosyasını nano ile terminal ekranında başlatıyoruz.</code></pre></figure>
+
+<p>Gemfile dosyası açıldıktan sonra <strong>gem “minima”, “~&gt; 2.0”</strong> yazısının hemen alt satırına <strong>gem “jekyll-theme-basically-basic”</strong> yazıyoruz. Altına yazmamızın sebebi düzenli gözükmesi için. İsterseniz bu dosya içinde farklı bir yerede yazabilirsiniz. <strong>CTRL + X</strong> tuşlarına basıp çıkan uyarıya <strong>Evet</strong> deyip kaydedip çıkıyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">nano _config.yml //_config.yml dosyasını nano ile terminal ekranında başlatıyoruz.</code></pre></figure>
+
+<p>Sayfanın altlarına inip <strong>themes: minima</strong> yazan kısmı buluyoruz ve <strong>minima</strong> kısmını <strong>jekyll-theme-basically-basic</strong> şeklinde değiştiriyoruz. Yine aynı şekilde <strong>CTRL + X</strong> tuşlarına basıp <strong>Evet</strong> deyip kaydedip çıkıyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle install // temamızı yüklüyoruz.
+jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
+
+<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi_3.png" alt="Görüntü yüklemenede lütfen sayfayı tekrar yükleyiniz." /></p>
+
+<h2><strong>Tebrikler.</strong></h2>
+<p>Yukarıda gördüğünüz gibi temamız değişti. Bundan sonra içerik üretmek veya temayı özelleştirmek sizin zevkinize kalmış. Eğer isterseniz kendinizde sıfırdan bir tema oluşturabilirsiniz.</p>
+
+<p>Yazımı sonuna kadar okuduğunuz için teşekkür ederim. Umarım faydalı bir yazı olmuştur. Görüşmek üzere.</p>
+
+			<hr>
+			<div class="paylas">
+				<h5>Bu yazıyı paylaş:</h5>
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					<a class="a2a_button_whatsapp"></a>
+				</div>
+			</div>
+			<hr>
+			<div class="related-posts">
+				<h5>Diğer Yazılar</h5>
+				
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							12
+							Ocak
+							
+						2018
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html">SASS ve SCSS Nedir ? Neden Kullanmalıyız ? Nasıl Kurulur ?</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							3
+							Eylül
+							
+						2017
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/sublime-text-3-kurulum-kullanim-ve-eklentiler.html">Sublime Text 3 Kurulum, Kullanım ve Eklentiler</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							30
+							Ağustos
+							
+						2017
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html">Jekyll ve Github Pages ile Ücretsiz Blog Oluşturmak</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div id="disqus_thread"></div>
+<script>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sefik-furkan-bayram-kisisel-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        
+
+
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">© Tüm hakları saklıdır. Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="static/js/docs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+</html>
