@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="author" content="Şefik Furkan Bayram" />
+    <meta name="description" content="Kişisel Blog ve Yazılım">
+    <link rel="shortcut icon" href="static/img/favicon.ico">
+    
+      <title>SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş</title>
+    
+
+	<!-- Custom styles for this template -->
+	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+    	<link rel="stylesheet" type="text/css" href="static/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+	<link href="https://fonts.googleapis.com/css?family=Dosis:600|Inconsolata|Indie+Flower|Poppins:500" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/syntax.css" />
+	  
+    <!-- Google Analytics -->
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-96537358-2', 'auto');
+  ga('send', 'pageview');
+</script>
+  </head>
+  <!-- Main Body-->
+  <body>	  
+  <!-- Back to top button -->
+  <i id="toTop" class="fa fa-chevron-up fa-4x"></i>  
+  <!-- Wrap all page content here -->
+  <div id="wrap">
+    <!-- Navbar header -->
+    <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index"><i class="fa fa-home"></i></a>
+    </div>
+    <div id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="blog">BLOG</a></li>
+        <li><a href="about">HAKKIMDA</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>     
+
+    <div class="container">
+	<div class="blog-post">
+		<h3>
+		<strong><a href="/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html">SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş</a></strong>
+		</h3>
+	</div>
+	<div class="blog-title">
+		<h4>
+		
+		16
+		Ocak
+		
+	2018
+	<p>Yayınlanma Saati: 23:30</p>
+	&nbsp;&nbsp;
+	
+		<span class="label label-success myLabel">sass</span>
+	
+		<span class="label label-success myLabel">scss</span>
+	
+		<span class="label label-success myLabel">css</span>
+	
+		<span class="label label-success myLabel">css-preprocessor</span>
+	
+	</h4>
+</div>
+</style>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<div class="blogpost">
+			<p>Merhaba arkadaşlar bir önceki yazımda <strong>“SASS ve SCSS Nedir? Neden Kullanmalıyız ve Nasıl Kurulur?”</strong> konularına değinmiştim. Bu sefer ise <strong>SCSS</strong> ile nasıl çalışmaya başlayacağımızdan ve benim genelde kullandığım klasör yapısından bahsedeceğim. 
+Bilgisayarında <strong>SCSS</strong> kurulu olmayanlar <a href="http://furkanbayram.net/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html" target="?blank">buradan</a> yardım alabilirler.</p>
+
+<p>Genelde giriş seviyesindeki projelerde klasör yapımı aşağıdaki gibi oluşturuyorum.</p>
+
+<p><img src="/static/img/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/1.png" class="img-responsive img-thumbnail" alt="" />
+Dikkat ettiyseniz <strong>css</strong> ve <strong>scss</strong> diye iki farklı klasörümüz var. Önceden hep css içinde çalışıyorduk ama artık scss klasörü içinde çalışacağız.</p>
+
+<p>scss klasörünün içine giriyoruz ve “style.scss” ismiyle scss dosyamızı oluşturuyoruz. (istediğiniz ismi verebilirsiniz ben genelde “style” ismini kullanıyorum.)</p>
+
+<p>Oluşturduğumuz “style.scss” dosyasının içerisine aşağıdaki kodları kopyalıyoruz ve <strong>kaydediyoruz</strong>.</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$font-stack</span><span class="p">:</span>    <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$primary-color</span><span class="p">:</span> <span class="mh">#333</span><span class="p">;</span>
+
+<span class="nt">body</span> <span class="p">{</span>
+  <span class="nl">font</span><span class="p">:</span> <span class="m">100%</span> <span class="nv">$font-stack</span><span class="p">;</span>
+  <span class="na">backgorund-color</span><span class="p">:</span> <span class="nv">$primary-color</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Şimdi biz bu kodları buraya yazdık ve kaydettik ama sayfamızda bir değişiklik olmadı. Çünkü bu kodların css formatına çevrilmesi gerekiyor. Yani burada yazdığımız kodların yazıldıktan hemen sonra css klasörünün içine aktarılması gerekiyor. Bunu nasıl yapacağız diye sakın korkmayın, çok basit.</p>
+
+<p>Projemizin kök dizininde komut satırını açıyoruz. 
+<img src="/static/img/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/2.png" class="img-responsive img-thumbnail" alt="" /></p>
+
+<p>Komut satırına aşağıdaki kodu yazıyoruz.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">sass <span class="nt">--watch</span> scss:css </code></pre></figure>
+
+<p>Bu tek satırlık kod css klasörünün içinde bizim için bir css dosyası oluşturuyor. Bu işlem sayesinde scss tarafında yazdığımız her kod anında css’e otomatik olarak dönüştürülüyor.</p>
+
+<p>Eğer başarılı bir şekilde tüm adımları gerçekleştirdiyseniz komut satırında şöyle bir çıktı almanız gerekiyor.
+<img src="/static/img/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/4.png" class="img-responsive img-thumbnail" alt="" /></p>
+
+<p>Aşağıda scss ve css dosyalarımızın çıktısını görüyorsunuz.
+<img src="/static/img/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/3.png" class="img-responsive img-thumbnail" alt="" />
+Biz kodlarımızı sadece scss kısmına yazıyoruz ve “–watch” komutu sayesinde yaptığımız her değişiklik izlenip css kısmına aktarılıyor.</p>
+
+<h1>Özet</h1>
+
+<ol>
+  <li>SCSS’i bilgisayarımıza kuruyoruz. Kurulu değil ise <a href="http://furkanbayram.net/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html" target="?blank">buradan</a> kurabilirsiniz.</li>
+  <li>İsteğe bağlı olarak klasör yapısını oluşturuyoruz.</li>
+  <li>“scss” klasörünün içine istediğiniz isimde bir scss dosyası oluşturuyoruz. Örneğin: style.scss</li>
+  <li>Projemizin ana dizininde komut satırını çalıştırıyoruz.</li>
+  <li>Komut satırına <code> sass --watch scss:css</code> yazıyoruz ve enter’a basıp çalıştırıyoruz.</li>
+  <li><strong>Html sayfamızda css dosyamızı çağırmayı unutmuyoruz.</strong></li>
+</ol>
+<h4>Ve artık SCSS ile çalışmaya başlayabiliriz.</h4>
+
+<p>Eğer takıldığınız bir yer olursa aşağıya yorum olarak yazabilirsiniz. Bir sonraki yazıda scss’in syntax yapısına değineceğim. Kendinize iyi bakın, bol kahveler :)</p>
+
+
+			<hr>
+			<div class="paylas">
+				<h5>Bu yazıyı paylaş:</h5>
+				<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+					<a class="a2a_button_facebook"></a>
+					<a class="a2a_button_twitter"></a>
+					<a class="a2a_button_google_plus"></a>
+					<a class="a2a_button_whatsapp"></a>
+				</div>
+			</div>
+			<hr>
+			<div class="related-posts">
+				<h5>Diğer Yazılar</h5>
+				
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							12
+							Ocak
+							
+						2018
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html">SASS ve SCSS Nedir ? Neden Kullanmalıyız ? Nasıl Kurulur ?</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							3
+							Eylül
+							
+						2017
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/sublime-text-3-kurulum-kullanim-ve-eklentiler.html">Sublime Text 3 Kurulum, Kullanım ve Eklentiler</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<h6 style="text-align: right">
+							
+							31
+							Ağustos
+							
+						2017
+						
+						</h6>
+					</div>
+					<div class="col-sm-8 col-md-8 col-lg-8">
+						<h6 style="text-align: left">
+						<strong><a href="/jekyll-tema-degistirme-ve-klasor-yapisi.html">Jekyll Tema Değiştirme ve Klasör Yapısı</a></strong>
+						</h6>
+					</div>
+				</div>
+			
+		</div>
+	</div>
+</div>
+</div>
+
+
+<div id="disqus_thread"></div>
+<script>
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://sefik-furkan-bayram-kisisel-blog.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                        
+
+
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">© Tüm hakları saklıdır. Powered by <a href="http://jekyllrb.com/">Jekyll</a>
+        </div>
+    </div>
+</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+    crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="static/js/docs.min.js"></script>
+    <script src="static/js/main.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+    
+  </body>
+</html>
