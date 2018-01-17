@@ -315,3 +315,10 @@ div.footer {
 .linkedin {
   background-color: #0077b5;
 }
+
+.headerMenu ul li a{
+  font-weight: bold !important;
+  margin-left:10px !important;
+  margin-right:10px !important;
+  font-size:16px !important;
+}
