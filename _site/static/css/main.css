@@ -119,6 +119,11 @@ body {
     font-size: 18px !important;
     line-height: 35px !important;
   }
+
+footer{
+  display: none;
+}
+
   .navbar-default .navbar-nav .open .dropdown-menu>li>a {
     color: #6b6b6b;
   }
@@ -316,9 +321,3 @@ div.footer {
   background-color: #0077b5;
 }
 
-.headerList li a{
-  font-weight: bold;
-  margin-left:10px;
-  margin-right:10px;
-  font-size:16px ;
-}
