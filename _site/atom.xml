@@ -6,7 +6,7 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-01-17T02:46:21Z</updated>
+  <updated>2018-01-17T18:38:27Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
@@ -17,8 +17,8 @@
   <title type="text">SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html" />
   <id>http://localhost:3000/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris</id>
-  <published>2018-01-16T23:30:43Z</published>
-  <updated>2018-01-16T23:30:43Z</updated>
+  <published>2018-01-16T23:15:43Z</published>
+  <updated>2018-01-16T23:15:43Z</updated>
   <content type="html"><![CDATA[ <p>Merhaba arkadaşlar bir önceki yazımda <strong>“SASS ve SCSS Nedir? Neden Kullanmalıyız ve Nasıl Kurulur?”</strong> konularına değinmiştim. Bu sefer ise <strong>SCSS</strong> ile nasıl çalışmaya başlayacağımızdan ve benim genelde kullandığım klasör yapısından bahsedeceğim. 
 Bilgisayarında <strong>SCSS</strong> kurulu olmayanlar <a href="http://furkanbayram.net/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html" target="?blank">buradan</a> yardım alabilirler.</p>
 
