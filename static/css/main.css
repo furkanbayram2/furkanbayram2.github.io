@@ -66,6 +66,10 @@ body {
 
 .navbar-default .navbar-nav>li>a {
   color: #6b6b6b;
+  font-weight: bold;
+  margin-left:10px;
+  margin-right:10px;
+  font-size:16px;
 }
 
 .navbar-default .navbar-nav>li>a:hover,
@@ -314,10 +318,3 @@ div.footer {
 .linkedin {
   background-color: #0077b5;
 }
-
-.headerMenu li a{
-  font-weight: bold;
-  margin-left:10px;
-  margin-right:10px;
-  font-size:16px;
-  }
