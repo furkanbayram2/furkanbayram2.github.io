@@ -56,12 +56,12 @@ jekyll serve 			// projemizi çalıştırıyoruz.
 
 <strong>new</strong> komutu ile ilk projemizi oluşturduk. Daha sonra projemizi oluşturduğumuz klasörün içine giriyoruz ve <strong>jekyll serve</strong> komutu ile projemizi çalıştırıyoruz.
 
-<img class="img-responsive" src="../static/img/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak/1.png" />
+<img class="img-responsive" src="../static/images/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak/1.png" />
 
 Yukarıdaki gibi bir çıktı alırsak sitemiz başarılı bir şekilde oluşmuş ve çalışıyor.
 Tarayıcımızı açıp adres çubuğuna, <strong>localhost:4000</strong> yazarsak sitemiz açılacaktır.
 
-<img class="img-responsive" src="../static/img/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak/2.png" />
+<img class="img-responsive" src="../static/images/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak/2.png" />
 
 Ve sitemiz hazır. İlerleyen yazılarda projedeki klasörlerin ne işe yaradığını, hazır bir temayı nasıl kullanacağımızı, github üzerinden nasıl yayınlayacağımızı ve kendi alan adımızı nasıl kullanacağımızı anlatacağım. 
 

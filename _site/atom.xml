@@ -6,7 +6,7 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-01-17T19:01:49Z</updated>
+  <updated>2018-01-30T07:54:12Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
@@ -24,8 +24,9 @@ Bilgisayarında <strong>SCSS</strong> kurulu olmayanlar <a href="http://furkanba
 
 <p>Genelde giriş seviyesindeki projelerde klasör yapımı aşağıdaki gibi oluşturuyorum.</p>
 
-<p><img src="/static/img/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/1.png" class="img-responsive img-thumbnail" alt="" />
-Dikkat ettiyseniz <strong>css</strong> ve <strong>scss</strong> diye iki farklı klasörümüz var. Önceden hep css içinde çalışıyorduk ama artık scss klasörü içinde çalışacağız.</p>
+<p><img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/1.png" class="img-responsive img-thumbnail" alt="" /></p>
+
+<p>Dikkat ettiyseniz <strong>css</strong> ve <strong>scss</strong> diye iki farklı klasörümüz var. Önceden hep css içinde çalışıyorduk ama artık scss klasörü içinde çalışacağız.</p>
 
 <p>scss klasörünün içine giriyoruz ve “style.scss” ismiyle scss dosyamızı oluşturuyoruz. (istediğiniz ismi verebilirsiniz ben genelde “style” ismini kullanıyorum.)</p>
 
@@ -42,7 +43,7 @@ Dikkat ettiyseniz <strong>css</strong> ve <strong>scss</strong> diye iki farklı
 <p>Şimdi biz bu kodları buraya yazdık ve kaydettik ama sayfamızda bir değişiklik olmadı. Çünkü bu kodların css formatına çevrilmesi gerekiyor. Yani burada yazdığımız kodların yazıldıktan hemen sonra css klasörünün içine aktarılması gerekiyor. Bunu nasıl yapacağız diye sakın korkmayın, çok basit.</p>
 
 <p>Projemizin kök dizininde komut satırını açıyoruz. 
-<img src="/static/img/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/2.png" class="img-responsive img-thumbnail" alt="" /></p>
+<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/2.png" class="img-responsive img-thumbnail" alt="" /></p>
 
 <p>Komut satırına aşağıdaki kodu yazıyoruz.</p>
 
@@ -51,10 +52,10 @@ Dikkat ettiyseniz <strong>css</strong> ve <strong>scss</strong> diye iki farklı
 <p>Bu tek satırlık kod css klasörünün içinde bizim için bir css dosyası oluşturuyor. Bu işlem sayesinde scss tarafında yazdığımız her kod anında css’e otomatik olarak dönüştürülüyor.</p>
 
 <p>Eğer başarılı bir şekilde tüm adımları gerçekleştirdiyseniz komut satırında şöyle bir çıktı almanız gerekiyor.
-<img src="/static/img/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/4.png" class="img-responsive img-thumbnail" alt="" /></p>
+<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/4.png" class="img-responsive img-thumbnail" alt="" /></p>
 
 <p>Aşağıda scss ve css dosyalarımızın çıktısını görüyorsunuz.
-<img src="/static/img/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/3.png" class="img-responsive img-thumbnail" alt="" />
+<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/3.png" class="img-responsive img-thumbnail" alt="" />
 Biz kodlarımızı sadece scss kısmına yazıyoruz ve “–watch” komutu sayesinde yaptığımız her değişiklik izlenip css kısmına aktarılıyor.</p>
 
 <h1>Özet</h1>
@@ -136,7 +137,7 @@ Neredeyse her yazıma uzun zamandır yazamıyorum diye başlamak zorunda kalıyo
 
 <p>Kurulum tamamlandıktan sonra aşağıdaki gibi bir mesaj alacaksınız.</p>
 
-<p><img class="img-responsive" src="../static/img/post_image/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur/1.png" /></p>
+<p><img class="img-responsive" src="../static/images/post_image/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur/1.png" /></p>
 
 <p>Kurulumun gerçekleştiğini kontrol etmek için aşağıdaki komutu yazın ve sonuç olarak bilgisayarınızda kurulu olan sass versiyonunu size döndürüyorsa eksiksiz bir şekilde kurulum tamamlanmış demektir.</p>
 
@@ -209,17 +210,17 @@ Aşağıda, kod yazarken kullandığım, işinizi kolaylaştıracak bazı eklent
 
 <h2>1. AutoFileName</h2>
 
-<p><img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<p><img class="img-responsive" src="../static/images/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
 Bu eklenti dosya adlarını otomatik olarak tamamlıyor ve dosya isimlerini yazarken yazım hatası yapmamızı en aza indiriyor. Örneğin <strong>href</strong> etiketlerinde, html içindeki <strong>img</strong> etiketlerinde yol belirtirken veya stil dosyalarında <strong>background-image</strong> için yol belirtirken aynı seviyedeki veya alt seviyelerdeki dosya ve klasörleri görmemizi sağlıyor. Ayrıyetten resimlere ait <strong>yükseklik X genişlik</strong> değerlerinide görebiliyoruz.</p>
 
 <h2>2. Autoprefixer</h2>
 
-<p><img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler/4.gif" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<p><img class="img-responsive" src="../static/images/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler/4.gif" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
 CSS yazarken işlerimizi kolaylaştıracak bir eklenti bu. Örneğin, <strong>transform</strong> özelliğinin chrome veya safari gibi tarayıcılarda çalışması için <strong>-webkit-transform</strong>, IE için ise <strong>-ms-transform</strong> yazmamız gerekiyor. Bu eklenti sayesinde bunları ayrı ayrı yazmıyoruz.</p>
 
 <h2>3. BracketHighlighter</h2>
 
-<p><img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<p><img class="img-responsive" src="../static/images/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
 Artık parantezi açtım mı, tırnağı kapattım mı derken şaşı olmaya son :) Bu eklenti sayesinde parantezlerin veya tırnak içindeki alanların başlangıç veya bitişlerini çok rahat bulabileceksiniz. Adındanda anlaşılacağı gibi başlangıç ve bitiş kısımlarını belirgin hale getiriyor.</p>
 
 <h2>4. Boxy Theme</h2>
@@ -228,7 +229,7 @@ Artık parantezi açtım mı, tırnağı kapattım mı derken şaşı olmaya son
 
 <h2>5. CSS Extended Completions</h2>
 
-<p><img class="img-responsive" src="../static/img/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler/3.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<p><img class="img-responsive" src="../static/images/post_image/sublime_text_3_kurulum_kullanim_ve_eklentiler/3.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
 Bir tek <strong>CSS Extended Completions</strong> olsun bana bir şey olmaz :) diyebileceğim bir eklenti. Stil dosyalarınızdaki fonksiyon, class ve id isimlerini html içerisinde kullanırken, daha siz yazmadan otomatik olarak tamamlıyor. Yeni bir CSS freamworküne başlayacağınız zaman bu eklenti bulunmaz bir veli nimet. Yabancısı olduğunuz freamworke, bu eklenti sayesinde kolayca alışabilirsiniz.</p>
 
 <h2>6. Emmet</h2>
@@ -266,7 +267,7 @@ Bir tek <strong>CSS Extended Completions</strong> olsun bana bir şey olmaz :) d
 
 <h1>Jekyll Klasör Yapısı</h1>
 
-<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<p><img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
 Oluşturulan bir jekyll projesi genel hatları ile başlangıçta yukarıdaki gibi bir klasör yapısına sahiptir.
 Projemizi oluşturduğumuzda hazır olarak <strong>minima</strong> isimli tema ile gelir ve daha sonra istersek sıfırdan bir tema oluşturabiliriz veya hazır olarak bulunan temaları değiştirerek istediğimiz hale getirebiliriz. Klasör yapısından bahsettikten sonra tema konusuna daha detaylı bir şekilde değineceğim. 
 Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
@@ -274,7 +275,7 @@ Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
 <h2>_post</h2>
 <p>Bu klasörün altında genelde blog sitesi oluşturulduğunda yayınlanacak yazılar bulunur. Bir post yayınlamak için <kbd>yil-ay-gun-post-ismi.md</kbd> şeklinde bir dosya oluşturmamız gerekir.  <strong>Örneğin:</strong> <kbd>2017-08-31-jekyll-dosya-yapisi-ve-bazi-ipuclari.md</kbd> şeklinde kaydedebiliriz. Projemizi oluşturduğumuz zaman aşağıdaki gibi hazır bir post ile gelir. İsterseniz bu örneği inceleyelim.</p>
 
-<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
+<p><img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
 <ul>
   <li>layout: Bu dosyanın bir post olduğunu belirtiyoruz.</li>
   <li>title: Postumuzun başlığı. Örneğin bu postun başlığı “Jekyll Klasör Yapısı ve Tema Değiştirme”dır.</li>
@@ -317,7 +318,7 @@ Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle install // temamızı yüklüyoruz.
 jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
 
-<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/3.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
+<p><img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/3.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
 
 <h2><strong>Tebrikler.</strong></h2>
 <p>Yukarıda gördüğünüz gibi temamız değişti. Bundan sonra içerik üretmek veya temayı özelleştirmek sizin zevkinize kalmış. Eğer isterseniz kendinizde sıfırdan bir tema oluşturabilirsiniz.</p>
@@ -366,12 +367,12 @@ jekyll serve 			// projemizi çalıştırıyoruz.</code></pre></figure>
 
 <p><strong>new</strong> komutu ile ilk projemizi oluşturduk. Daha sonra projemizi oluşturduğumuz klasörün içine giriyoruz ve <strong>jekyll serve</strong> komutu ile projemizi çalıştırıyoruz.</p>
 
-<p><img class="img-responsive" src="../static/img/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak/1.png" /></p>
+<p><img class="img-responsive" src="../static/images/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak/1.png" /></p>
 
 <p>Yukarıdaki gibi bir çıktı alırsak sitemiz başarılı bir şekilde oluşmuş ve çalışıyor.
 Tarayıcımızı açıp adres çubuğuna, <strong>localhost:4000</strong> yazarsak sitemiz açılacaktır.</p>
 
-<p><img class="img-responsive" src="../static/img/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak/2.png" /></p>
+<p><img class="img-responsive" src="../static/images/post_image/jekyll_ve_github_page_ile_ucretsiz_blog_olusturmak/2.png" /></p>
 
 <p>Ve sitemiz hazır. İlerleyen yazılarda projedeki klasörlerin ne işe yaradığını, hazır bir temayı nasıl kullanacağımızı, github üzerinden nasıl yayınlayacağımızı ve kendi alan adımızı nasıl kullanacağımızı anlatacağım.</p>
 

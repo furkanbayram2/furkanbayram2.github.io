@@ -19,6 +19,7 @@ gems:
 whitelist:
 - jekyll-redirect-from
 author: Şefik Furkan Bayram
+job: Frontend Developer
 description: Kişisel Blog ve Yazılım
 avatar: profileImage.jpg
 facebook: profile.php?id=100006148155735

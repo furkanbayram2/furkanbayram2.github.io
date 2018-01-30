@@ -1,91 +1,87 @@
 ---
 layout: layout
 ---
-<div class="container">
-	<div class="blog-post">
-		<h3>
-		<strong><a href="{{ page.url }}">{{ page.title }}</a></strong>
-		</h3>
-	</div>
-	<div class="blog-title">
-		<h4>
-		{% assign m = page.date | date: "%-m" %}
-		{{ page.date | date: "%-d" }}
-		{% case m %}
-		{% when '1' %}Ocak
-		{% when '2' %}Şubat
-		{% when '3' %}Mart
-		{% when '4' %}Nisan
-		{% when '5' %}Mayıs
-		{% when '6' %}Haziran
-		{% when '7' %}Temmuz
-		{% when '8' %}Ağustos
-		{% when '9' %}Eylül
-		{% when '10' %}Ekim
-		{% when '11' %}Kasım
-		{% when '12' %}Aralık
-	{% endcase %}
-	{{ page.date | date: "%Y" }}
-	<p>Yayınlanma Saati: {{ page.date | date: "%R" }}</p>
-	&nbsp;&nbsp;
-	{% for tag in page.tags %}
-		<span class="label label-success myLabel">{{ tag }}</span>
-	{% endfor %}
-	</h4>
-</div>
-</style>
-<div class="panel panel-default">
-	<div class="panel-body">
-		<div class="blogpost">
-			{{ content }}
-			<hr>
-			<div class="paylas">
-				<h5>Bu yazıyı paylaş:</h5>
-				<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-					<a class="a2a_button_facebook"></a>
-					<a class="a2a_button_twitter"></a>
-					<a class="a2a_button_google_plus"></a>
-					<a class="a2a_button_whatsapp"></a>
-				</div>
+<div id="page" class="page blog-post-page">
+		{% include header.html %}
+  
+		<div id="main" class="site-main">
+		  <div class="page-wrapper">
+			<a class="blog-back-button" href="index.html#blog"><i class="fa fa-angle-left"></i></a>
+  
+			<div class="blog-post-main-image">
+			  <img class="post-image img-responsive" src="static\images\bg6.jpg" alt="blog-post-1" />
 			</div>
-			<hr>
-			<div class="related-posts">
-				<h5>Diğer Yazılar</h5>
-				{% for post in site.related_posts limit:3 %}
-					<div class="row">
-						<div class="col-sm-4 col-md-4 col-lg-4">
-							<h6 style="text-align: right">
-							{% assign m = post.date | date: "%-m" %}
-							{{ post.date | date: "%-d" }}
-							{% case m %}
-							{% when '1' %}Ocak
-							{% when '2' %}Şubat
-							{% when '3' %}Mart
-							{% when '4' %}Nisan
-							{% when '5' %}Mayıs
-							{% when '6' %}Haziran
-							{% when '7' %}Temmuz
-							{% when '8' %}Ağustos
-							{% when '9' %}Eylül
-							{% when '10' %}Ekim
-							{% when '11' %}Kasım
-							{% when '12' %}Aralık
-						{% endcase %}
-						{{ post.date | date: "%Y" }}
-						
-						</h6>
+  
+			<div class="blog-post-content">
+			  <h1>{{ page.title }}</h1>
+			  <div class="post-info">
+					<span class="autor"><i class="fa fa-fw fa-user"></i> {{site.author}}</span>
+					<span class="divider">|</span>
+					<span class="date"><i class="fa fa-fw fa-clock-o"></i> Yayınlanma Saati: {{ page.date | date: "%R" }}</span>
+					<!-- Share Buttons -->
+	
+					<!-- /Share Buttons -->
+				  </div>
+			  <ul class="tags">
+					{% for tag in page.tags %}
+					<span class="label myLabel">{{ tag }}</span>
+				{% endfor %}
+			  </ul>
+			  <div class="blogpost">
+					{{ content }}
+					<hr>
+					<div class="paylas">
+						<h5>Bu yazıyı paylaş:</h5>
+						<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+							<a class="a2a_button_facebook"></a>
+							<a class="a2a_button_twitter"></a>
+							<a class="a2a_button_google_plus"></a>
+							<a class="a2a_button_whatsapp"></a>
+						</div>
 					</div>
-					<div class="col-sm-8 col-md-8 col-lg-8">
-						<h6 style="text-align: left">
-						<strong><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></strong>
-						</h6>
-					</div>
+					<hr>
+					<div class="related-posts">
+						<h5>Diğer Yazılar</h5>
+						{% for post in site.related_posts limit:3 %}
+							<div class="row">
+								<div class="col-sm-4 col-md-4 col-lg-4">
+									<h6 style="text-align: right">
+									{% assign m = post.date | date: "%-m" %}
+									{{ post.date | date: "%-d" }}
+									{% case m %}
+									{% when '1' %}Ocak
+									{% when '2' %}Şubat
+									{% when '3' %}Mart
+									{% when '4' %}Nisan
+									{% when '5' %}Mayıs
+									{% when '6' %}Haziran
+									{% when '7' %}Temmuz
+									{% when '8' %}Ağustos
+									{% when '9' %}Eylül
+									{% when '10' %}Ekim
+									{% when '11' %}Kasım
+									{% when '12' %}Aralık
+								{% endcase %}
+								{{ post.date | date: "%Y" }}
+								
+								</h6>
+							</div>
+							<div class="col-sm-8 col-md-8 col-lg-8">
+								<h6 style="text-align: left">
+								<strong><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></strong>
+								</h6>
+							</div>
+						</div>
+					{% endfor %}
 				</div>
-			{% endfor %}
+			
+  
+
+  
+			</div>
+  
+		  </div>
 		</div>
-	</div>
-</div>
-</div>
-{% include disqus.html %}
-</div>
+	  </div>
+	  <!-- /Single Post page -->
 <script async src="https://static.addtoany.com/menu/page.js"></script>

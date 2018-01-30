@@ -1,26 +1,40 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <meta name="author" content="Şefik Furkan Bayram" />
-    <meta name="description" content="Kişisel Blog ve Yazılım">
-    <link rel="shortcut icon" href="static/img/favicon.ico">
-    
-      <title>Jekyll Tema Değiştirme ve Klasör Yapısı</title>
-    
 
-	<!-- Custom styles for this template -->
-	<link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
-    	<link rel="stylesheet" type="text/css" href="static/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
-	<link href="https://fonts.googleapis.com/css?family=Dosis:600|Inconsolata|Indie+Flower|Poppins:500" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<head>
+  <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Sunshine, portfolio" />
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Şefik Furkan Bayram" />
+  <meta name="description" content="Kişisel Blog ve Yazılım">
+  <link rel="shortcut icon" href="static/images/favicon.ico"> 
+  <title>Jekyll Tema Değiştirme ve Klasör Yapısı</title>
+  
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="static/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old"
+  />
+  <link href="https://fonts.googleapis.com/css?family=Dosis:600|Inconsolata|Indie+Flower|Poppins:500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+  />
   <link rel="stylesheet" type="text/css" href="static/css/syntax.css" />
-	  
-    <!-- Google Analytics -->
-    <script>
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <link rel="stylesheet" href="static/css/normalize.css">
+  <link rel="stylesheet" href="static/css/transition-animations.css">
+  <link rel="stylesheet" href="static/css/owl.carousel.css">
+  <link rel="stylesheet" href="static/css/magnific-popup.css">
+  <link rel="stylesheet" href="static/css/animate.css">
+  <link rel="stylesheet" href="static/css/main.css" type="text/css">
+
+  <!-- This styles needs for demo -->
+  <link rel="stylesheet" href="preview/lmpixels-demo-panel.css" type="text/css">
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <!-- Google Analytics -->
+  <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -28,67 +42,125 @@
   ga('create', 'UA-96537358-2', 'auto');
   ga('send', 'pageview');
 </script>
-  </head>
-  <!-- Main Body-->
-  <body>	  
-  <!-- Back to top button -->
-  <i id="toTop" class="fa fa-chevron-up fa-4x"></i>  
-  <!-- Wrap all page content here -->
-  <div id="wrap">
-    <!-- Navbar header -->
-    <nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index"><img src="/static/img/social/home2.png" alt=""></a>
-    </div>
-    <div id="navbar">
-      <ul class="nav navbar-nav navbar-right headerList">
-        <li><a style="font-weight:bold; font-size:16px;" href="blog">BLOG</a></li>
-        <li><a style="font-weight:bold; font-size:16px;" href="about">HAKKIMDA</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>     
+</head>
+<!-- Main Body-->
 
-    <div class="container">
-	<div class="blog-post">
-		<h3>
-		<strong><a href="/jekyll-tema-degistirme-ve-klasor-yapisi.html">Jekyll Tema Değiştirme ve Klasör Yapısı</a></strong>
-		</h3>
-	</div>
-	<div class="blog-title">
-		<h4>
-		
-		31
-		Ağustos
-		
-	2017
-	<p>Yayınlanma Saati: 01:28</p>
-	&nbsp;&nbsp;
+<body>
+  
+  <!-- Wrap all page content here -->
+
+  <!-- Navbar header -->
+
+
+  <div id="page" class="page blog-post-page">
+				<!-- Header -->
+		<header id="site_header" class="header mobile-menu-hide">
+        <div class="my-photo">
+        <img src="static/images/profileImage.jpg" alt="image">
+        <div class="mask"></div>
+        </div>
+    
+        <div class="site-title-block">
+        <h1 class="site-title">Şefik Furkan Bayram</h1>
+        <p class="site-description">Frontend Developer</p>
+        </div>
+    
+        <!-- Navigation & Social buttons -->
+        <div class="site-nav">
+        <!-- Main menu -->
+        <ul id="nav" class="site-main-menu">
+          <!-- About Me Subpage link -->
+          <li>
+          <a class="pt-trigger" href="index.html#home">Anasayfa</a><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
+          </li>
+          <!-- /About Me Subpage link -->
+          <!-- About Me Subpage link -->
+          <li>
+          <a class="pt-trigger" href="index.html#hakkimda">Hakkımda</a>
+          </li>
+          <!-- /About Me Subpage link -->
+          <li>
+          <a class="pt-trigger" href="index.html#ozgecmis">Kariyer</a>
+          </li>
+          <!--<li>
+          <a class="pt-trigger" href="index.html#portfolyo">Portfolyo</a>
+          </li>-->
+          <li class="active">
+          <a class="pt-trigger" href="index.html#blog">Blog</a>
+          </li>
+          <li>
+          <a class="pt-trigger" href="index.html#iletisim">İletişim</a>
+          </li>
+        </ul>
+        <!-- /Main menu -->
+    
+        <!-- Social buttons -->
+        <ul class="social-links">
+          <li><a class="tip social-button" href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+          <li><a class="tip social-button" href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="tip social-button" href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+          <!--<li><a class="tip social-button" href="#" title="Youtube"><i class="fa fa-youtube"></i></a></li>-->
+          <!--<li><a class="tip social-button" href="#" title="last.fm"><i class="fa fa-lastfm"></i></a></li>-->
+          <!--<li><a class="tip social-button" href="#" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>-->
+        </ul>
+        <!-- /Social buttons -->
+        </div>
+        <!-- Navigation & Social buttons -->
+      </header>
+      <!-- /Header -->
+    
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+        <div class="mobile-site-title">furkanbayram.net</div>
+        </div>
+    
+        <a class="menu-toggle mobile-visible">
+        <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
+
+  
+		<div id="main" class="site-main">
+		  <div class="page-wrapper">
+			<a class="blog-back-button" href="index.html#blog"><i class="fa fa-angle-left"></i></a>
+  
+			<div class="blog-post-main-image">
+			  <img class="post-image img-responsive" src="static\images\bg6.jpg" alt="blog-post-1" />
+			</div>
+  
+			<div class="blog-post-content">
+			  <h1>Jekyll Tema Değiştirme ve Klasör Yapısı</h1>
+			  <div class="post-info">
+					<span class="autor"><i class="fa fa-fw fa-user"></i> Şefik Furkan Bayram</span>
+					<span class="divider">|</span>
+					<span class="date"><i class="fa fa-fw fa-clock-o"></i> Yayınlanma Saati: 01:28</span>
+					<!-- Share Buttons -->
 	
-		<span class="label label-success myLabel">github</span>
-	
-		<span class="label label-success myLabel">jekyll</span>
-	
-		<span class="label label-success myLabel">blog</span>
-	
-		<span class="label label-success myLabel">ruby</span>
-	
-		<span class="label label-success myLabel">domain</span>
-	
-		<span class="label label-success myLabel">tema</span>
-	
-	</h4>
-</div>
-</style>
-<div class="panel panel-default">
-	<div class="panel-body">
-		<div class="blogpost">
-			<p>Heerkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.</p>
+					<!-- /Share Buttons -->
+				  </div>
+			  <ul class="tags">
+					
+					<span class="label myLabel">github</span>
+				
+					<span class="label myLabel">jekyll</span>
+				
+					<span class="label myLabel">blog</span>
+				
+					<span class="label myLabel">ruby</span>
+				
+					<span class="label myLabel">domain</span>
+				
+					<span class="label myLabel">tema</span>
+				
+			  </ul>
+			  <div class="blogpost">
+					<p>Heerkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.</p>
 
 <h1>Jekyll Klasör Yapısı</h1>
 
-<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<p><img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
 Oluşturulan bir jekyll projesi genel hatları ile başlangıçta yukarıdaki gibi bir klasör yapısına sahiptir.
 Projemizi oluşturduğumuzda hazır olarak <strong>minima</strong> isimli tema ile gelir ve daha sonra istersek sıfırdan bir tema oluşturabiliriz veya hazır olarak bulunan temaları değiştirerek istediğimiz hale getirebiliriz. Klasör yapısından bahsettikten sonra tema konusuna daha detaylı bir şekilde değineceğim. 
 Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
@@ -96,7 +168,7 @@ Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
 <h2>_post</h2>
 <p>Bu klasörün altında genelde blog sitesi oluşturulduğunda yayınlanacak yazılar bulunur. Bir post yayınlamak için <kbd>yil-ay-gun-post-ismi.md</kbd> şeklinde bir dosya oluşturmamız gerekir.  <strong>Örneğin:</strong> <kbd>2017-08-31-jekyll-dosya-yapisi-ve-bazi-ipuclari.md</kbd> şeklinde kaydedebiliriz. Projemizi oluşturduğumuz zaman aşağıdaki gibi hazır bir post ile gelir. İsterseniz bu örneği inceleyelim.</p>
 
-<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
+<p><img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
 <ul>
   <li>layout: Bu dosyanın bir post olduğunu belirtiyoruz.</li>
   <li>title: Postumuzun başlığı. Örneğin bu postun başlığı “Jekyll Klasör Yapısı ve Tema Değiştirme”dır.</li>
@@ -139,124 +211,124 @@ Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
 <figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle install // temamızı yüklüyoruz.
 jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
 
-<p><img class="img-responsive" src="../static/img/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/3.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
+<p><img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/3.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
 
 <h2><strong>Tebrikler.</strong></h2>
 <p>Yukarıda gördüğünüz gibi temamız değişti. Bundan sonra içerik üretmek veya temayı özelleştirmek sizin zevkinize kalmış. Eğer isterseniz kendinizde sıfırdan bir tema oluşturabilirsiniz.</p>
 
 <p>Yazımı sonuna kadar okuduğunuz için teşekkür ederim. Umarım faydalı bir yazı olmuştur. Görüşmek üzere.</p>
 
-			<hr>
-			<div class="paylas">
-				<h5>Bu yazıyı paylaş:</h5>
-				<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-					<a class="a2a_button_facebook"></a>
-					<a class="a2a_button_twitter"></a>
-					<a class="a2a_button_google_plus"></a>
-					<a class="a2a_button_whatsapp"></a>
+					<hr>
+					<div class="paylas">
+						<h5>Bu yazıyı paylaş:</h5>
+						<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+							<a class="a2a_button_facebook"></a>
+							<a class="a2a_button_twitter"></a>
+							<a class="a2a_button_google_plus"></a>
+							<a class="a2a_button_whatsapp"></a>
+						</div>
+					</div>
+					<hr>
+					<div class="related-posts">
+						<h5>Diğer Yazılar</h5>
+						
+							<div class="row">
+								<div class="col-sm-4 col-md-4 col-lg-4">
+									<h6 style="text-align: right">
+									
+									16
+									Ocak
+									
+								2018
+								
+								</h6>
+							</div>
+							<div class="col-sm-8 col-md-8 col-lg-8">
+								<h6 style="text-align: left">
+								<strong><a href="/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html">SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş</a></strong>
+								</h6>
+							</div>
+						</div>
+					
+							<div class="row">
+								<div class="col-sm-4 col-md-4 col-lg-4">
+									<h6 style="text-align: right">
+									
+									12
+									Ocak
+									
+								2018
+								
+								</h6>
+							</div>
+							<div class="col-sm-8 col-md-8 col-lg-8">
+								<h6 style="text-align: left">
+								<strong><a href="/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html">SASS ve SCSS Nedir ? Neden Kullanmalıyız ? Nasıl Kurulur ?</a></strong>
+								</h6>
+							</div>
+						</div>
+					
+							<div class="row">
+								<div class="col-sm-4 col-md-4 col-lg-4">
+									<h6 style="text-align: right">
+									
+									3
+									Eylül
+									
+								2017
+								
+								</h6>
+							</div>
+							<div class="col-sm-8 col-md-8 col-lg-8">
+								<h6 style="text-align: left">
+								<strong><a href="/sublime-text-3-kurulum-kullanim-ve-eklentiler.html">Sublime Text 3 Kurulum, Kullanım ve Eklentiler</a></strong>
+								</h6>
+							</div>
+						</div>
+					
 				</div>
+			
+  
+
+  
 			</div>
-			<hr>
-			<div class="related-posts">
-				<h5>Diğer Yazılar</h5>
-				
-					<div class="row">
-						<div class="col-sm-4 col-md-4 col-lg-4">
-							<h6 style="text-align: right">
-							
-							16
-							Ocak
-							
-						2018
-						
-						</h6>
-					</div>
-					<div class="col-sm-8 col-md-8 col-lg-8">
-						<h6 style="text-align: left">
-						<strong><a href="/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html">SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş</a></strong>
-						</h6>
-					</div>
-				</div>
-			
-					<div class="row">
-						<div class="col-sm-4 col-md-4 col-lg-4">
-							<h6 style="text-align: right">
-							
-							12
-							Ocak
-							
-						2018
-						
-						</h6>
-					</div>
-					<div class="col-sm-8 col-md-8 col-lg-8">
-						<h6 style="text-align: left">
-						<strong><a href="/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html">SASS ve SCSS Nedir ? Neden Kullanmalıyız ? Nasıl Kurulur ?</a></strong>
-						</h6>
-					</div>
-				</div>
-			
-					<div class="row">
-						<div class="col-sm-4 col-md-4 col-lg-4">
-							<h6 style="text-align: right">
-							
-							3
-							Eylül
-							
-						2017
-						
-						</h6>
-					</div>
-					<div class="col-sm-8 col-md-8 col-lg-8">
-						<h6 style="text-align: left">
-						<strong><a href="/sublime-text-3-kurulum-kullanim-ve-eklentiler.html">Sublime Text 3 Kurulum, Kullanım ve Eklentiler</a></strong>
-						</h6>
-					</div>
-				</div>
-			
+  
+		  </div>
 		</div>
-	</div>
-</div>
-</div>
-
-
-<div id="disqus_thread"></div>
-<script>
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://sefik-furkan-bayram-kisisel-blog.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                        
-
-
-</div>
+	  </div>
+	  <!-- /Single Post page -->
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 
-  </div>
-  <!-- Footer -->
-  <footer>
-    <div id="footer">
-        <div class="container">
-            <p class="text-muted">© Tüm hakları saklıdır. Powered by <a href="http://jekyllrb.com/">Jekyll</a>
-        </div>
-    </div>
-</footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
-    integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+  </div>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
     crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="static/js/docs.min.js"></script>
-    <script src="static/js/main.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="static/js/ie10-viewport-bug-workaround.js"></script>
-    
-  </body>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="static/js/docs.min.js"></script>
+  <script src="static/js/main.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="static/js/ie10-viewport-bug-workaround.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/page-transition.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/validator.js"></script>
+  <script src="js/jquery.shuffle.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Demo Color changer Script -->
+  <script src="preview/lmpixels-demo-panel.js"></script>
+
+
+</body>
+
 </html>
