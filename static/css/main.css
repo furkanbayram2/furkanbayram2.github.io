@@ -2127,7 +2127,7 @@ blockquote {
 
 @media screen and (min-width: 481px) {
   .myBackground{
-    background:url("./../images/bg.jpg") !important;
+    background-image:url("./../images/bg.jpg") !important;
   }
 }
 
