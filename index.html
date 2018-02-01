@@ -15,6 +15,7 @@ redirect_from:
     <!-- /Loading animation -->
 
     <div id="page" class="page">
+        <a style="z-index:9999;" href="javascript:" id="return-to-top"><i class="pe-7s-angle-up"></i></a>
       <!-- Header -->
       <header id="site_header" class="header mobile-menu-hide">
         <div class="my-photo">
@@ -86,12 +87,16 @@ redirect_from:
           <div class="subpages">
 
             <!-- Home Subpage -->
-            <section class="pt-page pt-page-1 section-with-bg section-paddings-0" style="background-image: url(static/images/bg9.jpg);" data-id="home">
+            <section class="pt-page pt-page-1 section-with-bg section-paddings-0 myBackground" data-id="home">
               <div class="home-page-block-bg">
                 <div class="mask"></div>
               </div>
               <div class="home-page-block">
                 <div class="v-align">
+                    <div class="my-photo my-photo-mobile hidden-md hidden-lg">
+                        <img src="static/images/profileImage.jpg" alt="image">
+                        <div class="mask"></div>
+                      </div>
                   <h2>{{site.author}}</h2>
                   <div id="rotate" class="text-rotate">
                       <div>
@@ -127,12 +132,12 @@ redirect_from:
               <div class="row">
                 <div class="col-sm-6 col-md-6 subpage-block">
                   <div class="general-info">
-                    <h3>Ben Web Developer/Designer @ limemedia.com</h3>
+                    <h3>Frontend Developer/Designer @ limemedia.net</h3>
                     <p>Merhaba, ben Şefik Furkan Bayram. Bilgisayar Teknolojisi ve Bilişim Sisteleri 4. sınıf öğrencisiyim.</p>
                     <p>
                     Frontend alanında kendimi geliştiriyorum.
-                    Boş zamanlarımda bildiğim şeyleri sizlerle paylaşmaya çalışıyorum.
-                    Eğer benimle iletişime geçmek isterseniz</p>
+                    Boş zamanlarımda bildiğim şeyleri sizlerle paylaşmaya çalışıyorum. 
+                    </p>
                     
                   </div>
                 </div>
@@ -217,7 +222,7 @@ redirect_from:
                   <div class="service-block"> 
                     <div class="service-info">
                       <img src="static/images/service/copywrite.png" alt="Copywriter">
-                      <h4>İçerik Oluşturucu</h4>
+                      <h4>Dijital Tasarımlar</h4>
                       <p>Kurumun renkleri, logosu, kurum içi döküman gibi kurumsal kimlik tasarımları, banner ve reklam görsel tasarımları..</p>
                     </div>
                   </div>
@@ -228,7 +233,7 @@ redirect_from:
                     <div class="service-info">
                       <img src="static/images/service/ecommerce.png" alt="E-Commerce">
                       <h4>Bakım ve Güncelleme</h4>
-                      <p>Web sayfasında oluşabilecek hataların giderilmesi, gelişen teknolojije veya ihtiyaçlara göre yeni eklentiler eklenmesi.</p>
+                      <p>Web sayfasında oluşabilecek hataların giderilmesi, gelişen teknoloji veya ihtiyaçlara göre yeni eklentiler eklenmesi.</p>
                     </div>
                   </div>
                 </div>
@@ -246,7 +251,7 @@ redirect_from:
               <!-- End of Services block -->
 
               <!-- Clients block -->
-              <div class="block-title">
+              <!--<div class="block-title">
                 <h3>Müşteriler</h3>
               </div>
 
@@ -286,7 +291,7 @@ redirect_from:
                     <a href="#" target="_blank"><img src="static/images/clients/client_6.png" alt="image"></a>
                   </div>
                 </div>
-              </div>
+              </div>-->
               <!-- End of Clients block -->
 
               <!-- Fun facts block -->
@@ -295,35 +300,26 @@ redirect_from:
               </div>
 
               <div class="row">
-                <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="col-sm-6 col-md-4 subpage-block">
                   <div class="fun-fact-block gray-bg"> 
                     <i class="pe-7s-icon pe-7s-smile"></i>
-                    <h4>Mutlu Müşteri</h4>
-                    <span class="fun-value">1,024</span>
+                    <h4>Mutlu Proje</h4>
+                    <span class="fun-value">76</span>
                   </div>
                 </div>
 
-                <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="col-sm-6 col-md-4 subpage-block">
                   <div class="fun-fact-block"> 
                     <i class="pe-7s-icon pe-7s-alarm"></i>
                     <h4>Çalışılan Saat</h4>
-                    <span class="fun-value">6,256</span>
+                    <span class="fun-value">1578</span>
                   </div>
                 </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
-                  <div class="fun-fact-block gray-bg"> 
-                    <i class="pe-7s-icon pe-7s-medal"></i>
-                    <h4>Kazanılan Başarı</h4>
-                    <span class="fun-value">21</span>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 subpage-block">
+                <div class="col-sm-6 col-md-4 subpage-block">
                   <div class="fun-fact-block"> 
                     <i class="pe-7s-icon pe-7s-coffee"></i>
                     <h4>İçilen Kahve</h4>
-                    <span class="fun-value">20,000</span>
+                    <span class="fun-value">1457</span>
                   </div>
                 </div>
               </div>
@@ -339,34 +335,7 @@ redirect_from:
               </div>
 
               <div class="row">
-                <div class="col-sm-6 col-md-4 subpage-block">
-                  <div class="block-title">
-                    <h3>Eğitim</h3>
-                  </div>
-                  <div class="timeline">
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2014 - Şuan</h5>
-                      <h4 class="event-name">Bilgisayar Bilimcisi</h4>
-                      <span class="event-description">Mersin Üniversitesi</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2014</h5>
-                      <h4 class="event-name">Bilişim Teknolojileri</h4>
-                      <span class="event-description">Nilüfer Hatun Kız Meslek Lisesi</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                    <!-- Single event -->
-                    <div class="timeline-event te-primary">
-                      <h5 class="event-date">2008</h5>
-                      <h4 class="event-name">Specialization Course</h4>
-                      <span class="event-description">University of Studies</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
-                    </div>
-                  </div>
-                </div>
+              
 
                 <div class="col-sm-6 col-md-4 subpage-block">
                   <div class="block-title">
@@ -378,25 +347,51 @@ redirect_from:
                       <h5 class="event-date">Haziran 2017 - Ağustos 2017</h5>
                       <h4 class="event-name">Önyüz Geliştirici</h4>
                       <span class="event-description">NET HAREKET Web Ajansı</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                      <p>Responsive website tasarımı,</p>
+                      <p>Website performans iyileştirmeleri,</p>
+                      <p>Jekyll ve Hexo Teknolojileri ile proje geliştirmek</p>
                     </div>
                     <!-- Single event -->
                     <div class="timeline-event te-primary">
                       <h5 class="event-date">Haziran 2015 - Ağustos 2016</h5>
                       <h4 class="event-name">Stajyer .NET Geliştirici</h4>
                       <span class="event-description">Telpa Telekominikasyon</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                      <p>Responsive website tasarımı,</p>
+                      <p>Website tasarım güncellemeleri,</p>
+                      <p>Backend alanında destek</p>
                     </div>
                     <!-- Single event -->
                     <div class="timeline-event te-primary">
                       <h5 class="event-date">Eylül 2013 - Haziran 2014</h5>
                       <h4 class="event-name">Stajyer BT Elemanı</h4>
                       <span class="event-description">TAT Konserve Sanayii A.Ş</span>
-                      <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+                      <p>Yerel ağ optimizasyonu ve bakımı,</p>
+                      <p>Aylık bilgisayar bakımı,</p>
+                      <p>Server bakımı</p>
                     </div>
                   </div>
                 </div>
-
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Eğitim</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2014 - Şuan</h5>
+                      <h4 class="event-name">Bilgisayar Teknolojisi ve Bilişim Sistemleri (Lisans)</h4>
+                      <span class="event-description">Mersin Üniversitesi</span>
+                    
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2014</h5>
+                      <h4 class="event-name">Bilişim Teknolojileri (Lise)</h4>
+                      <span class="event-description">Nilüfer Hatun Kız Meslek Lisesi</span>
+                     
+                    </div>
+                  </div>
+                </div>
                 <div class="col-sm-6 col-md-4 subpage-block">
                   <div class="block-title">
                     <h3>Tasarım Yetenekleri</h3>
@@ -404,17 +399,17 @@ redirect_from:
                   <div class="skills-info">
                     <h4>Web Tasarım</h4>                               
                     <div class="skill-container">
-                      <div class="skill-percentage skill-1"></div>
-                    </div>
-
-                    <h4>Grafik Tasarım</h4>
-                    <div class="skill-container">
-                      <div class="skill-percentage skill-2"></div>
+                      <div class="skill-percentage skill-8"></div>
                     </div>
 
                     <h4>Baskı Tasarım</h4>
                     <div class="skill-container">
                       <div class="skill-percentage skill-3"></div>
+                    </div>
+
+                    <h4>Grafik Tasarım</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-5"></div>
                     </div> 
                   </div>
 
@@ -422,29 +417,29 @@ redirect_from:
                     <h3>Yazılım Yetenekleri</h3>
                   </div>
                   <div class="skills-info">
-                    <h4>HML5</h4>                               
+                    <h4>HTML5</h4>                               
                     <div class="skill-container">
-                      <div class="skill-percentage skill-4"></div>
+                      <div class="skill-percentage skill-9"></div>
                     </div>
 
                     <h4>CSS3</h4>
                     <div class="skill-container">
-                      <div class="skill-percentage skill-5"></div>
+                      <div class="skill-percentage skill-8"></div>
                     </div>
 
-                    <h4>jQuery</h4>
+                    <h4>Wordpress</h4>
                     <div class="skill-container">
                       <div class="skill-percentage skill-6"></div>
                     </div>
 
-                    <h4>Wordpress</h4>
+                    <h4>jQuery</h4>
                     <div class="skill-container">
                       <div class="skill-percentage skill-7"></div>
                     </div>
 
                     <h4>VueJS</h4>
                     <div class="skill-container">
-                      <div class="skill-percentage skill-8"></div>
+                      <div class="skill-percentage skill-4"></div>
                     </div>
                   </div>
                 </div>
@@ -690,7 +685,7 @@ redirect_from:
                     </div>
                     <div class="post-info">
                       <ul class="category">
-                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">{{ post.category }}</a></li>
                       </ul>
                       <a href="{{ site.baseurl }}{{ post.url }}"><h4 class="blog-item-title">{{ post.title }}</h4></a>
                     </div>
@@ -725,9 +720,9 @@ redirect_from:
               <div class="row">
                 <div class="col-sm-6 col-md-6 subpage-block">
                   <div class="block-title">
-                    <h3>Get in Touch</h3>
+                    <h3>Kısa Bilgi</h3>
                   </div>
-                  <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget tincidunt tortor tempus.</p>
+                  <p>Freelence iş teklifleriniz için bana yandaki formdan ve aşağıdaki iletişim adreslerinden ulaşabilirsiniz.</p>
                   <div class="contact-info-block">
                     <div class="ci-icon">
                       <i class="pe-7s-icon pe-7s-map-marker"></i>
@@ -794,7 +789,7 @@ redirect_from:
                       
                       <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI" data-callback="correctCaptcha"></div>
 
-                      <input type="submit" class="button btn-send" value="Mesaj Gönder">
+                      <input type="submit" class="button btn-send messageButton" value="Devre Dışı" disabled>
                     </div>
                   </form>
                 </div>
@@ -808,3 +803,5 @@ redirect_from:
       </div>
       <!-- /Main Content -->
     </div>
+
+    

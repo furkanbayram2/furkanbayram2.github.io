@@ -2,6 +2,7 @@
 layout: post
 title: SASS ve SCSS Nedir ? Neden Kullanmalıyız ? Nasıl Kurulur ?
 date: 2018-01-12 16:29:00
+category: CSS
 tags:
 - sass
 - scss
@@ -59,7 +60,7 @@ gem install sass 	// sass kurulumunu gerçekleştiriyoruz.
 
 Kurulum tamamlandıktan sonra aşağıdaki gibi bir mesaj alacaksınız. 
 
-<img class="img-responsive" src="../static/images/post_image/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur/1.png" />
+<img class="img-responsive" src="../static/images/post_image/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html/1.png" />
 
 Kurulumun gerçekleştiğini kontrol etmek için aşağıdaki komutu yazın ve sonuç olarak bilgisayarınızda kurulu olan sass versiyonunu size döndürüyorsa eksiksiz bir şekilde kurulum tamamlanmış demektir.
 {% highlight bash %}

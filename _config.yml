@@ -13,7 +13,7 @@ safe: true
 
 url: http://furkanbayram2.github.io
 baseurl: '' 
-title: Şefik Furkan Bayram
+title: Şefik Furkan Bayram - Yazılım ve Tasarım
 gems:
 - jekyll-redirect-from
 whitelist:

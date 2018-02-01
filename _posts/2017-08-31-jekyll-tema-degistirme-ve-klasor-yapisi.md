@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll Tema Değiştirme ve Klasör Yapısı
 date: 2017-08-31 01:28:00
-
+category: Web Teknolojileri
 tags:
 - github
 - jekyll
@@ -16,7 +16,7 @@ Heerkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan b
 
 <h1>Jekyll Klasör Yapısı</h1>
 
-<img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<img class="img-responsive" src="static/images/post_image/jekyll-tema-degistirme-ve-klasor-yapisi.html/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
 Oluşturulan bir jekyll projesi genel hatları ile başlangıçta yukarıdaki gibi bir klasör yapısına sahiptir.
 Projemizi oluşturduğumuzda hazır olarak <strong>minima</strong> isimli tema ile gelir ve daha sonra istersek sıfırdan bir tema oluşturabiliriz veya hazır olarak bulunan temaları değiştirerek istediğimiz hale getirebiliriz. Klasör yapısından bahsettikten sonra tema konusuna daha detaylı bir şekilde değineceğim. 
 Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.
@@ -24,7 +24,7 @@ Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.
 <h2>_post</h2>
 Bu klasörün altında genelde blog sitesi oluşturulduğunda yayınlanacak yazılar bulunur. Bir post yayınlamak için <kbd>yil-ay-gun-post-ismi.md</kbd> şeklinde bir dosya oluşturmamız gerekir.  <strong>Örneğin:</strong> <kbd>2017-08-31-jekyll-dosya-yapisi-ve-bazi-ipuclari.md</kbd> şeklinde kaydedebiliriz. Projemizi oluşturduğumuz zaman aşağıdaki gibi hazır bir post ile gelir. İsterseniz bu örneği inceleyelim.
 
-<img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<img class="img-responsive" src="/static/images/post_image/jekyll-tema-degistirme-ve-klasor-yapisi.html/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
 * layout: Bu dosyanın bir post olduğunu belirtiyoruz.
 * title: Postumuzun başlığı. Örneğin bu postun başlığı "Jekyll Klasör Yapısı ve Tema Değiştirme"dır.
 * date: Postunuzun yayınlama tarihi ve saati.

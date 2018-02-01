@@ -2,6 +2,7 @@
 layout: post
 title: SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş
 date: 2018-01-16 23:15:43
+category: CSS
 tags:
 - sass
 - scss
@@ -17,7 +18,7 @@ Bilgisayarında <strong>SCSS</strong> kurulu olmayanlar <a href="http://furkanba
 
 Genelde giriş seviyesindeki projelerde klasör yapımı aşağıdaki gibi oluşturuyorum.
 
-<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/1.png" class="img-responsive img-thumbnail" alt="">
+<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html/1.png" class="img-responsive img-thumbnail" alt="">
 
 
 Dikkat ettiyseniz <strong>css</strong> ve <strong>scss</strong> diye iki farklı klasörümüz var. Önceden hep css içinde çalışıyorduk ama artık scss klasörü içinde çalışacağız. 
@@ -39,7 +40,7 @@ body {
 Şimdi biz bu kodları buraya yazdık ve kaydettik ama sayfamızda bir değişiklik olmadı. Çünkü bu kodların css formatına çevrilmesi gerekiyor. Yani burada yazdığımız kodların yazıldıktan hemen sonra css klasörünün içine aktarılması gerekiyor. Bunu nasıl yapacağız diye sakın korkmayın, çok basit.
 
 Projemizin kök dizininde komut satırını açıyoruz. 
-<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/2.png" class="img-responsive img-thumbnail" alt="">
+<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html/2.png" class="img-responsive img-thumbnail" alt="">
 
 
 Komut satırına aşağıdaki kodu yazıyoruz.
@@ -50,11 +51,11 @@ sass --watch scss:css
 Bu tek satırlık kod css klasörünün içinde bizim için bir css dosyası oluşturuyor. Bu işlem sayesinde scss tarafında yazdığımız her kod anında css'e otomatik olarak dönüştürülüyor.
 
 Eğer başarılı bir şekilde tüm adımları gerçekleştirdiyseniz komut satırında şöyle bir çıktı almanız gerekiyor.
-<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/4.png" class="img-responsive img-thumbnail" alt="">
+<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html/4.png" class="img-responsive img-thumbnail" alt="">
 
 
 Aşağıda scss ve css dosyalarımızın çıktısını görüyorsunuz.
-<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris/3.png" class="img-responsive img-thumbnail" alt="">
+<img src="/static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html/3.png" class="img-responsive img-thumbnail" alt="">
 Biz kodlarımızı sadece scss kısmına yazıyoruz ve "--watch" komutu sayesinde yaptığımız her değişiklik izlenip css kısmına aktarılıyor.
 
 <h1>Özet</h1>
