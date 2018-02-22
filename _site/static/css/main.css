@@ -2121,8 +2121,14 @@ blockquote {
 }
 
 @media screen and (max-width: 480px) {
+  .v-align{
+    display: block;
+    padding-top:30px;
+  }
+
+  
   .myBackground{
-    background-image: url(./../images/bg-mobile.jpg) !important;
+    background-image: url(./../images/bg-mobile2.jpeg) !important;
   }
   .home-page-block {
     height: 75vh !important;
