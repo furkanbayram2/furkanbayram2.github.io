@@ -370,7 +370,7 @@ textarea.form-control, textarea.form-control:focus {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: #f5f5f5;
+  background-color: #e3e3e3;
 }
 
 .pt-wrapper.scroll-auto {
@@ -502,7 +502,7 @@ textarea.form-control, textarea.form-control:focus {
   position: fixed;
   width: 22%;
   height: 100%;
-  background-color: #fff;
+  background-color: #e3e3e3;
   overflow: auto;
 }
 
@@ -540,7 +540,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 p.site-description {
-  color: #9c9c9c;
+  color: black;
   font-size: 16px;
   font-weight: 300;
   font-family: Oswald, Helvetica, sans-serif;
@@ -657,17 +657,17 @@ ul.social-links li:last-child a {
   font-weight: 500;
   position: relative;
   text-decoration: none;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #e3e3e3;
   outline: none;
 }
 
 .site-main-menu li:first-child a {
-  border-top: 1px solid #f5f5f5;
+  border-top: 1px solid #e3e3e3;
 }
 
 .site-main-menu li a:hover,
 .site-main-menu li.active a {
-  background-color: #fcfcfc;
+  background-color: #e3e3e3;
 }
 
 .site-main-menu li a:hover:after,
@@ -748,14 +748,7 @@ ul.social-links li:last-child a {
 /* =======================================
 7.1. Home subpage
 ======================================= */
-.home-page-block-bg .mask {
-  position: absolute;
-  background: rgba(55,55,55,0.7);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
+
 
 .home-page-block {
   position: relative;
@@ -766,14 +759,14 @@ ul.social-links li:last-child a {
 }
 
 .home-page-block h2 {
-  color: #fff;
+  color: black;
   text-align: center;
   font-size: 70px;
   margin: 0;
 }
 
 .home-page-description {
-  color: #fff;
+  color: black;
   font-size: 21px;
   font-weight: 300;
   font-family: Oswald, Helvetica, sans-serif;
@@ -2128,7 +2121,7 @@ blockquote {
 
   
   .myBackground{
-    background-image: url(./../images/bg-mobile2.jpeg) !important;
+    background-image: url(./../images/bg3.jpg) !important;
   }
   .home-page-block {
     height: 75vh !important;
@@ -2137,7 +2130,7 @@ blockquote {
 
 @media screen and (min-width: 481px) {
   .myBackground{
-    background-image:url("./../images/bg.jpg") !important;
+    background-image:url("./../images/bg3.jpg") !important;
   }
 
 }
