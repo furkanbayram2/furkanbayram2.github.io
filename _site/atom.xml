@@ -6,7 +6,7 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-04-05T22:17:35Z</updated>
+  <updated>2018-04-05T22:20:54Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
@@ -19,7 +19,11 @@
   <id>http://localhost:3000/erasmus-staji-icin-nasil-sirket-buldum</id>
   <published>2018-04-04T21:40:00Z</published>
   <updated>2018-04-04T21:40:00Z</updated>
-  <content type="html"><![CDATA[ <p>Herkese merhaba. Bugün yazılım ile ilgili değilde erasmus stajı yapmak istiyorsanız neler yapmalısınız, staj yeri ararken nasıl bir yol izlemelisiniz gibi konularla ilgili bir yazı yazmak istedim. Çevremden duyduğum kadarıyla insanlar staj yeri bulma konusunda gerçekten çok zorlanıyor. Ben staj yapacağım kurumu 2 gün gibi bir sürede buldum. Ya ben çok şanslıydım ya da diğer insanlar doğru yolu izlemiyor. <strong>Hatta belirli bir süre o kadar çok geri dönüş aldım ki istemeyerekte olsa cevap vermediğim mailler bile oldu.</strong></p>
+  <content type="html"><![CDATA[ <div class="erasmus">
+<img class="img-responsive" src="../static/images/post_image/erasmus-staji-icin-nasil-sirket-buldum.html/cover.jpg" />
+</div>
+
+<p>Herkese merhaba. Bugün yazılım ile ilgili değilde erasmus stajı yapmak istiyorsanız neler yapmalısınız, staj yeri ararken nasıl bir yol izlemelisiniz gibi konularla ilgili bir yazı yazmak istedim. Çevremden duyduğum kadarıyla insanlar staj yeri bulma konusunda gerçekten çok zorlanıyor. Ben staj yapacağım kurumu 2 gün gibi bir sürede buldum. Ya ben çok şanslıydım ya da diğer insanlar doğru yolu izlemiyor. <strong>Hatta belirli bir süre o kadar çok geri dönüş aldım ki istemeyerekte olsa cevap vermediğim mailler bile oldu.</strong></p>
 
 <p><strong>Erasmus stajımı 3 ay sonra yapıcam ama bu konuyla ilgili çok fazla araştırma yaptım ve çok fazla kişiyle görüştüm. O yüzden anlattıklarıma hak verip vermemek size kalmış.</strong></p>
 
@@ -64,12 +68,10 @@ Staj yeri bulmak aslında gerçekten bu kadar kolay. 2 hafta içinden 6 kurumdan
 
 <h4>Aklınıza takılan bir yer varsa veya sormak istediğiniz bir şey varsa iletişim kısmındaki mail adresimden veya sosyal medya hesaplarımdan bana ulaşabilirsiniz.</h4>
 
-<div class="erasmus">
-<img class="img-responsive" src="../static/images/post_image/erasmus-staji-icin-nasil-sirket-buldum.html/cover.jpg" />
-</div>
+
 <style>
     .erasmus img{
-        visibility: hidden;
+        
     }
 </style>
 </h5></h5></h5></h5></h5></h5></h5></h5></h5></h5></h3></h3>
