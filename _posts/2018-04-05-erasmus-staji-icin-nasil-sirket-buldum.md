@@ -62,7 +62,7 @@ Staj yeri bulmak aslında gerçekten bu kadar kolay. 2 hafta içinden 6 kurumdan
 <h4>Aklınıza takılan bir yer varsa veya sormak istediğiniz bir şey varsa iletişim kısmındaki mail adresimden veya sosyal medya hesaplarımdan bana ulaşabilirsiniz.</h4>
 
 <div class="erasmus">
-<img class="img-responsive" src="../static/images/post_image/erasmus-staji-icin-nasil-sirket-buldum.html/cover.png" />
+<img class="img-responsive" src="../static/images/post_image/erasmus-staji-icin-nasil-sirket-buldum.html/cover.jpg" />
 </div>
 <style>
     .erasmus img{
