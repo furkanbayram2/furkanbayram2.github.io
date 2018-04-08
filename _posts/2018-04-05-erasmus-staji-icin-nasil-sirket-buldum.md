@@ -56,7 +56,7 @@ Staj yeri bulmak aslında gerçekten bu kadar kolay. 2 hafta içinden 6 kurumdan
 
 <h2>CV örneğim ve Motivasyon Mektubu</h2>
 
-<h3><a href="static\images\post_image{{ post.url }}\cv.pdf">Buraya</a> tıklayak örnek CV'mi ve <a href="static\images\post_image{{ post.url }}\motivation-letter.pdf">buradanda</a> motivasyon mektubumu görebilirisniz. ( 2 tane yazmıştım iksinide kullanabilirsiniz.)</h3>
+<h3><a href="static\images\post_image{{ post.url }}\cv.pdf">Buraya</a> tıklayak örnek CV'mi ve <a href="static\images\post_image{{ post.url }}\motivation-letter.pdf">buradanda</a> motivasyon mektubumu görebilirsiniz. ( 2 tane yazmıştım iksinide kullanabilirsiniz.)</h3>
 
 
 <h4>Aklınıza takılan bir yer varsa veya sormak istediğiniz bir şey varsa iletişim kısmındaki mail adresimden veya sosyal medya hesaplarımdan bana ulaşabilirsiniz.</h4>
