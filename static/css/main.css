@@ -2197,3 +2197,25 @@ blockquote {
   background: rgba(0, 0, 0, 0.9);
 }
 
+.archive a:hover{
+opacity:0.5;
+
+}
+
+#archives{
+  margin-top:25px;
+
+}
+
+
+.archive-group h4{
+  margin-top:3px;
+  margin-bottom:3px;
+}
+
+.category-head{
+  margin-bottom:0;
+  margin-top:20px;
+}
+
+
