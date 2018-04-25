@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<!-- ŞEFİK FURKAN BAYRAM -->
+<!-- ŞEFİK FURKAN BAYRAM -->
+<!-- ŞEFİK FURKAN BAYRAM -->
+<!-- ŞEFİK FURKAN BAYRAM -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>14-701-009 Şefik Furkan Bayram</title>
+    <style>
+        body {
+            background: url(bg.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .button {
+            padding: 15px;
+            background-color: rgb(161, 228, 53);
+            margin: 15px;
+            color: black;
+            -webkit-box-shadow: 0px 1px 5px 1px #000000;
+            box-shadow: 0px 1px 5px 1px #000000;
+            font-weight: bold;
+        }
+
+        .menu {
+            height: 50px;
+            width: 1000px;
+            margin: 0 auto;
+            padding-top: 25px;
+            padding-left: 25px;
+        }
+
+        .kapsam {
+            width: 1000px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+
+        .kutu {
+            background-color: rgb(51, 133, 51);
+            height: 100px;
+            width: 100px;
+            left: 10px;
+            top: 50px;
+            position: relative;
+            animation-delay: inherit;
+            animation-iteration-count: infinite;
+        }
+
+        .delirt {
+            animation-name: delirt;
+            animation-duration: 5s;
+            animation-delay: inherit;
+            animation-iteration-count: infinite;
+        }
+
+        .dondur {
+            animation-name: dondur;
+            animation-duration: 2s;
+        }
+
+        .kucult {
+            animation-name: kucult;
+            animation-duration: 2s;
+        }
+
+        .buyult {
+            animation-name: buyult;
+            animation-duration: 2s;
+        }
+
+        .kaydir {
+            animation-name: kaydir;
+            animation-duration: 2s;
+        }
+
+        .karart {
+            animation-name: karart;
+            animation-duration: 2s;
+        }
+
+        @keyframes dondur {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+
+        @keyframes kucult {
+            0% {
+                width: 100px;
+                height: 100px;
+            }
+            100% {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+
+
+        @keyframes buyult {
+            0% {
+                width: 100px;
+                height: 100px;
+            }
+            100% {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+
+
+        @keyframes kaydir {
+            0% {
+                left: 10px;
+            }
+            50% {
+                left: 900px;
+            }
+            100% {
+                left: 10px;
+            }
+        }
+
+
+
+        @keyframes karart {
+            0% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes delirt {
+            0% {
+                left: 10px;
+                transform: rotate(0deg);
+            }
+            10% {
+                opacity: 0.8;
+                transform: rotate(360deg);
+                background-color: red;
+            }
+            20% {
+
+                transform: rotate(270deg);
+            }
+            30% {
+                width: 100px;
+                height: 100px;
+                transform: rotate(160deg);
+                background-color: purple;
+            }
+            40% {
+
+                transform: rotate(300deg);
+            }
+            50% {
+                opacity: 1;
+                height: 50px;
+                width: 50px;
+                left: 700px;
+                transform: rotate(180deg);
+            }
+            60% {
+                opacity: 1;
+                height: 50px;
+                width: 50px;
+                left: 800px;
+                transform: rotate(360deg);
+            }
+            70% {
+                opacity: 0.5;
+                background-color: yellow;
+            }
+            80% {
+                opacity: 0;
+                width: 100px;
+                height: 100px;
+            }
+            90% {
+                opacity: 0.8;
+
+            }
+            100% {
+                opacity: 1;
+                left: 10px;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="kapsam">
+        <div id="kutu" class="kutu delirt"></div>
+    </div>
+    <div class="menu">
+        <a href="#" class="button" id="dondur" onclick="dondur()">DÖNDÜR</a>
+        <a href="#" class="button" id="kaydir" onclick="kaydir()">KAYDIR</a>
+        <a href="#" class="button" id="buyult" onclick="buyult()">BÜYÜLT</a>
+        <a href="#" class="button" id="kucult" onclick="kucult()">KÜÇÜLT</a>
+        <a href="#" class="button" id="karart" onclick="karart()">KARART</a>
+        <a href="#" class="button" id="karart" onclick="delirt()">DELİRT</a>
+        <a href="#" class="button" id="dondur" onclick="durdur()">DURDUR</a>
+    </div>
+    <script>
+        function dondur() {
+            var element = document.getElementById("kutu");
+            element.classList.remove("dondur");
+            element.classList.remove("kaydir");
+            element.classList.remove("buyult");
+            element.classList.remove("kucult");
+            element.classList.remove("karart");
+            element.classList.remove("delirt");
+            element.classList.add("dondur");
+        };
+
+        function kaydir() {
+            var element = document.getElementById("kutu");
+            element.classList.remove("dondur");
+            element.classList.remove("kaydir");
+            element.classList.remove("buyult");
+            element.classList.remove("kucult");
+            element.classList.remove("karart");
+            element.classList.remove("delirt");
+            element.classList.add("kaydir");
+        };
+
+        function buyult() {
+            var element = document.getElementById("kutu");
+            element.classList.remove("dondur");
+            element.classList.remove("kaydir");
+            element.classList.remove("buyult");
+            element.classList.remove("kucult");
+            element.classList.remove("karart");
+            element.classList.remove("delirt");
+            element.classList.add("buyult");
+        };
+
+        function kucult() {
+            var element = document.getElementById("kutu");
+            element.classList.remove("dondur");
+            element.classList.remove("kaydir");
+            element.classList.remove("buyult");
+            element.classList.remove("kucult");
+            element.classList.remove("karart");
+            element.classList.remove("delirt");
+            element.classList.add("kucult");
+        };
+
+        function karart() {
+            var element = document.getElementById("kutu");
+            element.classList.remove("dondur");
+            element.classList.remove("kaydir");
+            element.classList.remove("buyult");
+            element.classList.remove("kucult");
+            element.classList.remove("karart");
+            element.classList.remove("delirt");
+            element.classList.add("karart");
+        };
+
+        function delirt() {
+            var element = document.getElementById("kutu");
+            element.classList.remove("dondur");
+            element.classList.remove("kaydir");
+            element.classList.remove("buyult");
+            element.classList.remove("kucult");
+            element.classList.remove("karart");
+            element.classList.remove("delirt");
+            element.classList.add("delirt");
+        };
+
+        function durdur() {
+            var element = document.getElementById("kutu");
+            element.classList.remove("dondur");
+            element.classList.remove("kaydir");
+            element.classList.remove("buyult");
+            element.classList.remove("kucult");
+            element.classList.remove("karart");
+            element.classList.remove("delirt");
+        };
+    </script>
+</body>
+
+</html>

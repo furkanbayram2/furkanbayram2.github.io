@@ -521,7 +521,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 .my-photo-mobile{
-  max-width:150px !important;
+  height:150px !important;
 }
 
 .site-title-block {
