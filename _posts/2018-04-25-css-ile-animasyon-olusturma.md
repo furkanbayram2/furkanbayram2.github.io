@@ -9,6 +9,8 @@ tags:
 - keyframes
 ---
 
+
+
 <h4>Herkese merhabalar. 
     Öncelikle başlamadan önce 10-15 dakika gibi bir sürede yaptığım örneği göstererek neler yapabileceğimizi göstermek istiyorum.
     <a href="https://furkanbayram2.github.io/finalOdevi1" target="blank">Buraya</a> tıklayarak çalışmama, <a href="https://github.com/furkanbayram2/furkanbayram2.github.io/blob/master/finalOdevi1/index.html" target="blank">buraya</a> tıklayarak kaynak kodlarına erişebilirsiniz. <strong>NOT:</strong> JS kısmına takılmayın sadece butonlara tıklayınca yeni class ataması yapmak için kullandım. <strong>OLDUKÇA SPAGETTİ :)</strong></h4>
@@ -132,5 +134,6 @@ Animasyonu uygulayacağımız seçicinin aldığı bir kaç değer var. Bu değe
     Yukarıdaki özellikler çeşitli değerler alır. Bunları başka bir yazıda daha detaylı bir şekilde anlatmayı düşünüyorum. Eğer bu konuyla ilgili aklınıza takılan bir yer olursa <a href="https://www.facebook.com/profile.php?id=100006148155735" target="_blank">facebook</a> veya <a href="https://www.instagram.com/furkanbayram2/" target="_blank">instagram</a> adreslerimden bana ulaşabilirsiniz. İyi akşamlar.
 </h3>
 
- 
+
+<img style="height:0px" src="/static/images/post_image/css-ile-animasyon-olusturma.html/cover.jpg" alt="">
 
