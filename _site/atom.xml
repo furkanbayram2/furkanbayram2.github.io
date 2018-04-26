@@ -6,13 +6,78 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-04-25T21:22:46Z</updated>
+  <updated>2018-04-26T01:04:48Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
   </author>
   <rights type="text">Copyright © 2018 Şefik Furkan Bayram. All rights reserved.</rights>
   
+  <entry>
+  <title type="text">CSS ile Animasyon Oluşturma</title>
+  <link rel="alternate" type="text/html" href="http://localhost:3000/css-ile-animasyon-olusturma.html" />
+  <id>http://localhost:3000/css-ile-animasyon-olusturma</id>
+  <published>2018-04-25T19:00:00Z</published>
+  <updated>2018-04-25T19:00:00Z</updated>
+  <content type="html"><![CDATA[ <p>Herkese merhabalar. Önceden web uygulamalarında animasyon yapmak için genelde jQuery kullanırdım. Ama CSS3 ile gelen yenilikler ile artık jQuery kütüphanesinin yüzüne bile bakmıyorum diyebilirim :) Bugün <strong>@keyframes</strong> ile neler yapabileceğimizden bahsedeceğim.</p>
+
+<h1>1. Tarayıcı Desteği</h1>
+<p>Anlatıma başlamadan önce tarayıcı desteğinden bahsetmek istiyorum. Google Chrome, Mozilla, Opera ve Safari’nin neredeyse tüm sürümleri bu özelliği destekliyor. <a href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp">Buraya</a> tıklayarak daha detaylı tabloya ulaşabilirsiniz.</p>
+
+<h1>2. Kullanım</h1>
+
+<p>Kullanımı oldukça basit.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@keyframes</span> <span class="n">animasyon-ismi</span> <span class="p">{</span>
+    <span class="nt">from</span> <span class="p">{</span>
+        <span class="err">css</span> <span class="err">kodlari</span>
+    <span class="p">}</span>
+    <span class="nt">to</span> <span class="p">{</span>
+        <span class="err">css</span> <span class="err">kodlari</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><kbd>"animasyon-ismi"</kbd> yazan yere animasyonunuzu tanımlayan istediğiniz bir değişken adını yazabilirsiniz. <strong>from</strong> kısmı bizim başlangıç değerlerimiz, <strong>to</strong> kısmı ise bitiş değerleriğimizi ifade ediyor.
+From ve to ile kullanımın dışında bir de yüzdelik dilimler ile ifade ederek kullanabiliyoruz. Genelde yüzdelik dilimlerle ifade etmek daha esnek bir yapı kurmamızı sağlıyor.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@keyframes</span> <span class="n">animasyon-ismi</span> <span class="p">{</span>
+    <span class="nt">10</span><span class="o">%</span> <span class="p">{</span>
+        <span class="err">css</span> <span class="err">kodlari</span>
+    <span class="p">}</span>
+    <span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
+        <span class="err">css</span> <span class="err">kodlari</span>
+    <span class="p">}</span>
+    <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>
+        <span class="err">css</span> <span class="err">kodlari</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></figure>
+
+<p>Yukarıda animasyonumuzu 3 parçaya böldüm. Siz isterseniz 100 eşit parçaya bölebilirsiniz :) 10%, 25%, 50%, 75%, 100%…</p>
+
+<table class="table table-bordered">
+    <tr>
+        <th>
+            Özellik
+        </th>
+        <th>Açıklama</th>
+    </tr>
+    <tr>Açıklama</tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td> 
+       
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td> 
+       
+      </tr>
+</table>
+
+ ]]></content>
+</entry>
+
+
   <entry>
   <title type="text">Erasmus Stajı İçin Nasıl Şirket Buldum ?</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/erasmus-staji-icin-nasil-sirket-buldum.html" />
@@ -393,7 +458,7 @@ jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
 
 
   <entry>
-  <title type="text">Erasmus için Nasıl Staj Yeri Buldum ?</title>
+  <title type="text">Jekyll ve Github Pages ile Ücretsiz Blog Oluşturmak</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html" />
   <id>http://localhost:3000/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak</id>
   <published>2017-08-30T02:40:00Z</published>

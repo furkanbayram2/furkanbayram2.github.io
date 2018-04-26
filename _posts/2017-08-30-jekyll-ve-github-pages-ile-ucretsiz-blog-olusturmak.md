@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Erasmus için Nasıl Staj Yeri Buldum ?
+title: Jekyll ve Github Pages ile Ücretsiz Blog Oluşturmak
 date: 2017-08-30 02:40:00
 category: Web Teknolojileri
 tags:
