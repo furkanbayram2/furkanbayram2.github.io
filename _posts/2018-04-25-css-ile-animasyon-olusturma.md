@@ -11,6 +11,8 @@ tags:
 
 Herkese merhabalar. Önceden web uygulamalarında animasyon yapmak için genelde jQuery kullanırdım. Ama CSS3 ile gelen yenilikler ile artık jQuery kütüphanesinin yüzüne bile bakmıyorum diyebilirim :) Bugün <strong>@keyframes</strong> ile neler yapabileceğimizden bahsedeceğim.
 
+@keyframes özelliği ile hiç bir eklenti kullanmadan sadece CSS ile çeşitli animasyonlar yapabiliyoruz. Herhangi bir DOM elemanına kayma, renk değiştirme, büyüme, küçülme vb. efektler uygulatavişiyoruz. Kısaca @keyframes ile belirli bir zaman aralığı belirliyoruz ve bu zaman aralığında CSS ile yapıbilen her şeyi öğemize uygulayabiliyoruz. 
+
 <h1>1. Tarayıcı Desteği</h1>
 Anlatıma başlamadan önce tarayıcı desteğinden bahsetmek istiyorum. Google Chrome, Mozilla, Opera ve Safari'nin neredeyse tüm sürümleri bu özelliği destekliyor. <a href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp">Buraya</a> tıklayarak daha detaylı tabloya ulaşabilirsiniz.
 
