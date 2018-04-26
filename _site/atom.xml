@@ -6,7 +6,7 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-04-26T01:04:48Z</updated>
+  <updated>2018-04-26T20:21:44Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
@@ -17,42 +17,73 @@
   <title type="text">CSS ile Animasyon Oluşturma</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/css-ile-animasyon-olusturma.html" />
   <id>http://localhost:3000/css-ile-animasyon-olusturma</id>
-  <published>2018-04-25T19:00:00Z</published>
-  <updated>2018-04-25T19:00:00Z</updated>
-  <content type="html"><![CDATA[ <p>Herkese merhabalar. Önceden web uygulamalarında animasyon yapmak için genelde jQuery kullanırdım. Ama CSS3 ile gelen yenilikler ile artık jQuery kütüphanesinin yüzüne bile bakmıyorum diyebilirim :) Bugün <strong>@keyframes</strong> ile neler yapabileceğimizden bahsedeceğim.</p>
+  <published>2018-04-26T17:15:00Z</published>
+  <updated>2018-04-26T17:15:00Z</updated>
+  <content type="html"><![CDATA[ <h4>Herkese merhabalar. 
+    Öncelikle başlamadan önce 10-15 dakika gibi bir sürede yaptığım örneği göstererek neler yapabileceğimizi göstermek istiyorum.
+    <a href="https://furkanbayram2.github.io/finalOdevi1" target="blank">Buraya</a> tıklayarak çalışmama, <a href="https://github.com/furkanbayram2/furkanbayram2.github.io/blob/master/finalOdevi1/index.html" target="blank">buraya</a> tıklayarak kaynak kodlarına erişebilirsiniz. <strong>NOT:</strong> JS kısmına takılmayın sadece butonlara tıklayınca yeni class ataması yapmak için kullandım. <strong>OLDUKÇA SPAGETTİ :)</strong></h4>
+
+<p>Önceden web uygulamalarında animasyon yapmak için genelde jQuery kullanırdım. Ama CSS3 ile gelen yenilikler
+    ile artık jQuery kütüphanesinin yüzüne bile bakmıyorum diyebilirim :)</p>
+<p>Bugün
+<strong>@keyframes</strong> ile neler yapabileceğimizden bahsedeceğim. @keyframes özelliği ile hiç bir eklenti kullanmadan sadece
+CSS ile çeşitli animasyonlar yapabiliyoruz. Herhangi bir DOM elemanına kayma, renk değiştirme, büyüme, küçülme vb. efektler
+uygulayabiliyoruz. Kısaca @keyframes ile belirli bir zaman aralığı belirliyoruz ve bu zaman aralığında CSS ile yapıbilen
+her şeyi öğemize uygulayabiliyoruz.</p>
 
 <h1>1. Tarayıcı Desteği</h1>
-<p>Anlatıma başlamadan önce tarayıcı desteğinden bahsetmek istiyorum. Google Chrome, Mozilla, Opera ve Safari’nin neredeyse tüm sürümleri bu özelliği destekliyor. <a href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp">Buraya</a> tıklayarak daha detaylı tabloya ulaşabilirsiniz.</p>
+<p>Anlatıma başlamadan önce tarayıcı desteğinden bahsetmek istiyorum. Google Chrome, Mozilla, Opera ve Safari’nin neredeyse
+tüm sürümleri bu özelliği destekliyor.
+<a href="https://www.w3schools.com/cssref/css3_pr_animation-keyframes.asp">Buraya</a> tıklayarak daha detaylı tabloya ulaşabilirsiniz.</p>
 
 <h1>2. Kullanım</h1>
 
 <p>Kullanımı oldukça basit.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@keyframes</span> <span class="n">animasyon-ismi</span> <span class="p">{</span>
-    <span class="nt">from</span> <span class="p">{</span>
-        <span class="err">css</span> <span class="err">kodlari</span>
-    <span class="p">}</span>
-    <span class="nt">to</span> <span class="p">{</span>
-        <span class="err">css</span> <span class="err">kodlari</span>
-    <span class="p">}</span>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@keyframes</span> <span class="n">animasyon-ismi</span><span class="p">{</span>
+    <span class="nt">from</span> <span class="p">{</span> <span class="err">css</span> <span class="err">kodları</span> <span class="p">}</span>
+    <span class="nt">to</span> <span class="p">{</span> <span class="err">css</span> <span class="err">kodları</span> <span class="p">}</span>
 <span class="p">}</span></code></pre></figure>
 
-<p><kbd>"animasyon-ismi"</kbd> yazan yere animasyonunuzu tanımlayan istediğiniz bir değişken adını yazabilirsiniz. <strong>from</strong> kısmı bizim başlangıç değerlerimiz, <strong>to</strong> kısmı ise bitiş değerleriğimizi ifade ediyor.
-From ve to ile kullanımın dışında bir de yüzdelik dilimler ile ifade ederek kullanabiliyoruz. Genelde yüzdelik dilimlerle ifade etmek daha esnek bir yapı kurmamızı sağlıyor.</p>
+<p><kbd>"animasyon-ismi"</kbd> yazan yere animasyonunuzu tanımlayan istediğiniz bir değişken adını yazabilirsiniz.
+<strong>from</strong> kısmı bizim başlangıç değerlerimiz,
+<strong>to</strong> kısmı ise bitiş değerleriğimizi ifade ediyor. From ve to ile kullanımın dışında bir de yüzdelik dilimler ile
+ifade ederek kullanabiliyoruz. Genelde yüzdelik dilimlerle ifade etmek daha esnek bir yapı kurmamızı sağlıyor.</p>
 
-<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="k">@keyframes</span> <span class="n">animasyon-ismi</span> <span class="p">{</span>
-    <span class="nt">10</span><span class="o">%</span> <span class="p">{</span>
-        <span class="err">css</span> <span class="err">kodlari</span>
-    <span class="p">}</span>
-    <span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
-        <span class="err">css</span> <span class="err">kodlari</span>
-    <span class="p">}</span>
-    <span class="nt">100</span><span class="o">%</span> <span class="p">{</span>
-        <span class="err">css</span> <span class="err">kodlari</span>
-    <span class="p">}</span>
-<span class="p">}</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.kutu</span><span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span><span class="m">25px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span><span class="m">25px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span><span class="no">blue</span><span class="p">;</span>
+    <span class="nl">animation-name</span><span class="p">:</span><span class="n">animasyon-ismi</span><span class="p">;</span>
+    <span class="nl">animation-duration</span><span class="p">:</span><span class="m">2s</span><span class="p">;</span>
+<span class="p">}</span>
 
-<p>Yukarıda animasyonumuzu 3 parçaya böldüm. Siz isterseniz 100 eşit parçaya bölebilirsiniz :) 10%, 25%, 50%, 75%, 100%…</p>
+<span class="k">@keyframes</span> <span class="n">animasyon-ismi</span><span class="p">{</span>
+<span class="nt">10</span><span class="o">%</span> <span class="p">{</span> 
+    <span class="nl">width</span><span class="p">:</span><span class="m">100px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span><span class="m">100px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span><span class="no">red</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="nt">50</span><span class="o">%</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span><span class="m">150px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span><span class="m">150px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span><span class="no">purple</span><span class="p">;</span>
+ <span class="p">}</span>
+<span class="nt">100</span><span class="o">%</span> <span class="p">{</span> 
+    <span class="nl">width</span><span class="p">:</span><span class="m">50px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span><span class="m">50px</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span><span class="no">yellow</span><span class="p">;</span>
+ <span class="p">}</span> 
+<span class="p">}</span> </code></pre></figure>
+
+<p>Yukarıda
+animasyonumuzu 3 parçaya böldüm. Siz isterseniz 100 eşit parçaya bölebilirsiniz :) 10%, 25%, 50%, 75%, 100%… Örnek olarak
+yaptığım uygulamayı
+<a href="https://codepen.io/furkanbayram2/pen/mLrjKp" target="_blank">buraya</a> tıklayarak görebilirsiniz.</p>
+
+<h1>3. Özellikler</h1>
+
+<p>Animasyonu uygulayacağımız seçicinin aldığı bir kaç değer var. Bu değerler;</p>
 
 <table class="table table-bordered">
     <tr>
@@ -63,16 +94,50 @@ From ve to ile kullanımın dışında bir de yüzdelik dilimler ile ifade edere
     </tr>
     <tr>Açıklama</tr>
     <tr>
-        <td>Jill</td>
-        <td>Smith</td> 
-       
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td> 
-       
-      </tr>
+        <td>animation-name</td>
+        <td>DOM elemanımızda kullanacağımız @keyframes'in adını belirtir.</td>
+
+    </tr>
+    <tr>
+        <td>animation-duration</td>
+        <td>Animasyonun ne kadar sürede tamamlanacağı belirtir.</td>
+
+    </tr>
+    <tr>
+        <td>animation-timing-function</td>
+        <td>Animasyonun hız eğrisini belirtir.</td>
+
+    </tr>
+    <tr>
+        <td>animation-delay</td>
+        <td>Animasyonun başlaması için ne kadar gecikme olacağını belirtir.</td>
+
+    </tr>
+    <tr>
+        <td>animation-iteration-count</td>
+        <td>Animasyonun kaç defa oynatılacağı belirtir.</td>
+
+    </tr>
+    <tr>
+        <td>animation-direction</td>
+        <td>Animasyon tamamlandıktan sonra geriye doğru oynatılıp oynatılmayacağını belirtir.</td>
+
+    </tr>
+    <tr>
+        <td>animation-fill-mode</td>
+        <td>Animasyon bittikten sonra veya animasyon oynatılırken animasyonun nasıl davranacağını belirler.</td>
+
+    </tr>
+    <tr>
+        <td>animation-play-state</td>
+        <td>Animasyonun başlangıçta çalışıp çalışmayacağını belirtir.</td>
+
+    </tr>
 </table>
+
+<h3>
+    Yukarıdaki özellikler çeşitli değerler alır. Bunları başka bir yazıda daha detaylı bir şekilde anlatmayı düşünüyorum. Eğer bu konuyla ilgili aklınıza takılan bir yer olursa <a href="https://www.facebook.com/profile.php?id=100006148155735" target="_blank">facebook</a> veya <a href="https://www.instagram.com/furkanbayram2/" target="_blank">instagram</a> adreslerimden bana ulaşabilirsiniz. İyi akşamlar.
+</h3>
 
  ]]></content>
 </entry>
