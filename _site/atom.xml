@@ -6,7 +6,7 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-04-26T20:35:55Z</updated>
+  <updated>2018-06-30T18:57:32Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
@@ -17,8 +17,8 @@
   <title type="text">CSS ile Animasyon Oluşturma</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/css-ile-animasyon-olusturma.html" />
   <id>http://localhost:3000/css-ile-animasyon-olusturma</id>
-  <published>2018-04-26T17:15:00Z</published>
-  <updated>2018-04-26T17:15:00Z</updated>
+  <published>2018-04-26T20:15:00Z</published>
+  <updated>2018-04-26T20:15:00Z</updated>
   <content type="html"><![CDATA[ <h4>Herkese merhabalar. 
     Öncelikle başlamadan önce 10-15 dakika gibi bir sürede yaptığım örneği göstererek neler yapabileceğimizi göstermek istiyorum.
     <a href="https://furkanbayram2.github.io/finalOdevi1" target="blank">Buraya</a> tıklayarak çalışmama, <a href="https://github.com/furkanbayram2/furkanbayram2.github.io/blob/master/finalOdevi1/index.html" target="blank">buraya</a> tıklayarak kaynak kodlarına erişebilirsiniz. <strong>NOT:</strong> JS kısmına takılmayın sadece butonlara tıklayınca yeni class ataması yapmak için kullandım. <strong>OLDUKÇA SPAGETTİ :)</strong></h4>
@@ -149,8 +149,8 @@ yaptığım uygulamayı
   <title type="text">Erasmus Stajı İçin Nasıl Şirket Buldum ?</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/erasmus-staji-icin-nasil-sirket-buldum.html" />
   <id>http://localhost:3000/erasmus-staji-icin-nasil-sirket-buldum</id>
-  <published>2018-04-04T21:40:00Z</published>
-  <updated>2018-04-04T21:40:00Z</updated>
+  <published>2018-04-05T00:40:00Z</published>
+  <updated>2018-04-05T00:40:00Z</updated>
   <content type="html"><![CDATA[ <p>Herkese merhaba. Bugün yazılım ile ilgili değilde erasmus stajı yapmak istiyorsanız neler yapmalısınız, staj yeri ararken nasıl bir yol izlemelisiniz gibi konularla ilgili bir yazı yazmak istedim. Çevremden duyduğum kadarıyla insanlar staj yeri bulma konusunda gerçekten çok zorlanıyor. Ben staj yapacağım kurumu 2 gün gibi bir sürede buldum. Ya ben çok şanslıydım ya da diğer insanlar doğru yolu izlemiyor. <strong>Hatta belirli bir süre o kadar çok geri dönüş aldım ki istemeyerekte olsa cevap vermediğim mailler bile oldu.</strong></p>
 
 <p><strong>Erasmus stajımı 3 ay sonra yapıcam ama bu konuyla ilgili çok fazla araştırma yaptım ve çok fazla kişiyle görüştüm. O yüzden anlattıklarıma hak verip vermemek size kalmış.</strong></p>
@@ -213,8 +213,8 @@ Staj yeri bulmak aslında gerçekten bu kadar kolay. 2 hafta içinden 6 kurumdan
   <title type="text">SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html" />
   <id>http://localhost:3000/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris</id>
-  <published>2018-01-16T23:15:43Z</published>
-  <updated>2018-01-16T23:15:43Z</updated>
+  <published>2018-01-17T02:15:43Z</published>
+  <updated>2018-01-17T02:15:43Z</updated>
   <content type="html"><![CDATA[ <p>Merhaba arkadaşlar bir önceki yazımda <strong>“SASS ve SCSS Nedir? Neden Kullanmalıyız ve Nasıl Kurulur?”</strong> konularına değinmiştim. Bu sefer ise <strong>SCSS</strong> ile nasıl çalışmaya başlayacağımızdan ve benim genelde kullandığım klasör yapısından bahsedeceğim. 
 Bilgisayarında <strong>SCSS</strong> kurulu olmayanlar <a href="http://furkanbayram.net/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html" target="?blank">buradan</a> yardım alabilirler.</p>
 
@@ -276,8 +276,8 @@ Biz kodlarımızı sadece scss kısmına yazıyoruz ve “–watch” komutu say
   <title type="text">SASS ve SCSS Nedir ? Neden Kullanmalıyız ? Nasıl Kurulur ?</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html" />
   <id>http://localhost:3000/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur</id>
-  <published>2018-01-12T16:29:00Z</published>
-  <updated>2018-01-12T16:29:00Z</updated>
+  <published>2018-01-12T19:29:00Z</published>
+  <updated>2018-01-12T19:29:00Z</updated>
   <content type="html"><![CDATA[ <p>Herkese merhaba,
 Neredeyse her yazıma uzun zamandır yazamıyorum diye başlamak zorunda kalıyorum :) Ama bundan sonra düzenli olarak bildiklerimi sizlerle paylaşmaya çalışacağım. Bugün CSS-preprocessor’lerden SASS ve SCSS hakkında bilgi vereceğim.</p>
 
@@ -329,7 +329,7 @@ Neredeyse her yazıma uzun zamandır yazamıyorum diye başlamak zorunda kalıyo
   </li>
 </ol>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gem install sass 	// sass kurulumunu gerçekleştiriyoruz.</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gem <span class="nb">install </span>sass 	// sass kurulumunu gerçekleştiriyoruz.</code></pre></figure>
 
 <p>Kurulum tamamlandıktan sonra aşağıdaki gibi bir mesaj alacaksınız.</p>
 
@@ -354,8 +354,8 @@ Neredeyse her yazıma uzun zamandır yazamıyorum diye başlamak zorunda kalıyo
   <title type="text">Sublime Text 3 Kurulum, Kullanım ve Eklentiler</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/sublime-text-3-kurulum-kullanim-ve-eklentiler.html" />
   <id>http://localhost:3000/sublime-text-3-kurulum-kullanim-ve-eklentiler</id>
-  <published>2017-09-03T02:26:00Z</published>
-  <updated>2017-09-03T02:26:00Z</updated>
+  <published>2017-09-03T05:26:00Z</published>
+  <updated>2017-09-03T05:26:00Z</updated>
   <content type="html"><![CDATA[ <p>Herkese merhaba. Uzun zamandır geliştirme yaparken <strong>Brackets</strong> metin editörünü kullanıyordum. Son 1 haftadır bu editörün performansından rahatsızlık duymaya başladım. Bu yüzden yeni bir metin editörü arayışına girdim. En az 3-4 adet editör değiştirdim ve sonunda <strong>Sublime Text 3</strong> kullanmaya karar verdim. Bu yazımda <strong>Linux</strong> işletim sistemine <strong>Sublime Text 3</strong> nasıl kurulur, eklentiler nasıl yüklenir, editör nasıl özelleştiriler vb. konulardan bahsedeceğim.</p>
 
 <h1>Sublime Text 3 Kurulumu</h1>
@@ -457,8 +457,8 @@ Bir tek <strong>CSS Extended Completions</strong> olsun bana bir şey olmaz :) d
   <title type="text">Jekyll Tema Değiştirme ve Klasör Yapısı</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/jekyll-tema-degistirme-ve-klasor-yapisi.html" />
   <id>http://localhost:3000/jekyll-tema-degistirme-ve-klasor-yapisi</id>
-  <published>2017-08-31T01:28:00Z</published>
-  <updated>2017-08-31T01:28:00Z</updated>
+  <published>2017-08-31T04:28:00Z</published>
+  <updated>2017-08-31T04:28:00Z</updated>
   <content type="html"><![CDATA[ <p>Heerkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.</p>
 
 <h1>Jekyll Klasör Yapısı</h1>
@@ -511,7 +511,7 @@ Dilerseniz bu klasörler ne işe yarar biraz onlardan bahsedelim.</p>
 
 <p>Sayfanın altlarına inip <strong>themes: minima</strong> yazan kısmı buluyoruz ve <strong>minima</strong> kısmını <strong>jekyll-theme-basically-basic</strong> şeklinde değiştiriyoruz. Yine aynı şekilde <strong>CTRL + X</strong> tuşlarına basıp <strong>Evet</strong> deyip kaydedip çıkıyoruz.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle install // temamızı yüklüyoruz.
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">bundle <span class="nb">install</span> // temamızı yüklüyoruz.
 jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
 
 <p><img class="img-responsive" src="../static/images/post_image/jekyll_tema_degistirme_ve_klasor_yapisi/3.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." /></p>
@@ -528,8 +528,8 @@ jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
   <title type="text">Jekyll ve Github Pages ile Ücretsiz Blog Oluşturmak</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html" />
   <id>http://localhost:3000/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak</id>
-  <published>2017-08-30T02:40:00Z</published>
-  <updated>2017-08-30T02:40:00Z</updated>
+  <published>2017-08-30T05:40:00Z</published>
+  <updated>2017-08-30T05:40:00Z</updated>
   <content type="html"><![CDATA[ <p>Herkese merhaba. Öncelikle <a href="https://jekyllrb.com/">Jekyll</a> nedir ne işe yarar bize neler sağlar onlardan bahsetmek istiyorum. 
 <a href="https://jekyllrb.com/">Jekyll</a>, Github’ın ruby ile geliştirmiş olduğu statik web sayfalar oluşturmamızı sağlayan bir araçtır. <a href="https://jekyllrb.com/">Jekyll</a>‘nin resmi web sitesine girdiğimizde bizi “Transform your plain text into static websites and blogs.” diye bir yazı karşılıyor. Yani düz metinlerimizi web sitelerine ve bloglara dönüştürebileceğimizden bahsediyor. Tamamen ücretsiz olup hatrı sayılır bir kullanıcı kitlesi vardır. Lafı fazla uzatmadan <a href="https://jekyllrb.com/">Jekyll</a> nasıl kurulur, nasıl çalışır hale getirilir bunlardan bahsetmek istiyorum.</p>
 
@@ -543,13 +543,13 @@ jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
 
 <p>Bizden sistem parolamızı isteyecektir. Girdikten sonra enter’a basıp devam ediyoruz.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get install ruby-full 	// ruby kurulumunu gerçekleştiriyoruz.
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">apt-get <span class="nb">install </span>ruby-full 	// ruby kurulumunu gerçekleştiriyoruz.
 
 <span class="nb">exit</span> 				// root modundan çıkıyoruz.</code></pre></figure>
 
 <p>Ruby kurulumunu gerçekleştirdikten sonra <strong>exit</strong> komutuyla root modundan çıkıyoruz.</p>
 
-<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gem install jekyll 		// jekyll kurulumunu gerçekleştiriyoruz.</code></pre></figure>
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">gem <span class="nb">install </span>jekyll 		// jekyll kurulumunu gerçekleştiriyoruz.</code></pre></figure>
 
 <p>NOT: Buraları hızlıca geçmemin sebebi internette çok fazla kaynak ve dökümantasyon olması. Eğer hata alırsanız veya bir sorun ile karşılaşırsanız sosyal medya hesaplarımdan bana ulaşabilirsiniz. Elimden geldiğince yardımcı olmaya çalışırım.</p>
 

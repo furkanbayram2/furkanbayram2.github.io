@@ -1,51 +1,13 @@
-/*
-* Template Name: Sunshine - Responsive vCard Template v2
-* Author: LMPixels
-* Author URL: http://themeforest.net/user/LMPixels
-* Version: 2.0
-*/
-
-/* =============================================================================
 
 
-1. Fonts
-2. General styles (Buttons, Inputs, Typography)
-3. Page loadig animation
-4. Subpages changer
-5. Site header (sidebar)
-6. Site content
-7. Subpages
-  7.1. Home subpage
-  7.2. About Me subpage
-  7.3. Resume subpage
-  7.4. Portfolio subpage
-  7.5. Blog subpage
-  7.6. Contact subpage
-8. Sliders (testimonials & portfolio carousels)
-9. Portfolio Full info page
-10. Blog post page
-11. Media Queries
+@import url('pe-icon-7-stroke.css'); 
 
-============================================================================= */
-
-
-/* ============================================================================= 
-1. Fonts
-============================================================================= */
-/* 7 stroke icons font by Pixeden */
-@import url('pe-icon-7-stroke.css'); /* Full icons list: http://themes-pixeden.com/font-demos/7-stroke/index.html */
-
-/* Font awesome icons font */
-@import url('font-awesome.css'); /* Full icons list: http://fontawesome.io/icons/ */
+@import url('font-awesome.css'); 
 
 /* Google fonts */
 @import url("//fonts.googleapis.com/css?family=Oswald:300,400,700");
 @import url("//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&amp;subset=latin,latin-ext,cyrillic");
 
-
-/* ============================================================================= 
-2. General styles
-============================================================================= */
 
 html {
   height: 100%;
@@ -215,7 +177,6 @@ textarea.form-control, textarea.form-control:focus {
   color: #33B0E8;
 }
 
-/* Placeholders */
 .form-control::-moz-placeholder {
   color: #adadac;
   opacity: 1;
@@ -274,10 +235,6 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 
-
-/* ============================================================================= 
-3. Page loadig animation
-============================================================================= */
 .no-js .preloader { display: none;  }
 .preloader {
   position: fixed;
@@ -355,10 +312,6 @@ textarea.form-control, textarea.form-control:focus {
   }
 }
 
-
-/* ============================================================================= 
-4. Subpages changer
-============================================================================= */
 .pt-wrapper {
   position: relative;
   width: 100%;
@@ -493,11 +446,7 @@ textarea.form-control, textarea.form-control:focus {
 .section-paddings-0 {
   padding: 0;
 }
-/* /Page changer */
 
-/* ============================================================================= 
-5. Site header (sidebar)
-============================================================================= */
 .header {
   position: fixed;
   width: 22%;
@@ -614,20 +563,12 @@ ul.social-links li:last-child a {
   line-height: 50px;
 }
 
-/* ----- Header ----- */
-
-
-/* ============================================================================= 
-6. Site content
-============================================================================= */
 .site-main {
   height: 100%;
   margin-left: 22%;
   position: relative;
   background-color: #fff;
 }
-
-/* Main menu */
 .site-nav {
   display: block;
   padding: 25px 0 30px;
@@ -739,15 +680,6 @@ ul.social-links li:last-child a {
   margin-top: -1px;
   background-color: #33B0E8;
 }
-
-
-
-/* ============================================================================= 
-7. Subpages
-============================================================================= */
-/* =======================================
-7.1. Home subpage
-======================================= */
 
 
 .home-page-block {
@@ -1502,13 +1434,7 @@ ul.social-links li:last-child a {
   font-size: 30px;
   color: #888;
 }
-/* /Contact info */
 
-
-/* ============================================================================= 
-8. Sliders
-============================================================================= */
-/* Testimonials Carousel */
 .testimonials.owl-carousel .owl-nav {
   position: absolute;
   text-align: right;
@@ -1647,12 +1573,7 @@ ul.social-links li:last-child a {
   transition: opacity 200ms ease;
   border-radius: 30px;
 }
-/* Portfolio Carousel */
 
-
-/* ============================================================================= 
-9. Portfolio Full info page
-============================================================================= */
 .portfolio-page-content {
   padding-bottom: 60px; 
 }
@@ -1775,11 +1696,7 @@ ul.social-links li:last-child a {
   padding: 2px 7px;
   background-color: #eee;
 }
-/* /Tags Block */
 
-/* ============================================================================= 
-10. Blog post page
-============================================================================= */
 .blog-post-page {
   height: auto;
 }
@@ -1908,10 +1825,6 @@ blockquote {
   font-size: 12px;
 }
 
-
-/* ============================================================================= 
-11. Media Queries 
-============================================================================= */
 
 @media only screen and (max-width: 1200px) {
   .header {
@@ -2136,11 +2049,6 @@ blockquote {
 }
 
 
-
-/* ============================================================================= 
-12. Updates
-============================================================================= */
-/* v2.1 - 9 may 2017 */
 .g-recaptcha {
   margin-bottom: 20px;
 }
