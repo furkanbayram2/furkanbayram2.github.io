@@ -135,5 +135,5 @@ Animasyonu uygulayacağımız seçicinin aldığı bir kaç değer var. Bu değe
 </h3>
 
 
-<img style="height:0px" src="/static/images/post_image/css-ile-animasyon-olusturma.html/cover.jpg" alt="">
+
 
