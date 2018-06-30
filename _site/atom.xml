@@ -6,7 +6,7 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-06-30T18:57:32Z</updated>
+  <updated>2018-06-30T19:08:02Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
@@ -139,8 +139,6 @@ yaptığım uygulamayı
     Yukarıdaki özellikler çeşitli değerler alır. Bunları başka bir yazıda daha detaylı bir şekilde anlatmayı düşünüyorum. Eğer bu konuyla ilgili aklınıza takılan bir yer olursa <a href="https://www.facebook.com/profile.php?id=100006148155735" target="_blank">facebook</a> veya <a href="https://www.instagram.com/furkanbayram2/" target="_blank">instagram</a> adreslerimden bana ulaşabilirsiniz. İyi akşamlar.
 </h3>
 
-<p><img style="height:0px" src="/static/images/post_image/css-ile-animasyon-olusturma.html/cover.jpg" alt="" /></p>
-
  ]]></content>
 </entry>
 
@@ -191,18 +189,13 @@ Staj yeri bulmak aslında gerçekten bu kadar kolay. 2 hafta içinden 6 kurumdan
 
 <h2>CV örneğim ve Motivasyon Mektubu</h2>
 
-<h3><a href="static\images\post_image\cv.pdf">Buraya</a> tıklayak örnek CV'mi ve <a href="static\images\post_image\motivation-letter.pdf">buradanda</a> motivasyon mektubumu görebilirsiniz. ( 2 tane yazmıştım iksinide kullanabilirsiniz.)</h3>
+<h3><a href="cv.pdf">Buraya</a> tıklayak örnek CV'mi ve <a href="motivation-letter.pdf">buradanda</a> motivasyon mektubumu görebilirsiniz. ( 2 tane yazmıştım iksinide kullanabilirsiniz.)</h3>
 
 
 <h4>Aklınıza takılan bir yer varsa veya sormak istediğiniz bir şey varsa iletişim kısmındaki mail adresimden veya sosyal medya hesaplarımdan bana ulaşabilirsiniz.</h4>
 
-<div class="erasmus">
-<img class="img-responsive" src="../static/images/post_image/erasmus-staji-icin-nasil-sirket-buldum.html/cover.jpg" />
-</div>
 <style>
-    .erasmus img{
-        visibility: hidden;
-    }
+   
 </style>
 </h5></h5></h5></h5></h5></h5></h5></h5></h5></h5></h3></h3>
  ]]></content>
