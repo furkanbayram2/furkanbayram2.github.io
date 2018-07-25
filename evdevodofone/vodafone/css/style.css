@@ -1,3 +1,12 @@
+/* 
+1_menü altında çıkan çizgileri beyaz kısmın altına almalıyız. 
+2_Offer kısmında detayları göster diyince alt kısım açılmalı yazılar orda çıkmalı. 
+3_Hemen başvur butonuna tıklayınca sliderdaki gibi form sayfası açılmalı
+4_teklif sayfasına git diyince detay psd'deki içerik gösterilmeli pop-up olarak
+5_sayfadaki butonların üzerine gelince renkler değişmeli. 
+buton hoverları için şu sayfayı örnek alabilirsiniz.
+https://www.vodafone.com.tr/Net/evde-internet.php#fiber */
+
 @import url("normalize.css");
 @import url("formalize.css");
 @import url("owl.carousel.css");
@@ -128,18 +137,25 @@ a.outline-btn {
 
 .header-middle {
     border-bottom: 1px solid #b5b6b7;
-    padding-bottom: 35px;
+    /*padding-bottom: 35px;*/
 }
 
 .logo {
     float: left;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
+}
+
+.header-middle-kapsam {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .main-menu {
     float: left;
     margin-left: 40px;
-    margin-top: 40px;
+    /* margin-top: 40px;*/
 }
 
 .main-menu ul li {
@@ -150,6 +166,7 @@ a.outline-btn {
 
 .main-menu ul li a {
     color: #484b4c;
+    padding-bottom: 44px;
 }
 
 .main-menu ul li a i {
@@ -159,7 +176,7 @@ a.outline-btn {
 
 .partner {
     float: right;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 /* content */
@@ -417,13 +434,10 @@ h3.offer-name {
     margin-right: 10px;
 }
 
-.prop-list {
-    float: right;
-}
+
 
 .prop-list ul {
     float: left;
-    margin-right: 60px;
     color: #333;
     font-size: 15px;
     line-height: 20px;
@@ -537,7 +551,7 @@ h3.offer-name {
     border-radius: 12px;
 }
 
-.remodal .container {}
+
 
 .modal-price {
     background: url(../img/modalprice.png) no-repeat;
@@ -570,6 +584,44 @@ h3.offer-name {
 .remodal-close {
     right: 0 !important;
     left: auto !important
+}
+
+.button--primary {
+    font-weight: normal;
+    margin-bottom:2px;
+    color: #FFF;
+    background-color: #E60000;
+}
+
+.button--primary:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #900;
+}
+
+.button--secondry {
+    font-weight: normal;
+    margin-top:2px;
+    color: #FFF;
+    background-color: #666;
+}
+
+.button--secondry:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #333;
+}
+
+.button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid transparent;
+    font-size: 20px;
+    padding: 11px 37px;
+    text-align: center;
+    text-decoration: none;
+    color:white;
 }
 
 .badget {
@@ -677,15 +729,21 @@ h3.offer-name {
     margin-bottom: 100px;
 }
 
+
 .beefup__head {
+
     color: #636363;
-    font-size: 37px;
+    font-size: 20px;
     font-weight: 300;
     font-family: roboto;
     text-align: left;
     border-bottom: 1px solid #555;
     padding: 15px 0;
     cursor: pointer;
+}
+
+.beefup__head h4{
+    padding-left:25px;
 }
 
 .beefup__head b {
@@ -788,7 +846,6 @@ ul.tab-menu li.active-tab span.adsl {
 .footer-top {
     background: #ebebeb;
     height: 125px;
-    
 }
 
 .footer-top ul {
@@ -799,15 +856,15 @@ ul.tab-menu li.active-tab span.adsl {
 
 .footer-top ul li {
     font-size: 16px;
-   text-align: center;
+    text-align: center;
     color: #484b4c;
     margin-left: 16px;
     margin-right: 16px;
 }
 
 .footer-top ul li img {
-    width:30px;
-    margin-left:10px;
+    width: 30px;
+    margin-left: 10px;
     margin-right: 10px;
 }
 
@@ -886,11 +943,14 @@ ul.tab-menu li.active-tab span.adsl {
 
 /* responsive */
 
-@media only screen and (max-width: 1200px) {
-    .container {
-        width: 100%;
-        padding: 0 15px;
+@media only screen and (max-width: 990px) {
+    .main-menu ul li a {
+     
+        padding-bottom: 3px;
     }
+}
+
+@media only screen and (max-width: 1200px) {
     .header-top {
         float: none;
         margin: 0;
@@ -911,24 +971,6 @@ ul.tab-menu li.active-tab span.adsl {
     }
     .partner {
         display: none;
-    }
-    .main-menu {
-        float: none;
-        background: #d42d1f;
-        margin: 0;
-        margin-top: 25px;
-        margin-bottom: -20px;
-    }
-    .main-menu ul li {
-        float: none;
-        width: 100%;
-        margin: 0;
-        font-size: 16px !important;
-        padding: 10px;
-        border-bottom: 1px solid rgba(255, 255, 255, .3);
-    }
-    .main-menu ul li a {
-        color: #fff;
     }
     .main-slider {
         text-align: center;
@@ -1180,7 +1222,6 @@ a.hover-effect-menu:hover {
     text-decoration: none;
 }
 
-
 @media only screen and (max-width: 480px) {
     .offer-content li {
         width: 100%;
@@ -1269,26 +1310,26 @@ button {
     margin-top: 25px
 }
 
-.kapsam{
-    margin-top:100px;
-    margin-bottom:100px;
+.kapsam {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .fiyat {
     font-family: 'vodafonelight' !important;
     background-image: url('../img/offerbg.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     padding-top: 35px;
     padding-bottom: 25px;
     color: white;
 }
 
-.fiyat h2{
-    font-size:80px;
+.fiyat h2 {
+    font-size: 80px;
 }
 
-.bilgi{
-    padding:0 !important;
+.bilgi {
+    padding: 0 !important;
 }
 
 .bilgi-sol {}
@@ -1299,7 +1340,7 @@ button {
 
 .bilgi-sag {
     text-align: center;
-    padding:0 !important;
+    padding: 0 !important;
 }
 
 .bilgi-sag a {
@@ -1314,12 +1355,11 @@ button {
 }
 
 .kutu2 {
-    margin-top:5px;
-    margin-bottom:5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 1px solid #919190;
-
 }
 
 .bg-mor {
@@ -1335,25 +1375,24 @@ button {
     background-color: #d42d1f;
 }
 
-.bg-red a{
+.bg-red a {
     color: white !important;
 }
 
-.text-grey{
-    color:#4a4d4e;
+.text-grey {
+    color: #4a4d4e;
 }
 
-.footer-top .container ul li{
+.footer-top .container ul li {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.footer-top .container ul li p{
-    
-    margin-bottom:0px;
-    
+
+.footer-top .container ul li p {
+    margin-bottom: 0px;
 }
 
-.yazi{
-    margin-left:10px;
+.yazi {
+    margin-left: 10px;
 }
