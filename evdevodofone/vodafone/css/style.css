@@ -1,0 +1,1359 @@
+@import url("normalize.css");
+@import url("formalize.css");
+@import url("owl.carousel.css");
+@import url("remodal.css");
+@import url("remodal-default-theme.css");
+@import url("jQuery.verticalCarousel.css");
+@import url("font-awesome.css");
+@import url("bootstrap.min.css");
+@font-face {
+    font-family: 'vodafoneextra_bold';
+    src: url('../fonts/vodafone_extrabold-webfont.woff2') format('woff2'), url('../fonts/vodafone_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vodafonelight';
+    src: url('../fonts/vodafone_light-webfont.woff2') format('woff2'), url('../fonts/vodafone_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'vodafoneregular';
+    src: url('../fonts/vodafone-webfont.woff2') format('woff2'), url('../fonts/vodafone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* SİTE */
+
+body {
+    font-family: 'vodafonelight';
+    font-size: 14px;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'vodafoneregular';
+}
+
+a.red-btn {
+    display: block;
+    width: 190px;
+    height: 56px;
+    background: #d42d1f;
+    color: #fff;
+    text-align: center;
+    line-height: 56px;
+    font-size: 22px;
+}
+
+a.outline-btn {
+    display: block;
+    width: 190px;
+    height: 56px;
+    border: 1px solid #919190;
+    color: #4a4d4e;
+    text-align: center;
+    line-height: 56px;
+    font-size: 22px;
+}
+
+.fLeft {
+    float: left;
+    margin-right: 20px;
+}
+
+.fRight {
+    float: right;
+    margin-bottom: 30px;
+}
+
+.mB_85 {
+    margin: 0 !important;
+    margin-bottom: 85px;
+}
+
+/* header */
+
+.header {}
+
+.header-top {
+    background: #484b4c;
+    height: 44px;
+    line-height: 44px;
+}
+
+.header-top ul li {
+    float: left;
+    font-size: 20px;
+}
+
+.header-top ul li a {
+    color: #fff;
+    display: block;
+    padding: 0 19px;
+}
+
+.header-top ul li a.active {
+    background: #fff;
+    color: #484b4c;
+}
+
+.header-top ul {
+    float: left;
+    margin-left: 271px;
+}
+
+.customer-support {
+    font-size: 22px;
+    float: right;
+    color: #fff;
+}
+
+.customer-support img {
+    width: 30px;
+}
+
+.header-middle {
+    border-bottom: 1px solid #b5b6b7;
+    padding-bottom: 35px;
+}
+
+.logo {
+    float: left;
+    margin-top: 10px;
+}
+
+.main-menu {
+    float: left;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.main-menu ul li {
+    font-size: 24px;
+    float: left;
+    margin-left: 40px;
+}
+
+.main-menu ul li a {
+    color: #484b4c;
+}
+
+.main-menu ul li a i {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.partner {
+    float: right;
+    margin-top: 30px;
+}
+
+/* content */
+
+.content {}
+
+.main-slider {
+    margin-bottom: 53px;
+}
+
+.main-slider h1 {
+    font-size: 26px;
+    color: #fff;
+    line-height: 60px;
+    padding-top: 15px;
+}
+
+.main-slider p {
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.owl-pagination {
+    display: table;
+    margin: 0 auto;
+    margin-top: -70px;
+    position: relative;
+    z-index: 999;
+}
+
+.owl-page {
+    background: #f0f0ef;
+    width: 15px;
+    height: 15px;
+    display: block;
+    float: left;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.owl-page.active {
+    background: none;
+    border: 1px solid #acacac;
+    padding: 3px;
+    width: 19px;
+    height: 19px;
+    margin-top: -2px;
+}
+
+.owl-page.active:after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: #acacac;
+    border-radius: 50%;
+    margin-top: -2px;
+    margin-left: -2px;
+}
+
+.campaign-bar {
+    background: url(../img/campaignbg.jpg) top center;
+    width: 100%;
+    height: 215px;
+    margin-top: -40px;
+}
+
+.campaign-bar p {
+    font-size: 30px;
+    color: #fff;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.campaign-bar form {
+    display: table;
+    margin: 0 auto;
+}
+
+.form-group {
+    float: left;
+}
+
+.form-group p {
+    font-size: 20px;
+    padding: 0;
+    text-align: left;
+    height: 20px;
+}
+
+.form-box {
+    margin-top: 15px;
+    width: 350px;
+    height: 55px;
+    border: 1px solid #aea1a2;
+    margin-right: 23px;
+    padding: 0 15px;
+    outline: none;
+    font-family: 'vodafoneregular';
+}
+
+.send-btn {
+    background: #fff;
+    font-family: 'vodafonelight';
+    font-size: 25px;
+    width: 195px;
+    height: 55px;
+    border: 1px solid #f79498;
+    margin-top: 15px;
+    cursor: pointer;
+    color: #484b4c;
+}
+
+.offers {}
+
+.offers-title {
+    color: #4a4d4e;
+    font-size: 42px;
+    text-align: center;
+    padding: 65px 0;
+}
+
+.offer {
+    background: #fff;
+    border: 1px solid #ececec;
+    margin-bottom: 35px;
+}
+
+.offer-price {
+    background: url(../img/offerbg.png);
+    color: #fff;
+    float: left;
+}
+
+.price {
+    font-size: 90px;
+    margin-left: 25px;
+    padding-top: 80px;
+}
+
+.price i {
+    font-size: 50px;
+    margin-left: -50px;
+    top: -40px;
+    position: relative;
+    display: inline-block;
+    font-style: normal;
+}
+
+.price small {
+    font-size: 24px !important;
+}
+
+.pay-frequency {
+    display: inline-block;
+    font-size: 15px;
+    margin-left: -10px;
+    width: 50px;
+}
+
+.other-price {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: -10px;
+}
+
+.offer-info {
+    text-align: center;
+    width: 400px;
+    margin-top: 38px;
+    margin-left: 30px;
+    float: left;
+}
+
+h3.offer-name {
+    font-size: 36px;
+    color: #572b4e;
+    font-family: 'vodafonelight';
+    font-weight: normal;
+}
+
+.offer-info button {
+    font-family: 'vodafonelight';
+    font-size: 17px;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.offer-info button i {
+    color: #d42d1f;
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+
+.offer-content {
+    margin-top: 16px;
+}
+
+.offer-content li {
+    width: 200px;
+    height: 110px;
+    float: left;
+    font-size: 32px;
+    text-align: center;
+    padding-top: 22px;
+}
+
+.offer-content li span {
+    display: block;
+    font-size: 24px;
+}
+
+.offer-content li:first-child {
+    background: #572b4e;
+    border: 1px solid #572b4e;
+    color: #fff;
+}
+
+.offer-content li:last-child {
+    background: none;
+    border: 1px solid #572b4e;
+    color: #572b4e;
+}
+
+.offer-process {
+    float: right;
+    margin: 15px;
+}
+
+.offer-process a {
+    margin-bottom: 15px;
+}
+
+.other-properties {
+    border-top: 1px solid #ececec;
+    padding: 20px 0;
+    display: none;
+}
+
+.applications {
+    float: left;
+    margin-left: 22px;
+    margin-top: 18px;
+}
+
+.applications ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.prop-list {
+    float: right;
+}
+
+.prop-list ul {
+    float: left;
+    margin-right: 60px;
+    color: #333;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.faq {
+    padding: 60px 0;
+}
+
+.faq-title {
+    font-size: 43px;
+    color: #4a4d4e;
+    text-align: center;
+}
+
+.faq-title b {
+    font-weight: normal;
+    font-family: 'vodafoneregular';
+}
+
+.faq form {
+    display: table;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.faq-wrap {
+    float: left;
+    width: 455px;
+    margin-left: 11px;
+    margin-right: 11px;
+}
+
+.faq-box {
+    width: 455px;
+    height: 95px;
+    border: 1px solid #7b7b7b;
+    margin-left: 11px;
+    margin-right: 11px;
+    font-size: 28px;
+    font-family: 'vodafoneregular';
+    padding: 0 25px;
+    outline: none;
+    line-height: 95px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.faq-box img {
+    float: right;
+    margin-top: 39px;
+}
+
+.faq-content {
+    padding: 11px;
+    line-height: 35px;
+    display: none;
+}
+
+.faq-content ul li {
+    list-style-type: circle;
+    margin-left: 20px;
+}
+
+.faq-content ul li a {
+    color: #d42d1f;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.why-vodafone {
+    background: #622a54;
+    padding: 30px 0;
+}
+
+.why-title {
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+}
+
+.why-title b {
+    font-weight: normal;
+    font-family: 'vodafoneregular';
+}
+
+.why-vodafone ul {
+    display: table;
+    margin: 0 auto;
+}
+
+.why-vodafone ul li {
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    float: left;
+    padding: 20px 40px 0 40px;
+    width: 33.3333%;
+    text-align: center;
+}
+
+.why-vodafone ul li img {
+    max-width: 25%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.remodal {
+    padding: 0;
+    border-radius: 12px;
+}
+
+.remodal .container {}
+
+.modal-price {
+    background: url(../img/modalprice.png) no-repeat;
+    background-size: 100%;
+    text-align: left;
+    color: #fff;
+}
+
+.modal-price-content {
+    padding: 40px 60px;
+    font-family: Roboto;
+}
+
+.modal-offer-name {
+    font-size: 41px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #8c8e8f;
+    max-width: 60%;
+}
+
+.modal-price-content .price {
+    margin: 0;
+    padding-top: 0px;
+}
+
+.modal-price-content .other-price {
+    margin-left: 0;
+}
+
+.remodal-close {
+    right: 0 !important;
+    left: auto !important
+}
+
+.badget {
+    position: absolute;
+    top: 170px;
+    right: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.badget-mini {
+    background: url(../img/badgemini.png) no-repeat;
+    background-size: contain;
+    padding: 50px;
+    float: left;
+    margin-right: -80px;
+    top: 70px;
+    position: relative;
+    z-index: 2;
+    font-size: 30px;
+}
+
+.badget-big {
+    background: url(../img/badgebig.png) no-repeat;
+    background-size: contain;
+    padding: 60px;
+    float: left;
+    font-size: 37px;
+}
+
+.modal-offer {}
+
+.modal-offer-title {
+    font-family: roboto;
+    font-weight: 300;
+    font-size: 37px;
+    color: #636363;
+}
+
+.modal-offer-title b {
+    color: #d42d1f;
+}
+
+.modal-offer .offer-content-wrap {
+    display: table;
+    margin: 0 auto;
+}
+
+.modal-offer .offer-content {
+    margin: 40px auto;
+}
+
+.modal-offer .offer-content li {
+    width: 25vw;
+    font-size: 3.5vw;
+    height: auto;
+    padding: 30px 0;
+}
+
+.modal-offer .offer-content li span {
+    font-size: 2vw;
+}
+
+.modal-offer-pass {
+    margin-top: 100px;
+}
+
+.offer-pass-text {
+    width: 50%;
+    text-align: left;
+    float: left;
+    color: #636363;
+    font-size: 37px;
+    font-family: roboto;
+    font-weight: 300;
+}
+
+.offer-pass-text a {
+    margin-top: 30px;
+}
+
+.offer-pass-text b {
+    display: block;
+    color: #d42d1f;
+}
+
+.offer-pass-list {
+    width: 50%;
+    float: right;
+}
+
+.offer-pass-list ul li {
+    float: left;
+    margin-left: 20px;
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+}
+
+.offer-pass-list ul li img {
+    max-width: 100%;
+}
+
+.modal-offer-info {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.beefup__head {
+    color: #636363;
+    font-size: 37px;
+    font-weight: 300;
+    font-family: roboto;
+    text-align: left;
+    border-bottom: 1px solid #555;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.beefup__head b {
+    font-weight: 300;
+}
+
+.is-open .beefup__head b {
+    color: #d42d1f;
+    font-weight: 400;
+}
+
+.beefup__body {
+    padding: 20px 0;
+    text-align: left;
+}
+
+.beefup__body img {
+    max-width: 100%;
+}
+
+ul.tab-menu {
+    display: table;
+    height: 85px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+ul.tab-menu li {
+    border: 1px solid #d42d1f;
+    color: #d42d1f;
+    border-radius: 50%;
+    float: left;
+    width: 85px;
+    height: 85px;
+    margin: 0 22px;
+    cursor: pointer;
+}
+
+ul.tab-menu li.active-tab {
+    background: #d42d1f;
+    color: #fff;
+}
+
+span.fiber {
+    background: url(../img/fiber-red.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+ul.tab-menu li.active-tab span.fiber {
+    background: url(../img/fiber.png);
+}
+
+span.adsl {
+    background: url(../img/adsl-red.png);
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+ul.tab-menu li.active-tab span.adsl {
+    background: url(../img/adsl.png);
+}
+
+.tab-container {
+    display: none;
+}
+
+.offer-wrap {
+    background: #ebebeb;
+    padding: 70px 0;
+}
+
+.offer-wrap .offers-title {
+    padding-top: 0;
+}
+
+.vc_container {
+    min-height: 604px !important;
+}
+
+.vc_goUp,
+.vc_goDown {
+    text-align: center;
+}
+
+.vc_goUp {
+    margin-bottom: 25px;
+}
+
+/* footer */
+
+.footer {}
+
+.footer-top {
+    background: #ebebeb;
+    height: 125px;
+    
+}
+
+.footer-top ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.footer-top ul li {
+    font-size: 16px;
+   text-align: center;
+    color: #484b4c;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.footer-top ul li img {
+    width:30px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+
+.footer-top ul li p {
+    float: left;
+}
+
+.footer-top ul li span {
+    display: block;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.footer-middle {
+    background: #4a4d4e;
+    height: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.footer-menu {
+    float: left;
+    width: 25%;
+    color: #fff;
+    margin-top: 80px;
+}
+
+.footer-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-menu ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-title {}
+
+.footer-bottom {
+    background: #363839;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.copyright {
+    font-size: 15px;
+    color: #acacac;
+    float: left;
+    line-height: 50px;
+}
+
+.footer-bottom-menu {
+    float: right;
+}
+
+.footer-bottom-menu ul li {
+    float: left;
+    font-size: 15px;
+    line-height: 50px;
+    margin-right: 3px;
+}
+
+.footer-bottom-menu ul li a {
+    color: #acacac;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .header-top {
+        float: none;
+        margin: 0;
+    }
+    .header-top ul {
+        float: none;
+        margin: 0;
+    }
+    .customer-support {
+        display: none;
+    }
+    .logo {
+        float: none;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .partner {
+        display: none;
+    }
+    .main-menu {
+        float: none;
+        background: #d42d1f;
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: -20px;
+    }
+    .main-menu ul li {
+        float: none;
+        width: 100%;
+        margin: 0;
+        font-size: 16px !important;
+        padding: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
+    }
+    .main-menu ul li a {
+        color: #fff;
+    }
+    .main-slider {
+        text-align: center;
+    }
+    .main-slider h1 {
+        font-size: 40px;
+        line-height: 34px;
+    }
+    .main-slider .item {
+        background-size: cover !important;
+    }
+    .main-slider p {
+        font-size: 20px;
+    }
+    .main-slider a {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .campaign-bar {
+        height: auto;
+        padding-bottom: 35px;
+    }
+    .campaign-bar form {
+        display: block;
+    }
+    .form-group {
+        float: none;
+        width: 100%;
+    }
+    .form-box {
+        width: 100%;
+    }
+    .send-btn {
+        width: 100%;
+    }
+    .offer-price {
+        background: #616465;
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .price {
+        margin: 0;
+        padding: 0;
+        font-size: 50px;
+    }
+    .price i {
+        font-size: 30px;
+        margin: 0;
+        top: 0;
+    }
+    .pay-frequency {
+        margin-left: 0;
+    }
+    .other-price {
+        margin: 0;
+    }
+    .offer-info {
+        float: none;
+        margin: 0;
+        width: 100%;
+        padding: 15px;
+    }
+    .offer-content li {
+        width: 50%;
+        font-size: 28px;
+    }
+    .offer-content:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .offer-process {
+        float: none;
+        width: auto;
+    }
+    .offer-process a {
+        width: 100%;
+    }
+    .applications {
+        float: none;
+        display: table;
+        margin: 20px auto;
+    }
+    .prop-list {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .prop-list ul {
+        float: none;
+        text-align: center;
+        margin: 0;
+    }
+    .why-vodafone {
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .why-vodafone ul {
+        margin-top: 30px;
+    }
+    .why-vodafone ul li {
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .form-select {
+        width: 100%;
+        float: none;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .remodal {
+        width: 100%;
+    }
+    .modal-price {
+        width: 100%;
+        background: #616465;
+        height: auto;
+        padding: 30px;
+        min-height: auto;
+    }
+    .modal-price-content {
+        padding: 0;
+        text-align: center;
+    }
+    .modal-offer-name {
+        width: 100%;
+        max-width: 100%;
+        font-size: 30px;
+    }
+    .badget {
+        position: relative;
+        top: 0;
+        right: 0;
+        float: none;
+        width: 100%;
+    }
+    .badget-mini {
+        width: 100%;
+        background: #d42d1f;
+        padding: 20px;
+        float: none;
+        top: 0;
+        font-size: 24px;
+    }
+    .badget-mini br {
+        display: none;
+    }
+    .badget-big {
+        width: 100%;
+        background: #572b4e;
+        padding: 20px;
+        float: none;
+        font-size: 30px;
+    }
+    .badget-big br {
+        display: none;
+    }
+    .modal-offer {
+        margin-top: 25px;
+    }
+    .modal-offer .offer-content-wrap {
+        display: block;
+        padding: 15px;
+    }
+    .modal-offer .offer-content li {
+        width: 50%;
+    }
+    .modal-offer-pass {
+        margin-top: 0px;
+    }
+    .offer-pass-text {
+        width: 100%;
+        float: none;
+        text-align: center;
+        font-size: 30px;
+    }
+    .offer-pass-text a {
+        margin: 20px auto;
+    }
+    .offer-pass-list {
+        width: 100%;
+        float: none;
+        margin-left: -10px;
+    }
+    .modal-offer-info {
+        margin: 25px 0;
+    }
+    .beefup__head {
+        font-size: 24px;
+    }
+    .vc_container {
+        min-height: 1020px !important;
+    }
+    .footer-top {
+        display: none;
+    }
+    .footer-middle {
+        height: auto;
+        padding: 30px 0;
+    }
+    .footer-middle:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .footer-menu {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+        float: none;
+        text-align: center;
+    }
+    .footer-bottom {
+        height: auto;
+    }
+    .copyright {
+        float: none;
+        text-align: center;
+    }
+    .footer-bottom-menu {
+        display: none;
+    }
+}
+
+.offer-detay {
+    font-weight: normal;
+}
+
+.red-btn:hover {
+    background: #d1171e;
+}
+
+.send-btn:hover {
+    opacity: 0.7;
+}
+
+.outline-btn:hover {
+    background: #ebebeb;
+}
+
+a.hover-effect-menu:hover {
+    border-bottom: 3px solid red;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 480px) {
+    .offer-content li {
+        width: 100%;
+        float: none;
+        font-size: 28px;
+    }
+    .modal-offer .offer-content li {
+        width: 100%;
+        float: none;
+        font-size: 28px;
+    }
+    .modal-offer .offer-content li span {
+        font-size: 16px;
+    }
+    .vc_container {
+        min-height: 1240px !important;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+    .offer-info {
+        margin-left: 350px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .offer-info {
+        margin-left: 30px;
+    }
+}
+
+#slider {
+    width: 500px;
+    top: 100px;
+    position: fixed
+}
+
+#header {
+    width: 260px;
+    height: 200px;
+}
+
+#sidebar {
+    position: fixed;
+    height: 200px;
+    background: #000;
+    color: #fff;
+}
+
+#sidebar1 {
+    position: fixed;
+}
+
+div#title {
+    position: fixed
+}
+
+select {
+    padding: 6px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 3px solid #98d0f1
+}
+
+textarea {
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 2px;
+    border: 3px solid #98d0f1;
+    margin-top: 10px;
+    height: 80px;
+    width: 100%
+}
+
+button {
+    background: #2bc1f2;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 22px;
+    font-weight: bolder;
+    padding: 8px 0;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 25px
+}
+
+.kapsam{
+    margin-top:100px;
+    margin-bottom:100px;
+}
+
+.fiyat {
+    font-family: 'vodafonelight' !important;
+    background-image: url('../img/offerbg.png');
+    background-repeat:no-repeat;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.fiyat h2{
+    font-size:80px;
+}
+
+.bilgi{
+    padding:0 !important;
+}
+
+.bilgi-sol {}
+
+.bilgi-sol-yazi {
+    text-align: center;
+}
+
+.bilgi-sag {
+    text-align: center;
+    padding:0 !important;
+}
+
+.bilgi-sag a {
+    text-decoration: none;
+}
+
+.kutu {
+    text-align: center;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.kutu2 {
+    margin-top:5px;
+    margin-bottom:5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #919190;
+
+}
+
+.bg-mor {
+    background-color: #572b4e;
+    color: white;
+}
+
+.bg-white {
+    color: 572b4e;
+}
+
+.bg-red {
+    background-color: #d42d1f;
+}
+
+.bg-red a{
+    color: white !important;
+}
+
+.text-grey{
+    color:#4a4d4e;
+}
+
+.footer-top .container ul li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer-top .container ul li p{
+    
+    margin-bottom:0px;
+    
+}
+
+.yazi{
+    margin-left:10px;
+}
