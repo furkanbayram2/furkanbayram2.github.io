@@ -10,6 +10,9 @@ tags:
 - sublime text
 - sublime text 3
 ---
+<div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/bg.jpg" alt="image">
+</div>
 
 
 Herkese merhaba. Uzun zamandır geliştirme yaparken <strong>Brackets</strong> metin editörünü kullanıyordum. Son 1 haftadır bu editörün performansından rahatsızlık duymaya başladım. Bu yüzden yeni bir metin editörü arayışına girdim. En az 3-4 adet editör değiştirdim ve sonunda <strong>Sublime Text 3</strong> kullanmaya karar verdim. Bu yazımda <strong>Linux</strong> işletim sistemine <strong>Sublime Text 3</strong> nasıl kurulur, eklentiler nasıl yüklenir, editör nasıl özelleştiriler vb. konulardan bahsedeceğim.

@@ -1382,8 +1382,17 @@ ul.social-links li:last-child a {
   font-weight: 300;
 }
 
+.bg-image-post{
+  text-align: center !important;
+}
+
 .blog-card .post-meta .item, .post-meta .item a {
   color: #a6a6a6;
+}
+
+.date{
+  color:#33b0e8;  
+  font-weight: bold;
 }
 
 .post-meta .item {
@@ -1697,13 +1706,15 @@ ul.social-links li:last-child a {
   background-color: #eee;
 }
 
+
+
 .blog-post-page {
   height: auto;
 }
 
 .blog-post-page .page-wrapper {
   position: relative;
-  border-left: 15px solid #f5f5f5;
+  margin-top:70px;
 }
 
 .blog-back-button {

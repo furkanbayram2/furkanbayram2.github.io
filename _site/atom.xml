@@ -6,7 +6,7 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-07-19T00:56:45Z</updated>
+  <updated>2018-07-30T21:32:24Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
@@ -19,7 +19,11 @@
   <id>http://localhost:3000/css-ile-animasyon-olusturma</id>
   <published>2018-04-26T20:15:00Z</published>
   <updated>2018-04-26T20:15:00Z</updated>
-  <content type="html"><![CDATA[ <h4>Herkese merhabalar. 
+  <content type="html"><![CDATA[ <div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/css-ile-animasyon-olusturma.html/bg.jpg" alt="image" />
+</div>
+
+<h4>Herkese merhabalar. 
     Öncelikle başlamadan önce 10-15 dakika gibi bir sürede yaptığım örneği göstererek neler yapabileceğimizi göstermek istiyorum.
     <a href="https://furkanbayram2.github.io/finalOdevi1" target="blank">Buraya</a> tıklayarak çalışmama, <a href="https://github.com/furkanbayram2/furkanbayram2.github.io/blob/master/finalOdevi1/index.html" target="blank">buraya</a> tıklayarak kaynak kodlarına erişebilirsiniz. <strong>NOT:</strong> JS kısmına takılmayın sadece butonlara tıklayınca yeni class ataması yapmak için kullandım. <strong>OLDUKÇA SPAGETTİ :)</strong></h4>
 
@@ -149,7 +153,11 @@ yaptığım uygulamayı
   <id>http://localhost:3000/erasmus-staji-icin-nasil-sirket-buldum</id>
   <published>2018-04-05T00:40:00Z</published>
   <updated>2018-04-05T00:40:00Z</updated>
-  <content type="html"><![CDATA[ <p>Herkese merhaba. Bugün yazılım ile ilgili değilde erasmus stajı yapmak istiyorsanız neler yapmalısınız, staj yeri ararken nasıl bir yol izlemelisiniz gibi konularla ilgili bir yazı yazmak istedim. Çevremden duyduğum kadarıyla insanlar staj yeri bulma konusunda gerçekten çok zorlanıyor. Ben staj yapacağım kurumu 2 gün gibi bir sürede buldum. Ya ben çok şanslıydım ya da diğer insanlar doğru yolu izlemiyor. <strong>Hatta belirli bir süre o kadar çok geri dönüş aldım ki istemeyerekte olsa cevap vermediğim mailler bile oldu.</strong></p>
+  <content type="html"><![CDATA[ <div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/erasmus-staji-icin-nasil-sirket-buldum.html/bg.jpg" alt="image" />
+</div>
+
+<p>Herkese merhaba. Bugün yazılım ile ilgili değilde erasmus stajı yapmak istiyorsanız neler yapmalısınız, staj yeri ararken nasıl bir yol izlemelisiniz gibi konularla ilgili bir yazı yazmak istedim. Çevremden duyduğum kadarıyla insanlar staj yeri bulma konusunda gerçekten çok zorlanıyor. Ben staj yapacağım kurumu 2 gün gibi bir sürede buldum. Ya ben çok şanslıydım ya da diğer insanlar doğru yolu izlemiyor. <strong>Hatta belirli bir süre o kadar çok geri dönüş aldım ki istemeyerekte olsa cevap vermediğim mailler bile oldu.</strong></p>
 
 <p><strong>Erasmus stajımı 3 ay sonra yapıcam ama bu konuyla ilgili çok fazla araştırma yaptım ve çok fazla kişiyle görüştüm. O yüzden anlattıklarıma hak verip vermemek size kalmış.</strong></p>
 
@@ -208,7 +216,11 @@ Staj yeri bulmak aslında gerçekten bu kadar kolay. 2 hafta içinden 6 kurumdan
   <id>http://localhost:3000/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris</id>
   <published>2018-01-17T02:15:43Z</published>
   <updated>2018-01-17T02:15:43Z</updated>
-  <content type="html"><![CDATA[ <p>Merhaba arkadaşlar bir önceki yazımda <strong>“SASS ve SCSS Nedir? Neden Kullanmalıyız ve Nasıl Kurulur?”</strong> konularına değinmiştim. Bu sefer ise <strong>SCSS</strong> ile nasıl çalışmaya başlayacağımızdan ve benim genelde kullandığım klasör yapısından bahsedeceğim. 
+  <content type="html"><![CDATA[ <div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html/bg.jpeg" alt="image" />
+  </div>
+
+<p>Merhaba arkadaşlar bir önceki yazımda <strong>“SASS ve SCSS Nedir? Neden Kullanmalıyız ve Nasıl Kurulur?”</strong> konularına değinmiştim. Bu sefer ise <strong>SCSS</strong> ile nasıl çalışmaya başlayacağımızdan ve benim genelde kullandığım klasör yapısından bahsedeceğim. 
 Bilgisayarında <strong>SCSS</strong> kurulu olmayanlar <a href="http://furkanbayram.net/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html" target="?blank">buradan</a> yardım alabilirler.</p>
 
 <p>Genelde giriş seviyesindeki projelerde klasör yapımı aşağıdaki gibi oluşturuyorum.</p>
@@ -271,7 +283,11 @@ Biz kodlarımızı sadece scss kısmına yazıyoruz ve “–watch” komutu say
   <id>http://localhost:3000/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur</id>
   <published>2018-01-12T19:29:00Z</published>
   <updated>2018-01-12T19:29:00Z</updated>
-  <content type="html"><![CDATA[ <p>Herkese merhaba,
+  <content type="html"><![CDATA[ <div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html/bg.jpg" alt="image" />
+</div>
+
+<p>Herkese merhaba,
 Neredeyse her yazıma uzun zamandır yazamıyorum diye başlamak zorunda kalıyorum :) Ama bundan sonra düzenli olarak bildiklerimi sizlerle paylaşmaya çalışacağım. Bugün CSS-preprocessor’lerden SASS ve SCSS hakkında bilgi vereceğim.</p>
 
 <h1>CSS Preprocessor Nedir ?</h1>
@@ -349,7 +365,11 @@ Neredeyse her yazıma uzun zamandır yazamıyorum diye başlamak zorunda kalıyo
   <id>http://localhost:3000/sublime-text-3-kurulum-kullanim-ve-eklentiler</id>
   <published>2017-09-03T05:26:00Z</published>
   <updated>2017-09-03T05:26:00Z</updated>
-  <content type="html"><![CDATA[ <p>Herkese merhaba. Uzun zamandır geliştirme yaparken <strong>Brackets</strong> metin editörünü kullanıyordum. Son 1 haftadır bu editörün performansından rahatsızlık duymaya başladım. Bu yüzden yeni bir metin editörü arayışına girdim. En az 3-4 adet editör değiştirdim ve sonunda <strong>Sublime Text 3</strong> kullanmaya karar verdim. Bu yazımda <strong>Linux</strong> işletim sistemine <strong>Sublime Text 3</strong> nasıl kurulur, eklentiler nasıl yüklenir, editör nasıl özelleştiriler vb. konulardan bahsedeceğim.</p>
+  <content type="html"><![CDATA[ <div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/bg.jpg" alt="image" />
+</div>
+
+<p>Herkese merhaba. Uzun zamandır geliştirme yaparken <strong>Brackets</strong> metin editörünü kullanıyordum. Son 1 haftadır bu editörün performansından rahatsızlık duymaya başladım. Bu yüzden yeni bir metin editörü arayışına girdim. En az 3-4 adet editör değiştirdim ve sonunda <strong>Sublime Text 3</strong> kullanmaya karar verdim. Bu yazımda <strong>Linux</strong> işletim sistemine <strong>Sublime Text 3</strong> nasıl kurulur, eklentiler nasıl yüklenir, editör nasıl özelleştiriler vb. konulardan bahsedeceğim.</p>
 
 <h1>Sublime Text 3 Kurulumu</h1>
 
@@ -452,7 +472,11 @@ Bir tek <strong>CSS Extended Completions</strong> olsun bana bir şey olmaz :) d
   <id>http://localhost:3000/jekyll-tema-degistirme-ve-klasor-yapisi</id>
   <published>2017-08-31T04:28:00Z</published>
   <updated>2017-08-31T04:28:00Z</updated>
-  <content type="html"><![CDATA[ <p>Heerkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.</p>
+  <content type="html"><![CDATA[ <div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/jekyll-tema-degistirme-ve-klasor-yapisi.html/bg.jpg" alt="image" />
+</div>
+
+<p>Herkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.</p>
 
 <h1>Jekyll Klasör Yapısı</h1>
 
@@ -523,7 +547,11 @@ jekyll serve   // projemizi çalıştırıyoruz.</code></pre></figure>
   <id>http://localhost:3000/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak</id>
   <published>2017-08-30T05:40:00Z</published>
   <updated>2017-08-30T05:40:00Z</updated>
-  <content type="html"><![CDATA[ <p>Herkese merhaba. Öncelikle <a href="https://jekyllrb.com/">Jekyll</a> nedir ne işe yarar bize neler sağlar onlardan bahsetmek istiyorum. 
+  <content type="html"><![CDATA[ <div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html/bg.jpg" alt="image" />
+</div>
+
+<p>Herkese merhaba. Öncelikle <a href="https://jekyllrb.com/">Jekyll</a> nedir ne işe yarar bize neler sağlar onlardan bahsetmek istiyorum. 
 <a href="https://jekyllrb.com/">Jekyll</a>, Github’ın ruby ile geliştirmiş olduğu statik web sayfalar oluşturmamızı sağlayan bir araçtır. <a href="https://jekyllrb.com/">Jekyll</a>‘nin resmi web sitesine girdiğimizde bizi “Transform your plain text into static websites and blogs.” diye bir yazı karşılıyor. Yani düz metinlerimizi web sitelerine ve bloglara dönüştürebileceğimizden bahsediyor. Tamamen ücretsiz olup hatrı sayılır bir kullanıcı kitlesi vardır. Lafı fazla uzatmadan <a href="https://jekyllrb.com/">Jekyll</a> nasıl kurulur, nasıl çalışır hale getirilir bunlardan bahsetmek istiyorum.</p>
 
 <p><strong>NOT: Debian 9 kullandığım için anlatımımı Linux işletim sistemleri üzerinden gerçekleştireceğim.</strong></p>

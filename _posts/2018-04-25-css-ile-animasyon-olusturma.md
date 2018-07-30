@@ -8,8 +8,9 @@ tags:
 - animation
 - keyframes
 ---
-
-
+<div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/css-ile-animasyon-olusturma.html/bg.jpg" alt="image">
+</div>
 
 <h4>Herkese merhabalar. 
     Öncelikle başlamadan önce 10-15 dakika gibi bir sürede yaptığım örneği göstererek neler yapabileceğimizi göstermek istiyorum.

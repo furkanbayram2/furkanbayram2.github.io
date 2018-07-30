@@ -9,6 +9,9 @@ tags:
 - css
 - css-preprocessor
 ---
+<div class="bg-image-post" >
+<img style="max-height:500px;" src="./static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html/bg.jpeg" alt="image">
+  </div>
 
 Merhaba arkadaşlar bir önceki yazımda <strong>"SASS ve SCSS Nedir? Neden Kullanmalıyız ve Nasıl Kurulur?"</strong> konularına değinmiştim. Bu sefer ise <strong>SCSS</strong> ile nasıl çalışmaya başlayacağımızdan ve benim genelde kullandığım klasör yapısından bahsedeceğim. 
 Bilgisayarında <strong>SCSS</strong> kurulu olmayanlar <a href="http://furkanbayram.net/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html" target="?blank">buradan</a> yardım alabilirler. 

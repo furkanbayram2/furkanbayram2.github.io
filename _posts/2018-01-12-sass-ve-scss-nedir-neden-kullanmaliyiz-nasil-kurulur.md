@@ -9,6 +9,9 @@ tags:
 - css
 - css-preprocessor
 ---
+<div class="bg-image-post">
+<img style="max-height:500px;" src="./static/images/post_image/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html/bg.jpg" alt="image">
+</div>
 
 
 Herkese merhaba,

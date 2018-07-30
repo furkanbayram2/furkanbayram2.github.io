@@ -14,7 +14,12 @@ layout: layout
 			  <div class="post-info">
 					<span class="autor"><i class="fa fa-fw fa-user"></i> {{site.author}}</span>
 					<span class="divider">|</span>
-					<span class="date"><i class="fa fa-fw fa-clock-o"></i> Yayınlanma Saati: {{ page.date | date: "%R" }}</span>
+					<span class="date"><i class="fa fa-fw fa-clock-o"></i class="saat"> Yayınlanma Saati: {{ page.date | date: "%R" }} - Yayınlanma Tarihi:  
+						{% assign m = page.date | date: "%-m" %} {{ page.date | date: "%-d" }} {% case m %} {% when
+							'1' %}Ocak {% when '2' %}Şubat {% when '3' %}Mart {% when '4' %}Nisan {% when '5' %}Mayıs
+							{% when '6' %}Haziran {% when '7' %}Temmuz {% when '8' %}Ağustos {% when '9' %}Eylül
+							{% when '10' %}Ekim {% when '11' %}Kasım {% when '12' %}Aralık {% endcase %} {{ page.date
+							| date: "%Y" }}</span>
 					<!-- Share Buttons -->
 	
 					<!-- /Share Buttons -->
