@@ -1727,6 +1727,27 @@ ul.social-links li:last-child a {
   color: #888;
 }
 
+.bbb-archive{
+  padding:15px;
+  font-size:21px;
+}
+
+.bbb-archive i{
+  padding-right:5px;
+  font-size:21px;
+}
+
+.bbb-archive:hover,
+.bbb-archive:visited:hover {
+  color: #fff;
+  background-color: #33B0E8;
+}
+
+.bbb-archive:hover:after,
+.bbb-archive:visited:hover:after {
+  background: #328BE8;
+}
+
 .blog-back-button:after {
     display: block;
     width: 5px;
@@ -1767,6 +1788,7 @@ ul.social-links li:last-child a {
   padding: 30px;
   margin: -70px 40px 0;
 }
+
 
 blockquote {
   margin: 20px 0;
