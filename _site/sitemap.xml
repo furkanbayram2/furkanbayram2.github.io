@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://localhost:3000/</loc>
-    <lastmod>2018-10-05T16:46:30+03:00</lastmod>
+    <lastmod>2018-10-05T16:50:10+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -10,7 +10,7 @@
     <url>
       <loc>http://localhost:3000/ingilizce-ogreniyor-muyum.html</loc>
       
-        <lastmod>2018-10-05T12:15:00+03:00</lastmod>
+        <lastmod>2018-10-05T16:15:00+03:00</lastmod>
       
       
         <changefreq>monthly</changefreq>
@@ -128,7 +128,7 @@
   <url>
     <loc>http://localhost:3000/404</loc>
     
-      <lastmod>2018-10-05T16:46:30+03:00</lastmod>
+      <lastmod>2018-10-05T16:50:10+03:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -141,7 +141,7 @@
   <url>
     <loc>http://localhost:3000/archive</loc>
     
-      <lastmod>2018-10-05T16:46:30+03:00</lastmod>
+      <lastmod>2018-10-05T16:50:10+03:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -154,7 +154,7 @@
   <url>
     <loc>http://localhost:3000/atom.xml</loc>
     
-      <lastmod>2018-10-05T16:46:30+03:00</lastmod>
+      <lastmod>2018-10-05T16:50:10+03:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -167,7 +167,7 @@
   <url>
     <loc>http://localhost:3000/</loc>
     
-      <lastmod>2018-10-05T16:46:30+03:00</lastmod>
+      <lastmod>2018-10-05T16:50:10+03:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -180,7 +180,7 @@
   <url>
     <loc>http://localhost:3000/sitemap.xml</loc>
     
-      <lastmod>2018-10-05T16:46:30+03:00</lastmod>
+      <lastmod>2018-10-05T16:50:10+03:00</lastmod>
     
     
       <changefreq>monthly</changefreq>
@@ -193,7 +193,7 @@
   <url>
     <loc>http://localhost:3000/redirects.json</loc>
     
-      <lastmod>2018-10-05T16:46:30+03:00</lastmod>
+      <lastmod>2018-10-05T16:50:10+03:00</lastmod>
     
     
       <changefreq>monthly</changefreq>

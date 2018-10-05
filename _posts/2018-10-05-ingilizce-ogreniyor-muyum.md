@@ -1,12 +1,12 @@
 ---
 layout: post
 title: İngilizce Öğreniyor muyum ?
-date: 2018-10-05 09:15:00
+date: 2018-10-05 13:15:00
 category: Erasmus+ Stajı
 tags:
-- css3
-- animation
-- keyframes
+- english
+- learn
+- improve
 ---
 <div class="bg-image-post">
     <img style="max-height:500px;" src="./static/images/post_image/ingilizce-ogreniyor-muyum.html/bg.jpg" alt="image">
