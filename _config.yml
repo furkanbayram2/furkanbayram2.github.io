@@ -11,8 +11,8 @@ safe: true
 
 # edit here to achieve your personal greatness
 
-url: http://furkanbayram.online
-baseurl: '/' 
+url: ''
+baseurl: '' 
 title: Şefik Furkan Bayram - Yazılım ve Tasarım
 gems:
 - jekyll-redirect-from

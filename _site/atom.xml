@@ -6,12 +6,12 @@
   
   <link href="http://localhost:3000/"/>
   <id>http://localhost:3000/</id>
-  <updated>2018-10-05T17:16:12Z</updated>
+  <updated>2019-01-01T02:24:24Z</updated>
   <author>
     <name>Şefik Furkan Bayram</name>
     <email>sefikfurkanbayram@gmail.com</email>
   </author>
-  <rights type="text">Copyright © 2018 Şefik Furkan Bayram. All rights reserved.</rights>
+  <rights type="text">Copyright © 2019 Şefik Furkan Bayram. All rights reserved.</rights>
   
   <entry>
   <title type="text">İngilizce Öğreniyor muyum ?</title>
@@ -342,8 +342,8 @@ Staj yeri bulmak aslında gerçekten bu kadar kolay. 2 hafta içinden 6 kurumdan
   <title type="text">SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html" />
   <id>http://localhost:3000/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris</id>
-  <published>2018-01-17T01:15:43Z</published>
-  <updated>2018-01-17T01:15:43Z</updated>
+  <published>2018-01-17T02:15:43Z</published>
+  <updated>2018-01-17T02:15:43Z</updated>
   <content type="html"><![CDATA[ <div class="bg-image-post">
 <img style="max-height:500px;" src="./static/images/post_image/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html/bg.jpeg" alt="image" />
   </div>
@@ -409,8 +409,8 @@ Biz kodlarımızı sadece scss kısmına yazıyoruz ve “–watch” komutu say
   <title type="text">SASS ve SCSS Nedir ? Neden Kullanmalıyız ? Nasıl Kurulur ?</title>
   <link rel="alternate" type="text/html" href="http://localhost:3000/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html" />
   <id>http://localhost:3000/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur</id>
-  <published>2018-01-12T18:29:00Z</published>
-  <updated>2018-01-12T18:29:00Z</updated>
+  <published>2018-01-12T19:29:00Z</published>
+  <updated>2018-01-12T19:29:00Z</updated>
   <content type="html"><![CDATA[ <div class="bg-image-post">
 <img style="max-height:500px;" src="./static/images/post_image/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html/bg.jpg" alt="image" />
 </div>
