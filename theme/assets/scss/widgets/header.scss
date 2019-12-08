@@ -1,0 +1,193 @@
+.header {
+    background-color: $main-color;
+
+    &-left {
+        &-menu-button {
+            color: $text-color !important;
+            font-size: 50px;
+
+            button {
+                background-color: transparent;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            i {
+                color: $text-color;
+            }
+        }
+
+        .mobile-left-menu {
+            z-index: 2;
+
+            .navbar-nav {
+                .nav-item {
+                    padding: 0px 25px;
+                }
+            }
+        }
+    }
+
+    &-center {
+        &:before {
+            content: "";
+            background: $second-color;
+            height: 50px;
+            width: 1px;
+            position: absolute;
+            left: 0;
+            top: -13px;
+
+        }
+
+        .navbar {
+            &-menu {
+                list-style: none;
+                flex-grow: 1;
+
+                .search-container {
+                    font-size: 13px;
+
+                    form {
+
+                        input,
+                        button {
+                            background-color: transparent;
+                            color: $text-color;
+                            border: none;
+                            &:focus{
+                                outline: 0;
+                            }
+                        }
+                    }
+                }
+
+                &-list {
+                    font-size: 13px;
+                    border-right: 1px solid $second-color;
+
+
+                    &-item {
+                        padding: 10px 1rem;
+
+                        span {
+                            color: $second-text-color;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    &-right {
+        .user {
+            .btn-default {
+                padding: 15px 25px;
+            }
+
+            &-login-button {
+                background-color: #5a83ff;
+            }
+
+            &-join-button {
+                background-color: #008a64;
+                margin-left: 15px;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: $x-small) {
+    .header {
+        &-left {
+            &-menu-button {
+                button {
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+
+        &-center {
+            display: none;
+        }
+
+        &-right {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: $x-small) and (max-width: $medium) {
+    .header {
+        &-center {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: $small) and (max-width: $large) {
+    .header {
+        &-center {
+            .navbar {
+                &-menu {
+                    font-size: 10px;
+
+                    &-list {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        &-right {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: $large) {
+
+    .navbar-collapse,
+    .collapse.show {
+        display: none;
+    }
+
+}
+
+@media (max-width: $medium) {
+    .navbar-collapse {
+        position: absolute;
+        top: 88px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        z-index: 1;
+        background: $second-color;
+
+    }
+
+    .navbar-collapse.collapsing {
+        height: auto;
+        -webkit-transition: left 0.3s ease;
+        -o-transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        left: -100%;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        -webkit-transition: left 0.3s ease-in;
+        -o-transition: left 0.3s ease-in;
+        -moz-transition: left 0.3s ease-in;
+        transition: left 0.3s ease-in;
+    }
+}

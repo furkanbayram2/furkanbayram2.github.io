@@ -1,0 +1,510 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #ffffff;
+}
+
+.color-blue {
+  color: #a0b7ff;
+}
+
+.badge {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background-color: #070a14;
+}
+.header-left-menu-button {
+  color: #ffffff !important;
+  font-size: 50px;
+}
+.header-left-menu-button button {
+  background-color: transparent;
+}
+.header-left-menu-button button:focus {
+  outline: none;
+}
+.header-left-menu-button i {
+  color: #ffffff;
+}
+.header-left .mobile-left-menu {
+  z-index: 2;
+}
+.header-left .mobile-left-menu .navbar-nav .nav-item {
+  padding: 0px 25px;
+}
+.header-center:before {
+  content: "";
+  background: #131e32;
+  height: 50px;
+  width: 1px;
+  position: absolute;
+  left: 0;
+  top: -13px;
+}
+.header-center .navbar-menu {
+  list-style: none;
+  flex-grow: 1;
+}
+.header-center .navbar-menu .search-container {
+  font-size: 13px;
+}
+.header-center .navbar-menu .search-container form input,
+.header-center .navbar-menu .search-container form button {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+}
+.header-center .navbar-menu .search-container form input:focus,
+.header-center .navbar-menu .search-container form button:focus {
+  outline: 0;
+}
+.header-center .navbar-menu-list {
+  font-size: 13px;
+  border-right: 1px solid #131e32;
+}
+.header-center .navbar-menu-list-item {
+  padding: 10px 1rem;
+}
+.header-center .navbar-menu-list-item span {
+  color: #606b92;
+}
+.header-right .user .btn-default {
+  padding: 15px 25px;
+}
+.header-right .user-login-button {
+  background-color: #5a83ff;
+}
+.header-right .user-join-button {
+  background-color: #008a64;
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+  .header-left-menu-button button {
+    background-color: transparent;
+    border: none;
+  }
+  .header-center {
+    display: none;
+  }
+  .header-right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .header-center {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .header-center .navbar-menu {
+    font-size: 10px;
+  }
+  .header-center .navbar-menu-list {
+    font-size: 12px;
+  }
+  .header-right {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .navbar-collapse,
+.collapse.show {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    z-index: 1;
+    background: #131e32;
+  }
+
+  .navbar-collapse.collapsing {
+    height: auto;
+    -webkit-transition: left 0.3s ease;
+    -o-transition: left 0.3s ease;
+    -moz-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+    left: -100%;
+  }
+
+  .navbar-collapse.show {
+    left: 0;
+    -webkit-transition: left 0.3s ease-in;
+    -o-transition: left 0.3s ease-in;
+    -moz-transition: left 0.3s ease-in;
+    transition: left 0.3s ease-in;
+  }
+}
+.left {
+  background-color: #131e32;
+}
+.left .mini-menu {
+  background-color: #070a14;
+}
+.left .mini-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.left .mini-menu-list li {
+  font-size: 13px;
+  margin: 5px 0px;
+  padding: 10px 15px;
+  color: #ffffff;
+}
+.left .mini-menu-list li img {
+  width: 45px;
+}
+.left .mini-menu-list li span {
+  margin-top: 5px;
+}
+.left .mini-menu-list li.active {
+  background-color: #2a3550;
+  border-left: 2px solid #5a83ff;
+}
+.left .main-menu {
+  padding-top: 30px;
+  background-color: #131e32;
+  border-left: 2px solid #171d2f;
+  border-top: 2px solid #171d2f;
+  border-radius: 4px;
+  background: url("/assets/img/football-bg-2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: -50px -50px;
+}
+.left .main-menu-header {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.left .main-menu-leagues ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.left .main-menu-leagues ul li {
+  padding: 15px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+}
+.left .main-menu-leagues ul li.active {
+  background-color: #5a83ff;
+}
+.left .main-menu-countries {
+  margin-top: 30px;
+}
+.left .main-menu-countries .countries-header {
+  color: #ffffff;
+  font-size: 21px;
+}
+.left .main-menu-countries .countries-content {
+  margin-top: 30px;
+}
+.left .main-menu-countries .countries-content .country-cart {
+  padding: 15px 0px;
+  border-bottom: 1px solid #29344e;
+}
+.left .main-menu-countries .countries-content .country-cart .country-content {
+  margin-left: 20px;
+}
+.left .main-menu-countries .countries-content .country-cart .country-content-name {
+  color: #ffffff;
+  font-size: 12px;
+}
+.left .main-menu-countries .countries-content .country-cart .country-content-league {
+  color: #606b92;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .left {
+    display: none;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .left {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .left {
+    display: none;
+  }
+}
+.right {
+  background-color: #131e32;
+}
+.right .barcode {
+  margin: 15px 0px;
+}
+.right .barcode i {
+  font-size: 73px;
+  color: #ffffff;
+  margin: 5px 0px;
+}
+.right .right-tabs-list {
+  list-style: none;
+  margin-left: 0;
+  padding: 0;
+  display: flex;
+}
+.right .right-tabs-list li {
+  width: 50%;
+  padding: 15px 0;
+  text-align: center;
+}
+.right .right-tabs-list .betslip {
+  background-color: #2a3550;
+  color: #5a83ff;
+  border-bottom: 5px solid #5a83ff;
+}
+.right .right-tabs-list .openbet {
+  color: #ffffff;
+  border-top: 2px solid #2a3550;
+  border-right: 2px solid #2a3550;
+}
+.right .right-tabs-list .openbet .badge {
+  margin-left: 3px;
+  color: #ffffff;
+  background-color: #5a83ff;
+}
+
+.center {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e2eaef;
+}
+.center-breadcrumb {
+  margin-top: 10px;
+  background-color: #131e32;
+}
+.center-breadcrumb .breadcrumb {
+  border-radius: 0;
+  background-color: transparent;
+}
+.center-breadcrumb .schedule {
+  padding-left: 15px;
+}
+.center-breadcrumb .schedule .calendar {
+  color: #ffffff;
+}
+.center-breadcrumb .schedule .calendar.active {
+  background-color: #2a3550;
+  border-bottom: 5px solid #5a83ff;
+  padding: 20px 35px;
+}
+.center-breadcrumb .schedule .favorite {
+  color: #fed100;
+  padding: 20px 35px;
+}
+.center-breadcrumb .schedule .favorite span {
+  margin-left: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.center-content-header {
+  margin-top: 1px;
+  background-color: #2a3550;
+}
+.center-content-header h5 {
+  color: #ffffff;
+  padding: 20px 0px 20px 15px;
+}
+.center-content .center-all-button {
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+.center-content .center-all-button a {
+  color: #39425b;
+}
+
+@media only screen and (max-width: 576px) {
+  .center-banner img {
+    padding: 0px !important;
+    margin: 5px 0px;
+  }
+  .center-banner img:last-child {
+    display: none;
+  }
+  .center-breadcrumb {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+}
+.cart {
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+}
+.cart .code-and-teams {
+  height: 100%;
+  font-size: 10px;
+}
+.cart .code-and-teams .code {
+  margin-right: 5px;
+}
+.cart .code-and-teams .teams {
+  margin-left: 5px;
+}
+.cart .date-and-actions {
+  height: 100%;
+}
+.cart .date-and-actions .date {
+  font-size: 10px;
+  margin-right: 5px;
+}
+.cart .date-and-actions .chart-star {
+  margin-left: 5px;
+}
+.cart .date-and-actions .chart-star .chart,
+.cart .date-and-actions .chart-star .star {
+  padding: 10px;
+  background-color: #f1f4fb;
+  border-radius: 2px;
+}
+.cart .date-and-actions .chart-star .chart {
+  margin-bottom: 3px;
+}
+.cart .date-and-actions .chart-star .star {
+  margin-top: 3px;
+}
+.cart-center .rate-box {
+  border: 1px solid #e8eaeb;
+  background-color: #f1f4fb;
+  border-radius: 3px;
+  padding: 10px 1.5rem;
+  color: #39425b;
+  font-size: 13px;
+}
+@media only screen and (max-width: 576px) {
+  .cart .team-info {
+    margin-bottom: 10px;
+  }
+  .cart-center {
+    padding-right: 15px !important;
+  }
+  .cart-center .rate-box {
+    padding: 5px 20px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .cart .team-info {
+    margin-bottom: 10px;
+  }
+  .cart .team-info .code-and-teams {
+    font-size: 13px;
+  }
+  .cart .team-info .code-and-teams .teams {
+    margin-left: 30px;
+  }
+  .cart-center {
+    padding-right: 15px !important;
+  }
+  .cart-center .rate-box {
+    padding: 5px 45px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .cart .team-info {
+    margin-bottom: 10px;
+  }
+  .cart .team-info .code-and-teams {
+    font-size: 13px;
+  }
+  .cart-center {
+    padding-right: 15px !important;
+  }
+  .cart-center .rate-box {
+    padding: 5px 40px;
+  }
+}
+.breadcrumb {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  font-size: 13px;
+  font-weight: 700;
+}
+.breadcrumb li {
+  float: left;
+}
+.breadcrumb li:before {
+  display: none !important;
+}
+.breadcrumb li:first-child a {
+  padding-left: 10px;
+}
+.breadcrumb li:last-child {
+  background: transparent !important;
+}
+.breadcrumb li:last-child a {
+  background: transparent;
+  padding-left: 40px;
+}
+.breadcrumb li:last-child a:before {
+  display: none;
+}
+.breadcrumb li:last-child a:after {
+  display: none;
+}
+.breadcrumb li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0 10px 65px;
+  background: #2a3550;
+  /* fallback color */
+  background: third-color;
+  position: relative;
+  display: block;
+  float: left;
+}
+.breadcrumb li a:before {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 32px solid #131e32;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+.breadcrumb li a:after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 28px solid #2a3550;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+  left: 100%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 576px) {
+  .center-breadcrumb nav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
