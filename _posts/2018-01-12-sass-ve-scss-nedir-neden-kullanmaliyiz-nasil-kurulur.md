@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SASS ve SCSS Nedir ? Neden Kullanmalıyız ? Nasıl Kurulur ?
-date: 2018-01-12 16:29:00
+date: 3017-01-12 16:29:00
 category: CSS
 tags:
 - sass

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll Tema Değiştirme ve Klasör Yapısı
-date: 2017-08-31 01:28:00
+date: 3017-08-31 01:28:00
 category: Web Teknolojileri
 tags:
 - github

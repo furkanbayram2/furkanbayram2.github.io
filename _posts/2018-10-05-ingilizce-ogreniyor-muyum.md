@@ -1,7 +1,7 @@
 ---
 layout: post
 title: İngilizce Öğreniyor muyum ?
-date: 2018-10-05 13:15:00
+date: 3018-10-05 13:15:00
 category: Erasmus+ Stajı
 tags:
 - english

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS ile Animasyon Oluşturma
-date: 2018-04-26 17:15:00
+date: 3018-04-26 17:15:00
 category: Web Teknolojileri
 tags:
 - css3
