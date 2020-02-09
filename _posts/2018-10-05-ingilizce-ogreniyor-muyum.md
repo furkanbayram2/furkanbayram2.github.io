@@ -8,10 +8,6 @@ tags:
 - learn
 - improve
 ---
-<div class="bg-image-post">
-    <img style="max-height:500px;" src="./static/images/post_image/ingilizce-ogreniyor-muyum.html/bg.jpg" alt="image">
-</div>
-
 <h4>Selam, bugün Estonya'daki 44. günüm galiba. 45'te olabilir tam emin değilim. Buraya geldiğimden beri aklımda bir kaç tane soru vardı. "Acaba ingilizce öğrenebiliyor muyum ?", "Acaba benim yerimde başkası olsa İngilizce'sini daha çabuk ve hızlı mı geliştirirdi ?", "Yurtdışında zamanımı boşa mı harcıyorum ?", "Tek yaptığım para harcamak mı ?" </h4>
 
 <p>Bugün bu soruları kenara atmaya karar verdim. Çünkü bunların gelişimimi engellemesi dışında hiç bir faydası yok. Bu yaşıma geldiğimden beri hayatımın farklı dönemlerinde hep birileriyle kıyaslandım. Hayatta en nefret ettiğim şeylerden birisi olan bu durumu artık başkasının bana değil, kendi kendime yaptığımı farkettım. </p>

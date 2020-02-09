@@ -9,11 +9,6 @@ tags:
 - blog
 - ruby
 ---
-
-<div class="bg-image-post">
-<img style="max-height:500px;" src="./static/images/post_image/erasmus-staji-icin-nasil-sirket-buldum.html/bg.jpg" alt="image">
-</div>
-
 Herkese merhaba. Bugün yazılım ile ilgili değilde erasmus stajı yapmak istiyorsanız neler yapmalısınız, staj yeri ararken nasıl bir yol izlemelisiniz gibi konularla ilgili bir yazı yazmak istedim. Çevremden duyduğum kadarıyla insanlar staj yeri bulma konusunda gerçekten çok zorlanıyor. Ben staj yapacağım kurumu 2 gün gibi bir sürede buldum. Ya ben çok şanslıydım ya da diğer insanlar doğru yolu izlemiyor. <strong>Hatta belirli bir süre o kadar çok geri dönüş aldım ki istemeyerekte olsa cevap vermediğim mailler bile oldu.</strong>
 
 <strong>Erasmus stajımı 3 ay sonra yapıcam ama bu konuyla ilgili çok fazla araştırma yaptım ve çok fazla kişiyle görüştüm. O yüzden anlattıklarıma hak verip vermemek size kalmış.</strong>

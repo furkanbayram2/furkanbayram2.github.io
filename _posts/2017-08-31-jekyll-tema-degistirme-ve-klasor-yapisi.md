@@ -11,10 +11,6 @@ tags:
 - domain
 - tema
 ---
-<div class="bg-image-post">
-<img style="max-height:500px;" src="./static/images/post_image/jekyll-tema-degistirme-ve-klasor-yapisi.html/bg.jpg" alt="image">
-</div>
-
 Herkese merhaba. Önceki yazımda jekyll ile nasıl proje oluştururuz bundan bahsetmiştim. Bu yazımda ise jekyll dosya yapısından, oluşturduğumuz projeyi nasıl özelleştirebileceğimizden ve bazı özelliklerden bahsedeceğim.
 
 <h1>Jekyll Klasör Yapısı</h1>

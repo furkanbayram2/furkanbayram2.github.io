@@ -1,206 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://localhost:3000/</loc>
-    <lastmod>2019-01-01T13:41:10+03:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  
-    <url>
-      <loc>http://localhost:3000/ingilizce-ogreniyor-muyum.html</loc>
-      
-        <lastmod>2018-10-05T16:15:00+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:3000/estonyada-yasam.html</loc>
-      
-        <lastmod>2018-09-22T12:15:00+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:3000/css-ile-animasyon-olusturma.html</loc>
-      
-        <lastmod>2018-04-26T20:15:00+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:3000/erasmus-staji-icin-nasil-sirket-buldum.html</loc>
-      
-        <lastmod>2018-04-05T00:40:00+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:3000/scss-ile-calisma-ortamini-hazirlamak-ve-ilk-giris.html</loc>
-      
-        <lastmod>2018-01-17T02:15:43+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:3000/sass-ve-scss-nedir-neden-kullanmaliyiz-nasil-kurulur.html</loc>
-      
-        <lastmod>2018-01-12T19:29:00+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:3000/sublime-text-3-kurulum-kullanim-ve-eklentiler.html</loc>
-      
-        <lastmod>2017-09-03T05:26:00+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:3000/jekyll-tema-degistirme-ve-klasor-yapisi.html</loc>
-      
-        <lastmod>2017-08-31T04:28:00+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-    <url>
-      <loc>http://localhost:3000/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html</loc>
-      
-        <lastmod>2017-08-30T05:40:00+03:00</lastmod>
-      
-      
-        <changefreq>monthly</changefreq>
-      
-      
-        <priority>0.5</priority>
-      
-    </url>
-  
-  
-  <url>
-    <loc>http://localhost:3000/404</loc>
-    
-      <lastmod>2019-01-01T13:41:10+03:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:3000/archive</loc>
-    
-      <lastmod>2019-01-01T13:41:10+03:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:3000/atom.xml</loc>
-    
-      <lastmod>2019-01-01T13:41:10+03:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:3000/</loc>
-    
-      <lastmod>2019-01-01T13:41:10+03:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:3000/sitemap.xml</loc>
-    
-      <lastmod>2019-01-01T13:41:10+03:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-  <url>
-    <loc>http://localhost:3000/redirects.json</loc>
-    
-      <lastmod>2019-01-01T13:41:10+03:00</lastmod>
-    
-    
-      <changefreq>monthly</changefreq>
-    
-    
-      <priority>0.3</priority>
-    
-  </url>
-  
-</urlset>
+﻿---
+layout: null
+---
+{%-if site.plainwhite.sitemap -%}
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        <url>
+            <loc>{{ site.url }}</loc>
+            <lastmod>2019-06-07T00:00:00+00:00</lastmod>
+            <priority>1.00</priority>
+        </url>
+        {%- for post in site.posts -%}
+            <url>
+                <loc>{{ site.url }}{{ post.url }}</loc>
+                <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url>
+        {%- endfor -%}
+    </urlset>    
+{%- endif -%}

@@ -8,10 +8,6 @@ tags:
 - animation
 - keyframes
 ---
-<div class="bg-image-post">
-    <img style="max-height:500px;" src="./static/images/post_image/estonyada-yasam.html/cover.jpg" alt="image">
-</div>
-
 <h4>Herkese merhabalar.
     22 Ağustos 2018 tarihinde Erasmus stajım için Tallinn'e geldim. Bugün Estonya'da 29. günüm. Bu yazıyı da
     Oldtown'da Cafein isimli bir kahve dükkanından yazıyorum. Bizdeki Kahve Dünyası'nın Estonya versiyonu diyebiliriz.

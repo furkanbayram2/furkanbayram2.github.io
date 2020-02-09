@@ -9,11 +9,6 @@ tags:
 - blog
 - ruby
 ---
-<div class="bg-image-post" >
-<img style="max-height:500px;" src="./static/images/post_image/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html/bg.jpg" alt="image">
-</div>
-
-
 Herkese merhaba. Öncelikle <a href="https://jekyllrb.com/">Jekyll</a> nedir ne işe yarar bize neler sağlar onlardan bahsetmek istiyorum. 
 <a href="https://jekyllrb.com/">Jekyll</a>, Github'ın ruby ile geliştirmiş olduğu statik web sayfalar oluşturmamızı sağlayan bir araçtır. <a href="https://jekyllrb.com/">Jekyll</a>'nin resmi web sitesine girdiğimizde bizi "Transform your plain text into static websites and blogs." diye bir yazı karşılıyor. Yani düz metinlerimizi web sitelerine ve bloglara dönüştürebileceğimizden bahsediyor. Tamamen ücretsiz olup hatrı sayılır bir kullanıcı kitlesi vardır. Lafı fazla uzatmadan <a href="https://jekyllrb.com/">Jekyll</a> nasıl kurulur, nasıl çalışır hale getirilir bunlardan bahsetmek istiyorum.
 

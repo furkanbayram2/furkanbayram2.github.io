@@ -8,10 +8,6 @@ tags:
 - animation
 - keyframes
 ---
-<div class="bg-image-post">
-<img style="max-height:500px;" src="./static/images/post_image/css-ile-animasyon-olusturma.html/bg.jpg" alt="image">
-</div>
-
 <h4>Herkese merhabalar. 
     Öncelikle başlamadan önce 10-15 dakika gibi bir sürede yaptığım örneği göstererek neler yapabileceğimizi göstermek istiyorum.
     <a href="https://furkanbayram2.github.io/finalOdevi1" target="blank">Buraya</a> tıklayarak çalışmama, <a href="https://github.com/furkanbayram2/furkanbayram2.github.io/blob/master/finalOdevi1/index.html" target="blank">buraya</a> tıklayarak kaynak kodlarına erişebilirsiniz. <strong>NOT:</strong> JS kısmına takılmayın sadece butonlara tıklayınca yeni class ataması yapmak için kullandım. <strong>OLDUKÇA SPAGETTİ :)</strong></h4>
