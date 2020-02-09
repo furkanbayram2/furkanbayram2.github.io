@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sublime Text 3 Kurulum, Kullanım ve Eklentiler
-date: 3017-09-03 02:26:00
+date: 2017-09-03 02:26:00
 category: İnceleme - Tanıtım
 tags:
 - sublimetext

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Estonya'da Yaşam
-date: 3018-09-22 09:15:00
+date: 2018-09-22 09:15:00
 category: Erasmus+ Stajı
 tags:
 - css3

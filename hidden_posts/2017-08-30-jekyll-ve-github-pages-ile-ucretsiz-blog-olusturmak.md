@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll ve Github Pages ile Ücretsiz Blog Oluşturmak
-date: 3017-08-30 02:40:00
+date: 2017-08-30 02:40:00
 category: Web Teknolojileri
 tags:
 - github

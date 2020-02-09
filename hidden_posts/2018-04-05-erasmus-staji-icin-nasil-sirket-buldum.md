@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Erasmus Stajı İçin Nasıl Şirket Buldum ?
-date: 3018-04-04 21:40:00
+date: 2018-04-04 21:40:00
 category: Erasmus+ Stajı
 tags:
 - github

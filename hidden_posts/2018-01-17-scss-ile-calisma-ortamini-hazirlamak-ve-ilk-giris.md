@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SCSS ile Çalışma Ortamını Hazırlamak ve İlk Giriş
-date: 3018-01-16 23:15:43
+date: 2018-01-16 23:15:43
 category: CSS
 tags:
 - sass
