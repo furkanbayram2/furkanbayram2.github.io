@@ -228,6 +228,7 @@ main {
     .post-thumbnail{
         display: flex;
         justify-content: center;
+        display: none;
         margin-bottom: 20px;
         img{
             max-height: 400px;
