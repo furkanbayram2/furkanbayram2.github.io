@@ -2,6 +2,7 @@
 layout: post
 title: What's New and Updates in Vue CLI 4.0
 date: 2020-02-22 12:30:00
+thumbnail: /assets/img/posts/whats-new-and-updateds-in-vue-cli-4/thumbnail.png
 category: vue
 tags:
 - vue

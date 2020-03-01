@@ -2,6 +2,7 @@
 layout: post
 title: How to create CSS keyframe animations
 date: 2020-01-28 13:15:00
+thumbnail: /assets/img/posts/how-to-create-css-keyframe-animations/thumbnail.png
 category: css
 tags:
 - css
