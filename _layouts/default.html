@@ -14,17 +14,24 @@
         <p class="tagline">{{ site.plainwhite.tagline }}</p>
         <a class="about-link" href="/about">About me</a>
         <ul class="social">
+            {%- if site.plainwhite.social_links.devto -%}
+              <a href="https://dev.to/{{ site.plainwhite.social_links.devto }}" target="_blank">
+                <li>
+                  <img src="/assets/img/icons/devto.png"/>
+                </li>
+              </a>
+            {%- endif -%}
+          {%- if site.plainwhite.social_links.twitter -%}
+            <a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}" target="_blank">
+              <li>
+                <img src="/assets/img/icons/twitter.svg"/>
+              </li>
+            </a>
+          {%- endif -%}
           {%- if site.plainwhite.social_links.facebook -%}
             <a href="https://facebook.com/{{ site.plainwhite.social_links.facebook }}" target="_blank">
               <li>
                 <img src="/assets/img/icons/facebook.svg"/>
-              </li>
-            </a>
-          {%- endif -%}
-          {%- if site.plainwhite.social_links.devto -%}
-            <a href="https://dev.to/{{ site.plainwhite.social_links.devto }}" target="_blank">
-              <li>
-                <img src="/assets/img/icons/devto.png"/>
               </li>
             </a>
           {%- endif -%}
@@ -35,17 +42,18 @@
               </li>
             </a>
           {%- endif -%}
+  
+          {%- if site.plainwhite.social_links.instagram -%}
+            <a href="https://instagram.com/{{ site.plainwhite.social_links.instagram }}" target="_blank">
+              <li>
+                <img src="/assets/img/icons/instagram.svg"/>
+              </li>
+            </a>
+          {%- endif -%}
           {%- if site.plainwhite.social_links.linkedin -%}
             <a href="https://www.linkedin.com/{{ site.plainwhite.social_links.linkedin }}" target="_blank">
               <li>
                 <img src="/assets/img/icons/linkedin.svg"/>
-              </li>
-            </a>
-          {%- endif -%}
-          {%- if site.plainwhite.social_links.instagram -%}
-            <a href="https://instagram.com/{{ site.plainwhite.social_links.instagram }}">
-              <li>
-                <img src="/assets/img/icons/instagram.svg"/>
               </li>
             </a>
           {%- endif -%}

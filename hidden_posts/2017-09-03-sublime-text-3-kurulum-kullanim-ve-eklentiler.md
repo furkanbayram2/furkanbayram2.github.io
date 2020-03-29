@@ -72,19 +72,19 @@ Aşağıda, kod yazarken kullandığım, işinizi kolaylaştıracak bazı eklent
 
 <h2>1. AutoFileName</h2>
 
-<img class="img-responsive" src="../static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/1.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<img class="img-responsive" src="../static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/1.png" alt="Please refresh the page." />
 Bu eklenti dosya adlarını otomatik olarak tamamlıyor ve dosya isimlerini yazarken yazım hatası yapmamızı en aza indiriyor. Örneğin <strong>href</strong> etiketlerinde, html içindeki <strong>img</strong> etiketlerinde yol belirtirken veya stil dosyalarında <strong>background-image</strong> için yol belirtirken aynı seviyedeki veya alt seviyelerdeki dosya ve klasörleri görmemizi sağlıyor. Ayrıyetten resimlere ait <strong>yükseklik X genişlik</strong> değerlerinide görebiliyoruz.
   
 
 <h2>2. Autoprefixer</h2>
 
-<img class="img-responsive" src="../static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/4.gif" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<img class="img-responsive" src="../static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/4.gif" alt="Please refresh the page." />
 CSS yazarken işlerimizi kolaylaştıracak bir eklenti bu. Örneğin, <strong>transform</strong> özelliğinin chrome veya safari gibi tarayıcılarda çalışması için <strong>-webkit-transform</strong>, IE için ise <strong>-ms-transform</strong> yazmamız gerekiyor. Bu eklenti sayesinde bunları ayrı ayrı yazmıyoruz. 
 
 
 <h2>3. BracketHighlighter</h2>
 
-<img class="img-responsive" src="../static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/2.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<img class="img-responsive" src="../static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/2.png" alt="Please refresh the page." />
 Artık parantezi açtım mı, tırnağı kapattım mı derken şaşı olmaya son :) Bu eklenti sayesinde parantezlerin veya tırnak içindeki alanların başlangıç veya bitişlerini çok rahat bulabileceksiniz. Adındanda anlaşılacağı gibi başlangıç ve bitiş kısımlarını belirgin hale getiriyor.
 
 
@@ -95,7 +95,7 @@ Boxy Theme içinde onlarca tema bulunduruyor. Eğer bu temalar hoşunuza gitmese
 
 <h2>5. CSS Extended Completions</h2>
 
-<img class="img-responsive" src="../static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/3.png" alt="Görüntü yüklenemedi lütfen sayfayı tekrar yükleyiniz." />
+<img class="img-responsive" src="../static/images/post_image/sublime-text-3-kurulum-kullanim-ve-eklentiler.html/3.png" alt="Please refresh the page." />
 Bir tek <strong>CSS Extended Completions</strong> olsun bana bir şey olmaz :) diyebileceğim bir eklenti. Stil dosyalarınızdaki fonksiyon, class ve id isimlerini html içerisinde kullanırken, daha siz yazmadan otomatik olarak tamamlıyor. Yeni bir CSS freamworküne başlayacağınız zaman bu eklenti bulunmaz bir veli nimet. Yabancısı olduğunuz freamworke, bu eklenti sayesinde kolayca alışabilirsiniz.
 
   

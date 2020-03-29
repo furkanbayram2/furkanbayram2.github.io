@@ -12,4 +12,4 @@ I am professionally working on the Frontend Web Development by using HTML5, CSS3
 
 I worked as a Frontend Developer in [Alegra Digital](https://alegra.io){:target="\_blank"} which are few well-known companies in Turkey. for 14 months (2018-2020).
 
-And now I have been working as a software developer for a month at [CDEV Turkey](http://cdev.global){:target="\_blank"}.
+And now am working as a software developer at [CDEV Turkey](http://cdev.global){:target="\_blank"} since January 2020.

@@ -44,7 +44,7 @@ Neden <strong>SCSS</strong> kullanmanız gerektiğini diğer yazılarda göstere
 <h2>SASS ve SCSS Nasıl Kurulur ?</h2>
 SASS ve SCSS kurulumunu ayrı ayrı yapmıyoruz. Yukarıda belirttiğim gibi ikiside aynı çatı altında çalışıyor, sadece syntax farkı var. Aşağıdaki kurulum ikisi içinde geçerlidir.
 
-Bilgisayarınıza kurabilmek için iki seçeneğimiz var. Birincisi yardımcı  masaüstü programlar ile, ikinci yol ise komut satırından kurulum. Ben size komut satırından kurulumu anlatacağım.
+Bilgisayarınıza kurabilmek için iki seçeneğimiz var. Birincisi yardımcı masaüstü programlar ile, ikinci yol ise komut satırından kurulum. Ben size komut satırından kurulumu anlatacağım.
 
 1. <strong>SASS</strong> ve <strong>SCSS</strong> ile çalışabilmek için bilgisayarımızda Ruby'nin kurulu olması gerekiyor.
 <a href="https://rubyinstaller.org/downloads/">Buradan</a>, işletim sisteminize uygun olan sürümü seçerek indirip, kurulumu gerçekleştirebilirsiniz.

@@ -66,12 +66,12 @@ jekyll serve 			// run project
 
 We created our first project with the <strong>new</strong> command. Then we go into the folder where we created our project and run our project with the <strong>jekyll serve</strong> command.
 
-<img class="img-responsive" src="../static/images/post_image/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html/1.png" />
+![Bash](https://dev-to-uploads.s3.amazonaws.com/i/e350urm0crel426gcjff.png)
 
 If we get an output like above, our site has been created and working successfully.
 If we open our browser and enter <strong>localhost:4000</strong> in the address bar, our site will open.
 
-<img class="img-responsive" src="../static/images/post_image/jekyll-ve-github-pages-ile-ucretsiz-blog-olusturmak.html/2.png" />
+![Bash 2](https://dev-to-uploads.s3.amazonaws.com/i/jsboco7o37avq9ewwk0v.png)
 
 And our site is ready. In the next articles, I will explain what the folders in the project do, how to use a ready-made theme, how to publish it on github and how to use our own domain name.
 
