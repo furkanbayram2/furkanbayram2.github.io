@@ -3,7 +3,7 @@ layout: post
 title: Coolest Tool for Writing Documentation - VuePress
 date: 2020-02-09 12:00:00
 thumbnail: /assets/img/posts/coolest-tool-for-writing-documantation-vuepress/thumbnail.png
-category: webdev
+category: vue
 tags:
 - javascript
 - vue
