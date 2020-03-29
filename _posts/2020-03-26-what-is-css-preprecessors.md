@@ -2,7 +2,7 @@
 layout: post
 title: What is CSS Preprecessors? (for begginers)
 date: 2020-03-26 12:30:00
-category: webdev
+category: scss
 tags:
 - css
 - scss
