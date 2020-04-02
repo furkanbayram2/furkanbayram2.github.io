@@ -1,0 +1,3 @@
+User-agent: Googlebot
+Disallow: /cv.pdf/
+Sitemap: https://sfb.dev/sitemap.xml
