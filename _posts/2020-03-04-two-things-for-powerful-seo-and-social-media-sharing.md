@@ -1,8 +1,8 @@
 ﻿---
 layout: post
-title: 2 Basic Things for Powerful SEO and Social Network 
+title: 2 Basic Things for Powerful SEO and Social Media Sharing
 date: 2020-04-03 00:00:00
-thumbnail: /assets/img/posts/how-to-create-css-keyframe-animations/thumbnail.png
+thumbnail: /assets/img/two-things-for-powerful-seo-and-social-media-sharing/thumbnail.png
 category: SEO
 tags:
 - seo
