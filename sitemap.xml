@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/css/2020/01/28/how-to-create-css-keyframe-animations.html</loc>
+<lastmod>2020-01-28T16:15:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/vue/2020/02/09/coolest-tool-for-writing-documantation-vuepress.html</loc>
+<lastmod>2020-02-09T15:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/vue/2020/02/22/what-s-new-and-updates-in-vue-cli-4.html</loc>
+<lastmod>2020-02-22T15:30:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/webdev/2020/03/10/build-free-blog-with-jekyll-and-github-pages.html</loc>
+<lastmod>2020-03-10T15:30:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/scss/2020/03/26/what-is-css-preprecessors.html</loc>
+<lastmod>2020-03-26T15:30:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/seo/2020/04/03/two-things-for-powerful-seo-and-social-network.html</loc>
+<lastmod>2020-04-03T03:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/cv.pdf</loc>
+<lastmod>2020-04-01T09:46:59+03:00</lastmod>
+</url>
+</urlset>
