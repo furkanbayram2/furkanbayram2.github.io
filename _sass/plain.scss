@@ -14,8 +14,24 @@ $leftWidth: 220px;
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+} 
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #42b883; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #35495e; 
+}
 body {
-  font-family: "Raleway", sans-serif;
+  background-color: #fcf8f3;
+  font-family: 'Oxanium', cursive;
+  // font-family: "Raleway", sans-serif;
+  // font-family: 'Encode Sans Expanded', sans-serif;
   font-size: 16px;
   line-height: 1.2em;
   margin: 0;
@@ -144,7 +160,6 @@ main {
 
     a {
       display: block;
-      font-family: 'Merriweather';
       text-align: center;
       padding: 1rem 0;
       text-decoration: none;
@@ -204,6 +219,7 @@ main {
 .post-title {
   line-height: 1.2em;
   font-size: 28px;
+  color: #42b883;
 }
 .posts, .post-container {
 
@@ -236,7 +252,6 @@ main {
     }
 }
 .post {
-  font-family: "Merriweather", sans-serif;
   font-weight: 300;
   color: #222;
   line-height: 1.9em;
