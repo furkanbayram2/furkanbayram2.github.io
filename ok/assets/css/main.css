@@ -1,0 +1,111 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  background-color: #131415; }
+
+ul {
+  list-style: none;
+  padding-left: 0; }
+
+a {
+  color: #ffffff; }
+  a:hover {
+    text-decoration: none; }
+
+.navbar-top {
+  background-color: #1f1f20;
+  color: #ffffff;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  font-size: .75rem; }
+  @media (max-width: 992px) {
+    .navbar-top {
+      display: none; } }
+.navbar-middle {
+  background-color: #131415; }
+  .navbar-middle .navbar-nav.level-1 {
+    height: 80px; }
+    .navbar-middle .navbar-nav.level-1 .nav-item {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center; }
+      .navbar-middle .navbar-nav.level-1 .nav-item .nav-link {
+        font-size: .875rem; }
+        .navbar-middle .navbar-nav.level-1 .nav-item .nav-link:after {
+          content: '';
+          bottom: 15px;
+          top: inherit;
+          left: 0;
+          margin-top: 0;
+          position: absolute;
+          right: 0;
+          left: 0;
+          width: 5px;
+          height: 5px;
+          background: #6236ff;
+          border-radius: 100%;
+          margin-left: auto;
+          margin-right: auto;
+          opacity: 0; }
+      .navbar-middle .navbar-nav.level-1 .nav-item-sub-menu {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s linear; }
+      .navbar-middle .navbar-nav.level-1 .nav-item:hover .nav-link:after {
+        opacity: 1; }
+      .navbar-middle .navbar-nav.level-1 .nav-item:hover .nav-item-sub-menu {
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 50vw;
+        font-size: 0.875rem;
+        background-color: #ffffff; }
+        .navbar-middle .navbar-nav.level-1 .nav-item:hover .nav-item-sub-menu .sub-menu-list.level-2 .sub-menu-item {
+          max-width: 185px; }
+          .navbar-middle .navbar-nav.level-1 .nav-item:hover .nav-item-sub-menu .sub-menu-list.level-2 .sub-menu-item .sub-menu-link {
+            color: #131415; }
+          .navbar-middle .navbar-nav.level-1 .nav-item:hover .nav-item-sub-menu .sub-menu-list.level-2 .sub-menu-item .level-3 .sub-menu-item .cat-cover {
+            position: absolute;
+            bottom: -25px;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            max-width: 290px;
+            opacity: 0;
+            transition: opacity .3s ease; }
+          .navbar-middle .navbar-nav.level-1 .nav-item:hover .nav-item-sub-menu .sub-menu-list.level-2 .sub-menu-item .level-3 .sub-menu-item:hover .cat-cover {
+            opacity: 1; }
+  .navbar-middle .right .search i {
+    color: #ffffff; }
+  .navbar-middle .right .language span {
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 700; }
+    .navbar-middle .right .language span.active {
+      color: #999999; }
+.navbar-bottom {
+  background-color: #6236ff;
+  color: #ffffff;
+  padding: 15px; }
+  .navbar-bottom span {
+    font-size: .8125rem;
+    line-height: 1rem; }
+
+.left-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  background-color: #ffffff; }
+  .left-menu .top {
+    border-bottom: 1px solid #999999; }
+  .left-menu .navbar-nav .nav-item .nav-link {
+    color: #131415; }
+
+/*# sourceMappingURL=main.css.map */
