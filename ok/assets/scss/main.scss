@@ -24,6 +24,8 @@ ul {
 }
 
 a {
+  font-size: 0.875rem;
+  ;
   color: $light-color;
 
   &:hover {
@@ -49,87 +51,97 @@ a {
   &-middle {
     background-color: $dark-color;
 
-    .navbar-nav.level-1 {
-      height: 80px;
+    .main-menu-wrapper {
+      justify-content: center;
+      @media (min-width: $md-screen){
+        justify-content: space-between;
+      }
+      .main-menu {
+        .navbar-nav.level-1 {
+          height: 80px;
 
-      .nav-item {
-        position: relative;
-        height: 100%;
-        display: flex;
-        align-items: center;
+          .nav-item {
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
 
-        .nav-link {
-          font-size: .875rem;
+            .nav-link {
+              font-size: .875rem;
 
-          &:after {
-            content: '';
-            bottom: 15px;
-            top: inherit;
-            left: 0;
-            margin-top: 0;
-            position: absolute;
-            right: 0;
-            left: 0;
-            width: 5px;
-            height: 5px;
-            background: $primary-color;
-            border-radius: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            opacity: 0;
-          }
+              &:after {
+                content: '';
+                bottom: 15px;
+                top: inherit;
+                left: 0;
+                margin-top: 0;
+                position: absolute;
+                right: 0;
+                left: 0;
+                width: 5px;
+                height: 5px;
+                background: $primary-color;
+                border-radius: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 0;
+              }
 
-        }
-
-        &-sub-menu {
-          position: absolute;
-          visibility: hidden;
-          opacity: 0;
-          transition: opacity 0.3s linear;
-        }
-
-        &:hover {
-
-          .nav-link {
-            &:after {
-              opacity: 1;
             }
-          }
 
-          .nav-item-sub-menu {
-            visibility: visible;
-            opacity: 1;
-            position: absolute;
-            top: 80px;
-            left: 0;
-            width: 50vw;
-            font-size: 0.875rem;
-            background-color: $light-color;
+            &-sub-menu {
+              position: absolute;
+              visibility: hidden;
+              opacity: 0;
+              transition: opacity 0.3s linear;
+            }
 
-            .sub-menu-list.level-2 {
-              .sub-menu-item {
-                max-width: 185px;
+            &:hover {
 
-                .sub-menu-link {
-                  color: $dark-color;                  
+              .nav-link {
+                &:after {
+                  opacity: 1;
                 }
-                .level-3 {
+              }
+
+              .nav-item-sub-menu {
+                visibility: visible;
+                opacity: 1;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 50vw;
+                font-size: 0.875rem;
+                background-color: $light-color;
+
+                .sub-menu-list.level-2 {
                   .sub-menu-item {
-                    .cat-cover {
-                      position: absolute;
-                      bottom: -25px;
-                      right: 0;
-                      width: 100%;
-                      height: 100%;
-                      max-width: 290px;
-                      opacity: 0;
-                      transition: opacity .3s ease;
+                    max-width: 185px;
+
+                    .sub-menu-link {
+                      color: $dark-color;
                     }
-                    &:hover {
-                     .cat-cover{
-                       opacity: 1;
-                     }
-            
+
+                    .level-3 {
+                      .sub-menu-item {
+                        .cat-cover {
+                          position: absolute;
+                          bottom: -25px;
+                          right: 0;
+                          width: 100%;
+                          height: 100%;
+                          max-width: 290px;
+                          opacity: 0;
+                          transition: opacity .3s ease;
+                        }
+
+                        &:hover {
+                          .cat-cover {
+                            opacity: 1;
+                          }
+
+                        }
+                      }
                     }
                   }
                 }
@@ -139,7 +151,8 @@ a {
         }
       }
     }
-   
+
+
 
     .right {
       .search {
@@ -185,14 +198,56 @@ a {
   background-color: $light-color;
 
   .top {
-    border-bottom: 1px solid $secondary-color;
+    .hamburger-menu {
+      font-size: 18px;
+    }
   }
 
-  .navbar-nav {
-    .nav-item {
-      .nav-link {
+  .sub-menu-list.level-1 {
+    .sub-menu-item {
+      .sub-menu-link {
         color: $dark-color;
+      }
+    }
 
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+
+    .left-menu-user-menu {
+      a {
+        color: $dark-color;
+        text-decoration: underline;
+        padding-left: 8px;
+        font-size: 0.875rem;
+        ;
+      }
+    }
+
+    .left-menu-search {
+      i {
+        position: absolute;
+        bottom: 30px;
+        left: 25px;
+      }
+
+      input {
+        border-radius: 0;
+        border: none;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 35px;
+        font-size: .875rem;
+        ;
+
+        &:focus {
+          outline: 0;
+        }
       }
     }
   }

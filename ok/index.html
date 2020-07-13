@@ -1,4 +1,4 @@
-﻿﻿<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -56,20 +56,80 @@
     </div>
   </header> -->
   <div class="left-menu d-none">
-    <div class="top d-flex justify-content-between p-4">
+    <div class="top d-flex justify-content-between p-3 border-bottom">
       <img src="https://img-ok.mncdn.com/images/frontend/mobile-header-logo.png" alt="Logo">
-      <a class="hamburger-menu text-dark d-md-none ml-5" type="button" onclick="myFunction()">
+      <a class="hamburger-menu text-dark d-md-none ml-5" type="button" onclick="hambergerToggle()">
         <i class="fas fa-times"></i>
       </a>
     </div>
-    <ul class="navbar-nav d-flex mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link px-2" href="#">Ürünler</a>
-      </li>
+    <ul class="sub-menu-list level-1 mb-0 mx-2 p-2 border-bottom">
       <li class="nav-item">
-        <a class="nav-link px-2" href="#">Cinselliği Keşfet</a>
+        <a class="nav-link text-dark border-bottom" href="">Ürünler</a>
+        <ul class="navbar-nav d-flex mr-auto level-2">
+          <li class="nav-item active">
+            <ul class="sub-menu-list level-3">
+              <li class="sub-menu-item pl-4 pr-4" onclick="leftMenutoggle()">
+                <a class="sub-menu-link left-plus-menu d-flex flex-column">
+                  <div class="d-flex align-items-center justify-content-between w-100 py-1">
+                    <span>Prezervatifler</span>
+                    <i class="fas fa-plus"></i>
+                  </div>
+                  <div class="nav-item-sub-menu d-none">
+                    <ul class="sub-menu-list level-3">
+                      <li class="sub-menu-item ml-3">
+                        <a class="sub-menu-link" href="">
+                          Standart Prezervatifler
+                        </a>
+                      </li>
+                      <li class="sub-menu-item ml-3">
+                        <a class="sub-menu-link" href="">
+                          Geciktirici Prezervatifler
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </a>
+              </li>
+              <li class="sub-menu-item pl-4 pr-4">
+
+                <a class="sub-menu-link ml-5 text-dark" href="">
+                  <div class="d-flex align-items-center justify-content-between w-100 py-1">
+                    <span>Kayganlaştırıcı Masaj Setleri</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" onclick="leftMenutoggle()" type="button">
+            <ul class="sub-menu-list level-3 level-3-2">
+              <li class="sub-menu-item pl-4 pr-4">
+                <a class="sub-menu-link left-plus-menu d-flex flex-column">
+                  <div class="d-flex align-items-center justify-content-between w-100 py-1">
+                    <span>Cinselliği Keşfet</span>
+                    <i class="fas fa-plus"></i>
+                  </div>
+
+                </a>
+              </li>
+            </ul>
+
+          </li>
+        </ul>
       </li>
     </ul>
+    <div class="bottom py-2 px-3">
+      <div class="left-menu-user-menu py-3">
+        <a href="">
+          <i class="fas fa-user"></i>
+          <span>Giriş Yap / Üye Ol</span>
+        </a>
+      </div>
+      <div class="left-menu-search mb-2">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Aradığınız ürünü hemen bulun.">
+      </div>
+    </div>
+
   </div>
   <nav class="navbar navbar-expand-lg d-flex flex-column p-0">
     <div class="navbar-top w-100">
@@ -80,11 +140,11 @@
       </div>
     </div>
     <div class="navbar-middle d-flex align-items-center w-100">
-      <a class="hamburger-menu text-white d-md-none ml-5" type="button" onclick="myFunction()">
+      <a class="hamburger-menu text-white d-md-none ml-5" type="button" onclick="hambergerToggle()">
         <i class="fas fa-bars"></i>
       </a>
       <div class="container">
-        <div class="d-flex justify-content-between">
+        <div class="main-menu-wrapper d-flex">
           <div class="main-menu d-flex align-items-center">
             <a class="navbar-brand" href="#">
               <img src="https://img-ok.mncdn.com/images/site-logo.png" alt="Logo">
@@ -99,19 +159,27 @@
                       <ul class="level-3">
                         <li class="sub-menu-item">
                           <a class="sub-menu-link d-flex my-2" href="">Standart Prezervatifler</a>
-                          <div class="cat-cover" style="background: url('https://img-ok.mncdn.com/upload/sub-menu/hisset-cover.png') right center no-repeat; opacity: 1"></div>
+                          <div class="cat-cover"
+                            style="background: url('https://img-ok.mncdn.com/upload/sub-menu/hisset-cover.png') right center no-repeat; opacity: 1">
+                          </div>
                         </li>
                         <li class="sub-menu-item">
                           <a class="sub-menu-link d-flex py-2" href="">Geciktiricili Prezervatifler</a>
-                          <div class="cat-cover" style="background: url('https://img-ok.mncdn.com/upload/sub-menu/performans-cover.png') right center no-repeat;" ></div>
+                          <div class="cat-cover"
+                            style="background: url('https://img-ok.mncdn.com/upload/sub-menu/performans-cover.png') right center no-repeat;">
+                          </div>
                         </li>
                         <li class="sub-menu-item">
                           <a class="sub-menu-link d-flex py-2" href="">İnce Prezervatifler</a>
-                          <div class="cat-cover" style="background: url('https://img-ok.mncdn.com/upload/sub-menu/zevk-eglence-cover.png') right center no-repeat;"></div>
+                          <div class="cat-cover"
+                            style="background: url('https://img-ok.mncdn.com/upload/sub-menu/zevk-eglence-cover.png') right center no-repeat;">
+                          </div>
                         </li>
                         <li class="sub-menu-item">
                           <a class="sub-menu-link d-flex py-2" href="">Ekstra İnce Prezervatifler</a>
-                          <div class="cat-cover" style="background: url('https://img-ok.mncdn.com/upload/sub-menu/klasik-cover.png') right center no-repeat;"></div>
+                          <div class="cat-cover"
+                            style="background: url('https://img-ok.mncdn.com/upload/sub-menu/klasik-cover.png') right center no-repeat;">
+                          </div>
 
                         </li>
                         <li class="sub-menu-item">
@@ -163,8 +231,13 @@
 
 
   <script>
-    function myFunction() {
+    function hambergerToggle() {
       var element = document.querySelector(".left-menu");
+      element.classList.toggle("d-none");
+    }
+
+    function leftMenutoggle() {
+      var element = document.querySelector(".nav-item-sub-menu");
       element.classList.toggle("d-none");
     }
   </script>
