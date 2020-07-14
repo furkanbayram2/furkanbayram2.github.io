@@ -50,7 +50,9 @@ a {
 
   &-middle {
     background-color: $dark-color;
-
+    .hamburger-menu{
+      position: absolute;
+    }
     .main-menu-wrapper {
       justify-content: center;
       @media (min-width: $md-screen){
