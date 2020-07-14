@@ -24,6 +24,8 @@ a {
       display: none; } }
 .navbar-middle {
   background-color: #131415; }
+  .navbar-middle .hamburger-menu {
+    position: absolute; }
   .navbar-middle .main-menu-wrapper {
     justify-content: center; }
     @media (min-width: 768px) {
