@@ -1,0 +1,32 @@
+﻿﻿.static-text {
+  background: url(/ok/assets/images/abstract.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: var(--light-color);
+  padding: 40px 0;
+
+
+  &-wrapper {
+    border: 1px solid var(--primary-color);
+    padding: 40px;
+    .left, .right{
+      width: 50%;
+    }
+
+    .left{
+      .text{
+        width: 50%;
+        span{
+          font-size: 30px;
+        }
+      }
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
+
+}
