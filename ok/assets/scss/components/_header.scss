@@ -14,36 +14,41 @@
 
   &-middle {
     background-color: var(--dark-color);
-    .hamburger-menu{
+    border-bottom: 1px solid #707070;
+
+    .hamburger-menu {
       position: absolute;
     }
+
     .main-menu-wrapper {
       justify-content: center;
-      @media (min-width: 992px){
+      position: relative;
+
+      @media (min-width: 992px) {
         justify-content: space-between;
       }
+
       .main-menu {
         .navbar-nav.level-1 {
           height: 80px;
 
           .nav-item {
-            position: relative;
             height: 100%;
             display: flex;
             align-items: center;
 
             .nav-link {
-              font-size: .875rem;
+              font-size: .8125rem;
+              position: relative;
+
 
               &:after {
                 content: '';
-                bottom: 15px;
-                top: inherit;
+                bottom: -8px;
                 left: 0;
+                right: 0;
                 margin-top: 0;
                 position: absolute;
-                right: 0;
-                left: 0;
                 width: 5px;
                 height: 5px;
                 background-color: var(--primary-color);
@@ -59,11 +64,10 @@
               position: absolute;
               visibility: hidden;
               opacity: 0;
-              transition: opacity 0.3s linear;
+              transition: opacity .3s ease-in-out;
             }
 
             &:hover {
-
               .nav-link {
                 &:after {
                   opacity: 1;
@@ -74,7 +78,7 @@
                 position: absolute;
                 top: 80px;
                 left: 0;
-                width: 50vw;
+                width: 100%;
                 z-index: 1;
                 font-size: 0.875rem;
                 visibility: visible;
@@ -83,21 +87,38 @@
 
                 .sub-menu-list.level-2 {
                   .sub-menu-item {
-                    max-width: 185px;
+                    .sub-menu-link {
+                      color: #777777;
+
+                      i {
+                        opacity: 0;
+                        transition: all .3s ease-in;
+                      }
+                    }
 
                     .sub-menu-link {
-                      color: var(--dark-color);
+                      &:hover {
+                        color: #000000;
+
+                        i {
+                          opacity: 1;
+                          transition: all .2s ease;
+
+                        }
+                      }
+
                     }
+
 
                     .level-3 {
                       .sub-menu-item {
                         .cat-cover {
                           position: absolute;
-                          bottom: -25px;
+                          bottom: 0;
                           right: 0;
                           width: 100%;
                           height: 100%;
-                          max-width: 290px;
+                          max-width: 500px;
                           opacity: 0;
                           transition: opacity .3s ease;
                         }
@@ -123,21 +144,53 @@
 
     .right {
       .search {
-        i {
-          color: var(--light-color);
+        height: 100%;
+
+        .nav-item-sub-menu {
+          position: absolute;
+          top: 80px;
+          left: 0;
+          width: 100%;
+          z-index: 1;
+          font-size: 0.875rem;
+          visibility: hidden;
+          opacity: 0;
+          background-color: var(--light-color);
         }
+
+        a {
+          i {
+            color: var(--light-color);
+          }
+        }
+
+        &:hover {
+          .nav-item-sub-menu {
+
+            visibility: visible;
+            opacity: 1;
+          }
+        }
+
       }
 
       .language {
-        span {
-          color: var(--light-color);
-          font-size: 0.875rem;
-          font-weight: 700;
+        a {
+          span {
+            color: var(--light-color);
+            font-size: 0.875rem;
+            font-weight: 700;
+
+
+          }
 
           &.active {
-            color: var(--secondary-color);
+            span {
+              color: var(--secondary-color);
+            }
           }
         }
+
       }
     }
   }

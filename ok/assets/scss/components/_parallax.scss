@@ -1,18 +1,38 @@
 ﻿﻿.parallax {
   .parallax-item {
+    @media (max-width: 992px) {
+      flex-direction: column;
+      padding-top: 15px;
+      padding-bottom: 15px;;
+    }
+
     background-color: var(--dark-color);
-    height: 65vh;
+    min-height: 65vh;
+
     .item-left {
-      img {}
+      img {
+        @media (max-width: 992px) {
+          width: 200px;
+        }
+      }
     }
 
     .item-right {
+      @media (max-width: 992px) {
+        align-items: center;
+      }
+
       .item-name {
-        span{
+        span {
+          @media (max-width: 992px){
+            font-size: 36px;
+            font-weight: 500;
+          }
           font-size: 36px;
-        font-weight: 700;
-        color: var(--light-color);
+          font-weight: 700;
+          color: var(--light-color);
         }
+
       }
 
       .item-desc {
@@ -20,6 +40,7 @@
         line-height: 1.5;
         color: var(--light-color);
       }
+
       .item-button {
         .item-cta-btn {
           margin-top: 1rem;
