@@ -1,0 +1,29 @@
+﻿﻿body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  font-size: 0.875rem;
+  ;
+  color: var(--light-color);
+
+  &:hover {
+    text-decoration: none;
+    color: var(--light-color);
+  }
+}
+
+.btn-default{
+  background-color: var(--light-color);
+  font-size: 0.875rem;
+  color: #000000;
+  border-radius: 4px;
+  font-weight: 600;
+  padding: 7px 15px;
+}
