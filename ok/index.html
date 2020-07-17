@@ -27,10 +27,14 @@
 <body>
 
   <!-- header left menu -->
-  <div class="left-menu d-none">
+  <div class="left-menu fixed-top d-none">
     <div class="top d-flex justify-content-between p-3 border-bottom">
       <img src="https://img-ok.mncdn.com/images/frontend/mobile-header-logo.png" alt="Logo">
+      <a class="hamburger-menu text-dark d-md-none ml-5" type="button" onclick="hambergerToggle()">
+        <i class="fas fa-times"></i>
+      </a>
     </div>
+
     <ul class="sub-menu-list level-1 mb-0 mx-2 p-2 border-bottom">
       <li class="nav-item">
         <a class="nav-link text-dark border-bottom" href="">Ürünler</a>
@@ -115,9 +119,6 @@
       </a>
       <div class="container">
         <div class="main-menu-wrapper d-flex">
-          <a class="hamburger-menu text-dark d-md-none ml-5" type="button" onclick="hambergerToggle()">
-            <i class="fas fa-times"></i>
-          </a>
           <div class="main-menu d-flex align-items-center">
             <a class="navbar-brand" href="#">
               <img src="https://img-ok.mncdn.com/images/site-logo.png" alt="Logo">
@@ -331,13 +332,18 @@
   </nav>
 
   <!-- video -->
-  <div class="media d-flex position-relative">
+  <div class="media d-flex justify-content-center position-relative">
     <div class="media-image-wrapper">
       <img class="w-100" src="./assets/images/video.jpg" alt="Video image">
 
     </div>
     <div class="media-icon-wrapper position-absolute d-flex align-items-center justify-content-center">
       <i class="far fa-play-circle"></i>
+    </div>
+    <div class="media-text-wrapper position-absolute">
+      <a href="">
+        <span>MANİFESTOYU OKU</span>
+      </a>
     </div>
   </div>
 
@@ -378,66 +384,66 @@
 
   <!-- parallax -->
   <div class="parallax">
-    <div class="parallax-item d-flex justify-content-center align-items-center position-relative">
-      <div class="item-left d-flex align-items-center mr-3">
+    <div class="parallax-item d-flex justify-content-center align-items-center col-12">
+      <div class="item-left d-flex align-items-center justify-content-center col-12 col-lg-3"">
         <img src="./assets/images/ok-zero.png" alt="">
       </div>
-      <div class="item-right d-flex flex-column justify-content-center ml-3">
+      <div class="item-right d-flex flex-column justify-content-center col-12 col-lg-4">
         <div class="item-name">
           <span>Daha Fazla His</span>
         </div>
-        <div class="item-desc mt-3">
-          <span>Ekstra incelikle hiçbir şey yokmuş gibi hissetmek isteyenler için </span>
+        <div class="item-desc text-center text-lg-left mt-3">
+          <span>Okey Tenn’in özel olarak formüle edilmiş dokusu daha yumuşak ve doğal bir his sağlar. Lateks içermediğinden standart kondomlar gibi kokmaz, lateks alerjisi olanlara uygundur.</span>
         </div>
-        <div class="item-button mt-5">
+        <div class="item-button mt-3 mb-5 mt-lg-5 mt-lg-0 d-flex d-flex">
           <a class="btn-default item-cta-btn" href="#">Tümünü Gör</a>
         </div>
       </div>
     </div>
-    <div class="parallax-item d-flex justify-content-center align-items-center">
-      <div class="item-left d-flex align-items-center mr-3">
+    <div class="parallax-item d-flex justify-content-center align-items-center col-12 col-12">
+      <div class="item-left d-flex align-items-center justify-content-center col-12 col-lg-3">
         <img src="./assets/images/ok-rotar.png" alt="">
       </div>
-      <div class="item-right d-flex flex-column justify-content-center ml-3">
+      <div class="item-right d-flex flex-column justify-content-center col-12 col-lg-4 col-12 col-lg-4">
         <div class="item-name">
           <span>Daha Fazla Performans</span>
         </div>
-        <div class="item-desc mt-3">
-          <span>Geciktiricili etki ile daha uzun performans yaşamak isteyenler için</span>
+        <div class="item-desc text-center text-lg-left mt-3">
+          <span>Okey Klasik, klasikten vazgeçemeyenler için üretilmiş standart prezervatiftir. Rezervuar uçludur, kayganlaştırıcı krem içerir ve şeffaftır. Doğal Latex kauçuğundan üretilmiştir.</span>
         </div>
-        <div class="item-button mt-5">
+        <div class="item-button mt-3 mb-5 mt-lg-5 mt-lg-0 d-flex d-flex">
           <a class="btn-default item-cta-btn" href="#">Tümünü Gör</a>
         </div>
       </div>
     </div>
-    <div class="parallax-item d-flex justify-content-center align-items-center">
-      <div class="item-left d-flex align-items-center mr-3">
+    <div class="parallax-item d-flex justify-content-center align-items-center col-12">
+      <div class="item-left d-flex align-items-center justify-content-center col-12 col-lg-3"">
         <img src="./assets/images/ok-nirvana.png" alt="">
       </div>
-      <div class="item-right d-flex flex-column justify-content-center ml-3">
+      <div class="item-right d-flex flex-column justify-content-center col-12 col-lg-4">
         <div class="item-name">
           <span>Daha Fazla Zevk & Eğlence</span>
         </div>
-        <div class="item-desc mt-3">
+        <div class="item-desc text-center text-lg-left mt-3">
           <span>İlişkisine daha fazla zevk ve eğlence katmak isteyenler için</span>
         </div>
-        <div class="item-button mt-5">
+        <div class="item-button mt-3 mb-5 mt-lg-5 mt-lg-0 d-flex d-flex">
           <a class="btn-default item-cta-btn" href="#">Tümünü Gör</a>
         </div>
       </div>
     </div>
-    <div class="parallax-item d-flex justify-content-center align-items-center">
-      <div class="item-left d-flex align-items-center mr-3">
+    <div class="parallax-item d-flex justify-content-center align-items-center col-12">
+      <div class="item-left d-flex align-items-center justify-content-center col-12 col-lg-3"">
         <img src="./assets/images/ok-zero.png" alt="">
       </div>
-      <div class="item-right d-flex flex-column justify-content-center ml-3">
+      <div class="item-right d-flex flex-column justify-content-center col-12 col-lg-4">
         <div class="item-name">
           <span>Klasikten Vazgeçmeyenler</span>
         </div>
-        <div class="item-desc mt-3">
+        <div class="item-desc text-center text-lg-left mt-3">
           <span>Klasikle hazzı zamansız yaşamak isteyenler için</span>
         </div>
-        <div class="item-button mt-5">
+        <div class="item-button mt-3 mb-5 mt-lg-5 mt-lg-0 d-flex d-flex">
           <a class="btn-default item-cta-btn" href="#">Tümünü Gör</a>
         </div>
       </div>
@@ -468,7 +474,7 @@
                   <span>Cinsellik İle İlgili Sorunlar</span>
                 </div>
                 <div class="cta d-flex">
-                  <a class="btn-default" href="">İçeriği Oku</a>
+                  <a class="btn-default text-center" href="">İçeriği Oku</a>
                 </div>
               </div>
             </div>
@@ -553,6 +559,9 @@
               <form class="d-flex flex-column" action="submit">
                 <label for="campaign">Kampanyalardan Haberdar Ol</label>
                 <input type="text" name="campaign" placeholder="E-mail" />
+                <button>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
                 <div class="check d-flex mt-2">
                   <input class="mr-3" type="checkbox" name="checkbox" checked>
                   <label for="checkbox">OKEY markası ve ürünleri hakkında fırsatlar, kampanyalar, etkinlikler,
@@ -579,7 +588,6 @@
       </div>
 
     </div>
-
   </footer>
 
 

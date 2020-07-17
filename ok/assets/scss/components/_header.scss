@@ -19,7 +19,8 @@
     .hamburger-menu {
       position: absolute;
       top: 20px;
-      left: -50px;
+      left: -30px;
+      z-index: 1030;
     }
 
     .main-menu-wrapper {
@@ -211,10 +212,6 @@
 
 //left-menu
 .left-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
   height: 100vh;
   width: 100%;
   background-color: var(--light-color);

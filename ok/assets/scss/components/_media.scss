@@ -1,4 +1,5 @@
 ﻿﻿.media {
+  display: flex;
   &-image-wrapper {
     img {
       max-height: 500px;
@@ -15,6 +16,14 @@
     i{
       font-size: 98px;
       color: var(--light-color);
+    }
+  }
+
+  &-text-wrapper{
+    bottom: 10px;
+    a span{
+      color: var(--light-color);
+      letter-spacing: 2px;
     }
   }
 }
