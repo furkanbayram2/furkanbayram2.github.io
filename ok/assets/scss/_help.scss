@@ -19,11 +19,15 @@ a {
   }
 }
 
-.btn-default{
+.btn-default {
   background-color: var(--light-color);
   font-size: 0.875rem;
   color: #000000;
   border-radius: 4px;
   font-weight: 600;
-  padding: 7px 15px;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
