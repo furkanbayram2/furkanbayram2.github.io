@@ -15,21 +15,20 @@
 
     .product-image {
       grid-area: AAA;
-      background: url(/ok/assets/images/product-detail-abstract.png) no-repeat center center;
-      background-size: cover;
+
     }
 
     .product-info {
       grid-area: BBB;
 
-      .name {
+      .name-wrapper {
         span {
           font-size: 1.5rem;
           color: var(--light-color);
         }
       }
 
-      .size {
+      .size-wrapper {
         margin-top: 25px;
 
         ul {
@@ -61,7 +60,7 @@
         }
       }
 
-      .title {
+      .title-wrapper {
         margin-top: 50px;
         text-align: center;
 
@@ -71,7 +70,7 @@
         }
       }
 
-      .description {
+      .description-wrapper {
         margin-top: 15px;
         text-align: center;
 
@@ -82,7 +81,9 @@
         }
       }
 
-      .features {
+      .features-wrapper {
+        margin-top: 50px;
+
         .title {
           text-align: center;
           margin-bottom: 25px;
@@ -125,20 +126,33 @@
         }
       }
 
-      .video {
+      .video-wrapper {
         margin-top: 70px;
-        background-color: rgba(19, 20, 21, 0.35);
+        border-radius: 4px;
 
         img {
           max-width: 100%;
+          border-radius: 4px;
+
         }
 
         i {
-          top: 0;
-          bottom: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: var(--light-color);
+          font-size: 3rem;
+        }
+
+        .overlay {
+          height: 100%;
+          width: 100%;
+          position: absolute;
           left: 0;
-          right: 0;
-          margin: auto;
+          top: 0;
+          background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.64), rgba(238, 238, 238, 0));
+
         }
       }
     }

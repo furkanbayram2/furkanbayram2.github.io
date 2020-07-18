@@ -334,18 +334,22 @@
     </div>
   </nav>
 
+  <!-- product detail wrapper -->
   <div class="product-detail-wrapper">
+
+    <!-- product detail -->
     <div class="product-detail">
       <div class="product-image d-flex justify-content-center">
         <div class="product-image-wrapper">
-          <img src="https://img-ok.mncdn.com/upload/animation-banners/ok-klasik-d.png" alt="Product Image"
-        ></div>
+          <img src="https://img-ok.mncdn.com/upload/animation-banners/ok-klasik-d.png" alt="Product Image"></div>
       </div>
+
+      <!-- product info -->
       <div class="product-info">
-        <div class="name">
+        <div class="name-wrapper">
           <span>Okey Tenn Orjinal 10'lu</span>
         </div>
-        <div class="size">
+        <div class="size-wrapper">
           <ul class="d-flex">
             <li><a href="">8'li</a></li>
             <li class="active"><a href="">10'lu</a></li>
@@ -353,16 +357,16 @@
             <li><a href="">40'lı</a></li>
           </ul>
         </div>
-        <div class="title">
+        <div class="title-wrapper">
           <span>Okey Tenn Orjinal</span>
         </div>
-        <div class="description">
+        <div class="description-wrapper">
           <span>
             Okey Tenn’in özel olarak formüle edilmiş dokusu daha yumuşak ve doğal bir his sağlar. Lateks içermediğinden
             standart kondomlar gibi kokmaz, lateks alerjisi olanlara uygundur.
           </span>
         </div>
-        <div class="features">
+        <div class="features-wrapper">
           <div class="title">
             <span>Ürün Özellikleri</span>
           </div>
@@ -391,18 +395,101 @@
             </li>
           </ul>
         </div>
-        <div class="video">
+        <div class="video-wrapper position-relative">
           <img src="assets/images/man-and-woman.jpg" alt="Man and woman">
           <i class="fas fa-play-circle"></i>
+          <div class="overlay"></div>
+        </div>
+        <!-- accordion -->
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div
+              class="card-header d-flex align-items-center justify-content-between d-flex align-items-center justify-content-between"
+              id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link p-0" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Ürün Bilgisi
+                </button>
+              </h2>
+              <a class="plus-icon" href="">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <ul>
+                  <li class="d-flex flex-column">
+                    <span class="title">Ürün Açıklaması</span>
+                    <span class="description">Fil Gücünde Emicilik! Sevdiklerinize temiz ve sağlıklı ortamlar yaratmak
+                      için Selpak Havlu en büyük yardımcınız!</span>
+                  </li>
+                  <li class="d-flex flex-column">
+                    <span class="title">Ürün Özellikleri</span>
+                    <span class="description">Daha yumuşak ve doğal</span>
+                  </li>
+                  <li class="d-flex flex-column">
+                    <span class="title">Birim Miktar</span>
+                    <span class="description">10 adet - 1 paket</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header d-flex align-items-center justify-content-between" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link p-0 collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Saklama Koşulları
+                </button>
+              </h2>
+              <a class="plus-icon" href="">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header d-flex align-items-center justify-content-between" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link p-0 collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Kullanım Bilgisi
+                </button>
+              </h2>
+              <a class="plus-icon" href="">
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
+
     </div>
 
   </div>
-
-
-
-
 
   <!-- breadcrumb -->
   <!-- <div class="breadcrumb-wrapper">
@@ -492,7 +579,7 @@
     </div>
   </div>
 
-  <!-- description -->
+  <!-- description area -->
   <div class="container">
     <div class="decsription-area mb-5">
       <div class="wrapper">
