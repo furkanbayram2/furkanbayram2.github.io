@@ -1,0 +1,16 @@
+﻿.image-text{
+   background: url(/ok/assets/images/product_list_abstract.jpg) no-repeat center center;
+   min-height: 350px;
+  .text{
+    @media (min-width: 992px){
+      width: 50%;
+    }
+    .title{
+      font-size: 1.5rem;
+    }
+
+    .description{
+      font-size: .875rem;;
+    }
+  }
+}
