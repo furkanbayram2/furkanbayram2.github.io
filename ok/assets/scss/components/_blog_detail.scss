@@ -1,0 +1,45 @@
+﻿.blog-detail-page {
+  margin-top: 25px;
+  margin-bottom: 7.5rem;
+
+  @media (max-width: 992px) {
+    padding: 0;
+  }
+
+  .blog-detail-header {
+    height: 170px;
+    border-radius: 4px;
+    background: url("https://img-ok.mncdn.com/UPLOAD/BANNER/blog/blog-detail/tip2_detail_cover.png") no-repeat center center;
+    background-size: cover;
+    border-radius: 15px;
+    .title{
+      span{
+        font-size: 1.25rem;
+        color: var(--light-color);
+      }
+    }
+
+
+  }
+
+  .blog-detail {
+    margin-top: 2rem;
+
+    .title {
+      margin-bottom: 1rem;
+
+      .header {
+        font-size: 1.5rem;
+      }
+    }
+
+    .content {
+      p {
+        font-size: .875rem;
+        ;
+      }
+    }
+  }
+
+
+}
