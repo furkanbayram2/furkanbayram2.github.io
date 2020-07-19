@@ -1,0 +1,46 @@
+﻿.about-page {
+  margin-top: 25px;
+  margin-bottom: 7.5rem;
+
+  @media (max-width: 992px) {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .about-header {
+    height: 170px;
+    border-radius: 4px;
+    background-color: #6236ff;
+
+    .icon {
+      border: 1px solid var(--light-color);
+      border-radius: 50%;
+
+      i {
+        color: var(--light-color);
+        padding: 28px;
+
+      }
+    }
+  }
+
+  .about {
+    margin-top: 2rem;
+
+    .title {
+      margin-bottom: 1rem;
+
+      .header {
+        font-size: 1.5rem;
+      }
+    }
+
+    .content{
+      p{
+        font-size: .875rem;;
+      }
+    }
+  }
+
+
+}
