@@ -1,0 +1,36 @@
+﻿.left-side-menu {
+  .title {
+    padding-bottom: 25px;
+
+    span {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+
+  }
+
+  ul {
+    margin-top: 20px;
+
+    li {
+      a {
+        color: var(--dark-color);
+        padding: 10px 0;
+        font-size: 0.875rem;
+        font-weight: 700;
+      }
+
+      i {
+        display: none;
+      }
+
+      &:hover {
+        i {
+          display: flex;
+
+        }
+      }
+    }
+  }
+}
