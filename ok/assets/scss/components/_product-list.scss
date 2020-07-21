@@ -2,11 +2,7 @@
   padding-top: 45px;
 
   @media (max-width: 992px) {
-    .container {
-      max-width: fit-content;
-      padding-left: 0;
-      padding-right: 0;
-    }
+    padding: 0;
   }
 
   .categories {
@@ -43,6 +39,10 @@
   }
 
   .products-wrapper {
+    @media (max-width: 992px) {
+      padding: 0;
+    }
+
     .products {
       border-width: 1px 0 0 1px;
       border-color: rgb(229, 229, 229);
