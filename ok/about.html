@@ -7,7 +7,7 @@
   <title>About</title>
 
   <!-- fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
   <!-- css -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
@@ -258,75 +258,66 @@
           </div>
           <div class="right d-none d-lg-flex align-items-center">
             <div class="search d-flex align-items-center">
-              <a href="">
-                <i class="fas fa-search"></i>
-              </a>
-              <div class="nav-item-sub-menu py-5 px-3">
+              <span class="search-span d-flex align-items-center h-100" onclick="searchToggle()">
+                <i class="fas fa-search text-white"></i>
+              </span>
+              <div class="nav-item-sub-menu search-wrapper d-none">
                 <ul class="sub-menu-list d-flex level-2">
-                  <li class="sub-menu-item mr-5 border-right px-4">
-                    <a class="sub-menu-link font-weight-bold text-dark" href="">Prezervatifler</a>
-                    <ul class="level-3">
-                      <li class="sub-menu-item">
-                        <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                          <span>Standart Prezervatifler</span>
-                          <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <div class="cat-cover"
-                          style="background: url('https://img-ok.mncdn.com/upload/sub-menu/hisset-cover.png') right center no-repeat;">
-                        </div>
-                      </li>
-                      <li class="sub-menu-item">
-                        <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                          <span>Geciktiricili Prezervatifler</span>
-                          <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <div class="cat-cover"
-                          style="background: url('https://img-ok.mncdn.com/upload/sub-menu/k-jel-cover.png') right center no-repeat;">
-                        </div>
-                      </li>
-                      <li class="sub-menu-item">
-                        <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                          <span>İnce Prezervatifler</span>
-                          <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <div class="cat-cover"
-                          style="background: url('https://img-ok.mncdn.com/upload/sub-menu/zevk-eglence-cover.png') right center no-repeat;">
-                        </div>
-                      </li>
-                      <li class="sub-menu-item">
-                        <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                          <span>Ekstra İnce Prezervatifler</span>
-                          <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <div class="cat-cover"
-                          style="background: url('https://img-ok.mncdn.com/upload/sub-menu/klasik-cover.png') right center no-repeat;">
-                        </div>
+                  <div class="search-area col-12 p-0">
+                    <div class="top d-flex flex-column">
+                      <div class="search-close d-flex justify-content-end" onclick="searchToggle()">
+                        <span>Kapat</span>
+                      </div>
+                      <div class="search-input position-relative">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="İstediğin gibi ara...">
+                      </div>
+                    </div>
+                    <div class="bottom d-flex">
+                      <div class="bottom-left">
+                        <a class="last-search-title d-block" href="">Son Aramalarınız</a>
+                        <ul class="last-search d-flex flex-wrap">
+                          <li class="last-search-item"><a href="">Klasik</a></li>
+                          <li class="last-search-item"><a href="">Ritim</a></li>
+                          <li class="last-search-item"><a class="test" href="#">İnce</a></li>
+                          <li class="last-search-item"><a class="test" href="#">Kabartmalı</a></li>
+                        </ul>
+                      </div>
+                      <div class="bottom-right">
+                        <a class="popular-search-title d-block" href="">Popüler Aramalar</a>
+                        <ul class="popular-search d-flex flex-wrap">
+                          <li class="popular-search-item"><a href="">Non Latex</a></li>
+                          <li class="popular-search-item"><a href="">İnce</a></li>
+                          <li class="popular-search-item"><a class="test" href="#">Geciktiricili</a></li>
+                          <li class="popular-search-item"><a class="test" href="#">Kabartmalı</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
 
-                      </li>
-                      <li class="sub-menu-item">
-                        <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                          <span>Kabartmalı ve Tırtıklı Prezervatifler</span>
-                          <i class="fas fa-arrow-right"></i>
-                        </a>
-                        <div class="cat-cover"></div>
-
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="sub-menu-item">
-                    <a class="sub-menu-link font-weight-bold text-dark" href="">Kayganlaştırı ve Masaj Jelleri</a>
-                  </li>
 
                 </ul>
               </div>
-
             </div>
             <div class="language">
               <a class="active" href=""><span>EN |</span></a>
               <a href=""><span>TR</span></a>
             </div>
+            <div class="secret-view">
+              <div class="secret-switch">
+                <label class="switch mb-0">
+                  <input type="checkbox">
+                  <span class="slider">
+                    <svg viewbox="0 0 32 32" id="icon-hidden-mode">
+                      <path fill="#fff" style="fill: var(--color1, #fff);"
+                        d="M22.736 21.931c2.294 0 4.154 1.896 4.154 4.235 0 2.338-1.859 4.234-4.154 4.234-1.973 0-3.624-1.4-4.050-3.28h-5.198c-0.426 1.882-2.077 3.28-4.048 3.28-2.296 0-4.155-1.896-4.155-4.234 0-2.339 1.859-4.235 4.155-4.235 2.010 0 3.686 1.456 4.072 3.389h5.152c0.384-1.933 2.061-3.389 4.072-3.389zM9.44 23.626c-1.376 0-2.494 1.136-2.494 2.541 0 1.403 1.117 2.539 2.494 2.539 1.376 0 2.493-1.136 2.493-2.539s-1.117-2.541-2.493-2.541zM22.736 23.626c-1.378 0-2.494 1.136-2.494 2.541 0 1.403 1.117 2.539 2.494 2.539 1.376 0 2.493-1.136 2.493-2.539s-1.117-2.541-2.493-2.541zM27.488 16l0.354 1.125h3.326c0.458 0 0.83 0.405 0.83 0.901 0 0.448-0.301 0.819-0.696 0.888l-0.134 0.013h-30.338c-0.458 0-0.83-0.403-0.83-0.901 0-0.448 0.301-0.818 0.696-0.888l0.134-0.011 3.317-0.002 0.333-1.125h23.010zM22.614 2.056c0.414 0.299 0.72 0.722 0.872 1.206l3.501 11.138h-22.034l1.597-5.387c0.619-2.090 2.832-3.286 4.941-2.674 0.075 0.021 0.15 0.045 0.224 0.072l0.563 0.2c0.454 0.167 0.978 0.263 1.524 0.263 1.491 0 2.815-0.717 3.645-1.825l0.009-0.012 1.821-2.467c0.443-0.591 1.142-0.969 1.929-0.969 0.529 0 1.018 0.171 1.415 0.46l-0.007-0.005z">
+                      </path>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+            </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -379,38 +370,44 @@
                 </div>
 
                 <div class="content">
-                  <p>OKEY, Türkiye’de aile planlaması kavramını yerleştirmek ve doğum kontrol yöntemlerini erişilir kılmak
-                  için 1991 yılında piyasaya sunuldu. Ardından 1992'de, Türk televizyonlarındaki ilk prezervatif
-                  reklamını yayınlayarak, bir tür devrim yaptı. Bu sayede, ülkemizde “prezervatif” diye bir reklam
-                  kategorisinin oluşmasını sağladı. Prezervatif, hem etkin bir doğum kontrol yöntemi hem de cinsel yolla
-                  bulaşan hastalıklara karşı koruyucu olan tek üründür.</p>
+                  <p>OKEY, Türkiye’de aile planlaması kavramını yerleştirmek ve doğum kontrol yöntemlerini erişilir
+                    kılmak
+                    için 1991 yılında piyasaya sunuldu. Ardından 1992'de, Türk televizyonlarındaki ilk prezervatif
+                    reklamını yayınlayarak, bir tür devrim yaptı. Bu sayede, ülkemizde “prezervatif” diye bir reklam
+                    kategorisinin oluşmasını sağladı. Prezervatif, hem etkin bir doğum kontrol yöntemi hem de cinsel
+                    yolla
+                    bulaşan hastalıklara karşı koruyucu olan tek üründür.</p>
 
                   <p>Türkiye’nin bir numaralı, en güvenilen ve en kaliteli prezervatif markası olan OKEY, toplumumuzda
-                  cinsellikle ilgili bilinç düzeyinin arttırılması, doğru bilinen yanlışların düzeltilmesi gibi konuları
-                  en önemli görevleri olarak kabul etti. OKEY, piyasaya sunulduğu ilk günden bu yana, Türkiye’nin önde
-                  gelen gönüllü kuruluşu TAP Vakfı (Türkiye Aile Sağlığı ve Planlaması Vakfı) tarafından desteklendi. 11
-                  yıldır ücretsiz olarak hizmet veren Alo OKEY - 444 OKEY Cinsel Sağlık Bilgi Hattı ile tüketicilerin
-                  cinselliğe dair öğrenmek istediği her şeyi TAP Vakfı uzmanları aracılığı ile cevaplandırdı ve
-                  cinsellik konusunda kafalarındaki soru işaretlerini sildi.</p>
+                    cinsellikle ilgili bilinç düzeyinin arttırılması, doğru bilinen yanlışların düzeltilmesi gibi
+                    konuları
+                    en önemli görevleri olarak kabul etti. OKEY, piyasaya sunulduğu ilk günden bu yana, Türkiye’nin önde
+                    gelen gönüllü kuruluşu TAP Vakfı (Türkiye Aile Sağlığı ve Planlaması Vakfı) tarafından desteklendi.
+                    11
+                    yıldır ücretsiz olarak hizmet veren Alo OKEY - 444 OKEY Cinsel Sağlık Bilgi Hattı ile tüketicilerin
+                    cinselliğe dair öğrenmek istediği her şeyi TAP Vakfı uzmanları aracılığı ile cevaplandırdı ve
+                    cinsellik konusunda kafalarındaki soru işaretlerini sildi.</p>
 
-                  <p>OKEY’in temel var olma sebebi, toplumsal bilinci ve bilgi düzeyini arttırarak Türkiye’de prezervatif
-                  kullanımını yaygınlaştırmaktır.</p>
+                  <p>OKEY’in temel var olma sebebi, toplumsal bilinci ve bilgi düzeyini arttırarak Türkiye’de
+                    prezervatif
+                    kullanımını yaygınlaştırmaktır.</p>
 
                   <p>Bu nedenle, yıllardır pek çok sivil toplum kuruluşuyla ortaklaşa projeler yürütülmektedir:</p>
 
-                  <p>-UNFPA (Birleşmiş Milletler Nüfus Fonu) - Türk Silahlı Kuvvetleri “Mehmetçik Üreme Sağlığı” eğitimleri
-                  -Toplum Gönülleri Vakfı – Akran Eğitimleri
-                  -Milli Eğitim Bakanlığı Mesleki Eğitim, Çıraklık ve Kalfalık Merkezleri Cinsel Sağlık Bilinçlendirme
-                  Faaliyetleri
-                  -Kahvehanelerde Bilinçlendirme ve Numune Dağıtımı
-                  -Bar ve Kafelerde Ürün Dağıtımı
-                  -Üniversiteler ve yurtlarda Numune Dağıtımı, Bilgilendirme Çalışmaları, Akran Eğitimleri
-                  -TurkMisc, (Türk Tıp Öğrencileri Komitesi) Cinsel Yolla Bulaşan Hastalıklar ve Üreme Sağlığı
-                  Eğitimleri</p>
+                  <p>-UNFPA (Birleşmiş Milletler Nüfus Fonu) - Türk Silahlı Kuvvetleri “Mehmetçik Üreme Sağlığı”
+                    eğitimleri
+                    -Toplum Gönülleri Vakfı – Akran Eğitimleri
+                    -Milli Eğitim Bakanlığı Mesleki Eğitim, Çıraklık ve Kalfalık Merkezleri Cinsel Sağlık Bilinçlendirme
+                    Faaliyetleri
+                    -Kahvehanelerde Bilinçlendirme ve Numune Dağıtımı
+                    -Bar ve Kafelerde Ürün Dağıtımı
+                    -Üniversiteler ve yurtlarda Numune Dağıtımı, Bilgilendirme Çalışmaları, Akran Eğitimleri
+                    -TurkMisc, (Türk Tıp Öğrencileri Komitesi) Cinsel Yolla Bulaşan Hastalıklar ve Üreme Sağlığı
+                    Eğitimleri</p>
 
                   <p>Prezervatif, hem etkin bir doğum kontrol yöntemi, hem de cinsel yolla bulaşan hastalıklara karşı
-                  koruyan, yan etkisiz, doğal tek üründür. İşte bu nedenle, güvenli bir cinsellik için, cinsel olarak
-                  aktif tüm bireylere prezervatif kullanımı tavsiye edilir.</p>
+                    koruyan, yan etkisiz, doğal tek üründür. İşte bu nedenle, güvenli bir cinsellik için, cinsel olarak
+                    aktif tüm bireylere prezervatif kullanımı tavsiye edilir.</p>
                 </div>
 
               </div>
@@ -510,6 +507,11 @@
 
     function leftMenutoggle() {
       var element = document.querySelector(".nav-item-sub-menu");
+      element.classList.toggle("d-none");
+    }
+
+    function searchToggle() {
+      var element = document.querySelector(".search-wrapper");
       element.classList.toggle("d-none");
     }
   </script>
