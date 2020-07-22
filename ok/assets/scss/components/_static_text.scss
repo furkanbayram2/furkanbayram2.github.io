@@ -11,7 +11,7 @@
 
   &-wrapper {
     border: 1px solid var(--primary-color);
-    padding: 100px 60px;
+    padding: 60px 50px;
     flex-direction: column;
 
     @media (min-width: 992px) {
@@ -26,14 +26,21 @@
 
 
     .left {
+      .logo{
+        img{
+          width: 107px;
+          height: 107px;
+        }
+      }
       .text {
         @media (min-width: 992px) {
           width: 50%;
-
         }
 
         span {
-          font-size: 30px;
+          font-size: 44px;
+          font-weight: 900;
+        
 
           @media (max-width: 992px) {
             font-size: 24px;
@@ -45,7 +52,7 @@
     .right {}
 
     p {
-      font-size: .875rem;
+      line-height: 28px;
     }
   }
 

@@ -49,18 +49,15 @@
             width: 130px;
             text-align: center;
             height: 50px;
+           
 
             a {
               font-size: 0.875rem;
               color: #a1a1a1;
-              display: block;
-              margin-top: 5px;
             }
 
             &.active {
-              display: flex;
-              align-items: center;
-              justify-content: center;
+
               background-color: var(--light-color);
 
               a {

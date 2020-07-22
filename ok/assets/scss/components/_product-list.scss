@@ -7,7 +7,8 @@
 
   .categories {
     .header {
-
+      padding-bottom: 10px;
+      margin-bottom: 20px;
       .text,
       i {
         color: var(--dark-color);
@@ -47,7 +48,7 @@
       border-width: 1px 0 0 1px;
       border-color: rgb(229, 229, 229);
       border-style: solid;
-      margin-top: 25px;
+      margin-top: 35px;
 
       .product {
         border-width: 0 1px 1px 0;
