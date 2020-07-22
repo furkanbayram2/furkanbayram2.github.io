@@ -1,6 +1,7 @@
 ﻿﻿.media {
   display: flex;
   &-image-wrapper {
+    z-index: -1;
     img {
       max-height: 500px;
       object-fit: contain;
