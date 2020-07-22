@@ -377,10 +377,10 @@
   <!-- parallax -->
   <div class="parallax">
     <div class="parallax-item d-flex justify-content-center align-items-center col-12">
-      <div class="item-left d-flex align-items-center justify-content-center col-12 col-lg-3">
+      <div class="item-left d-flex align-items-center justify-content-center">
         <img src=" ./assets/images/ok-zero.png" alt="">
       </div>
-      <div class="item-right d-flex flex-column justify-content-center col-12 col-lg-4">
+      <div class="item-right d-flex flex-column justify-content-center">
         <div class="item-name">
           <span>Daha Fazla His</span>
         </div>
@@ -394,10 +394,10 @@
       </div>
     </div>
     <div class="parallax-item d-flex justify-content-center align-items-center col-12">
-      <div class="item-left d-flex align-items-center justify-content-center col-12 col-lg-3">
+      <div class="item-left d-flex align-items-center justify-content-center">
         <img src="./assets/images/ok-rotar.png" alt="">
       </div>
-      <div class="item-right d-flex flex-column justify-content-center col-12 col-lg-4 col-12 col-lg-4">
+      <div class="item-right d-flex flex-column justify-content-center">
         <div class="item-name">
           <span>Daha Fazla Performans</span>
         </div>
@@ -411,10 +411,10 @@
       </div>
     </div>
     <div class="parallax-item d-flex justify-content-center align-items-center col-12">
-      <div class="item-left d-flex align-items-center justify-content-center col-12 col-lg-3">
+      <div class="item-left d-flex align-items-center justify-content-center">
         <img src=" ./assets/images/ok-nirvana.png" alt="">
       </div>
-      <div class="item-right d-flex flex-column justify-content-center col-12 col-lg-4">
+      <div class="item-right d-flex flex-column justify-content-center">
         <div class="item-name">
           <span>Daha Fazla Zevk & Eğlence</span>
         </div>
@@ -427,10 +427,10 @@
       </div>
     </div>
     <div class="parallax-item d-flex justify-content-center align-items-center col-12">
-      <div class="item-left d-flex align-items-center justify-content-center col-12 col-lg-3">
+      <div class="item-left d-flex align-items-center justify-content-center">
         <img src=" ./assets/images/ok-zero.png" alt="">
       </div>
-      <div class="item-right d-flex flex-column justify-content-center col-12 col-lg-4">
+      <div class="item-right d-flex flex-column justify-content-center">
         <div class="item-name">
           <span>Klasikten Vazgeçmeyenler</span>
         </div>
@@ -586,6 +586,8 @@
     </div>
   </footer>
 
+  <div class="bg-dark d-none" onclick="searchToggle()"></div>
+
 
   <!-- script -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -615,8 +617,12 @@
 
     function searchToggle() {
       var element = document.querySelector(".search-wrapper");
+      var bgDark = document.querySelector(".bg-dark");
+
       element.classList.toggle("d-none");
+      bgDark.classList.toggle("d-none");
     }
+
 
     var mySwiper = new Swiper('.swiper-container', {
       // Optional parameters

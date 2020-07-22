@@ -780,6 +780,7 @@
     </div>
   </footer>
 
+  <div class="bg-dark d-none" onclick="searchToggle()"></div>
 
   <!-- script -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -809,7 +810,10 @@
 
     function searchToggle() {
       var element = document.querySelector(".search-wrapper");
+      var bgDark = document.querySelector(".bg-dark");
+
       element.classList.toggle("d-none");
+      bgDark.classList.toggle("d-none");
     }
 
     var mySwiper = new Swiper('.swiper-container', {
