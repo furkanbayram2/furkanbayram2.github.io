@@ -14,12 +14,20 @@
     border-radius: 15px;
     .title{
       span{
-        font-size: 1.25rem;
+		font-size: 1.25rem;
+		font-weight: 700;
         color: var(--light-color);
       }
     }
+  }
 
-
+  .blog-detail-date{
+    margin-top: 25px;
+    margin-bottom: 35px;
+    span{
+      color: #777;
+      font-size: 0.75rem;
+    }
   }
 
   .blog-detail {
@@ -36,10 +44,35 @@
     .content {
       p {
         font-size: .875rem;
-        ;
-      }
+	  }
+	  
+	  a {
+		  color: var(--primary-color);
+	  }
     }
   }
 
+   .next-post{
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    .title{
+      span{
+        color: #777777;
+        font-size: 0.75rem;
+      }
+    }
+    .post{
+        padding-top: 10px;
 
+      a{
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: underline;
+        color: var(--dark-color);
+        margin-right: 10px;
+      }
+    }
+  }
 }

@@ -12,6 +12,12 @@
     }
   }
 
+  &-brand {
+	  img {
+		  max-width: 62px;
+	  }
+  }
+
   &-middle {
     background-color: var(--dark-color);
     border-bottom: 1px solid #707070;
@@ -41,7 +47,8 @@
             align-items: center;
 
             .nav-link {
-              font-size: .8125rem;
+			  font-size: .8125rem;
+			  font-weight: 600;
               position: relative;
               padding-left: 25px;
               padding-right: 25px;
@@ -92,6 +99,7 @@
 
                 .sub-menu-list.level-2 {
                   .sub-menu-item {
+					  min-width: 215px;
                     .sub-menu-link {
                       color: #777777;
 
@@ -107,7 +115,7 @@
 
                         i {
                           opacity: 1;
-                          transition: all .2s ease;
+                          transition: all .3s ease;
 
                         }
                       }
@@ -160,11 +168,21 @@
           position: absolute;
           top: 80px;
           left: 0;
+          height: 0;
           width: 100%;
           z-index: 999999999;
           font-size: 0.875rem;
           background-color: var(--light-color);
           padding: 20px 40px 40px 40px;
+          visibility: hidden;
+          opacity: 0;
+
+          &.show-search{
+            visibility: visible;
+            opacity: 1;
+            transition: all .3s ease-in-out;
+            height: auto;
+          }
 
           .sub-menu-list {
             .search-area {
@@ -312,8 +330,8 @@
                 +.slider {
                   background-color: rgb(98, 54, 255);
                   justify-content: flex-start;
-                  -webkit-transition: .4s;
-                  transition: .4s;
+                  -webkit-transition: .3s;
+                  transition: .3s;
 
                   &:before {
                     left: 10px;
@@ -339,8 +357,8 @@
               height: 32px;
               border-radius: 30px;
               background-color: rgba(255, 255, 255, .15);
-              -webkit-transition: .4s;
-              transition: .4s;
+              -webkit-transition: .3s;
+              transition: .3s;
 
               &:hover{
                 cursor: pointer;
@@ -355,8 +373,8 @@
                 border-radius: 30px;
                 bottom: 4px;
                 left: 4px;
-                -webkit-transition: .4s;
-                transition: .4s;
+                -webkit-transition: .3s;
+                transition: .3s;
               }
 
               svg {
@@ -383,10 +401,19 @@
 
 //left-menu
 .left-menu {
-  height: 100vh;
-  width: 100%;
-  background-color: var(--light-color);
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    position: fixed;
 
+  background-color: var(--light-color);
+  &.show-left-menu{
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+    opacity: 1;
+    transition: all .3s ease-in;
+  }
   .top {
     .hamburger-menu {
       font-size: 18px;

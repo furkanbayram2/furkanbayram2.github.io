@@ -34,16 +34,17 @@
           justify-content: center;
         }
 
-        ul {
-          .title {
+		.title {
             color: var(--light-color);
-            font-size: 0.875rem;
+			font-size: 0.875rem;
             padding-bottom: 5px;
-          }
-
+		  }
+		  
+        ul {
           li {
             a {
-              color: var(--secondary-color);
+			  color: var(--secondary-color);
+			  line-height: 36px;
               font-size: 0.75rem;
             }
           }

@@ -15,7 +15,12 @@
     .see-all {
       a {
         border: 1px solid var(--dark-color);
-        background-color: transparent;
+		background-color: transparent;
+		
+		&:hover {
+			background-color: #000000;
+			color: #ffffff;
+		}
       }
     }
   }
@@ -27,7 +32,6 @@
         .item {
           height: 380px;
           border-radius: 3px;
-          ;
           background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.64), rgba(238, 238, 238, 0));
 
           img {
@@ -35,9 +39,7 @@
             z-index: -1;
             height: 380px;
             border-radius: 3px;
-            ;
-
-
+            width: auto;
           }
 
           .title {

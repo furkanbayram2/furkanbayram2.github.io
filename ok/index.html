@@ -27,7 +27,7 @@
 <body>
 
   <!-- header left menu -->
-  <div class="left-menu fixed-top d-none">
+  <div class="left-menu fixed-top">
     <div class="top d-flex justify-content-between p-3 border-bottom">
       <img src="https://img-ok.mncdn.com/images/frontend/mobile-header-logo.png" alt="Logo">
       <a class="hamburger-menu text-dark d-md-none ml-5" type="button" onclick="hambergerToggle()">
@@ -260,7 +260,7 @@
               <span class="search-span d-flex align-items-center h-100" onclick="searchToggle()">
                 <i class="fas fa-search text-white"></i>
               </span>
-              <div class="nav-item-sub-menu search-wrapper d-none">
+              <div class="nav-item-sub-menu search-wrapper">
                 <ul class="sub-menu-list d-flex level-2">
                   <div class="search-area col-12 p-0">
                     <div class="top d-flex flex-column">
@@ -325,21 +325,23 @@
   <!-- video -->
   <div class="media d-flex justify-content-center position-relative">
     <div class="media-image-wrapper">
-      <img class="w-100" src="./assets/images/video.jpg" alt="Video image">
+      <img class="w-100" src="./assets/images/video-bg.png" alt="Video image">
 
     </div>
     <div class="media-icon-wrapper position-absolute d-flex align-items-center justify-content-center">
       <i class="far fa-play-circle"></i>
     </div>
-    <div class="media-text-wrapper position-absolute">
+    <!-- <div class="media-text-wrapper position-absolute">
       <a href="">
         <span>MANİFESTOYU OKU</span>
       </a>
-    </div>
+    </div> -->
   </div>
 
   <!-- static text -->
   <div class="static-text">
+	<a href="#" class="static-text-button"><i class="fa fa-sort-down"></i> MANİFESTOYU OKU <i class="fa fa-sort-down"></i></a>
+
     <div class="container">
       <div class="static-text-wrapper d-flex">
         <div class="left d-flex flex-column justify-content-between">
@@ -535,18 +537,23 @@
         <div class="middle-wrapper d-flex">
           <div class="col-12 col-lg-8">
             <div class="left d-flex">
-              <ul class="mr-5">
-                <a class="title" href="">Kurumsal</a>
-                <li><a href="">Hakkımızda</a></li>
-                <li><a href="">SSS</a></li>
-                <li><a href="">İletilim</a></li>
-              </ul>
-              <ul class="ml-4">
-                <a class="title" href="">Yasal Bilgilerimiz</a>
-                <li><a href="">İşlem Rehberi</a></li>
-                <li><a href="">Çerez Politikası</a></li>
-                <li><a href="">Gizlilik ve Güvenlik</a></li>
-              </ul>
+			<div class="mr-5">
+				<a class="title" href="">Kurumsal</a>
+				<ul>
+					<li><a href="">Hakkımızda</a></li>
+					<li><a href="">SSS</a></li>
+					<li><a href="">İletilim</a></li>
+				</ul>
+			</div>
+			  <div class="ml-4">
+				<a class="title" href="">Yasal Bilgilerimiz</a>
+				<ul>
+				  <li><a href="">İşlem Rehberi</a></li>
+				  <li><a href="">Çerez Politikası</a></li>
+				  <li><a href="">Gizlilik ve Güvenlik</a></li>
+				</ul>
+			  </div>
+
             </div>
           </div>
           <div class="col-12 col-lg-4">
@@ -607,19 +614,19 @@
   <script>
     function hambergerToggle() {
       var element = document.querySelector(".left-menu");
-      element.classList.toggle("d-none");
+      element.classList.toggle("show-left-menu");
     }
 
     function leftMenutoggle() {
       var element = document.querySelector(".nav-item-sub-menu");
-      element.classList.toggle("d-none");
+      element.classList.toggle("left-me");
     }
 
     function searchToggle() {
       var element = document.querySelector(".search-wrapper");
       var bgDark = document.querySelector(".bg-dark");
 
-      element.classList.toggle("d-none");
+      element.classList.toggle("show-search");
       bgDark.classList.toggle("d-none");
     }
 

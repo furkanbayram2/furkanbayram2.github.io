@@ -9,6 +9,8 @@
 
   .left-side-menu {
     .left-menu-list {
+      position: sticky;
+      top: 90px;
       li {
         a {
           font-weight: 400;

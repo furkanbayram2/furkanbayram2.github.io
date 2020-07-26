@@ -1,5 +1,6 @@
 ﻿﻿.static-text {
-  background: url(/ok/assets/images/abstract.png) no-repeat center center;
+position: relative;
+  background: url(../images/abstract.png) no-repeat center center;
   // fixed
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -26,14 +27,14 @@
     .left {
       .logo {
         img {
-          width: 107px;
-          height: 107px;
+          max-width: 107px;
+          max-height: 107px;
         }
       }
 
       .text {
         @media (min-width: 992px) {
-          width: 50%;
+          width: 70%;
         }
 
         span {
@@ -52,4 +53,30 @@
     }
   }
 
+
+  &-button {
+	  position: absolute;
+	  bottom: 100%;
+	  left: 50%;
+
+	  margin-left: -153px;
+	  width: 306px;
+	  height: 55px;
+	  line-height: 55px;
+	  text-align: center;
+	  
+	  font-size: 15px;
+	  font-weight: 600;
+
+	  background: url(../images/manifest-button.png) center center;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+
+	  display: flex;
+	  flex-direction: row;
+	  align-items: center;
+	  justify-content: space-between;
+
+	  padding: 0 25px;
+  }
 }
