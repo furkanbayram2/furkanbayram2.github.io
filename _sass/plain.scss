@@ -15,12 +15,12 @@ $leftWidth: 220px;
 }
 
 ::-webkit-scrollbar {
-  width: 7px;
+  width: 10px;
 } 
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #42b883; 
+  background: #8d99ae; 
 }
 
 /* Handle on hover */
@@ -28,7 +28,7 @@ $leftWidth: 220px;
   background: #35495e; 
 }
 body {
-  background-color: #fcf8f3;
+  background-color: #efefef;
   font-family: 'Oxanium', cursive;
   // font-family: "Raleway", sans-serif;
   // font-family: 'Encode Sans Expanded', sans-serif;
@@ -219,7 +219,7 @@ main {
 .post-title {
   line-height: 1.2em;
   font-size: 28px;
-  color: #42b883;
+  color: #8d99ae;
 }
 .posts, .post-container {
 
