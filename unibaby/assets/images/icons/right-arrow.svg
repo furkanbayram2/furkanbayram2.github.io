@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24">
+    <g fill="#4EBDFF" transform="translate(.473)">
+        <rect width="7.2" height="1.8" x="8.582" y="13.082" rx=".9" transform="rotate(-45 12.182 13.982)"/>
+        <path d="M9.636 9.11l3.819 3.818c.351.351.921.351 1.273 0 .351-.352.351-.922 0-1.273l-3.819-3.819c-.351-.351-.921-.351-1.273 0-.351.352-.351.922 0 1.273z" style="mix-blend-mode:multiply"/>
+    </g>
+</svg>

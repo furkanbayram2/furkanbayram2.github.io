@@ -1,0 +1,738 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anasayfa</title>
+
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+  <!-- filter area -->
+  <div class="filter-wrapper fixed-top">
+    <div class="header d-flex justify-content-between">
+      <div class="left d-flex align-items-center">
+        <div class="back">
+          <a onclick="filterMenuToggle()" href="#">
+            <img src="assets/images/icons/go-back.svg" alt="">
+          </a>
+        </div>
+        <div class="title">
+          <span>Filtrele & Sırala</span>
+        </div>
+      </div>
+
+      <div class="right d-flex align-items-center">
+        <a class="clear" href="">Temizle</a>
+      </div>
+    </div>
+    <div class="content">
+      <div class="filter">
+        <div class="filter-content d-flex justify-content-between">
+          <div class="left">
+            <span>Görünüm</span>
+          </div>
+          <div class="right">
+            <a class="d-flex align-items-center" href="#">
+              <span>İkili</span>
+              <img src="assets/images/icons/right-arrow.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="filter-detail d-flex">
+          <div class="option d-flex align-items-center">
+            <input type="checkbox">
+            <label for="">Tekli</label>
+          </div>
+          <div class="option d-flex align-items-center">
+            <input type="checkbox">
+            <label for="">İkili</label>
+          </div>
+        </div>
+      </div>
+      <div class="filter">
+        <div class="filter-content d-flex justify-content-between">
+          <div class="left">
+            <span>Ürün Adedi</span>
+          </div>
+          <div class="right">
+            <a class="d-flex align-items-center" href="#">
+              <span>24'lü</span>
+              <img src="assets/images/icons/right-arrow.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="filter-detail d-flex">
+          <div class="option d-flex align-items-center">
+            <input type="checkbox">
+            <label for="">12'li</label>
+          </div>
+          <div class="option d-flex align-items-center">
+            <input type="checkbox">
+            <label for="">24'lü</label>
+          </div>
+        </div>
+      </div>
+      <div class="filter">
+        <div onclick="filterItemToggle()" class="filter-content active d-flex justify-content-between">
+          <div class="left">
+            <span>Görünüm</span>
+          </div>
+          <div class="right">
+            <a class="d-flex align-items-center" href="#">
+              <span>Yenidoğan (0-1 ay)</span>
+              <img src="assets/images/icons/right-arrow.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="filter-detail column-filter d-flex flex-column">
+          <div class="option d-flex align-items-center">
+            <input type="checkbox">
+            <label for="">Yenidoğan (0-1 ay)</label>
+          </div>
+          <div class="option d-flex align-items-center">
+            <input type="checkbox">
+            <label for="">Bebek (1-24 ay)</label>
+          </div>
+          <div class="option d-flex align-items-center">
+            <input type="checkbox">
+            <label for="">Çocuk (24+ ay)</label>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- filter area -->
+
+
+  <!-- header left menu -->
+  <div class="left-menu fixed-top">
+    <div class="top d-flex justify-content-center p-3">
+      <ul class="language d-flex mb-0">
+        <li class="language-list">
+          <a class=" pl-2 pr-2" href="">EN</a>
+        </li>
+        <li>
+          <span>|</span>
+        </li>
+        <li class="language-list active">
+          <a class="pl-2 pr-2" href="">TR</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom">
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/1.png" alt="">
+        </div>
+      </ul>
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/2.png" alt="">
+        </div>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- header -->
+  <nav class="navbar d-flex flex-column p-0">
+    <div class="navbar-middle d-flex align-items-center w-100">
+      <div class="container">
+        <div class="main-menu-wrapper position-static d-flex w-100">
+          <div class="mobile-menu d-sm-none d-flex justify-content-between align-items-center w-100">
+            <div class="search d-md-none">
+              <img src="assets/images/icons/search.svg" alt="" />
+            </div>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <a class="hamburger-menu d-md-none" type="button" onclick="hamburgerToggle()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100">
+            <div class="left d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" alt="Logo">
+              </a>
+              <ul class="menu m-0 d-flex">
+                <li class="list">
+                  <a class="link-main" href="index.html">Anasayfa</a>
+                  <div class="nav-item-sub-menu">
+                    <div class="container">
+                      <ul class="sub-menu-list d-flex level-2">
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Anne Bakım Ürünleri</a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Ürünlerimiz</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Bakım Ürünleri</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Bebek Bakım Ürünleri</a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Mendil</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Banyo & Bakım</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Temizlik</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/product-list.html">Ürün Listesi</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/product-detail.html">Ürün Detay</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/about.html">Hakkımızda</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/manifesto.html">Manifesto</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/contact.html">İletişim</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/kvkk.html">KVKK</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right d-flex align-items-center">
+              <div class="search d-flex align-items-center">
+                <a href="" class="d-flex align-items-center">
+                  <span>Arama</span>
+                  <img src="assets/images/icons/search.svg" alt="" />
+                </a>
+              </div>
+              <ul class="language d-flex mb-0">
+                <li class="language-list">
+                  <a class=" pl-2 pr-2" href="">EN</a>
+                </li>
+                <li>
+                  <span>|</span>
+                </li>
+                <li class="language-list active">
+                  <a class="pl-2 pr-2" href="">TR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+  <!-- product list -->
+
+  <div class="product-list d-none d-md-block">
+    <ul class="nav nav-tabs d-flex container">
+      <li class="anne">
+        <a class="active" data-toggle="tab" data-target="#m-1">Anne Ürünleri</a>
+      </li>
+      <li class="bebek">
+        <a data-toggle="tab" data-target="#m-2">Bebek Ürünleri (0-24 ay)</a>
+      </li>
+      <li class="bebek">
+        <a data-toggle="tab" data-target="#m-2">Temizlik</a>
+      </li>
+    </ul>
+    <div class="product-tab tab-content">
+      <div id="m-1" class="tab-pane fade in show active">
+        <div class="header d-flex align-items-center">
+          <div class="container">
+            <span>ANNE ÜRÜNLERİ / BAKIM</span>
+          </div>
+        </div>
+        <div class="container">
+          <div class="product-count">
+            <span>
+              <strong>Bebek Ürünleri</strong> kategorisinde <strong>64 ürün</strong> listeleniyor.
+            </span>
+          </div>
+
+          <div class="content">
+            <div class="container">
+              <div class="row">
+                <div class="categories d-none d-lg-flex flex-column col-3">
+                  <ul class="category-list level-1">
+                    <li class="category-list-item">
+                      <a class="title" href="">Kategoriler</a>
+                      <ul class="level-2">
+                        <li>
+                          <a href="">Anne Ürünleri</a>
+                        </li>
+                        <li>
+                          <a href="">Bebek Ürünleri</a>
+                        </li>
+                        <li>
+                          <a href="">Ürün Setleri</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="products-wrapper col-12 col-lg-9">
+                  <div class="products d-flex flex-wrap">
+                    <div class="product-cart">
+                      <a class="text-dark" href="/ok/product-detail.html">
+                        <div class="product-image d-flex justify-content-center">
+                          <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                        </div>
+                        <div class="product-name">
+                          <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product-cart">
+                      <div class="product-image d-flex justify-content-center">
+                        <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                      </div>
+                      <div class="product-name">
+                        <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                      </div>
+                    </div>
+                    <div class="product-cart">
+                      <div class="product-image d-flex justify-content-center">
+                        <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                      </div>
+                      <div class="product-name">
+                        <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                      </div>
+                    </div>
+                    <div class="product-cart">
+                      <div class="product-image d-flex justify-content-center">
+                        <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                      </div>
+                      <div class="product-name">
+                        <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                      </div>
+                    </div>
+                    <div class="product-cart">
+                      <div class="product-image d-flex justify-content-center">
+                        <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                      </div>
+                      <div class="product-name">
+                        <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                      </div>
+                    </div>
+                    <div class="product-cart">
+                      <div class="product-image d-flex justify-content-center">
+                        <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                      </div>
+                      <div class="product-name">
+                        <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                      </div>
+                    </div>
+                    <div class="product-cart">
+                      <div class="product-image d-flex justify-content-center">
+                        <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                      </div>
+                      <div class="product-name">
+                        <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                      </div>
+                    </div>
+                    <div class="product-cart">
+                      <div class="product-image d-flex justify-content-center">
+                        <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                      </div>
+                      <div class="product-name">
+                        <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                      </div>
+                    </div>
+                    <div class="product-cart">
+                      <a class="text-dark" href="/product-detail">
+                        <div class="product-image d-flex justify-content-center">
+                          <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                        </div>
+                        <div class="product-name">
+                          <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product-cart">
+                      <div class="product-image d-flex justify-content-center">
+                        <img src="assets/images/product-list/product-web.png" alt="Product İmage">
+                      </div>
+                      <div class="product-name">
+                        <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pagination d-flex flex-column align-items-center">
+                    <div class="count">
+                      <span>8/64 Ürün Görüntülendi.</span>
+                    </div>
+                    <div class="bar">
+                      <div class="progressbar">
+                        <div></div>
+                      </div>
+                    </div>
+                    <div class="more">
+                      <a href="">Daha Fazla Göster</a>
+                    </div>
+                  </div>
+                  <!-- description area -->
+                  <div class="description-area mb-5">
+                    <div class="wrapper">
+                      <p>
+                        Bebeğinizin katı gıdaya geçmesi ile beraber, alt temizliği daha da zor hale gelir. Bu dönemde
+                        bebeğinizin alt temizliği için, daha iyi temizleyen ıslak bebek mendillerine ihtiyaç duyarsınız.
+                        Bebeğinizin katı gıdaya geçmesi ile beraber, alt temizliği daha da zor hale gelir. Bu dönemde
+                        bebeğinizin alt temizliği için, daha iyi temizleyen ıslak bebek mendillerine ihtiyaç duyarsınız.
+                        Bebeğinizin katı gıdaya geçmesi ile beraber, alt temizliği daha da zor hale gelir. Bu dönemde
+                        bebeğinizin alt temizliği için, daha iyi temizleyen ıslak bebek mendillerine ihtiyaç duyarsınız.
+
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="m-2" class="tab-pane fade">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- product list -->
+
+  <!-- product list mobile -->
+  <div class="product-list-mobile d-md-none">
+    <div class="header d-flex d-md-none justify-content-between">
+      <span class="title">Bebek Ürünleri</span>
+      <a onclick="filterMenuToggle()" class="filter">Düzenle</a>
+    </div>
+    <div class="content">
+      <div class="filters">
+        <ul class="list d-flex justify-content-between m-0">
+          <li class="item">
+            <a href="" class="link active">Tümü</a>
+          </li>
+          <li class="item">
+            <a href="" class="link">Mendiller</a>
+          </li>
+          <li class="item">
+            <a href="" class="link">Banyo Bakım</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="product-count">
+        <span>
+          <strong>Bebek Ürünleri</strong> kategorisinde <strong>64 ürün</strong> listeleniyor.
+        </span>
+      </div>
+
+      <div class="banner-area">
+        <div class="image text-center">
+          <img src="assets/images/product-list/baby.png" alt="">
+        </div>
+        <div class="title text-center">
+          <span>Parabensiz, Boyasız, SLS’siz Alkolsüz Ürünler</span>
+        </div>
+        <div class="sub-title text-center">
+          <span>Uni Baby Yenidoğan Ürünleri Hassas ve ince olan yenidoğan özel formüle sahiptir.</span>
+        </div>
+      </div>
+
+      <div class="products d-flex flex-wrap">
+        <div class="product-cart">
+          <div class="image text-center">
+            <img src="assets/images/product-list/product-1.png" alt="">
+          </div>
+          <div class="name">
+            <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+          </div>
+        </div>
+        <div class="product-cart">
+          <div class="image text-center">
+            <img src="assets/images/product-list/product-2.png" alt="">
+          </div>
+          <div class="name">
+            <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+          </div>
+        </div>
+        <div class="product-cart">
+          <div class="image text-center">
+            <img src="assets/images/product-list/product-3.png" alt="">
+          </div>
+          <div class="name">
+            <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+          </div>
+        </div>
+        <div class="product-cart">
+          <div class="image text-center">
+            <img src="assets/images/product-list/product-4.png" alt="">
+          </div>
+          <div class="name">
+            <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+          </div>
+        </div>
+        <div class="product-cart">
+          <div class="image text-center">
+            <img src="assets/images/product-list/product-1.png" alt="">
+          </div>
+          <div class="name">
+            <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+          </div>
+        </div>
+        <div class="product-cart">
+          <div class="image text-center">
+            <img src="assets/images/product-list/product-2.png" alt="">
+          </div>
+          <div class="name">
+            <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+          </div>
+        </div>
+        <div class="product-cart">
+          <div class="image text-center">
+            <img src="assets/images/product-list/product-3.png" alt="">
+          </div>
+          <div class="name">
+            <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+          </div>
+        </div>
+        <div class="product-cart">
+          <div class="image text-center">
+            <img src="assets/images/product-list/product-4.png" alt="">
+          </div>
+          <div class="name">
+            <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pagination d-flex flex-column align-items-center">
+        <div class="count">
+          <span>8/64 Ürün Görüntülendi.</span>
+        </div>
+
+        <div class="bar">
+          <div class="progressbar">
+            <div></div>
+          </div>
+        </div>
+
+        <div class="more">
+          <a href="">Daha Fazla Göster</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- product list mobile  -->
+
+  <!-- footer -->
+  <footer class="d-flex">
+    <div class="menu w-100 d-md-none">
+      <ul class="list d-flex justify-content-center m-0">
+        <li class="item">
+          <a href="" class="link">Hakkımızda</a>
+        </li>
+        <li class="item">
+          <a href="" class="link">İletişim</a>
+        </li>
+        <li class="item">
+          <a href="" class="link">Sözleşmeler</a>
+        </li>
+      </ul>
+    </div>
+    <div class="social d-md-none">
+      <ul class="list d-flex justify-content-center m-0">
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/instagram.svg" alt="">
+          </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/facebook.svg" alt="">
+          </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/twitter.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container d-none d-md-block">
+      <div class="footer-wrapper">
+        <div class="top d-flex w-100 justify-content-between">
+          <div class="left">
+            <div class="logo">
+              <img src="assets/images/eczacibasi-logo.png" alt="">
+            </div>
+          </div>
+
+          <div class="right d-flex">
+            <ul>
+              <a class="title" href="">Uni Baby</a>
+              <li>
+                <a href="">Hakkımızda</a>
+              </li>
+              <li>
+                <a href="">İletişim</a>
+              </li>
+            </ul>
+            <ul>
+              <a class="title" href="">Ürünlerimiz</a>
+              <li>
+                <a href="">Anne Ürünleri</a>
+              </li>
+              <li>
+                <a href="">Bebek Ürünleri</a>
+              </li>
+            </ul>
+            <ul>
+              <a class="title" href="">Faydalı Bilgiler</a>
+              <li>
+                <a href="">Hamile ve Anne</a>
+              </li>
+              <li>
+                <a href="">Premature</a>
+              </li>
+              <li>
+                <a href="">Yenidoğan</a>
+              </li>
+              <li>
+                <a href="">Bebek</a>
+              </li>
+              <li>
+                <a href="">Çocuk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom d-flex justify-content-between">
+          <div class="left">
+            <span>© 2019 Eczacibaşı Tüketim Ürünleri</span>
+          </div>
+          <div class="right">
+            <ul class="d-flex">
+              <li>
+                <a href="">Gizlilik ve Kullanım Koşulları</a>
+              </li>
+              <li>
+                <a href="">Kişisel Hakların Korunması</a>
+              </li>
+              <li>
+                <a href="">Sözleşmeler</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+
+  </script>
+</body>
+
+</html>

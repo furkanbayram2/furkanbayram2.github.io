@@ -1,0 +1,806 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürün Detay</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+  <!-- header left menu -->
+  <div class="left-menu fixed-top">
+    <div class="top d-flex justify-content-center p-3">
+      <ul class="language d-flex mb-0">
+        <li class="language-list">
+          <a class=" pl-2 pr-2" href="">EN</a>
+        </li>
+        <li>
+          <span>|</span>
+        </li>
+        <li class="language-list active">
+          <a class="pl-2 pr-2" href="">TR</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom">
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/1.png" alt="">
+        </div>
+      </ul>
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/2.png" alt="">
+        </div>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- header -->
+  <nav class="navbar d-flex flex-column p-0">
+    <div class="navbar-middle d-flex align-items-center w-100">
+      <div class="container">
+        <div class="main-menu-wrapper position-static d-flex w-100">
+          <div class="mobile-menu d-sm-none d-flex justify-content-between align-items-center w-100">
+            <div class="search d-md-none">
+              <img src="assets/images/icons/search.svg" alt="" />
+            </div>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <a class="hamburger-menu d-md-none" type="button" onclick="hamburgerToggle()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100">
+            <div class="left d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" alt="Logo">
+              </a>
+              <ul class="menu m-0 d-flex">
+                <li class="list">
+                  <a class="link-main" href="index.html">Anasayfa</a>
+                  <div class="nav-item-sub-menu">
+                    <div class="container">
+                      <ul class="sub-menu-list d-flex level-2">
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Anne Bakım Ürünleri</a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Ürünlerimiz</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Bakım Ürünleri</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Bebek Bakım Ürünleri</a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Mendil</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Banyo & Bakım</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Temizlik</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/product-list.html">Ürün Listesi</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/product-detail.html">Ürün Detay</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/about.html">Hakkımızda</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/manifesto.html">Manifesto</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/contact.html">İletişim</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/kvkk.html">KVKK</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right d-flex align-items-center">
+              <div class="search d-flex align-items-center">
+                <a href="" class="d-flex align-items-center">
+                  <span>Arama</span>
+                  <img src="assets/images/icons/search.svg" alt="" />
+                </a>
+              </div>
+              <ul class="language d-flex mb-0">
+                <li class="language-list">
+                  <a class=" pl-2 pr-2" href="">EN</a>
+                </li>
+                <li>
+                  <span>|</span>
+                </li>
+                <li class="language-list active">
+                  <a class="pl-2 pr-2" href="">TR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+
+  <!-- web -->
+  <div class="product-wrapper d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="breadcrumb">
+          <ul class="d-flex">
+            <li>
+              <a href="">Ürünlerimiz</a>
+            </li>
+            <li>
+              <span>/</span>
+            </li>
+            <li>
+              <a href="">Bebek Bakım Ürünleri</a>
+            </li>
+          </ul>
+        </div>
+        <div class="product d-flex w-100">
+          <div class="left d-flex flex-column w-50">
+            <div class="image">
+              <div class="tab-swiper-container swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="image text-center">
+                      <img src="assets/images/product-detail/product.png" alt="">
+                    </div>
+
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image text-center">
+                      <img src="assets/images/product-detail/product.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image text-center">
+                      <img src="assets/images/product-detail/product.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="image">
+                      <img src="assets/images/product-detail/product.png" alt="">
+                    </div>
+                  </div>
+
+                </div>
+                <!-- <div class="swiper-thumbnails">
+                  <button type="button">any html content</button>
+                  <button type="button">any html content</button>
+                  <button type="button">any html content</button>
+                  <button type="button">any html content</button>
+
+                </div> -->
+                <div class="swiper-pagination-web"></div>
+                <!-- Add Pagination -->
+              </div>
+            </div>
+            <div class="favorite d-flex justify-content-center">
+              <a class="add" href="">
+                <span>Favorilere Ekle</span>
+              </a>
+            </div>
+          </div>
+          <div class="right w-50">
+            <div class="name">
+              <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+            </div>
+            <div class="info">
+              <ul class="nav nav-tabs d-flex justify-content-around">
+                <li class="about">
+                  <a data-toggle="tab" data-target="#about">ÜRÜN HAKKINDA</a>
+                </li>
+                <li class="about-2">
+                  <a data-toggle="tab" data-target="#about-2">İÇERMEZLER</a>
+                </li>
+
+              </ul>
+              <div class="tab-content">
+                <div id="about" class="tab-pane fade active show">
+                  <div class="text">
+                    <span>
+                      Yenidoğan bebeklerin cildi çok ince ve hassastır. Yenidoğan bebekler, koruyucu bir tabaka olan
+                      Verniks
+                      ile doğarlar. Verniks yenidoğanları dış etkenlere karşı korurken, aynı zamanda vücut ısılarının
+                      ayarlanmasına yardımcı olur. Verniks tabakası temizlenmemelidir.
+                    </span>
+                  </div>
+                </div>
+                <div id="about-2" class="tab-pane fade">
+                  <div class="n-contain">
+                    <div class="title text-center">
+                      <span>Ne İçermez?</span>
+                    </div>
+                    <ul class="list">
+                      <li>Alkol</li>
+                      <li>Boya</li>
+                      <li>Paraben</li>
+                      <li>Sentetik Lif</li>
+                      <li>Parfüm</li>
+                      <li>Fenoksietanol</li>
+                      <li>SLS/SLES</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="blog">
+      <div class="header text-center">
+        <span>En Son Eklenen İçerikler</span>
+      </div>
+      <div class="container">
+        <div class="swiper-blog swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image d-flex">
+                <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+              </div>
+              <div class="content">
+                <div class="category">
+                  <span>Sağlık</span>
+                </div>
+                <div class="date">
+                  <span>15 Mart 2018 | 1dk</span>
+                </div>
+                <div class="title">
+                  <span>Çocuğunuza Özgüven Kazandırmak İçin
+                    Neler Yapabilirsiniz?</span>
+                </div>
+                <div class="sub-title">
+                  Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image d-flex">
+                <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+              </div>
+              <div class="content">
+                <div class="category">
+                  <span>Sağlık</span>
+                </div>
+                <div class="date">
+                  <span>15 Mart 2018 | 1dk</span>
+                </div>
+                <div class="title">
+                  <span>Çocuğunuza Özgüven Kazandırmak İçin
+                    Neler Yapabilirsiniz?</span>
+                </div>
+                <div class="sub-title">
+                  Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image d-flex">
+                <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+              </div>
+              <div class="content">
+                <div class="category">
+                  <span>Sağlık</span>
+                </div>
+                <div class="date">
+                  <span>15 Mart 2018 | 1dk</span>
+                </div>
+                <div class="title">
+                  <span>Çocuğunuza Özgüven Kazandırmak İçin
+                    Neler Yapabilirsiniz?</span>
+                </div>
+                <div class="sub-title">
+                  Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image d-flex">
+                <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+              </div>
+              <div class="content">
+                <div class="category">
+                  <span>Sağlık</span>
+                </div>
+                <div class="date">
+                  <span>15 Mart 2018 | 1dk</span>
+                </div>
+                <div class="title">
+                  <span>Çocuğunuza Özgüven Kazandırmak İçin
+                    Neler Yapabilirsiniz?</span>
+                </div>
+                <div class="sub-title">
+                  Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image d-flex">
+                <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+              </div>
+              <div class="content">
+                <div class="category">
+                  <span>Sağlık</span>
+                </div>
+                <div class="date">
+                  <span>15 Mart 2018 | 1dk</span>
+                </div>
+                <div class="title">
+                  <span>Çocuğunuza Özgüven Kazandırmak İçin
+                    Neler Yapabilirsiniz?</span>
+                </div>
+                <div class="sub-title">
+                  Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image d-flex">
+                <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+              </div>
+              <div class="content">
+                <div class="category">
+                  <span>Sağlık</span>
+                </div>
+                <div class="date">
+                  <span>15 Mart 2018 | 1dk</span>
+                </div>
+                <div class="title">
+                  <span>Çocuğunuza Özgüven Kazandırmak İçin
+                    Neler Yapabilirsiniz?</span>
+                </div>
+                <div class="sub-title">
+                  Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="other-products">
+      <div class="title text-center">
+        <span>BU ÜRÜNLER İLGİNİZİ ÇEKEBİLİR</span>
+      </div>
+      <div class="container">
+        <div class="slider">
+          <div class="releated-swiper-container swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="assets/images/product-list/product-1.png" alt="">
+                </div>
+                <div class="text">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="assets/images/product-list/product-2.png" alt="">
+                </div>
+                <div class="text">
+                  <span>Bebek cildine zararlı kimyasallar nelerdir ve nasıl önleriz</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="assets/images/product-list/product-3.png" alt="">
+                </div>
+                <div class="text">
+                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="image">
+                  <img src="assets/images/product-list/product-4.png" alt="">
+                </div>
+
+                <div class="text">
+                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- web -->
+
+
+  <!-- mobile -->
+  <div class="product-mobile-wrapper d-md-none">
+    <div class="product">
+      <div class="image">
+        <div class="mobile swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image text-center">
+                <img src="assets/images/product-detail/product.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image text-center">
+                <img src="assets/images/product-detail/product.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image text-center">
+                <img src="assets/images/product-detail/product.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination mb-4" style="bottom: -30px;"></div>
+        </div>
+      </div>
+      <div class="name">
+        <span class="d-block">Uni Baby Yenidoğan</span>
+        <span>Islak Pamuk Mendil - Tekli</span>
+      </div>
+      <div class="info">
+        <ul class="nav nav-tabs d-flex justify-content-around">
+          <li class="about">
+            <a data-toggle="tab" data-target="#about">ÜRÜN HAKKINDA</a>
+          </li>
+          <li class="about-2">
+            <a data-toggle="tab" data-target="#about-2">İÇERMEZLER</a>
+          </li>
+
+        </ul>
+        <div class="tab-content">
+          <div id="about" class="tab-pane fade active show">
+            <div class="text">
+              <span>
+                Yenidoğan bebeklerin cildi çok ince ve hassastır. Yenidoğan bebekler, koruyucu bir tabaka olan Verniks
+                ile doğarlar. Verniks yenidoğanları dış etkenlere karşı korurken, aynı zamanda vücut ısılarının
+                ayarlanmasına yardımcı olur. Verniks tabakası temizlenmemelidir.
+              </span>
+            </div>
+            <div class="video">
+              <img class="w-100" src="assets/images/product-detail/baby.png" alt="">
+            </div>
+            <div class="text">
+              <span>
+                Saflaştırılmış su ve pamuk içerir. Yenidoğan bebeğinizin ince, hassas ve geçirgen cildine özel
+                geliştirilmiştir. Yenidoğanların cilt temizliği için
+
+              </span>
+            </div>
+            <div class="more d-flex justify-content-center">
+              <a href="" class="d-flex align-items-center">
+                <span>DAHA FAZLA</span>
+                <img src="assets/images/icons/down-arrow.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div id="about-2" class="tab-pane fade">
+
+          </div>
+        </div>
+      </div>
+      <div class="n-contain">
+        <div class="title text-center">
+          <span>Ne İçermez?</span>
+        </div>
+        <ul class="list">
+          <li>Alkol</li>
+          <li>Boya</li>
+          <li>Paraben</li>
+          <li>Sentetik Lif</li>
+          <li>Parfüm</li>
+          <li>Fenoksietanol</li>
+          <li>SLS/SLES</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- releated posts -->
+    <div class="releated-posts">
+      <div class="title">
+        <span>İLGİLİ MAKALELER</span>
+      </div>
+      <div class="slider">
+        <div class="releated-swiper-container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="assets/images/slider/tab-1-1.png" alt="">
+              </div>
+
+              <div class="text">
+                <span>Yenidoğan cildi için neden su ve güneşe ihtiyaç duyarız</span>
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="assets/images/slider/tab-1-1.png" alt="">
+              </div>
+
+              <div class="text">
+                <span>Bebek cildine zararlı kimyasallar nelerdir ve nasıl önleriz</span>
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="assets/images/slider/tab-1-1.png" alt="">
+              </div>
+
+              <div class="text">
+                <span>Hamilelik ile ilgili yararlı bilgier.</span>
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="assets/images/slider/tab-1-1.png" alt="">
+              </div>
+
+              <div class="text">
+                <span>Hamilelik ile ilgili yararlı bilgier.</span>
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
+            </div>
+
+          </div>
+          <!-- Add Pagination -->
+        </div>
+      </div>
+    </div>
+    <!-- releated posts -->
+
+    <!-- other products -->
+    <div class="other-products">
+      <div class="title">
+        <span>DİĞER ÜRÜNLERİMİZE BAKIN</span>
+      </div>
+      <div class="slider">
+        <div class="releated-swiper-container swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="assets/images/product-list/product-1.png" alt="">
+              </div>
+              <div class="text">
+                <span>Uni Baby Yenidoğan Islak Pamuk Mendil - Tekli</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="assets/images/product-list/product-2.png" alt="">
+              </div>
+              <div class="text">
+                <span>Bebek cildine zararlı kimyasallar nelerdir ve nasıl önleriz</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="assets/images/product-list/product-3.png" alt="">
+              </div>
+              <div class="text">
+                <span>Hamilelik ile ilgili yararlı bilgier.</span>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="image">
+                <img src="assets/images/product-list/product-4.png" alt="">
+              </div>
+
+              <div class="text">
+                <span>Hamilelik ile ilgili yararlı bilgier.</span>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+        </div>
+      </div>
+    </div>
+    <!-- other products  -->
+  </div>
+  <!-- mobile -->
+
+  <div class="bg-dark d-none" onclick="searchToggle()"></div>
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    function categoryToggle() {
+      let element = document.querySelector(".category-list");
+      element.classList.toggle("d-none");
+    }
+
+    var mobile = new Swiper('.mobile', {
+      // Optional parameters
+      loop: true,
+      centeredSlides: false,
+      setWrapperSize: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    })
+
+
+
+    $(document).ready(function () {
+      var web = new Swiper('.web', {
+        // Example options
+        loop: true,
+        centeredSlides: false,
+        setWrapperSize: false,
+        pagination: {
+          el: '.swiper-pagination-web',
+          dynamicBullets: true,
+          clickable: true,
+        },
+      })
+
+      swiperThumbs(web, {
+        // Our default options
+        element: 'swiper-thumbnails',
+        activeClass: 'is-active',
+        scope: '.selector' // Parent selector that surrounds your Swiper html & Swiper thumbnail html to support multiple Swiper instances on one page.
+      });
+    });
+
+
+
+
+    var releatedPost = new Swiper('.releated-swiper-container', {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 2,
+      spaceBetween: 15,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 576px
+        576: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 5,
+        }
+        // when window width is >= 992
+      }
+
+    });
+
+    var mySwiper = new Swiper('.tab-swiper-container', {
+      // Optional parameters
+      slidesPerView: 1,
+
+    });
+
+    var blog = new Swiper('.swiper-blog', {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 576px
+        576: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        }
+        // when window width is >= 992
+      }
+    });
+  </script>
+</body>
+
+</html>

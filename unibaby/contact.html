@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anasayfa</title>
+
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+  <!-- header left menu -->
+  <div class="left-menu fixed-top">
+    <div class="top d-flex justify-content-center p-3">
+      <ul class="language d-flex mb-0">
+        <li class="language-list">
+          <a class=" pl-2 pr-2" href="">EN</a>
+        </li>
+        <li>
+          <span>|</span>
+        </li>
+        <li class="language-list active">
+          <a class="pl-2 pr-2" href="">TR</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom">
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/1.png" alt="">
+        </div>
+      </ul>
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/2.png" alt="">
+        </div>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- header -->
+  <nav class="navbar d-flex flex-column p-0">
+    <div class="navbar-middle d-flex align-items-center w-100">
+      <div class="container">
+        <div class="main-menu-wrapper position-static d-flex w-100">
+          <div class="mobile-menu d-sm-none d-flex justify-content-between align-items-center w-100">
+            <div class="search d-md-none">
+              <img src="assets/images/icons/search.svg" alt="" />
+            </div>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <a class="hamburger-menu d-md-none" type="button" onclick="hamburgerToggle()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100">
+            <div class="left d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" alt="Logo">
+              </a>
+              <ul class="menu m-0 d-flex">
+                <li class="list">
+                  <a class="link-main" href="index.html">Anasayfa</a>
+                  <div class="nav-item-sub-menu">
+                    <div class="container">
+                      <ul class="sub-menu-list d-flex level-2">
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Anne Bakım Ürünleri</a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Ürünlerimiz</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Bakım Ürünleri</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Bebek Bakım Ürünleri</a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Mendil</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Banyo & Bakım</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Temizlik</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/product-list.html">Ürün Listesi</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/product-detail.html">Ürün Detay</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/about.html">Hakkımızda</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/manifesto.html">Manifesto</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/contact.html">İletişim</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/kvkk.html">KVKK</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right d-flex align-items-center">
+              <div class="search d-flex align-items-center">
+                <a href="" class="d-flex align-items-center">
+                  <span>Arama</span>
+                  <img src="assets/images/icons/search.svg" alt="" />
+                </a>
+              </div>
+              <ul class="language d-flex mb-0">
+                <li class="language-list">
+                  <a class=" pl-2 pr-2" href="">EN</a>
+                </li>
+                <li>
+                  <span>|</span>
+                </li>
+                <li class="language-list active">
+                  <a class="pl-2 pr-2" href="">TR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+
+  <div class="contact-page col-12">
+
+    <div class="container-lg">
+      <div class="row">
+        <!-- left side menu -->
+        <div class="left-side-menu d-none d-lg-block col-12 col-lg-2">
+          <div class="title d-none d-lg-flex">
+            <span>Kurumsal</span>
+          </div>
+          <div class="title-mobile w-100 d-lg-none">
+            <span>Kurumsal</span>
+          </div>
+          <ul class="left-menu-list">
+            <li class="d-flex align-items-center justify-content-between">
+              <a class="active" href="">Hakkımızda</a>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <a href="">Manifestomuz</a>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <a href="">İletişim</a>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <a href="">Gizlilik Politikası ve Çerez Uyarısı</a>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <a href="">Kullanım Koşulları</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="form-area col-12 col-lg-9">
+          <div class="contact-header d-none d-lg-flex align-items-center justify-content-center">
+            <div class="icon">
+              <i class="fas fa-phone-alt"></i></div>
+          </div>
+          <div class="contact col-12">
+
+            <div class="row">
+              <div class="contact-right order-2 order-lg-1 col-12 p-0">
+                <div class="d-flex flex-wrap">
+                  <div class="section section-1">
+                    <div class="section-title">
+                      <span>Tüketici Danışma Hattı</span>
+                    </div>
+                    <ul>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/phone.svg" alt="">
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>Ücretsiz Sabit Hat</span>
+                          <a href="">0800 219 65 58</a>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/mobile-phone.svg" alt="">
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>Telefon</span>
+                          <a href="">0850 203 30 00</a>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/mail.svg" alt="">
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>E-Posta</span>
+                          <a href="">tuketimbilgi@eczacibasi.com.tr</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="section section-2">
+                    <div class="section-title">
+                      <span>Genel Müdürlük</span>
+                    </div>
+                    <ul>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/pin.svg" alt="">
+
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>Haritada Gör</span>
+                          <span class="content">
+                            Eczacıbaşı Tüketim Ürünleri Kavacık Ofis Rüzgarlıbahçe Mahallesi Kavak Sokak No:20
+                            Beykoz
+                            34805, İstanbul
+                          </span>
+                          <a class="text-decoration-underline" href=""><u>Haritada Gör</u> </a>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/phone.svg" alt="">
+
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>Telefon</span>
+                          <a href="">0(216) 333 79 00</a>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/phone.svg" alt="">
+
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>Fax</span>
+                          <a href="">0(216) 333 79 06</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="section section-3">
+                    <div class="section-title">
+                      <span>Fabrika</span>
+                    </div>
+                    <ul>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/pin.svg" alt="">
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>Haritada Gör</span>
+                          <span class="content">
+                            Eczacıbaşı Tüketim Ürünleri Kavacık Ofis Rüzgarlıbahçe Mahallesi Kavak Sokak No:20
+                            Beykoz
+                            34805, İstanbul
+                          </span>
+                          <a class="text-decoration-underline" href=""><u>Haritada Gör</u> </a>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/mobile-phone.svg" alt="">
+
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>Santral</span>
+                          <a href="">0(216) 333 79 00</a>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="left">
+                          <img src="assets/images/icons/phone.svg" alt="">
+
+                        </div>
+                        <div class="right d-flex flex-column">
+                          <span>Fax</span>
+                          <a href="">0(216) 333 79 06</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="contact-left  order-1 order-lg-2 col-12 col-lg-10">
+                <div class="title d-flex flex-column">
+                  <span class="header">Bize Yazın</span>
+                  <span class="info">* Doldurulması zorunlu alanlar</span>
+                </div>
+                <form id="contact-form" class="contact-form" action="submit">
+                  <div class="form-row">
+                    <div class="form-group col-12 col-g-6">
+                      <label class="mb-1" for="name-surnmame">*Ad Soyad</label>
+                      <input type="text" class="form-control" id="name-surname" placeholder="Tam adınız">
+                    </div>
+                    <div class="form-group col-12 col-lg-6">
+                      <label class="mb-1" for="mail">*E-Posta</label>
+                      <input type="email" class="form-control" id="mail" placeholder="E-Posta adresiniz">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-12 col-lg-6">
+                      <label class="mb-1" for="subject">*Mesaj Konusu</label>
+                      <select class="form-control" id="subject">
+                        <option>Mesaj Konusu Seçin</option>
+                        <option>Soru & Cevap</option>
+                        <option>İade</option>
+                        <option>Kargo Teslimatı</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-12">
+                      <label for="message">*Mesaj</label>
+                      <textarea class="form-control" id="message" rows="7"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-12 col-lg-6">
+                      <input type="text" class="form-control" id="code" placeholder="Doğrulama Kodu">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-12 col-lg-6">
+                      <button type="submit" class="btn btn-primary mb-2 w-100">GÖNDER</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="d-flex">
+    <div class="menu w-100 d-md-none">
+      <ul class="list d-flex justify-content-center m-0">
+        <li class="item">
+          <a href="" class="link">Hakkımızda</a>
+        </li>
+        <li class="item">
+          <a href="" class="link">İletişim</a>
+        </li>
+        <li class="item">
+          <a href="" class="link">Sözleşmeler</a>
+        </li>
+      </ul>
+    </div>
+    <div class="social d-md-none">
+      <ul class="list d-flex justify-content-center m-0">
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/instagram.svg" alt="">
+          </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/facebook.svg" alt="">
+          </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/twitter.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container d-none d-md-block">
+      <div class="footer-wrapper">
+        <div class="top d-flex w-100 justify-content-between">
+          <div class="left">
+            <div class="logo">
+              <img src="assets/images/eczacibasi-logo.png" alt="">
+            </div>
+          </div>
+
+          <div class="right d-flex">
+            <ul>
+              <a class="title" href="">Uni Baby</a>
+              <li>
+                <a href="">Hakkımızda</a>
+              </li>
+              <li>
+                <a href="">İletişim</a>
+              </li>
+            </ul>
+            <ul>
+              <a class="title" href="">Ürünlerimiz</a>
+              <li>
+                <a href="">Anne Ürünleri</a>
+              </li>
+              <li>
+                <a href="">Bebek Ürünleri</a>
+              </li>
+            </ul>
+            <ul>
+              <a class="title" href="">Faydalı Bilgiler</a>
+              <li>
+                <a href="">Hamile ve Anne</a>
+              </li>
+              <li>
+                <a href="">Premature</a>
+              </li>
+              <li>
+                <a href="">Yenidoğan</a>
+              </li>
+              <li>
+                <a href="">Bebek</a>
+              </li>
+              <li>
+                <a href="">Çocuk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom d-flex justify-content-between">
+          <div class="left">
+            <span>© 2019 Eczacibaşı Tüketim Ürünleri</span>
+          </div>
+          <div class="right">
+            <ul class="d-flex">
+              <li>
+                <a href="">Gizlilik ve Kullanım Koşulları</a>
+              </li>
+              <li>
+                <a href="">Kişisel Hakların Korunması</a>
+              </li>
+              <li>
+                <a href="">Sözleşmeler</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+  <div class="bg-dark d-none" onclick="searchToggle()"></div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+    var mainSwiper = new Swiper('.mainSwiper-container', {
+      // Optional parameters
+      loop: true,
+      pagination: {
+        el: '.mainSwiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+      },
+
+    });
+
+    var mySwiper = new Swiper('.tab-swiper-container', {
+      // Optional parameters
+      slidesPerView: 4,
+      spaceBetween: 15,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 576px
+        576: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 4,
+        }
+        // when window width is >= 992
+      }
+    });
+
+    var blog = new Swiper('.swiper-blog', {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 576px
+        576: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        }
+        // when window width is >= 992
+      }
+    });
+  </script>
+</body>
+
+</html>

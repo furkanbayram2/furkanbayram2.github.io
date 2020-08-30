@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Detail</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+  <!-- header left menu -->
+  <div class="left-menu fixed-top">
+    <div class="top d-flex justify-content-center p-3">
+      <ul class="language d-flex mb-0">
+        <li class="language-list">
+          <a class=" pl-2 pr-2" href="">EN</a>
+        </li>
+        <li>
+          <span>|</span>
+        </li>
+        <li class="language-list active">
+          <a class="pl-2 pr-2" href="">TR</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom">
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/1.png" alt="">
+        </div>
+      </ul>
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/2.png" alt="">
+        </div>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- header -->
+  <nav class="navbar d-flex flex-column p-0">
+    <div class="navbar-middle d-flex align-items-center w-100">
+      <div class="container">
+        <div class="main-menu-wrapper position-static d-flex w-100">
+          <div class="mobile-menu d-sm-none d-flex justify-content-between align-items-center w-100">
+            <div class="search d-md-none">
+              <img src="assets/images/icons/search.svg" alt="" />
+            </div>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <a class="hamburger-menu d-md-none" type="button" onclick="hamburgerToggle()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100">
+            <div class="left d-flex align-items-center">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" alt="Logo">
+              </a>
+              <ul class="menu m-0 d-flex">
+                <li class="list">
+                  <a class="link-main" href="index.html">Anasayfa</a>
+                  <div class="nav-item-sub-menu">
+                    <div class="container">
+
+                      <ul class="sub-menu-list d-flex level-2">
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Anne Bakım Ürünleri</a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Ürünlerimiz</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Bakım Ürünleri</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Bebek Bakım Ürünleri</a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Mendil</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Banyo & Bakım</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Temizlik</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/product-list.html">Ürün Listesi</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/product-detail.html">Ürün Detay</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/about.html">Hakkımızda</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/manifesto.html">Manifesto</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/contact.html">İletişim</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/kvkk.html">KVKK</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right d-flex align-items-center">
+              <div class="search d-flex align-items-center">
+                <a href="" class="d-flex align-items-center">
+                  <span>Arama</span>
+                  <img src="assets/images/icons/search.svg" alt="" />
+                </a>
+              </div>
+              <ul class="language d-flex mb-0">
+                <li class="language-list">
+                  <a class=" pl-2 pr-2" href="">EN</a>
+                </li>
+                <li>
+                  <span>|</span>
+                </li>
+                <li class="language-list active">
+                  <a class="pl-2 pr-2" href="">TR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+
+  <div class="blog-detail-page col-12">
+    <div class="container-lg">
+      <div class="row">
+
+        <div class="content col-12">
+          <div class="blog-detail-header d-flex">
+            <div class="title d-flex align-items-center p-3">
+              <span>Vajinal Mnatar</span>
+            </div>
+          </div>
+          <div class="blog-detail-date">
+            <span>15.06.2020 00:00:00</span>
+          </div>
+          <div class="blog-detail col-12">
+            <div class="row">
+              <div class=" col-12 order-2 order-lg-1 p-0">
+                <div class="title d-flex flex-column">
+                  <span class="header">VAJİNAL MANTAR NEDİR? GENİTAL MANTAR BELİRTİLERİ VE TEDAVİLERİ</span>
+                </div>
+
+                <div class="content">
+                  <p>Vajinal mantar, vajina florasındaki bakteri ve mantar dengesinin bozulmasıyla ortaya çıkan bir
+                    enfeksiyondur. Sağlıklı bir vajinada normal olarak bulunan Candida mantarı hücrelerinin çoğalmasıyla
+                    meydana gelen bu enfeksiyon Vulvovajinal kandidiyazis olarak da bilinmektedir.</p>
+
+                  <p>Vajinal mantar, vajina ve vulva dokusunda enflamasyon, tahriş, akıntı ve şiddetli kaşıntı gibi
+                    semptomlara neden olan bir enfeksiyondur. Bakteri ve mantar dengesinin bozulması sonucu Candida
+                    albicans adı verilen maya tipi mantar hücrelerinin vajina ve çevresinde çoğalmasıyla ortaya
+                    çıkmaktadır.</p>
+
+                  <p>OKEY’in temel var olma sebebi, toplumsal bilinci ve bilgi düzeyini arttırarak Türkiye’de
+                    prezervatif
+                    kullanımını yaygınlaştırmaktır.</p>
+
+                  <p>Bu nedenle, yıllardır pek çok sivil toplum kuruluşuyla ortaklaşa projeler yürütülmektedir:</p>
+
+                  <p>-UNFPA (Birleşmiş Milletler Nüfus Fonu) - Türk Silahlı Kuvvetleri “Mehmetçik Üreme Sağlığı”
+                    eğitimleri
+                    -Toplum Gönülleri Vakfı – Akran Eğitimleri
+                    -Milli Eğitim Bakanlığı Mesleki Eğitim, Çıraklık ve Kalfalık Merkezleri Cinsel Sağlık Bilinçlendirme
+                    Faaliyetleri
+                    -Kahvehanelerde Bilinçlendirme ve Numune Dağıtımı
+                    -Bar ve Kafelerde Ürün Dağıtımı
+                    -Üniversiteler ve yurtlarda Numune Dağıtımı, Bilgilendirme Çalışmaları, Akran Eğitimleri
+                    -TurkMisc, (Türk Tıp Öğrencileri Komitesi) Cinsel Yolla Bulaşan Hastalıklar ve Üreme Sağlığı
+                    Eğitimleri</p>
+
+                  <p>Prezervatif, hem etkin bir doğum kontrol yöntemi, hem de cinsel yolla bulaşan hastalıklara karşı
+                    koruyan, yan etkisiz, doğal tek üründür. İşte bu nedenle, güvenli bir cinsellik için, cinsel olarak
+                    aktif tüm bireylere prezervatif kullanımı tavsiye edilir.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="next-post border-top">
+            <div class="title">
+              <span>Sıradaki içerik</span>
+            </div>
+            <div class="post d-flex align-items-center">
+              <a href="">Cinsellik ile İlgili Sorular</a>
+              <i class="fas fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="top">
+      <div class="social d-flex justify-content-center">
+        <a class="mr-5" href=""><i class="fab fa-youtube"></i><span>Club Okey</span></a>
+        <a class="mr-5" href=""><i class="fab fa-spotify"></i><span>O.K. Playlist</span></a>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="container">
+        <div class="middle-wrapper d-flex">
+          <div class="col-12 col-lg-8">
+            <div class="left d-flex">
+              <ul class="mr-5">
+                <a class="title" href="">Kurumsal</a>
+                <li><a href="">Hakkımızda</a></li>
+                <li><a href="">SSS</a></li>
+                <li><a href="">İletilim</a></li>
+              </ul>
+              <ul class="ml-4">
+                <a class="title" href="">Yasal Bilgilerimiz</a>
+                <li><a href="">İşlem Rehberi</a></li>
+                <li><a href="">Çerez Politikası</a></li>
+                <li><a href="">Gizlilik ve Güvenlik</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+
+            <div class="right col-12">
+              <form class="d-flex flex-column" action="submit">
+                <label for="campaign">Kampanyalardan Haberdar Ol</label>
+                <input type="text" name="campaign" placeholder="E-mail" />
+                <button>
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                <div class="check d-flex mt-2">
+                  <input class="mr-3" type="checkbox" name="checkbox" checked>
+                  <label for="checkbox">OKEY markası ve ürünleri hakkında fırsatlar, kampanyalar, etkinlikler,
+                    tanıtımlar,
+                    promosyonlar ve yeniliklerden öncelikli olarak haberdar olmak üzere e-­posta üzerinden OKEY
+                    iletişimlerini almaya izin veriyorum.</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="left">
+            <span>2019 © OKEY</span>
+          </div>
+          <div class="right">
+            <span>Kişisel Hakların Korunması</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <div class="bg-dark d-none" onclick="searchToggle()"></div>
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+  <script>
+    function hamburgerToggle() {
+      var element = document.querySelector(".left-menu");
+      element.classList.toggle("d-none");
+    }
+
+    function leftMenutoggle() {
+      var element = document.querySelector(".nav-item-sub-menu");
+      element.classList.toggle("d-none");
+    }
+
+    function searchToggle() {
+      var element = document.querySelector(".search-wrapper");
+      var bgDark = document.querySelector(".bg-dark");
+
+      element.classList.toggle("d-none");
+      bgDark.classList.toggle("d-none");
+    }
+  </script>
+</body>
+
+</html>

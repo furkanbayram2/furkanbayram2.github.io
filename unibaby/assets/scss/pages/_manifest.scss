@@ -1,0 +1,41 @@
+﻿.manifest-page {
+  margin-top: 25px;
+  margin-bottom: 7.5rem;
+
+  @media (max-width: 992px) {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  .manifest-header {
+    height: 170px;
+    border-radius: 4px;
+    background-color: #66c28f;
+  }
+
+
+  .manifest {
+    padding: 40px 60px;
+    background-image: linear-gradient(to right, #fdbabc, #fdbabc);
+    border-radius: 5px;
+
+    .title {
+      margin-bottom: 20px;
+      margin-left: -15px;
+      padding-bottom: 15px;
+
+      span {
+        font-size: 30px;
+        color: #eb5573;
+      }
+    }
+
+    .content {
+      p {
+        color: #ffffff;
+        font-size: 18px;
+        ;
+      }
+    }
+  }
+}
