@@ -113,6 +113,14 @@
   .swiper-container {
     .swiper-wrapper {
       .swiper-slide {
+        .image {
+          img {
+            height: 85vh;
+            width: 100vw;
+            object-fit: fill;
+          }
+        }
+
         .content {
           &.notification-type {
             top: auto;
@@ -191,7 +199,7 @@
 
   .scroll-button {
     position: absolute;
-    bottom: 50px;
+    bottom: 25px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -489,22 +497,27 @@
 .blog {
   background-color: #f9f9f9;
   padding: 40px;
-  .header{
+
+  .header {
     margin-bottom: 30px;
-    span{
+
+    span {
       color: var(--quaternary-color);
       font-size: 1.5rem;
       font-weight: 700;
     }
   }
+
   .swiper-blog {
     .swiper-wrapper {
       .swiper-slide {
         border: 1px solid #dddddd;
         border-radius: 5px;
         background-color: #ffffff;
+
         .content {
           padding: 20px;
+
           .category {
             margin-bottom: 5px;
 
