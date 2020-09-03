@@ -1,0 +1,174 @@
+﻿.birthday-page {
+  .image {
+    bottom: 0;
+  }
+
+  .content-wrapper {
+    padding: 100px 20px;
+    background-color: var(--quaternary-color);
+
+    @media (max-width: 768px) {
+      padding: 50px 20px !important;
+
+      .content {
+        flex-direction: column;
+
+        .left,
+        .right {
+          width: 100% !important;
+          text-align: center;
+
+          .header {
+            margin-right: 0 !important;
+
+            .title {
+              margin-bottom: 15px !important;
+
+              span {
+                font-size: 30px !important;
+                color: #ffffff;
+                font-family: var(--secondary-font);
+                line-height: 1;
+              }
+            }
+
+            .sub-title {
+              margin-bottom: 30px !important;
+
+              span {
+                font-size: 15px !important;
+                color: #ffffff;
+                line-height: 1;
+
+              }
+            }
+          }
+
+          .date{
+            width: 100% !important;
+          }
+        }
+      }
+    }
+
+    .content {
+      .left {
+        .header {
+          margin-right: 100px;
+
+          .title {
+            margin-bottom: 15px;
+
+            span {
+              font-size: 54px;
+              color: #ffffff;
+              font-family: var(--secondary-font);
+              line-height: 1;
+            }
+          }
+
+          .sub-title {
+            margin-bottom: 30px;
+
+            span {
+              font-size: 22px;
+              color: #ffffff;
+              line-height-step: 1;
+
+            }
+          }
+        }
+      }
+
+      .right {
+        .date {
+          .inputs {
+            .input {
+              &:first-child {
+                padding-right: 10px;
+              }
+
+              &:last-child {
+                padding-left: 10px;
+              }
+
+              label {
+                font-size: 12px;
+                color: #ffffff;
+                margin-bottom: 10px;
+                min-height: 36px;
+                padding: 0 25px;
+              }
+
+              input {
+                border: 0;
+                border-radius: 5px;
+                height: 42px;
+              }
+            }
+          }
+        }
+
+        .datepicker {
+          margin-bottom: 40px;
+        }
+
+        .result {
+          color: #ffffff;
+
+          .guess {
+            margin-bottom: 10px;
+
+            span {
+              font-size: 14px;
+            }
+          }
+
+          .result-date {
+            .date {
+              font-size: 30px;
+              line-height: 1;
+            }
+
+            .day {
+              font-size: 30px;
+              line-height: 1;
+              margin-bottom: 10px;
+            }
+
+            .week {
+              font-size: 18px;
+              margin-bottom: 40px;
+            }
+          }
+
+
+
+          .info {
+            line-height: 1;
+
+            span {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.button {
+  margin-bottom: 20px;
+
+  .calculate {
+    padding: 20px 100px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: var(--secondary-color);
+    display: inline-block;
+    border: 0;
+    border-radius: 5px;
+  }
+}

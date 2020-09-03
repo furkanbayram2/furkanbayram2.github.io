@@ -110,6 +110,7 @@
                   <a class="link-main" href="index.html">Anasayfa</a>
                   <div class="nav-item-sub-menu">
                     <div class="container">
+
                       <ul class="sub-menu-list d-flex level-2">
                         <li class="sub-menu-item">
                           <a class="sub-menu-link-title font-weight-bold text-dark" href="">Anne Bakım Ürünleri</a>
@@ -210,92 +211,208 @@
   </nav>
   <!-- header -->
 
-  <div class="manifest-page col-12">
-    <div class="container-lg">
-      <div class="row">
-        <!-- left side menu -->
-        <div class="left-side-menu d-none d-lg-block col-12 col-lg-2">
-          <div class="title d-none d-lg-flex">
-            <span>Kurumsal</span>
-          </div>
-          <div class="title-mobile w-100 d-lg-none">
-            <span>Kurumsal</span>
-          </div>
-          <ul class="left-menu-list">
-            <li class="d-flex align-items-center justify-content-between">
-              <a class="active" href="">Hakkımızda</a>
-            </li>
-            <li class="d-flex align-items-center justify-content-between">
-              <a href="">Manifestomuz</a>
-            </li>
-            <li class="d-flex align-items-center justify-content-between">
-              <a href="">İletişim</a>
-            </li>
-            <li class="d-flex align-items-center justify-content-between">
-              <a href="">Gizlilik Politikası ve Çerez Uyarısı</a>
-            </li>
-            <li class="d-flex align-items-center justify-content-between">
-              <a href="">Kullanım Koşulları</a>
-            </li>
-          </ul>
-
-        </div>
-        <div class="right-side col-12 col-lg-10 p-0 p-md-3">
-          <div class="manifest col-12">
-            <div class="title d-flex flex-column">
-              <span class="header">HAKKIMIZDA | UNI BABY</span>
-            </div>
-            <div class="row">
-              <div class="col-12 col-lg-8 p-0">
-
-
-                <div class="content">
-                  <p>
-                    Bebeğin yere düşünce senin canının yanmasıdır annelik.
-                    Bebeğin uyumadan uyuyamamak, o üşüyorsa donmaktır.
-                  </p>
-
-                  <p>
-                    Zordur, bitmeyen bir emektir annelik.
-                    Geceyi gündüzü karıştırmak, birbirine eklemektir.
-                  </p>
-
-                  <p>
-                    İki minik gözün içine bakıp, gülsün diye dünyaları vermektir.
-                    Annelik bebeğini en iyi bilen olmak, onunla santim santim tekrar büyümektir.
-
-                  </p>
-
-                  <p>
-                    Bir küçük yavru ilk adımını atar, anne sevinçten dünyayı turlar.
-                    Ve minicik bir ağızdan çıkan ilk kelimede,
-                    anne dünyanın en güzel şarkısını duyar.
-                  </p>
-
-                  <p>
-                    Bir müjdeyle başlar annelik, sonsuz bir sevinçle...
-                    Bir bakışıyla, bir hareketiyle
-                    her gün yeniden müjde olur bebek annesine.
-                  </p>
-
-                  <p>
-                    Sen kendini ve bebeğini dinle,
-                    mutlu ol, anneliğinin tadına var.
-                  </p>
-                  <p>
-                    Güven kendine ve içgüdülerine, büyüt bebeğini güzelce.
-                    Sen mutluysan emin ol mutlu olur bebeğin de.
-                  </p>
-                  <p>
-                    sana eşlik etmekten, seninle birlikte öğrenmekten,
-                    senin mutluluğun için çalışıp, ihtiyaçlarına göre gelişmekten,
-                    senin ve bebeğin için üretmekten
-                    gururluyuz ANNE.
-                  </p>
-                </div>
-
+  <div class="birthday-page position-relative">
+    <div class="image position-absolute">
+      <img class="w-100" src="assets/images/birthday/bg.svg" alt="">
+    </div>
+    <div class="content-wrapper">
+      <div class="container p-0">
+        <div class="content d-flex">
+          <div class="left w-50">
+            <div class="header">
+              <div class="title">
+                <span>
+                  Doğum Tarihi Hesaplayıcı
+                </span>
               </div>
 
+              <div class="sub-title">
+                <span>
+                  Bebeğinizin hangi gün dünyaya geleceğini son reglinizin ilk gününü ve ortalama döngü uzunluğunuzu
+                  girerek
+                  kolayca öğrenebilirsiniz.
+                </span>
+              </div>
+            </div>
+
+
+          </div>
+          <div class="right d-flex justify-content-center w-50">
+            <div class="date w-75">
+              <div class="inputs d-flex">
+                <div class="input d-flex flex-column w-50 text-center">
+                  <label for="">Son Reglinizin İlk Günü</label>
+                  <input type="text">
+                </div>
+                <div class="input d-flex flex-column w-50 text-center">
+                  <label for="">Ortalama Döngü Uzunluğunuz</label>
+                  <input type="text">
+                </div>
+              </div>
+              <div class="datepicker">
+              </div>
+
+              <div class="button">
+                <a class="calculate text-center w-100" href="">
+                  HESAPLA
+                </a>
+              </div>
+            </div>
+
+            <!-- <div class="result d-flex flex-column align-items-center">
+              <div class="guess">
+                <span>Bebeğinizin Tahmini* Doğum Tarihi</span>
+              </div>
+              <div class="result-date">
+                <span class="date d-block text-center">14 Eylül 2020</span>
+                <span class="day d-block text-center">Cumartesi</span>
+                <span class="week d-block text-cemter">Hamileliğinizin 6. Haftasındasınız.</span>
+              </div>
+
+              <div class="button">
+                <a href="" class="calculate text-center w-100">
+                  TEKRAR HESAPLA
+                </a>
+              </div>
+              <div class="info w-50 text-center">
+                <span>
+                  *Gösterilen sonuç ortalama değerler ile hesaplanmış tahmini bir tarihtir. Her hamilelik özel ve
+                  farklıdır, bebeğiniz hazır olduğunda doğar.
+                  Doğru tarih için doktorunuza danışın.
+                </span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="blog">
+    <div class="header text-center">
+      <span>En Son Eklenen İçerikler</span>
+    </div>
+    <div class="container">
+      <div class="swiper-blog swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
             </div>
           </div>
         </div>
@@ -304,7 +421,7 @@
   </div>
 
   <!-- footer -->
-  <footer class="d-flex">
+  <!-- <footer class="d-flex">
     <div class="menu w-100 d-md-none">
       <ul class="list d-flex justify-content-center m-0">
         <li class="item">
@@ -406,7 +523,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <!-- footer -->
 
 
@@ -478,6 +595,13 @@
         }
         // when window width is >= 992
       }
+    });
+
+    $(function () {
+      $('#datetimepicker12').datetimepicker({
+        inline: true,
+        sideBySide: true
+      });
     });
   </script>
 </body>
