@@ -21,6 +21,13 @@ function filterMenuToggle(){
 }
 
 
+function closeCookie() {
+  var cookie = document.querySelector(".cookie");
+  cookie.classList.toggle("d-none");
+  document.body.classList.toggle("overflow-hidden");
+
+}
+
 
 
   

@@ -26,7 +26,7 @@
 
 </head>
 
-<body>
+<body class="overflow-hidden">
   <!-- header left menu -->
   <div class="left-menu fixed-top">
     <div class="top d-flex justify-content-center p-3">
@@ -82,6 +82,114 @@
 
 
   </div>
+
+  <!-- search -->
+  <div class="search-wrapper">
+    <div class="container">
+      <div class="search-content">
+        <div class="input-area position-relative w-100">
+          <input class="w-100" type="text">
+          <img class="position-absolute" src="assets/images/icons/close.svg" alt="">
+        </div>
+        <div class="result d-flex">
+          <div class="left w-50">
+            <div class="title">
+              <span>ÜRÜNLER</span>
+            </div>
+            <div class="products">
+              <div class="cart d-flex">
+                <div class="product-left">
+                  <img src="assets/images/search/product-1.png" alt="">
+                </div>
+                <div class="product-right w-50 d-flex align-items-center">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil 24’lü Avantaj Paket</span>
+                </div>
+              </div>
+              <div class="cart d-flex">
+                <div class="product-left">
+                  <img src="assets/images/search/product-1.png" alt="">
+                </div>
+                <div class="product-right w-50 d-flex align-items-center">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil 24’lü Avantaj Paket</span>
+                </div>
+              </div>
+              <div class="cart d-flex">
+                <div class="product-left">
+                  <img src="assets/images/search/product-2.png" alt="">
+                </div>
+                <div class="product-right w-50 d-flex align-items-center">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil 24’lü Avantaj Paket</span>
+                </div>
+              </div>
+              <div class="cart d-flex">
+                <div class="product-left">
+                  <img src="assets/images/search/product-1.png" alt="">
+                </div>
+                <div class="product-right w-50 d-flex align-items-center">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil 24’lü Avantaj Paket</span>
+                </div>
+              </div>
+              <div class="cart d-flex">
+                <div class="product-left">
+                  <img src="assets/images/search/product-2.png" alt="">
+                </div>
+                <div class="product-right w-50 d-flex align-items-center">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil 24’lü Avantaj Paket</span>
+                </div>
+              </div>
+            </div>
+            <div class="search-see-all">
+              <a class="d-flex align-items-center" href="">
+                <span>Tümünü Gör</span>
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </a>
+            </div>
+            <div class="search-close">
+              <a onclick="searchToggle()" class="search-close-button d-flex flex-column align-items-center" href="#">
+                <span>Kapat</span>
+                <img src="assets/images/icons/s-close.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="right w-50">
+            <div class="title">
+              <span>ÜRÜNLER</span>
+            </div>
+            <div class="products">
+              <div class="cart d-flex">
+                <div class="product-left">
+                  <img src="assets/images/icons/faks.svg" alt="">
+                </div>
+                <div class="product-right w-50 d-flex align-items-center">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil 24’lü Avantaj Paket</span>
+                </div>
+              </div>
+              <div class="cart d-flex">
+                <div class="product-left">
+                  <img src="assets/images/icons/faks.svg" alt="">
+                </div>
+                <div class="product-right w-50 d-flex align-items-center">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil 24’lü Avantaj Paket</span>
+                </div>
+              </div>
+              <div class="cart d-flex">
+                <div class="product-left">
+                  <img src="assets/images/icons/faks.svg" alt="">
+                </div>
+                <div class="product-right w-50 d-flex align-items-center">
+                  <span>Uni Baby Yenidoğan Islak Pamuk Mendil 24’lü Avantaj Paket</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- search -->
+
+
 
   <!-- header -->
   <nav class="navbar d-flex flex-column p-0">
@@ -185,7 +293,7 @@
             </div>
             <div class="right d-flex align-items-center">
               <div class="search d-flex align-items-center">
-                <a href="" class="d-flex align-items-center">
+                <a onclick="searchToggle()" href="#" class="d-flex align-items-center">
                   <span>Arama</span>
                   <img src="assets/images/icons/search.svg" alt="" />
                 </a>
@@ -214,19 +322,19 @@
     <ul class="nav nav-tabs d-flex container">
       <li class="hamilelik">
         <img src="assets/images/icons/hearth.svg" alt="">
-        <a data-toggle="tab" data-target="#m-1">Hamilelik</a>
+        <a class="grid-link" data-toggle="tab" data-target="#m-1">Hamilelik</a>
       </li>
       <li class="yenidogan">
         <img src="assets/images/icons/baby.svg" alt="">
-        <a data-toggle="tab" data-target="#m-2">Yenidoğan</a>
+        <a class="grid-link" data-toggle="tab" data-target="#m-2">Yenidoğan</a>
       </li>
       <li class="bebek">
         <img src="assets/images/icons/emzik.svg" alt="">
-        <a data-toggle="tab" data-target="#m-3">Bebek</a>
+        <a class="grid-link" data-toggle="tab" data-target="#m-3">Bebek</a>
       </li>
       <li class="cocuk">
         <img src="assets/images/icons/child.svg" alt="">
-        <a data-toggle="tab" data-target="#m-4">Çocuk</a>
+        <a class="grid-link" data-toggle="tab" data-target="#m-4">Çocuk</a>
       </li>
     </ul>
 
@@ -685,204 +793,18 @@
 
       </div>
       <div id="yenidogan" class="tab-pane fade">
-        <div class="title">
+        <div class="title container">
           <span>Yenidoğan</span>
-        </div>
-        <div class="sub-title">
-          <span>Uni Baby, yenidoğan cildinin hassasiyetine uygun saflıkta ve özel geliştirilmiş ürünler sunar.</span>
-        </div>
-        <div class="cta d-flex">
-          <a class="white-button d-flex align-items-center justify-content-center" href="">
-            <span>YENİDOĞAN ÜRÜNLERİ</span>
-            <img src="assets/images/icons/right-arrow.svg" alt="">
-          </a>
-        </div>
-        <div class="slider">
-          <div class="tab-swiper-container swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-
-            </div>
-            <!-- Add Pagination -->
-          </div>
-        </div>
-        <div class="scroll-button d-flex justify-content-center">
-          <a class="button green-button d-flex justify-content-center align-items-center" href="">
-            <i class="fas fa-angle-down"></i>
-          </a>
         </div>
       </div>
       <div id="bebek" class="tab-pane fade">
-        <div class="title">
+        <div class="title container">
           <span>BEBEK</span>
-        </div>
-        <div class="sub-title">
-          <span>Uni Baby, yenidoğan cildinin hassasiyetine uygun saflıkta ve özel geliştirilmiş ürünler sunar.</span>
-        </div>
-        <div class="cta d-flex">
-          <a class="white-button d-flex align-items-center justify-content-center" href="">
-            <span>BEBEK ÜRÜNLERİ</span>
-            <img src="assets/images/icons/right-arrow.svg" alt="">
-          </a>
-        </div>
-        <div class="slider">
-          <div class="tab-swiper-container swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-
-            </div>
-            <!-- Add Pagination -->
-          </div>
-        </div>
-        <div class="scroll-button d-flex justify-content-center">
-          <a class="button green-button d-flex justify-content-center align-items-center" href="">
-            <i class="fas fa-angle-down"></i>
-          </a>
         </div>
       </div>
       <div id="cocuk" class="tab-pane fade">
-        <div class="title">
+        <div class="title container">
           <span>ÇOCUK</span>
-        </div>
-        <div class="sub-title">
-          <span>Uni Baby, yenidoğan cildinin hassasiyetine uygun saflıkta ve özel geliştirilmiş ürünler sunar.</span>
-        </div>
-        <div class="cta d-flex">
-          <a class="white-button d-flex align-items-center justify-content-center" href="">
-            <span>SATIN AL</span>
-            <img src="assets/images/icons/right-arrow.svg" alt="">
-          </a>
-        </div>
-        <div class="slider">
-          <div class="tab-swiper-container swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="image">
-                  <img src="assets/images/slider/tab-1-1.png" alt="">
-                </div>
-
-                <div class="text">
-                  <span>Hamilelik ile ilgili yararlı bilgier.</span>
-                  <img src="assets/images/icons/right-arrow.svg" alt="">
-                </div>
-              </div>
-
-            </div>
-            <!-- Add Pagination -->
-          </div>
-        </div>
-        <div class="scroll-button d-flex justify-content-center">
-          <a class="button green-button d-flex justify-content-center align-items-center" href="">
-            <i class="fas fa-angle-down"></i>
-          </a>
         </div>
       </div>
     </div>
@@ -1320,6 +1242,8 @@
 
   <!-- blog tab -->
 
+  <div class="bg-dark d-none"></div>
+
   <!-- footer -->
   <footer class="d-flex">
     <div class="menu w-100 d-md-none">
@@ -1425,6 +1349,35 @@
     </div>
   </footer>
   <!-- footer -->
+
+
+  <!-- cookie popup -->
+  <dim class="cookie">
+
+    <div class="content position-relative d-flex">
+      <a onclick="closeCookie()" id="close-cookie" href="#">
+        <img src="assets/images/icons/close.svg" alt="">
+      </a>
+      <div class="left">
+        <div class="image">
+          <img src="assets/images/cookie.svg" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="title">
+          <span>Daha İyi Bir Deneyim İçin</span>
+        </div>
+        <div class="sub-title">
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec tristique libero, Duis
+            venenatis, sapien sed suscipit porttitor, erat nibh posuere nibh, vitae sagittis eros eros sed nulla.</span>
+        </div>
+      </div>
+    </div>
+
+  </dim>
+
+  <!-- cookie popup -->
+
 
 
   <!-- script -->
