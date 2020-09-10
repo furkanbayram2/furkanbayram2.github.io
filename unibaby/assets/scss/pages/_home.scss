@@ -570,3 +570,9 @@
     }
   }
 }
+
+.hide-scroll{
+  @media (min-width: 768px){
+    overflow: hidden;
+  }
+}

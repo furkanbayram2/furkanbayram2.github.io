@@ -23,8 +23,8 @@ function filterMenuToggle(){
 
 function closeCookie() {
   var cookie = document.querySelector(".cookie");
-  cookie.classList.toggle("d-none");
-  document.body.classList.toggle("overflow-hidden");
+  cookie.classList.toggle("d-md-flex");
+  document.body.classList.toggle("hide-scroll");
 
 }
 
