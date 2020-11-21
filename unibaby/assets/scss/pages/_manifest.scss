@@ -16,7 +16,9 @@
 
   .manifest {
     padding: 40px 60px;
-    background-image: linear-gradient(to right, #fdbabc, #fdbabc);
+    background-image: url("/assets/images/manifest.png");
+    background-size: contain;
+    background-repeat: round;
     border-radius: 5px;
 
     .title {

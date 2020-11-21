@@ -4,10 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog Detail</title>
+  <title>Blog</title>
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
 
   <!-- css -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
@@ -15,7 +17,6 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -27,67 +28,11 @@
 
 <body>
 
-  <!-- header left menu -->
-  <div class="left-menu fixed-top">
-    <div class="top d-flex justify-content-center p-3">
-      <ul class="language d-flex mb-0">
-        <li class="language-list">
-          <a class=" pl-2 pr-2" href="">EN</a>
-        </li>
-        <li>
-          <span>|</span>
-        </li>
-        <li class="language-list active">
-          <a class="pl-2 pr-2" href="">TR</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="bottom">
-      <ul class="menu-list d-flex">
-        <div class="left">
-          <span class="title">Anne Bakım Ürünleri</span>
-          <li>
-            <a href="">Ürünlerimiz</a>
-          </li>
-          <li>
-            <a href="">Bakım</a>
-          </li>
-          <li>
-            <a href="">Gıda Takviyesi</a>
-          </li>
-        </div>
-        <div class="right text-right">
-          <img src="assets/images/mobile-menu/1.png" alt="">
-        </div>
-      </ul>
-      <ul class="menu-list d-flex">
-        <div class="left">
-          <span class="title">Anne Bakım Ürünleri</span>
-          <li>
-            <a href="">Ürünlerimiz</a>
-          </li>
-          <li>
-            <a href="">Bakım</a>
-          </li>
-          <li>
-            <a href="">Gıda Takviyesi</a>
-          </li>
-        </div>
-        <div class="right text-right">
-          <img src="assets/images/mobile-menu/2.png" alt="">
-        </div>
-      </ul>
-    </div>
-
-
-  </div>
-
   <!-- header -->
   <nav class="navbar d-flex flex-column p-0">
-    <div class="navbar-middle d-flex align-items-center w-100">
-      <div class="container">
-        <div class="main-menu-wrapper position-static d-flex w-100">
+    <div class="navbar-middle d-flex align-items-center w-100 h-100">
+      <div class="container h-100">
+        <div class="main-menu-wrapper position-static position-static d-flex w-100 h-100">
           <div class="mobile-menu d-sm-none d-flex justify-content-between align-items-center w-100">
             <div class="search d-md-none">
               <img src="assets/images/icons/search.svg" alt="" />
@@ -99,20 +44,26 @@
               <i class="fas fa-bars"></i>
             </a>
           </div>
-          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100">
-            <div class="left d-flex align-items-center">
+          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100 h-100">
+            <div class="left d-flex align-items-center h-100">
               <a class="navbar-brand" href="#">
                 <img src="assets/images/logo.svg" alt="Logo">
               </a>
-              <ul class="menu m-0 d-flex">
+              <ul class="menu m-0 d-flex h-100">
                 <li class="list">
-                  <a class="link-main" href="index.html">Anasayfa</a>
+                  <a class="link-main" href="index.html">Ürünler</a>
                   <div class="nav-item-sub-menu">
                     <div class="container">
-
+                      <div class="rectangle green">
+                      </div>
+                      <div class="rectangle pink">
+                      </div>
                       <ul class="sub-menu-list d-flex level-2">
                         <li class="sub-menu-item">
-                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Anne Bakım Ürünleri</a>
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">
+                            <span>Anne Bakım Ürünleri</span>
+                            <img src="assets/images/menu/anneUrunleri.png" alt="">
+                          </a>
                           <ul class="level-3">
                             <li class="sub-menu-item">
                               <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
@@ -132,7 +83,10 @@
                           </ul>
                         </li>
                         <li class="sub-menu-item">
-                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">Bebek Bakım Ürünleri</a>
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">
+                            <span>Bebek Bakım Ürünleri</span>
+                            <img src="assets/images/menu/bebekUrunleri.png" alt="">
+                          </a>
                           <ul class="level-3">
                             <li class="sub-menu-item">
                               <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
@@ -162,31 +116,19 @@
                   </div>
                 </li>
                 <li class="list">
-                  <a class="link-main" href="/unibaby/product-list.html">Ürün Listesi</a>
+                  <a class="link-main" href="/unibaby/product-list.html">Faydalı Bilgiler</a>
                 </li>
                 <li class="list">
-                  <a class="link-main" href="/unibaby/product-detail.html">Ürün Detay</a>
+                  <a class="link-main effect" href="/unibaby/product-list.html">Avantajlı Setler</a>
                 </li>
                 <li class="list">
-                  <a class="link-main" href="/unibaby/birthday.html">Doğum Günü</a>
-                </li>
-                <li class="list">
-                  <a class="link-main" href="/unibaby/about.html">Hakkımızda</a>
-                </li>
-                <li class="list">
-                  <a class="link-main" href="/unibaby/manifesto.html">Manifesto</a>
-                </li>
-                <li class="list">
-                  <a class="link-main" href="/unibaby/contact.html">İletişim</a>
-                </li>
-                <li class="list">
-                  <a class="link-main" href="/unibaby/kvkk.html">KVKK</a>
+                  <a class="link-main" href="/unibaby/product-list.html">Satın Al</a>
                 </li>
               </ul>
             </div>
             <div class="right d-flex align-items-center">
               <div class="search d-flex align-items-center">
-                <a href="" class="d-flex align-items-center">
+                <a onclick="searchToggle()" href="#" class="d-flex align-items-center">
                   <span>Arama</span>
                   <img src="assets/images/icons/search.svg" alt="" />
                 </a>
@@ -210,136 +152,289 @@
   </nav>
   <!-- header -->
 
-  <div class="blog-detail-page col-12">
-    <div class="container-lg">
-      <div class="row">
+  <!-- main tab -->
+  <div class="blog-detail-wrapper">
 
-        <div class="content col-12">
-          <div class="blog-detail-header d-flex">
-            <div class="title d-flex align-items-center p-3">
-              <span>Vajinal Mnatar</span>
+    <div class="blog-detail-header">
+      <img src="assets/images/blog-detail/blog-detail-big.png" alt="">
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="blog-detail-content d-flex flex-column align-items-center justify-content-center">
+          <div class="wrap-content">
+            <div class="category">
+              <span>Sağlık</span>
+            </div>
+            <div class="date">
+              <span>15 Mart 2018 &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 1 Dk. Okuma Süresi</span>
+            </div>
+            <div class="title">
+              <span>Çocuğunuza Özgüven Kazandırmak İçin Neler Yapabilirsiniz?</span>
+            </div>
+            <div class="sub-title">
+              <span>Çocuk gelişim sitesi ÇocukluDünya işbirliği ile hazırlandı. </span>
+            </div>
+            <div class="w-100 d-flex justify-content-center">
+              <div class="blog-brace"></div>
+            </div>
+            <div class="content-title">
+              <span>Çocuklarda Özgüven Ne Zaman ve Nasıl Gelişmeye Başlar?</span>
+            </div>
+            <p class="blog-paragraph" style="margin-top: 35px;">
+              Hamilelikteki hızlı değişimlerin vücuda zarar vermesini engellemek mümkün mü?
+              Hamilelik, belki de vücudunuzun değişimini en hızlı gözlemleyebileceğiniz evre olabilir. Dolayısıyla
+              kişisel
+              bakım rutininizin de bu değişime ayak uyduruyor olması son derece önemlidir. Vücudunuzdaki hormonal
+              dengelerin
+              değişimi cildinize, saçlarınıza, tırnaklarınıza ve daha birçok bölgeye yansır. Ancak bu değişim olumsuz
+              yönde
+              olmak durumunda değildir. Günlük rutininizde yapacağınız küçük değişikliklerle birçok problemin önüne
+              geçebilirsiniz.
+            </p>
+            <p class="blog-paragraph">
+              Sosyal gelişim çocuğun kendini ifade edebilmesi, sosyal uyaranları anlayıp uygun tepkiler verebilmesi ve
+              etrafındaki insanlar ile iletişim kurmayı öğrenmesidir. Çocuk doğduğu andan itibaren insanlar ile ilişki
+              halindedir ancak iletişim kurmayı, büyüdükçe deneyimleri ile öğrenir.
+            </p>
+          </div>
+
+          <div class="square d-flex">
+            <div class="first w-50 mr-4">
+              <img class="w-100" src="assets/images/blog-detail/square1.png" alt="">
+            </div>
+            <div class="second w-50 ml-4 position-relative">
+              <a href="">
+                <img src="assets/images/youtube.svg" class="position-absolute" style="margin: auto; top: 0; right: 0; bottom: 0; left: 0; z-index: 100" alt="">
+              </a>
+              <div class="bg position-absolute h-100 w-100"></div>
+              <img class="w-100 h-100" src="assets/images/blog-detail/square1.png" alt="">
             </div>
           </div>
-          <div class="blog-detail-date">
-            <span>15.06.2020 00:00:00</span>
+          <div class="wrap-content" style="margin-top: 85px;">
+            <div class="content-title">
+              <span>Çocuğunuza Özgüven Kazandırmak İçin Neler Yapabilirsiniz?</span>
+            </div>
+            <p class="blog-paragraph" style="margin-top: 55px;">
+              Öncelikle, Virginia Satir’in 5 temel özgürlüğünün bilincinde olmak iyi bir başlangıç olabilir: Algılama
+              özgürlüğü, düşündüğünü söyleme özgürlüğü, duygu belirtme özgürlüğü, reddetme özgürlüğü, özünü
+              gerçekleştirme
+              özgürlüğü. Bu 5 temel özgürlükten yola çıkarak çocuğunuzun özgüvenini geliştirebilecek şeyler:
+            </p>
+            <p class="blog-paragraph">
+              Geri Çekilin
+              Çocuğunuzun yaşına uygun olarak, kendi seçimlerini yapmasına ve risk almasına izin verin. Bu çok basit
+              olan,
+              yemek zamanı ne kadar yemek yiyeceği, soğuk havada şapka veya atkı takıp takmayacağı gibi basit kararlar
+              olabilir. Yemek zamanı zorla yedirmek yerine, çocuğunuz eğer az yer ve sonra acıktığını söylerse: “Yemek
+              zamanı
+              yeterince yemedin, sana her istediğinde yemek hazırlayamam.
+            </p>
           </div>
-          <div class="blog-detail col-12">
-            <div class="row">
-              <div class=" col-12 order-2 order-lg-1 p-0">
-                <div class="title d-flex flex-column">
-                  <span class="header">VAJİNAL MANTAR NEDİR? GENİTAL MANTAR BELİRTİLERİ VE TEDAVİLERİ</span>
-                </div>
+          <div class="image-wrapper" style="margin-top: 75px;">
+            <img class="w-100" src="assets/images/blog-detail/blog-detail-mid.png" alt="">
+          </div>
+          <div class="wrap-content" style="margin-top: 60px;">
+            <p class="blog-paragraph">
+              Yapıcı Övgülerde Bulunun
+              Övgü çok güzel bir şeydir fakat övgünün neye ve ne kadar yapıldığı önemli bir noktadır. Örneğin: Çocuğunuz
+              güzel
+              bir resim yaptığında, “Sen harika bir çocuksun, bravo!” demek yerine “Harika bir iş çıkarmışsın.” deyin
+              böylece
+              çocuğu bir kalıba oturtmadan çocuğun gösterdiği çabayı takdir etmiş olursunuz. Kalıplaşmış şekilde takdir
+              edilen
+              çocuktan ziyade, çabası takdir edilen çocuğun yaptığı işi ileriye götürme motivasyonu daha fazladır, bu
+              motivasyon artışı ve bir şeyleri başarma hissi çocuğun kendine olan güvenini arttıracaktır. Fazla
+              kalıplaşmış
+              övgüler, çocuğun gelişmek için motivasyon ve güveni kendinde yeterince bulamamasına sebep olur.
 
-                <div class="content">
-                  <p>Vajinal mantar, vajina florasındaki bakteri ve mantar dengesinin bozulmasıyla ortaya çıkan bir
-                    enfeksiyondur. Sağlıklı bir vajinada normal olarak bulunan Candida mantarı hücrelerinin çoğalmasıyla
-                    meydana gelen bu enfeksiyon Vulvovajinal kandidiyazis olarak da bilinmektedir.</p>
 
-                  <p>Vajinal mantar, vajina ve vulva dokusunda enflamasyon, tahriş, akıntı ve şiddetli kaşıntı gibi
-                    semptomlara neden olan bir enfeksiyondur. Bakteri ve mantar dengesinin bozulması sonucu Candida
-                    albicans adı verilen maya tipi mantar hücrelerinin vajina ve çevresinde çoğalmasıyla ortaya
-                    çıkmaktadır.</p>
+            </p>
+            <p class="blog-paragraph">
+              Şartsız Sevgi Verin
+              Çocuğun başarısızlıkları ve hataları elbette olacaktır, önemli olan bunlardan dolayı çocuğu
+              eleştirmemektir.
+              Örnek olarak, yaptığı bir hatadan dolayı “Sen beceriksizsin, aptalsın vs.” demek yerine çocuğun
+              davranışını
+              ve
+              kişiliğini ayrıştırın ve şöyle diyin: Bu davranışın şu an bulunduğumuz yer için uygun değil, bunu
+              tekrarlamamanı
+              istiyorum.
+            </p>
+            <p class="blog-paragraph">
+              Bir Şeyleri Başarma Hissini Teşvik Edin
+              Örneğin, 3-5 yaşındaki çocuğunuzun içinde çöp olan çöp poşetlerini sürükleyerek size yardım etmesi,
+              alışverişten
+              dönerken hafif bir poşeti taşıması, kendi kendine giyinmesi gibi küçük adımlarla bile çocuk bir şeyleri
+              kendi
+              başına yapabildiğini, işe yarar olduğunu anlar, bu da kendini değerli hissettirdiği gibi kendine olan
+              güvenini
+              arttırır.
 
-                  <p>OKEY’in temel var olma sebebi, toplumsal bilinci ve bilgi düzeyini arttırarak Türkiye’de
-                    prezervatif
-                    kullanımını yaygınlaştırmaktır.</p>
+              Bu yazı çocuk gelişim sitesi ÇocukluDünya iş birliği ile hazırlanmıştır.
 
-                  <p>Bu nedenle, yıllardır pek çok sivil toplum kuruluşuyla ortaklaşa projeler yürütülmektedir:</p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-                  <p>-UNFPA (Birleşmiş Milletler Nüfus Fonu) - Türk Silahlı Kuvvetleri “Mehmetçik Üreme Sağlığı”
-                    eğitimleri
-                    -Toplum Gönülleri Vakfı – Akran Eğitimleri
-                    -Milli Eğitim Bakanlığı Mesleki Eğitim, Çıraklık ve Kalfalık Merkezleri Cinsel Sağlık Bilinçlendirme
-                    Faaliyetleri
-                    -Kahvehanelerde Bilinçlendirme ve Numune Dağıtımı
-                    -Bar ve Kafelerde Ürün Dağıtımı
-                    -Üniversiteler ve yurtlarda Numune Dağıtımı, Bilgilendirme Çalışmaları, Akran Eğitimleri
-                    -TurkMisc, (Türk Tıp Öğrencileri Komitesi) Cinsel Yolla Bulaşan Hastalıklar ve Üreme Sağlığı
-                    Eğitimleri</p>
 
-                  <p>Prezervatif, hem etkin bir doğum kontrol yöntemi, hem de cinsel yolla bulaşan hastalıklara karşı
-                    koruyan, yan etkisiz, doğal tek üründür. İşte bu nedenle, güvenli bir cinsellik için, cinsel olarak
-                    aktif tüm bireylere prezervatif kullanımı tavsiye edilir.</p>
-                </div>
+  </div>
+  <!-- blog tab -->
+  <div class="blog">
+    <div class="header text-center">
+      <span>En Son Eklenen İçerikler</span>
+    </div>
+    <div class="container position-relative">
+      <div class="swiper-blog swiper-container position-static">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+              <div class="read-more d-flex justify-content-end">
+                <img src="assets/images/icons/right-arrow.svg" alt="">
               </div>
             </div>
           </div>
-          <div class="next-post border-top">
-            <div class="title">
-              <span>Sıradaki içerik</span>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
             </div>
-            <div class="post d-flex align-items-center">
-              <a href="">Cinsellik ile İlgili Sorular</a>
-              <i class="fas fa-arrow-right"></i>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+              <div class="read-more d-flex justify-content-end">
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+              <div class="read-more d-flex justify-content-end">
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+              <div class="read-more d-flex justify-content-end">
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+              <div class="read-more d-flex justify-content-end">
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="image d-flex">
+              <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+            </div>
+            <div class="content">
+              <div class="category">
+                <span>Sağlık</span>
+              </div>
+              <div class="date">
+                <span>15 Mart 2018 | 1dk</span>
+              </div>
+              <div class="title">
+                <span>Çocuğunuza Özgüven Kazandırmak İçin
+                  Neler Yapabilirsiniz?</span>
+              </div>
+              <div class="sub-title">
+                Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+              </div>
+              <div class="read-more d-flex justify-content-end">
+                <img src="assets/images/icons/right-arrow.svg" alt="">
+              </div>
             </div>
           </div>
         </div>
+        <div class="swiper-blog-button swiper-button-prev"></div>
+        <div class="swiper-blog-button swiper-button-next"></div>
       </div>
     </div>
   </div>
-  <!-- footer -->
-  <footer>
-    <div class="top">
-      <div class="social d-flex justify-content-center">
-        <a class="mr-5" href=""><i class="fab fa-youtube"></i><span>Club Okey</span></a>
-        <a class="mr-5" href=""><i class="fab fa-spotify"></i><span>O.K. Playlist</span></a>
-      </div>
-    </div>
-    <div class="middle">
-      <div class="container">
-        <div class="middle-wrapper d-flex">
-          <div class="col-12 col-lg-8">
-            <div class="left d-flex">
-              <ul class="mr-5">
-                <a class="title" href="">Kurumsal</a>
-                <li><a href="">Hakkımızda</a></li>
-                <li><a href="">SSS</a></li>
-                <li><a href="">İletilim</a></li>
-              </ul>
-              <ul class="ml-4">
-                <a class="title" href="">Yasal Bilgilerimiz</a>
-                <li><a href="">İşlem Rehberi</a></li>
-                <li><a href="">Çerez Politikası</a></li>
-                <li><a href="">Gizlilik ve Güvenlik</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-
-            <div class="right col-12">
-              <form class="d-flex flex-column" action="submit">
-                <label for="campaign">Kampanyalardan Haberdar Ol</label>
-                <input type="text" name="campaign" placeholder="E-mail" />
-                <button>
-                  <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="check d-flex mt-2">
-                  <input class="mr-3" type="checkbox" name="checkbox" checked>
-                  <label for="checkbox">OKEY markası ve ürünleri hakkında fırsatlar, kampanyalar, etkinlikler,
-                    tanıtımlar,
-                    promosyonlar ve yeniliklerden öncelikli olarak haberdar olmak üzere e-­posta üzerinden OKEY
-                    iletişimlerini almaya izin veriyorum.</label>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bottom">
-      <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="left">
-            <span>2019 © OKEY</span>
-          </div>
-          <div class="right">
-            <span>Kişisel Hakların Korunması</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </footer>
+  <!-- blog tab -->
+  <!-- main tab -->
 
   <div class="bg-dark d-none" onclick="searchToggle()"></div>
 
@@ -354,9 +449,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
 
-
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
 
   <script>
@@ -377,6 +472,26 @@
       element.classList.toggle("d-none");
       bgDark.classList.toggle("d-none");
     }
+
+    var blog = new Swiper('.swiper-blog', {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        576: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        }
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
   </script>
 </body>
 

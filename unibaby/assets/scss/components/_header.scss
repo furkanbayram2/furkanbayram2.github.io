@@ -1,5 +1,5 @@
 ﻿﻿.navbar {
-  height: 60px;
+  height: 88px;
   border-bottom: 1px solid #efefef;
 
   &-top {
@@ -18,7 +18,8 @@
     margin-right: 0;
 
     img {
-      max-width: 62px;
+      width: 103px;
+      height: 57px;
     }
   }
 
@@ -42,11 +43,23 @@
         .left {
           .menu {
             .list {
+              display: flex;
+              align-items: center;
+              padding-left: 22px;
+              padding-right: 22px;
+
               .link-main {
                 color: var(--text-dark);
-                // font-size: 15px;
-                font-size: 10px;
-                padding: 10px 20px 30px 20px;
+                font-size: 15px;
+                font-weight: 500;
+                padding: 20px 0px;
+
+                &.effect {
+                  background-color: var(--secondary-color);
+                  color: #ffffff;
+                  border-radius: 30px !important;
+                  padding: 16px 12px;
+                }
               }
 
               .nav-item-sub-menu {
@@ -57,6 +70,30 @@
                 padding-top: 40px;
                 padding-bottom: 45px;
                 transition: opacity .3s ease-in-out;
+
+                .rectangle-green {}
+
+                .rectangle {
+                  position: absolute;
+                  &.green {
+                    background: linear-gradient(to bottom, rgba(178, 227, 146, 0.3), rgba(123, 195, 89, 0.3) 30%);
+                    top: -20px;
+                    left: 50px;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 0 50px;
+                  }
+
+                  &.pink {
+                    background: linear-gradient(to bottom, rgba(251, 178, 219, 0.3), rgba(246, 123, 180, 0.3) 30%);
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 0 80px;
+                    bottom: -40px;
+                    right: 70px;
+
+                  }
+                }
 
                 .sub-menu-list {
                   .sub-menu-item {
@@ -69,9 +106,17 @@
                       font-size: 20px;
                       border: 1px solid #cccccc;
                       border-radius: 6px;
-                      padding: 30px;
                       display: inline-block;
                       margin-bottom: 20px;
+                      display: flex;
+                      align-items: center;
+
+                      span {
+                        width: 148px;
+                        padding-left: 30px;
+                        display: inline-block;
+                        font-weight: 700;
+                      }
                     }
 
                     .level-3 {
@@ -91,7 +136,7 @@
               &:hover {
                 .nav-item-sub-menu {
                   position: absolute;
-                  top: 60px;
+                  top: 88px;
                   left: 0;
                   width: 100%;
                   z-index: 1000;
@@ -99,6 +144,7 @@
                   visibility: visible;
                   opacity: 1;
                   display: block;
+                  overflow: hidden;
                   background-color: #ffffff;
                 }
               }
@@ -135,7 +181,7 @@
 
         .nav-item-sub-menu {
           position: absolute;
-          top: 80px;
+          top: 88px;
           left: 0;
           height: 0;
           width: 100%;

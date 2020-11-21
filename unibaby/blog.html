@@ -7,7 +7,9 @@
   <title>Blog</title>
 
   <!-- fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
 
   <!-- css -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
@@ -15,7 +17,6 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
 
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -27,447 +28,447 @@
 
 <body>
 
-  <!-- header left menu -->
-  <div class="left-menu fixed-top d-none">
-    <div class="top d-flex justify-content-between p-3 border-bottom">
-      <img src="https://img-ok.mncdn.com/images/frontend/mobile-header-logo.png" alt="Logo">
-      <a class="hamburger-menu text-dark d-md-none ml-5" type="button" onclick="hamburgerToggle()">
-        <i class="fas fa-times"></i>
-      </a>
-    </div>
-
-    <ul class="sub-menu-list level-1 mb-0 mx-2 p-2 border-bottom">
-      <li class="nav-item">
-        <a class="nav-link text-dark border-bottom" href="">Ürünler</a>
-        <ul class="navbar-nav d-flex mr-auto level-2">
-          <li class="nav-item active">
-            <ul class="sub-menu-list level-3">
-              <li class="sub-menu-item pl-4 pr-4" onclick="leftMenutoggle()">
-                <a class="sub-menu-link left-plus-menu d-flex flex-column">
-                  <div class="d-flex align-items-center justify-content-between w-100 py-1">
-                    <span>Prezervatifler</span>
-                    <i class="fas fa-plus"></i>
-                  </div>
-                  <div class="nav-item-sub-menu d-none">
-                    <ul class="sub-menu-list level-3">
-                      <li class="sub-menu-item ml-3">
-                        <a class="sub-menu-link" href="">
-                          Standart Prezervatifler
-                        </a>
-                      </li>
-                      <li class="sub-menu-item ml-3">
-                        <a class="sub-menu-link" href="">
-                          Geciktirici Prezervatifler
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </a>
-              </li>
-              <li class="sub-menu-item pl-4 pr-4">
-                <a class="sub-menu-link text-dark" href="">
-                  <div class="d-flex align-items-center justify-content-between w-100 py-1">
-                    <span>Kayganlaştırıcı Masaj Setleri</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item" onclick="leftMenutoggle()" type="button">
-            <ul class="sub-menu-list level-3 level-3-2">
-              <li class="sub-menu-item pl-4 pr-4">
-                <a class="sub-menu-link left-plus-menu d-flex flex-column">
-                  <div class="d-flex align-items-center justify-content-between w-100 py-1">
-                    <span>Cinselliği Keşfet</span>
-                    <i class="fas fa-plus"></i>
-                  </div>
-
-                </a>
-              </li>
-            </ul>
-
-          </li>
-        </ul>
-      </li>
-    </ul>
-    <div class="bottom py-2 px-3">
-      <div class="left-menu-user-menu py-3">
-        <a href="">
-          <i class="fas fa-user"></i>
-          <span>Giriş Yap / Üye Ol</span>
-        </a>
-      </div>
-      <div class="left-menu-search mb-2">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Aradığınız ürünü hemen bulun.">
-      </div>
-    </div>
-
-  </div>
-
   <!-- header -->
-  <nav class="navbar sticky-top d-flex flex-column p-0">
-    <!-- <div class="navbar-top w-100">
-      <div class="container">
-        <div class="d-flex justify-content-end">
-          <span>ALO OKEY <strong>444 65 39</strong></span>
-        </div>
-      </div>
-    </div> -->
-    <div class="navbar-middle d-flex align-items-center w-100">
-      <a class="hamburger-menu text-white d-md-none ml-5" type="button" onclick="hamburgerToggle()">
-        <i class="fas fa-bars"></i>
-      </a>
-      <div class="container">
-        <div class="main-menu-wrapper position-static d-flex w-100">
-          <div class="main-menu d-flex align-items-center">
+  <nav class="navbar d-flex flex-column p-0">
+    <div class="navbar-middle d-flex align-items-center w-100 h-100">
+      <div class="container h-100">
+        <div class="main-menu-wrapper position-static position-static d-flex w-100 h-100">
+          <div class="mobile-menu d-sm-none d-flex justify-content-between align-items-center w-100">
+            <div class="search d-md-none">
+              <img src="assets/images/icons/search.svg" alt="" />
+            </div>
             <a class="navbar-brand" href="#">
-              <img src="https://img-ok.mncdn.com/images/site-logo.png" alt="Logo">
+              <img src="assets/images/logo.svg" alt="Logo">
             </a>
-            <ul class="navbar-nav d-none d-md-flex flex-row align-items-center mr-auto pl-5 level-1">
-              <li class="nav-item">
-                <a class="nav-link" href="#">ÜRÜNLER</a>
-                <div class="nav-item-sub-menu py-5 px-3">
-                  <ul class="sub-menu-list d-flex level-2">
-                    <li class="sub-menu-item mr-5 border-right px-4">
-                      <a class="sub-menu-link font-weight-bold text-dark" href="">Prezervatifler</a>
-                      <ul class="level-3">
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Standart Prezervatifler</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url('https://img-ok.mncdn.com/upload/sub-menu/hisset-cover.png') right center no-repeat;">
-                          </div>
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Geciktiricili Prezervatifler</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url('https://img-ok.mncdn.com/upload/sub-menu/k-jel-cover.png') right center no-repeat;">
-                          </div>
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>İnce Prezervatifler</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url('https://img-ok.mncdn.com/upload/sub-menu/zevk-eglence-cover.png') right center no-repeat;">
-                          </div>
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Ekstra İnce Prezervatifler</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url('https://img-ok.mncdn.com/upload/sub-menu/klasik-cover.png') right center no-repeat;">
-                          </div>
-
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Kabartmalı ve Tırtıklı Prezervatifler</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"></div>
-
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="sub-menu-item">
-                      <a class="sub-menu-link font-weight-bold text-dark" href="">Kayganlaştırı ve Masaj Jelleri</a>
-                    </li>
-
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CİNSELLİĞİ KEŞFET</a>
-                <div class="nav-item-sub-menu py-5 px-3">
-                  <ul class="sub-menu-list d-flex level-2">
-                    <li class="sub-menu-item mr-5 px-4">
-                      <ul class="level-3">
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Güvenli Cinsel Hayat</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url(https://img-ok.mncdn.com/upload/blog/submenu/guvenli-cinsel-hayat.jpg) right center no-repeat;">
-                          </div>
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Cinsellikte Zevk ve Eğlence</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url(https://img-ok.mncdn.com/upload/blog/submenu/zevk-eglence.jpg) right center no-repeat;">
-                          </div>
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Cinsel Haz</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url(https://img-ok.mncdn.com/upload/blog/submenu/haz.jpg) right center no-repeat;">
-                          </div>
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Cinsel Performans</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url(https://img-ok.mncdn.com/upload/blog/submenu/cinsellik-ile-ilgili-sorunlar.jpg) right center no-repeat;">
-                          </div>
-
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Cinselliğe Dair Her şey</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url(https://img-ok.mncdn.com/upload/blog/submenu/cinsellige-dair-hersey.jpg) right center no-repeat;">
-                          </div>
-
-                        </li>
-                        <li class="sub-menu-item">
-                          <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
-                            <span>Cinsellik ile İlgili Sorular</span>
-                            <i class="fas fa-arrow-right"></i>
-                          </a>
-                          <div class="cat-cover"
-                            style="background: url('https://img-ok.mncdn.com/upload/blog/submenu/cinsellik-ile-ilgili-sorunlar.jpg') right center no-repeat;">
-                          </div>
-
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
+            <a class="hamburger-menu d-md-none" type="button" onclick="hamburgerToggle()">
+              <i class="fas fa-bars"></i>
+            </a>
           </div>
-          <div class="right d-none d-lg-flex align-items-center">
-            <div class="search d-flex align-items-center">
-              <span class="search-span d-flex align-items-center h-100" onclick="searchToggle()">
-                <i class="fas fa-search text-white"></i>
-              </span>
-              <div class="nav-item-sub-menu search-wrapper d-none">
-                <ul class="sub-menu-list d-flex level-2">
-                  <div class="search-area col-12 p-0">
-                    <div class="top d-flex flex-column">
-                      <div class="search-close d-flex justify-content-end" onclick="searchToggle()">
-                        <span>Kapat</span>
+          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100 h-100">
+            <div class="left d-flex align-items-center h-100">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" alt="Logo">
+              </a>
+              <ul class="menu m-0 d-flex h-100">
+                <li class="list">
+                  <a class="link-main" href="index.html">Ürünler</a>
+                  <div class="nav-item-sub-menu">
+                    <div class="container">
+                      <div class="rectangle green">
                       </div>
-                      <div class="search-input position-relative">
-                        <i class="fas fa-search"></i>
-                        <input type="text" placeholder="İstediğin gibi ara...">
+                      <div class="rectangle pink">
                       </div>
-                    </div>
-                    <div class="bottom d-flex">
-                      <div class="bottom-left">
-                        <a class="last-search-title d-block" href="">Son Aramalarınız</a>
-                        <ul class="last-search d-flex flex-wrap">
-                          <li class="last-search-item"><a href="">Klasik</a></li>
-                          <li class="last-search-item"><a href="">Ritim</a></li>
-                          <li class="last-search-item"><a class="test" href="#">İnce</a></li>
-                          <li class="last-search-item"><a class="test" href="#">Kabartmalı</a></li>
-                        </ul>
-                      </div>
-                      <div class="bottom-right">
-                        <a class="popular-search-title d-block" href="">Popüler Aramalar</a>
-                        <ul class="popular-search d-flex flex-wrap">
-                          <li class="popular-search-item"><a href="">Non Latex</a></li>
-                          <li class="popular-search-item"><a href="">İnce</a></li>
-                          <li class="popular-search-item"><a class="test" href="#">Geciktiricili</a></li>
-                          <li class="popular-search-item"><a class="test" href="#">Kabartmalı</a></li>
-                        </ul>
-                      </div>
+                      <ul class="sub-menu-list d-flex level-2">
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">
+                            <span>Anne Bakım Ürünleri</span>
+                            <img src="assets/images/menu/anneUrunleri.png" alt="">
+                          </a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Ürünlerimiz</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Bakım Ürünleri</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">
+                            <span>Bebek Bakım Ürünleri</span>
+                            <img src="assets/images/menu/bebekUrunleri.png" alt="">
+                          </a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Mendil</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Banyo & Bakım</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Temizlik</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
                     </div>
                   </div>
-
-
-                </ul>
-              </div>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/unibaby/product-list.html">Faydalı Bilgiler</a>
+                </li>
+                <li class="list">
+                  <a class="link-main effect" href="/unibaby/product-list.html">Avantajlı Setler</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/unibaby/product-list.html">Satın Al</a>
+                </li>
+              </ul>
             </div>
-            <div class="language">
-              <a class="active" href=""><span>EN |</span></a>
-              <a href=""><span>TR</span></a>
-            </div>
-            <div class="secret-view">
-              <div class="secret-switch">
-                <label class="switch mb-0">
-                  <input type="checkbox">
-                  <span class="slider">
-                    <svg viewbox="0 0 32 32" id="icon-hidden-mode">
-                      <path fill="#fff" style="fill: var(--color1, #fff);"
-                        d="M22.736 21.931c2.294 0 4.154 1.896 4.154 4.235 0 2.338-1.859 4.234-4.154 4.234-1.973 0-3.624-1.4-4.050-3.28h-5.198c-0.426 1.882-2.077 3.28-4.048 3.28-2.296 0-4.155-1.896-4.155-4.234 0-2.339 1.859-4.235 4.155-4.235 2.010 0 3.686 1.456 4.072 3.389h5.152c0.384-1.933 2.061-3.389 4.072-3.389zM9.44 23.626c-1.376 0-2.494 1.136-2.494 2.541 0 1.403 1.117 2.539 2.494 2.539 1.376 0 2.493-1.136 2.493-2.539s-1.117-2.541-2.493-2.541zM22.736 23.626c-1.378 0-2.494 1.136-2.494 2.541 0 1.403 1.117 2.539 2.494 2.539 1.376 0 2.493-1.136 2.493-2.539s-1.117-2.541-2.493-2.541zM27.488 16l0.354 1.125h3.326c0.458 0 0.83 0.405 0.83 0.901 0 0.448-0.301 0.819-0.696 0.888l-0.134 0.013h-30.338c-0.458 0-0.83-0.403-0.83-0.901 0-0.448 0.301-0.818 0.696-0.888l0.134-0.011 3.317-0.002 0.333-1.125h23.010zM22.614 2.056c0.414 0.299 0.72 0.722 0.872 1.206l3.501 11.138h-22.034l1.597-5.387c0.619-2.090 2.832-3.286 4.941-2.674 0.075 0.021 0.15 0.045 0.224 0.072l0.563 0.2c0.454 0.167 0.978 0.263 1.524 0.263 1.491 0 2.815-0.717 3.645-1.825l0.009-0.012 1.821-2.467c0.443-0.591 1.142-0.969 1.929-0.969 0.529 0 1.018 0.171 1.415 0.46l-0.007-0.005z">
-                      </path>
-                    </svg>
-                  </span>
-                </label>
+            <div class="right d-flex align-items-center">
+              <div class="search d-flex align-items-center">
+                <a onclick="searchToggle()" href="#" class="d-flex align-items-center">
+                  <span>Arama</span>
+                  <img src="assets/images/icons/search.svg" alt="" />
+                </a>
               </div>
+              <ul class="language d-flex mb-0">
+                <li class="language-list">
+                  <a class=" pl-2 pr-2" href="">EN</a>
+                </li>
+                <li>
+                  <span>|</span>
+                </li>
+                <li class="language-list active">
+                  <a class="pl-2 pr-2" href="">TR</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
   </nav>
+  <!-- header -->
 
-  <div class="breadcrumb-wrapper d-none d-lg-block">
+  <!-- main tab -->
+  <div class="main-tab blog-wrapper">
     <div class="container">
-      <ol class="breadcrumb m-0 pl-0">
-        <li><a class="arrow" href="">Anasayfa</a></li>
-        <li><a href="">Ürünler</a></li>
-        <li><a href="">Prezervatifler</a></li>
-        <li class="active"><a href="">Hisset Koleksiyonu</a></li>
-      </ol>
-    </div>
-  </div>
-
-  <div class="blog-page col-12">
-    <div class="container-lg">
       <div class="row">
-        <!-- left side menu -->
-        <div class="left-side-menu col-12 col-lg-3">
-          <div class="title-mobile w-100 d-lg-none">
-            <span>Cinselliği Keşfet</span>
-          </div>
-          <ul class="left-menu-list">
-            <li class="d-flex align-items-center justify-content-between"><a href="">Güvenli Cinsel Hayat</a>
-              <i class="fas fa-arrow-right"></i>
-            </li>
-            <li class="d-flex align-items-center justify-content-between"><a href="">Cinsellikte Zevk ve Eğlence</a>
-              <i class="fas fa-arrow-right"></i>
-            </li>
-            <li class="d-flex align-items-center justify-content-between"><a href="">Cinsel Haz</a>
-              <i class="fas fa-arrow-right"></i>
-            </li>
-            <li class="d-flex align-items-center justify-content-between"><a href="">Cinsel Performans</a>
-              <i class="fas fa-arrow-right"></i>
-            </li>
-            <li class="d-flex align-items-center justify-content-between"><a href="">Cinselliğe Dair Her Şey</a>
-              <i class="fas fa-arrow-right"></i>
-            </li>
-            <li class="d-flex align-items-center justify-content-between"><a href="">Cinsellik İle İlgili Sorunlar</a>
-              <i class="fas fa-arrow-right"></i>
-            </li>
-          </ul>
+        <ul class="nav nav-tabs d-flex w-100 border-0">
+          <li class="hamilelik active">
+            <img src="assets/images/icons/hearth.svg" alt="">
+            <a data-toggle="tab" data-target="#hamilelik">Hamilelik ve Anne</a>
+          </li>
+          <li class="yenidogan">
+            <img src="assets/images/icons/baby.svg" alt="">
+            <a data-toggle="tab" data-target="#yenidogan">Yenidoğan</a>
+          </li>
+          <li class="bebek">
+            <img src="assets/images/icons/emzik.svg" alt="">
+            <a data-toggle="tab" data-target="#bebek">Bebek</a>
+          </li>
+          <li class="cocuk">
+            <img src="assets/images/icons/child.svg" alt="">
+            <a data-toggle="tab" data-target="#cocuk">Çocuk</a>
+          </li>
 
-        </div>
-        <div class="right-side col-12 col-lg-9">
-          <div class="blog col-12">
-            <div class="row">
-              <div class=" col-12 order-2 order-lg-1">
-                <div class="row">
-                  <div class="blog-card col-6 col-lg-4 p-0">
-                    <div class="blog-card-wrapper">
-                      <div class="image">
-                        <img class="w-100" src="https://img-ok.mncdn.com/UPLOAD/blog/liste/vajinal-mantar-min.png"
-                          alt="Vajinal Mantar">
+        </ul>
+        <div class="tab-content">
+          <div id="hamilelik-blog" class="tab-pane fade in show active p-0">
+            <div class="container">
+              <div class="filter d-flex justify-content-end">
+                <div class="filter-item">
+                  <span>Tarihe Göre Sırala</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
                       </div>
-                      <div class="content d-flex flex-column justify-content-between position-absolute h-100">
-                        <div class="text d-flex flex-column">
-                          <span class="title">Cinsellik İle İlgili Sorular</span>
-                          <span class="description">Vajinal Mantar</span>
-                        </div>
-                        <div class="action">
-                          <a class="btn-default d-inline-block" href="">İçeriği Oku</a>
-                        </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="blog-card col-6 col-lg-4 p-0">
-                    <div class="blog-card-wrapper">
-                      <div class="image">
-                        <img class="w-100" src="https://img-ok.mncdn.com/UPLOAD/blog/liste/vajinal-mantar-min.png"
-                          alt="Vajinal Mantar">
+                </div>
+                <div class="col-12 col-lg-3 pl-2 pr-2 mb-3">
+                  <div class="blog-cart">
+                    <div class="image d-flex justify-content-center quaternary-bg">
+                      <img class="overflow-hidden" src="assets/images/blog/blue-cart.svg" alt="">
+                    </div>
+                    <div class="content quaternary-bg">
+                      <div class="date">
+                        <span></span>
                       </div>
-                      <div class="content d-flex flex-column justify-content-between position-absolute h-100">
-                        <div class="text d-flex flex-column">
-                          <span class="title">Cinsellik İle İlgili Sorular</span>
-                          <span class="description">Vajinal Mantar</span>
-                        </div>
-                        <div class="action">
-                          <a class="btn-default d-inline-block" href="">İçeriği Oku</a>
-                        </div>
+                      <div class="title mt-5">
+                        <span style="color: #ffffff !important;">Doğum Tarihi Hesapla</span>
+                      </div>
+                      <div class="sub-title text-white">
+                        Bebeğinizin hangi gün dünyaya geleceğini son reglinizin…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="blog-card col-6 col-lg-4 p-0">
-                    <div class="blog-card-wrapper">
-                      <div class="image">
-                        <img class="w-100" src="https://img-ok.mncdn.com/UPLOAD/blog/liste/vajinal-mantar-min.png"
-                          alt="Vajinal Mantar">
+                </div>
+                <div class="col-12 col-lg-3 pl-2 mb-3">
+                  <div class="blog-cart secondary-bg">
+                    <div class="image d-flex justify-content-center">
+                      <img class="overflow-hidden" src="assets/images/blog/pink-cart.svg" alt="">
+                    </div>
+                    <div class="content secondary-bg">
+                      <div class="title mt-5">
+                        <span style="color: #ffffff !important;">Doğum Çantası Kontrol Listesi</span>
                       </div>
-                      <div class="content d-flex flex-column justify-content-between position-absolute h-100">
-                        <div class="text d-flex flex-column">
-                          <span class="title">Cinsellik İle İlgili Sorular</span>
-                          <span class="description">Vajinal Mantar</span>
-                        </div>
-                        <div class="action">
-                          <a class="btn-default d-inline-block" href="">İçeriği Oku</a>
-                        </div>
+                      <div class="sub-title text-white">
+                        Bebeğinizin hangi gün dünyaya geleceğini son reglinizin…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="blog-card col-6 col-lg-4 p-0">
-                    <div class="blog-card-wrapper">
-                      <div class="image">
-                        <img class="w-100" src="https://img-ok.mncdn.com/UPLOAD/blog/liste/vajinal-mantar-min.png"
-                          alt="Vajinal Mantar">
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
                       </div>
-                      <div class="content d-flex flex-column justify-content-between position-absolute h-100">
-                        <div class="text d-flex flex-column">
-                          <span class="title">Cinsellik İle İlgili Sorular</span>
-                          <span class="description">Vajinal Mantar</span>
-                        </div>
-                        <div class="action">
-                          <a class="btn-default d-inline-block" href="">İçeriği Oku</a>
-                        </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="blog-card col-6 col-lg-4 p-0">
-                    <div class="blog-card-wrapper">
-                      <div class="image">
-                        <img class="w-100" src="https://img-ok.mncdn.com/UPLOAD/blog/liste/vajinal-mantar-min.png"
-                          alt="Vajinal Mantar">
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
                       </div>
-                      <div class="content d-flex flex-column justify-content-between position-absolute h-100">
-                        <div class="text d-flex flex-column">
-                          <span class="title">Cinsellik İle İlgili Sorular</span>
-                          <span class="description">Vajinal Mantar</span>
-                        </div>
-                        <div class="action">
-                          <a class="btn-default d-inline-block" href="">İçeriği Oku</a>
-                        </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
                       </div>
                     </div>
                   </div>
-                  <div class="blog-card col-6 col-lg-4 p-0">
-                    <div class="blog-card-wrapper">
-                      <div class="image">
-                        <img class="w-100" src="https://img-ok.mncdn.com/UPLOAD/blog/liste/vajinal-mantar-min.png"
-                          alt="Vajinal Mantar">
+                </div>
+                <div class="col-12 col-lg-3 pl-2 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
                       </div>
-                      <div class="content d-flex flex-column justify-content-between position-absolute h-100">
-                        <div class="text d-flex flex-column">
-                          <span class="title">Cinsellik İle İlgili Sorular</span>
-                          <span class="description">Vajinal Mantar</span>
-                        </div>
-                        <div class="action">
-                          <a class="btn-default d-inline-block" href="">İçeriği Oku</a>
-                        </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
                       </div>
                     </div>
                   </div>
@@ -475,76 +476,47 @@
 
               </div>
 
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- footer -->
-  <footer>
-    <div class="top">
-      <div class="social d-flex justify-content-center">
-        <a class="mr-5" href=""><i class="fab fa-youtube"></i><span>Club Okey</span></a>
-        <a class="mr-5" href=""><i class="fab fa-spotify"></i><span>O.K. Playlist</span></a>
-      </div>
-    </div>
-    <div class="middle">
-      <div class="container">
-        <div class="middle-wrapper d-flex">
-          <div class="col-12 col-lg-8">
-            <div class="left d-flex">
-              <ul class="mr-5">
-                <a class="title" href="">Kurumsal</a>
-                <li><a href="">Hakkımızda</a></li>
-                <li><a href="">SSS</a></li>
-                <li><a href="">İletilim</a></li>
-              </ul>
-              <ul class="ml-4">
-                <a class="title" href="">Yasal Bilgilerimiz</a>
-                <li><a href="">İşlem Rehberi</a></li>
-                <li><a href="">Çerez Politikası</a></li>
-                <li><a href="">Gizlilik ve Güvenlik</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-
-            <div class="right col-12">
-              <form class="d-flex flex-column" action="submit">
-                <label for="campaign">Kampanyalardan Haberdar Ol</label>
-                <input type="text" name="campaign" placeholder="E-mail" />
-                <button>
-                  <i class="fas fa-arrow-right"></i>
-                </button>
-                <div class="check d-flex mt-2">
-                  <input class="mr-3" type="checkbox" name="checkbox" checked>
-                  <label for="checkbox">OKEY markası ve ürünleri hakkında fırsatlar, kampanyalar, etkinlikler,
-                    tanıtımlar,
-                    promosyonlar ve yeniliklerden öncelikli olarak haberdar olmak üzere e-­posta üzerinden OKEY
-                    iletişimlerini almaya izin veriyorum.</label>
+              <div class="pagination d-flex flex-column align-items-center">
+                <div class="d-flex flex-column align-items-center" style="width: 280px">
+                 <div class="count">
+                  <span>8/64 Ürün Görüntülendi.</span>
                 </div>
-              </form>
+                <div class="bar">
+                  <div class="progressbar">
+                    <div></div>
+                  </div>
+                </div>
+                <div class="more">
+                  <a href="">Daha Fazla Göster</a>
+                </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div id="yenidogan" class="tab-pane fade">
+            <div class="title container">
+              <span>Yenidoğan</span>
+            </div>
+          </div>
+          <div id="bebek" class="tab-pane fade">
+            <div class="title container">
+              <span>BEBEK</span>
+            </div>
+          </div>
+          <div id="cocuk" class="tab-pane fade">
+            <div class="title container">
+              <span>ÇOCUK</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="bottom">
-      <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="left">
-            <span>2019 © OKEY</span>
-          </div>
-          <div class="right">
-            <span>Kişisel Hakların Korunması</span>
-          </div>
-        </div>
-      </div>
 
-    </div>
-  </footer>
+
+  </div>
+  <!-- main tab -->
 
   <div class="bg-dark d-none" onclick="searchToggle()"></div>
 
@@ -559,9 +531,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
 
-
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
 
   <script>

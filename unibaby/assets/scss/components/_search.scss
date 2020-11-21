@@ -3,12 +3,14 @@
   width: 100%;
   background-color: #ffffff;
   opacity: 0;
+  display: none;
   visibility: visible;
   padding: 40px 0px 50px 0;
 
   &.show-search {
     visibility: visible;
     opacity: 1;
+    display: block;
     transition: all .3s ease-in-out;
     z-index: 101;
   }
