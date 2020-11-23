@@ -50,6 +50,7 @@
 
           .date{
             width: 100% !important;
+            z-index: 10;
           }
         }
       }
@@ -108,6 +109,10 @@
                 border: 0;
                 border-radius: 5px;
                 height: 42px;
+                color: var(--text-dark);
+                font-size: 14px;
+                font-weight: 700;
+                text-align: center;
               }
             }
           }

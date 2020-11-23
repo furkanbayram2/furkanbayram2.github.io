@@ -140,8 +140,8 @@
                         </li>
                         <li class="sub-menu-item">
                           <a class="sub-menu-link-title font-weight-bold text-dark" href="">
-                          <span>Bebek Bakım Ürünleri</span>
-                           <img src="assets/images/menu/bebekUrunleri.png" alt="">
+                            <span>Bebek Bakım Ürünleri</span>
+                            <img src="assets/images/menu/bebekUrunleri.png" alt="">
                           </a>
                           <ul class="level-3">
                             <li class="sub-menu-item">
@@ -238,21 +238,20 @@
 
           </div>
           <div class="right d-flex justify-content-center w-50">
-            <div class="date w-75">
-              <div class="inputs d-flex">
+            <div class="date w-75 z-index-1000">
+              <div class="inputs d-flex position-relative">
                 <div class="input d-flex flex-column w-50 text-center">
                   <label for="">Son Reglinizin İlk Günü</label>
-                  <input type="text">
+                  <input class="custom-datepicker" type="text" id="date-input2" onchange="console.log('Hello World!')" autocomplete="off" />
+
                 </div>
                 <div class="input d-flex flex-column w-50 text-center">
                   <label for="">Ortalama Döngü Uzunluğunuz</label>
                   <input type="text">
                 </div>
               </div>
-              <div class="datepicker">
-              </div>
 
-              <div class="button">
+              <div class="button" style="margin-top: 40px">
                 <a class="calculate text-center w-100" href="">
                   HESAPLA
                 </a>
@@ -557,6 +556,21 @@
       },
 
     });
+    const d2 = new Datepicker(document.getElementById("date-input2"), {
+      first_date: new Date(2020, 06, 19),
+      enabled_days: (d) => {
+        return d.getDate() % 2 == 0;
+      },
+      format: (d) => {
+        return [
+          d.getDate(),
+          d.getMonth(),
+          d.getFullYear(),
+        ].join("/");
+      },
+      first_day_of_week: "mon",
+      initial_date: new Date(2020, 01, 24),
+    });
 
     var mySwiper = new Swiper('.tab-swiper-container', {
       // Optional parameters
@@ -595,13 +609,6 @@
         }
         // when window width is >= 992
       }
-    });
-
-    $(function () {
-      $('#datetimepicker12').datetimepicker({
-        inline: true,
-        sideBySide: true
-      });
     });
   </script>
 </body>
