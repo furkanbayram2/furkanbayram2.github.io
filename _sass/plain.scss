@@ -20,7 +20,7 @@ $leftWidth: 220px;
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ffb100; 
+  background: #000000; 
 }
 
 /* Handle on hover */
@@ -28,7 +28,7 @@ $leftWidth: 220px;
   background: #35495e; 
 }
 body {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   font-family: 'Oxanium', cursive;
   // font-family: "Raleway", sans-serif;
   // font-family: 'Encode Sans Expanded', sans-serif;
@@ -219,7 +219,7 @@ main {
 .post-title {
   line-height: 1.2em;
   font-size: 28px;
-  color: #ffb100;
+  color: #000000;
 }
 .posts, .post-container {
 
