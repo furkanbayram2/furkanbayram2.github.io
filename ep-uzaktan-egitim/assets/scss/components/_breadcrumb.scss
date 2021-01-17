@@ -1,1 +1,30 @@
 ﻿
+.breadcrumb{
+  background-color: transparent;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item {
+  color: var(--text);
+  font-size: 12px !important;
+  font-weight: 500;
+  text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+  }
+  &.active {
+    color: #aca79e;
+    text-decoration: none;
+  }
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid var(--text);
+}

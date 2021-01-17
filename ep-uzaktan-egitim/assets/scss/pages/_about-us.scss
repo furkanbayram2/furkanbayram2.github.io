@@ -1,1 +1,46 @@
-﻿
+﻿.content.about {
+  .about-us {
+    .widget-image {
+      img {
+        min-height: 250px;
+      }
+    }
+    .breadcrumb {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 0;
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    .widget-title {
+      margin-bottom: 25px;
+
+      span {
+        font-size: 50px;
+        font-weight: 500;
+        font-family: var(--gotham);
+        color: #000000;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .about-content {
+      padding-bottom: 170px;
+      p {
+        font-weight: 300;
+        font-size: 17px;
+        color: #3c3c3c;
+      }
+      @media (min-width: 768px) {
+        width: 70%;
+      }
+    }
+  }
+}
