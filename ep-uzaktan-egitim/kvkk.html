@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anasayfa</title>
+
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+  <!-- header left menu -->
+  <div class="left-menu fixed-top">
+    <div class="top d-flex justify-content-center p-3">
+      <ul class="language d-flex mb-0">
+        <li class="language-list">
+          <a class=" pl-2 pr-2" href="">EN</a>
+        </li>
+        <li>
+          <span>|</span>
+        </li>
+        <li class="language-list active">
+          <a class="pl-2 pr-2" href="">TR</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom">
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/1.png" alt="">
+        </div>
+      </ul>
+      <ul class="menu-list d-flex">
+        <div class="left">
+          <span class="title">Anne Bakım Ürünleri</span>
+          <li>
+            <a href="">Ürünlerimiz</a>
+          </li>
+          <li>
+            <a href="">Bakım</a>
+          </li>
+          <li>
+            <a href="">Gıda Takviyesi</a>
+          </li>
+        </div>
+        <div class="right text-right">
+          <img src="assets/images/mobile-menu/2.png" alt="">
+        </div>
+      </ul>
+    </div>
+
+
+  </div>
+
+  <!-- header -->
+  <nav class="navbar d-flex flex-column p-0">
+    <div class="navbar-middle d-flex align-items-center w-100 h-100">
+      <div class="container h-100">
+        <div class="main-menu-wrapper position-static position-static d-flex w-100 h-100">
+          <div class="mobile-menu d-sm-none d-flex justify-content-between align-items-center w-100">
+            <div class="search d-md-none">
+              <img src="assets/images/icons/search.svg" alt="" />
+            </div>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <a class="hamburger-menu d-md-none" type="button" onclick="hamburgerToggle()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100 h-100">
+            <div class="left d-flex align-items-center h-100">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" alt="Logo">
+              </a>
+              <ul class="menu m-0 d-flex h-100">
+                <li class="list">
+                  <a class="link-main" href="index.html">Ürünler</a>
+                  <div class="nav-item-sub-menu">
+                    <div class="container">
+                      <div class="rectangle green">
+                      </div>
+                      <div class="rectangle pink">
+                      </div>
+                      <ul class="sub-menu-list d-flex level-2">
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">
+                            <span>Anne Bakım Ürünleri</span>
+                            <img src="assets/images/menu/anneUrunleri.png" alt="">
+                          </a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Ürünlerimiz</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Bakım Ürünleri</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">
+                          <span>Bebek Bakım Ürünleri</span>
+                           <img src="assets/images/menu/bebekUrunleri.png" alt="">
+                          </a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Mendil</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Banyo & Bakım</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Temizlik</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/unibaby/blog.html">Faydalı Bilgiler</a>
+                </li>
+                <li class="list">
+                  <a class="link-main effect" href="/unibaby/product-list.html">Avantajlı Setler</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/unibaby/product-list.html">Satın Al</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right d-flex align-items-center">
+              <div class="search d-flex align-items-center">
+                <a onclick="searchToggle()" href="#" class="d-flex align-items-center">
+                  <span>Arama</span>
+                  <img src="assets/images/icons/search.svg" alt="" />
+                </a>
+              </div>
+              <ul class="language d-flex mb-0">
+                <li class="language-list">
+                  <a class=" pl-2 pr-2" href="">EN</a>
+                </li>
+                <li>
+                  <span>|</span>
+                </li>
+                <li class="language-list active">
+                  <a class="pl-2 pr-2" href="">TR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+
+  <div class="kvkk-page col-12">
+    <div class="container-lg">
+      <div class="row">
+        <!-- left side menu -->
+        <div class="left-side-menu d-none d-lg-block col-12 col-lg-2">
+          <div class="title d-none d-lg-flex">
+            <span>Kurumsal</span>
+          </div>
+          <div class="title-mobile w-100 d-lg-none">
+            <span>Kurumsal</span>
+          </div>
+          <ul class="left-menu-list">
+            <li class="d-flex align-items-center justify-content-between">
+              <a class="active" href="">Hakkımızda</a>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <a href="">Manifestomuz</a>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <a href="">İletişim</a>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <a href="">Gizlilik Politikası ve Çerez Uyarısı</a>
+            </li>
+            <li class="d-flex align-items-center justify-content-between">
+              <a href="">Kullanım Koşulları</a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="right-side col-12 col-lg-10">
+          <div class="kvkk col-12">
+            <div class="row">
+              <div class="col-12 col-lg-10 p-0">
+                <div class="content">
+                  <span class="title-p">
+                    Gizlilik Politikası Ve Çerez Uyarısı
+                  </span>
+                  <p>
+                    Şirket, Veri Sahibi tarafından sağlanan Kişisel Verileri, üyelik açan müşterilerin üyelik
+                    kayıtlarının yapılması, kullanıcı ya da üyeler ile sitedeki ürün ve/veya hizmetlerle ilgili
+                    sözleşmelerin kurulması ve ifası başta olmak üzere, Şirkete özel ticari faaliyetlerin kurgulanması,
+                    koordine edilmesi, geliştirilmesi, icrası, iş geliştirmeye ve ticari aktivitelere yönelik
+                    faaliyetlerin planlanması ve icrası, ürün ve hizmetlerin kişilere göre özelleştirilmesi, profilleme,
+                    tanıtım ve pazarlanmaya yönelik faaliyetlerin kurgulanması ve icrası, Talep ve şikayet yönetimi ile
+                    satış sonrası süreçlerin kurgulanması ve/veya icrası, kurumsal ilişkilerinin planlanması, icrası ve
+                    yönetilmesi, Şirket'in ve Şirket'le iş ilişkisi içerisinde olan ilgili kişilerin hukuki, teknik ve
+                    ticari-iş güvenliğinin temin edilmesi ile hukuki yükümlülüklerin ifasına yönelik faaliyetlerin
+                    gerçekleştirilmesi gibi amaçlar (“Amaçlar”) kapsamında işleyebilmektedir.
+
+                  </p>
+
+
+                  <span class="title-p">
+                    Verilere Kim Erişebilmektedir?
+                  </span>
+                  <p>
+                    Şirket, Veri Sahibine ait Kişisel Verileri ve bu Kişisel Verileri kullanılarak elde ettiği yeni
+                    verileri, işbu Gizlilik Politikası ile belirlenen amaçların gerçekleştirilebilmesi için Şirketin
+                    hizmetlerinden faydalandığı üçüncü kişilere, söz konusu hizmetlerin temini amacıyla sınırlı olmak
+                    üzere aktarılabilecektir. Şirket ayrıca, işbu gizlilik politikasında belirtilen amaçlar dahilinde
+                    verileri, Şirketin iş ortakları, tedarikçileri, diğer Eczacıbaşı Topluluk Kuruluşları ve hukuken
+                    yetkili kurum ve kuruluşlara aktarabilecektir.
+                    Şirket, Veri Sahibi deneyiminin geliştirilmesi (iyileştirme ve kişiselleştirme dâhil), Veri
+                    Sahibinin güvenliğini sağlamak, hileli ya da izinsiz kullanımları tespit etmek, operasyonel
+                    değerlendirme araştırılması, Site hizmetlerine ilişkin hataların giderilmesi ve işbu gizlilik
+                    politikasında yer alan amaçlardan herhangi birisini gerçekleştirebilmek için SMS gönderimi yapanlar
+                    da dahil olmak üzere dış kaynak hizmet sağlayıcıları, barındırma hizmet sağlayıcıları (hosting
+                    servisleri), hukuk büroları, araştırma şirketleri, çağrı merkezleri gibi üçüncü kişiler ile
+                    paylaşabilecektir.
+                    Veri Sahibi, yukarıda belirtilen Amaçlarla sınırlı olmak kaydı ile bahsi geçen üçüncü tarafların
+                    Veri Sahibinin Kişisel Verilerini dünyanın her yerindeki sunucularında saklayabileceğini, bu hususa
+                    peşinen muvafakat ettiğini kabul eder.
+
+                  </p>
+
+                  <p>
+                    En değerli varlığınız olan bebeğinizin ihtiyaç duyduğu hassasiyetin farkında olarak, 22 yıllık
+                    deneyimimiz ile siz annelerimizin yanınızdayız.
+                  </p>
+
+                  <p>
+                    Yenidoğan döneminde bebeğinizin hassas ve korunmasız olduğunu biliyor, yenidoğan cildini iyi
+                    tanıyoruz. Cildinin su ve pamuk ile temizlenmesinin önemli olduğu bilinci ile saflaştırılmış su ve
+                    pamuk içeren ıslak pamuk mendilimiz ile pratik ve güvenli çözüm sunuyoruz. Banyosunun da cilt
+                    bakımın bir parçası olduğunu bilerek geliştirdiğimiz yenidoğan şampuanımız ile onu büyük bir
+                    hassasiyet ile yıkamanıza yardımcı oluyoruz.
+                  </p>
+
+                  <p>
+                    Bebeğiniz büyürken de ihtiyacı olan ürünleri büyük bir titizlik ve hassasiyetle geliştiriyoruz. Boya
+                    içermeyen bebek şampuan, parafin içermeyen bebek yağı, hızlı etki eden pişik kremi, ağartıcı
+                    içermeyen bebek deterjanı.. Ürettiğimiz her üründe, bebeğinizin hassas cildini ön planda tutuyoruz.
+                    Üretimimizin her aşamasını denetliyor, güncel gelişmeleri ve literatürleri sürekli takip ediyor,
+                    ürünlerimizde hassas içerikler kullanıyoruz.
+                  </p>
+
+                  <p>
+                    de siz annelerimizin ilk günden itibaren güvenle kullanabileceği ürünleri Eczacıbaşı güvencesiyle
+                    kullanımınıza sunuyoruz.
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="d-flex">
+    <div class="menu w-100 d-md-none">
+      <ul class="list d-flex justify-content-center m-0">
+        <li class="item">
+          <a href="" class="link">Hakkımızda</a>
+        </li>
+        <li class="item">
+          <a href="" class="link">İletişim</a>
+        </li>
+        <li class="item">
+          <a href="" class="link">Sözleşmeler</a>
+        </li>
+      </ul>
+    </div>
+    <div class="social d-md-none">
+      <ul class="list d-flex justify-content-center m-0">
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/instagram.svg" alt="">
+          </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/facebook.svg" alt="">
+          </a>
+        </li>
+        <li class="item">
+          <a href="" class="link">
+            <img src="assets/images/icons/twitter.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container d-none d-md-block">
+      <div class="footer-wrapper">
+        <div class="top d-flex w-100 justify-content-between">
+          <div class="left">
+            <div class="logo">
+              <img src="assets/images/eczacibasi-logo.png" alt="">
+            </div>
+          </div>
+
+          <div class="right d-flex">
+            <ul>
+              <a class="title" href="">Uni Baby</a>
+              <li>
+                <a href="">Hakkımızda</a>
+              </li>
+              <li>
+                <a href="">İletişim</a>
+              </li>
+            </ul>
+            <ul>
+              <a class="title" href="">Ürünlerimiz</a>
+              <li>
+                <a href="">Anne Ürünleri</a>
+              </li>
+              <li>
+                <a href="">Bebek Ürünleri</a>
+              </li>
+            </ul>
+            <ul>
+              <a class="title" href="">Faydalı Bilgiler</a>
+              <li>
+                <a href="">Hamile ve Anne</a>
+              </li>
+              <li>
+                <a href="">Premature</a>
+              </li>
+              <li>
+                <a href="">Yenidoğan</a>
+              </li>
+              <li>
+                <a href="">Bebek</a>
+              </li>
+              <li>
+                <a href="">Çocuk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bottom d-flex justify-content-between">
+          <div class="left">
+            <span>© 2019 Eczacibaşı Tüketim Ürünleri</span>
+          </div>
+          <div class="right">
+            <ul class="d-flex">
+              <li>
+                <a href="">Gizlilik ve Kullanım Koşulları</a>
+              </li>
+              <li>
+                <a href="">Kişisel Hakların Korunması</a>
+              </li>
+              <li>
+                <a href="">Sözleşmeler</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+  <div class="bg-dark d-none" onclick="searchToggle()"></div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+    var mainSwiper = new Swiper('.mainSwiper-container', {
+      // Optional parameters
+      loop: true,
+      pagination: {
+        el: '.mainSwiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+      },
+
+    });
+
+    var mySwiper = new Swiper('.tab-swiper-container', {
+      // Optional parameters
+      slidesPerView: 4,
+      spaceBetween: 15,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 576px
+        576: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 4,
+        }
+        // when window width is >= 992
+      }
+    });
+
+    var blog = new Swiper('.swiper-blog', {
+      slidesPerView: 3,
+      spaceBetween: 15,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+        },
+        // when window width is >= 576px
+        576: {
+          slidesPerView: 2,
+        },
+        992: {
+          slidesPerView: 3,
+        }
+        // when window width is >= 992
+      }
+    });
+  </script>
+</body>
+
+</html>

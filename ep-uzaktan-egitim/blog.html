@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+
+  <!-- fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar d-flex flex-column p-0">
+    <div class="navbar-middle d-flex align-items-center w-100 h-100">
+      <div class="container h-100">
+        <div class="main-menu-wrapper position-static position-static d-flex w-100 h-100">
+          <div class="mobile-menu d-sm-none d-flex justify-content-between align-items-center w-100">
+            <div class="search d-md-none">
+              <img src="assets/images/icons/search.svg" alt="" />
+            </div>
+            <a class="navbar-brand" href="#">
+              <img src="assets/images/logo.svg" alt="Logo">
+            </a>
+            <a class="hamburger-menu d-md-none" type="button" onclick="hamburgerToggle()">
+              <i class="fas fa-bars"></i>
+            </a>
+          </div>
+          <div class="main-menu w-100 d-none d-md-flex justify-content-between w-100 h-100">
+            <div class="left d-flex align-items-center h-100">
+              <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.svg" alt="Logo">
+              </a>
+              <ul class="menu m-0 d-flex h-100">
+                <li class="list">
+                  <a class="link-main" href="index.html">Ürünler</a>
+                  <div class="nav-item-sub-menu">
+                    <div class="container">
+                      <div class="rectangle green">
+                      </div>
+                      <div class="rectangle pink">
+                      </div>
+                      <ul class="sub-menu-list d-flex level-2">
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">
+                            <span>Anne Bakım Ürünleri</span>
+                            <img src="assets/images/menu/anneUrunleri.png" alt="">
+                          </a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Ürünlerimiz</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Bakım Ürünleri</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between py-2" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="sub-menu-item">
+                          <a class="sub-menu-link-title font-weight-bold text-dark" href="">
+                          <span>Bebek Bakım Ürünleri</span>
+                           <img src="assets/images/menu/bebekUrunleri.png" alt="">
+                          </a>
+                          <ul class="level-3">
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Mendil</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Banyo & Bakım</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Temizlik</span>
+                              </a>
+                            </li>
+                            <li class="sub-menu-item">
+                              <a class="sub-menu-link d-flex align-items-center justify-content-between" href="">
+                                <span>Gıda Takviyesi</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/unibaby/blog.html">Faydalı Bilgiler</a>
+                </li>
+                <li class="list">
+                  <a class="link-main effect" href="/unibaby/product-list.html">Avantajlı Setler</a>
+                </li>
+                <li class="list">
+                  <a class="link-main" href="/unibaby/product-list.html">Satın Al</a>
+                </li>
+              </ul>
+            </div>
+            <div class="right d-flex align-items-center">
+              <div class="search d-flex align-items-center">
+                <a onclick="searchToggle()" href="#" class="d-flex align-items-center">
+                  <span>Arama</span>
+                  <img src="assets/images/icons/search.svg" alt="" />
+                </a>
+              </div>
+              <ul class="language d-flex mb-0">
+                <li class="language-list">
+                  <a class=" pl-2 pr-2" href="">EN</a>
+                </li>
+                <li>
+                  <span>|</span>
+                </li>
+                <li class="language-list active">
+                  <a class="pl-2 pr-2" href="">TR</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+
+  <!-- main tab -->
+  <div class="main-tab blog-wrapper">
+    <div class="container">
+      <div class="row">
+        <ul class="nav nav-tabs d-flex w-100 border-0">
+          <li class="hamilelik active">
+            <img src="assets/images/icons/hearth.svg" alt="">
+            <a data-toggle="tab" data-target="#hamilelik">Hamilelik ve Anne</a>
+          </li>
+          <li class="yenidogan">
+            <img src="assets/images/icons/baby.svg" alt="">
+            <a data-toggle="tab" data-target="#yenidogan">Yenidoğan</a>
+          </li>
+          <li class="bebek">
+            <img src="assets/images/icons/emzik.svg" alt="">
+            <a data-toggle="tab" data-target="#bebek">Bebek</a>
+          </li>
+          <li class="cocuk">
+            <img src="assets/images/icons/child.svg" alt="">
+            <a data-toggle="tab" data-target="#cocuk">Çocuk</a>
+          </li>
+
+        </ul>
+        <div class="tab-content">
+          <div id="hamilelik-blog" class="tab-pane fade in show active p-0">
+            <div class="container">
+              <div class="filter d-flex justify-content-end">
+                <div class="filter-item">
+                  <span>Tarihe Göre Sırala</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 pr-2 mb-3">
+                  <div class="blog-cart">
+                    <div class="image d-flex justify-content-center quaternary-bg">
+                      <img class="overflow-hidden" src="assets/images/blog/blue-cart.svg" alt="">
+                    </div>
+                    <div class="content quaternary-bg">
+                      <div class="date">
+                        <span></span>
+                      </div>
+                      <div class="title mt-5">
+                        <span style="color: #ffffff !important;">Doğum Tarihi Hesapla</span>
+                      </div>
+                      <div class="sub-title text-white">
+                        Bebeğinizin hangi gün dünyaya geleceğini son reglinizin…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 mb-3">
+                  <div class="blog-cart secondary-bg">
+                    <div class="image d-flex justify-content-center">
+                      <img class="overflow-hidden" src="assets/images/blog/pink-cart.svg" alt="">
+                    </div>
+                    <div class="content secondary-bg">
+                      <div class="title mt-5">
+                        <span style="color: #ffffff !important;">Doğum Çantası Kontrol Listesi</span>
+                      </div>
+                      <div class="sub-title text-white">
+                        Bebeğinizin hangi gün dünyaya geleceğini son reglinizin…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/3.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pl-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/2.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-3 pr-2 mb-3">
+                  <div class="blog-cart ">
+                    <div class="image d-flex">
+                      <img class="overflow-hidden w-100" src="assets/images/product-detail/1.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="category">
+                        <span>Sağlık</span>
+                      </div>
+                      <div class="date">
+                        <span>15 Mart 2018 | 1dk</span>
+                      </div>
+                      <div class="title">
+                        <span>Çocuğunuza Özgüven Kazandırmak İçin
+                          Neler Yapabilirsiniz?</span>
+                      </div>
+                      <div class="sub-title">
+                        Kurallar her zaman hayatımızda var olan yapılardır. Kuralların varlığını bilmek…
+                      </div>
+                      <div class="read-more d-flex justify-content-end">
+                        <img src="assets/images/icons/right-arrow.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="pagination d-flex flex-column align-items-center">
+                <div class="d-flex flex-column align-items-center" style="width: 280px">
+                 <div class="count">
+                  <span>8/64 Ürün Görüntülendi.</span>
+                </div>
+                <div class="bar">
+                  <div class="progressbar">
+                    <div></div>
+                  </div>
+                </div>
+                <div class="more">
+                  <a href="">Daha Fazla Göster</a>
+                </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div id="yenidogan" class="tab-pane fade">
+            <div class="title container">
+              <span>Yenidoğan</span>
+            </div>
+          </div>
+          <div id="bebek" class="tab-pane fade">
+            <div class="title container">
+              <span>BEBEK</span>
+            </div>
+          </div>
+          <div id="cocuk" class="tab-pane fade">
+            <div class="title container">
+              <span>ÇOCUK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- main tab -->
+
+  <div class="bg-dark d-none" onclick="searchToggle()"></div>
+
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+  <script>
+    function hamburgerToggle() {
+      var element = document.querySelector(".left-menu");
+      element.classList.toggle("d-none");
+    }
+
+    function leftMenutoggle() {
+      var element = document.querySelector(".nav-item-sub-menu");
+      element.classList.toggle("d-none");
+    }
+
+    function searchToggle() {
+      var element = document.querySelector(".search-wrapper");
+      var bgDark = document.querySelector(".bg-dark");
+
+      element.classList.toggle("d-none");
+      bgDark.classList.toggle("d-none");
+    }
+  </script>
+</body>
+
+</html>
