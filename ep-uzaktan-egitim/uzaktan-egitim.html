@@ -59,6 +59,113 @@
     </div>
   </div>
   <!-- search -->
+
+
+  <!-- mobile header -->
+  <div class="left-menu fixed-top">
+
+    <div class="top d-flex justify-content-between align-items-center">
+      <div class="search">
+        <input type="text" onclick="mobileSearch()">
+        <i class="fas fa-search fa-lg search-icon"></i>
+      </div>
+      <div class="close">
+        <a href="#" onclick="hamburgerToggle()">
+
+          <i class="fas fa-times text-white"></i>
+        </a>
+      </div>
+    </div>
+    <div class="left-menu-search d-none">
+      <div class="title">
+        <span>
+          En çok aranan kelimeler
+        </span>
+      </div>
+      <div class="search-content">
+        <ul>
+          <li>
+            <a href="">Otel Temizliği</a>
+          </li>
+          <li>
+            <a href="">Sertifika Programları</a>
+          </li>
+          <li>
+            <a href="">Şifremi unuttum</a>
+          </li>
+          <li>
+            <a href="">Sisteme nasıl üye olurum?</a>
+          </li>
+          <li>
+            <a href="">Şirket Kodu</a>
+          </li>
+          <li>
+            <a href="">Covid - 19</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="left-menu-center">
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#">Uzantan Eğitim</a>
+          </li>
+          <li>
+            <a href="#">Eğitimler</a>
+          </li>
+          <li>
+            <a href="#">Kaynaklar</a>
+          </li>
+          <li>
+            <a href="#">Ücretlendirme</a>
+          </li>
+          <li>
+            <a href="#">Uzmana Danışın</a>
+          </li>
+        </ul>
+      </div>
+      <div class="actions d-flex">
+        <a href="#" class="btn btn-signin btn-dark mr-2">GİRİŞ</a>
+        <a href="#" class="btn btn-login btn-orange ml-2">KAYIT OL</a>
+
+      </div>
+    </div>
+    <div class="left-menu-bottom">
+      <div class="mobile">
+        <div class="title">
+          <span>Mobil Uygulamamızı İndirin</span>
+        </div>
+        <div class="logos d-flex justify-content-between">
+          <a href="" class="mr-2">
+            <img src="assets/images/anasayfa/app-store.png" alt="">
+          </a>
+          <a href="" class="ml-2">
+            <img src="assets/images/anasayfa/play-store.png" alt="">
+
+          </a>
+        </div>
+      </div>
+      <div class="footer d-flex justify-content-between align-items-center">
+        <div class="language">
+          <a href="">
+            <span>TÜRKÇE</span>
+            <i class="fas fa-angle-down ml-3"></i>
+          </a>
+        </div>
+        <div class="social d-flex">
+          <ul class="d-flex align-items-center mb-0">
+            <li><a href=""><i class="fab fa-facebook fa-lg"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- mobile header -->
   <!-- header -->
   <nav id="header" class="navbar d-flex flex-column w-100 p-0">
     <!-- notification -->
@@ -79,11 +186,8 @@
       <div class="w-100 d-flex justify-content-between align-items-center w-100 h-100">
         <div class="left d-flex align-items-center h-100">
           <a class="navbar-brand logo" href="#">
-            <img src="assets/images/anasayfa/logo.png" alt="Logo">
+            <img src="assets/images/anasayfa/hijyen-logo.png" alt="Logo">
           </a>
-          <div class="title">
-            <span>UZAKTAN EĞİTİM <br /> PROGRAMI</span>
-          </div>
         </div>
         <div class="center d-none d-md-flex align-items-center justify-content-center">
           <ul class="main-menu d-flex align-items-center m-0">
@@ -219,7 +323,8 @@
           <div class="basket">
             <a class="btn btn-basket d-flex align-items-center justify-content-center position-relative" href="">
               <img src="assets/images/icons/shopping-cart.png" alt="">
-              <div class="badge position-absolute text-white d-flex align-items-center justify-content-center">2</div>
+              <div class="badge position-absolute text-white d-flex align-items-center justify-content-center">2
+              </div>
             </a>
           </div>
           <div class="actions d-none d-md-flex">
@@ -227,7 +332,7 @@
             <a class="btn btn-orange btn-login" href="">Kayıt Ol</a>
           </div>
           <div class="mobile-menu d-md-none">
-            <a class="btn btn-mobile-menu" href=""></a>
+            <a class="btn btn-mobile-menu" href="#" onclick="hamburgerToggle()"></a>
           </div>
         </div>
       </div>
@@ -363,7 +468,7 @@
           <div class="container">
             <div class="widget-title d-flex justify-content-between align-items-center">
               <span class="title">Faydaları Neler?</span>
-             
+
             </div>
           </div>
           <div class="benefit-items ml-3">
@@ -863,36 +968,36 @@
     <script src="assets/js/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-       var swiper = new Swiper('.swiper-container', {
-               slidesPerView: 1,
-               
-               pagination: {
-                  el: '.swiper-pagination',
-                  dynamicBullets: true,
-               },
-            });
-            
-            var mySwiper = new Swiper('.tab-swiper-container', {
-               // Optional parameters
-               slidesPerView: auto,
-               pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
-                  dynamicBullets: true,
-               },
-               
-            });
-            
-            var people = new Swiper('.people-swiper-container', {
-               // Optional parameters
-               pagination: {
-                  el: '.swiper-pagination',
-                  clickable: true,
-                  dynamicBullets: true,
-               },
-               
-            });
-         </script>
+      var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+      });
+
+      var mySwiper = new Swiper('.tab-swiper-container', {
+        // Optional parameters
+        slidesPerView: auto,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+      });
+
+      var people = new Swiper('.people-swiper-container', {
+        // Optional parameters
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: true,
+        },
+
+      });
+    </script>
 </body>
 
 </html>

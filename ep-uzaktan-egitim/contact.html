@@ -20,221 +20,326 @@
 </head>
 
 <body>
-  <!-- search -->
-  <div class="search-wrapper">
+   <!-- search -->
+   <div class="search-wrapper">
     <div class="container">
-      <div class="content">
-        <div class="search-input d-flex justify-content-between">
-          <input class="w-100" type="text" placeholder="Aramak istediğiniz kelimeyi yazın...">
-          <div class="close">
-            <a href="#" class="btn-close" onclick="searchToggle()">
-              <i class="fas fa-times text-white"></i>
-            </a>
+       <div class="content">
+          <div class="search-input d-flex justify-content-between">
+             <input class="w-100" type="text" placeholder="Aramak istediğiniz kelimeyi yazın...">
+             <div class="close">
+                <a href="#" class="btn-close" onclick="searchToggle()">
+                   <i class="fas fa-times text-white"></i>
+                </a>
+             </div>
           </div>
-        </div>
-        <div class="suggestions d-flex flex-column">
-          <div class="title">
-            <span>En çok aranan kelimeler</span>
+          <div class="suggestions d-flex flex-column">
+             <div class="title">
+                <span>En çok aranan kelimeler</span>
+             </div>
+             <div class="item">
+                <a href="#">Otel Temizliği</a>
+             </div>
+             <div class="item">
+                <a href="#">Sertifika Programları</a>
+             </div>
+             <div class="item">
+                <a href="#">Şifremi Unuttum</a>
+             </div>
+             <div class="item">
+                <a href="#">Sisteme nasıl üye olurum?</a>
+             </div>
+             <div class="item">
+                <a href="#">Şirket kodu</a>
+             </div>
+             <div class="item">
+                <a href="#">Covid - 19</a>
+             </div>
           </div>
-          <div class="item">
-            <a href="#">Otel Temizliği</a>
-          </div>
-          <div class="item">
-            <a href="#">Sertifika Programları</a>
-          </div>
-          <div class="item">
-            <a href="#">Şifremi Unuttum</a>
-          </div>
-          <div class="item">
-            <a href="#">Sisteme nasıl üye olurum?</a>
-          </div>
-          <div class="item">
-            <a href="#">Şirket kodu</a>
-          </div>
-          <div class="item">
-            <a href="#">Covid - 19</a>
-          </div>
-        </div>
-      </div>
+       </div>
     </div>
-  </div>
-  <!-- search -->
-  <!-- header -->
-  <nav id="header" class="navbar d-flex flex-column w-100 p-0">
+ </div>
+ <!-- search -->
+
+
+ <!-- mobile header -->
+ <div class="left-menu fixed-top">
+
+    <div class="top d-flex justify-content-between align-items-center">
+       <div class="search">
+          <input type="text" onclick="mobileSearch()">
+          <i class="fas fa-search fa-lg search-icon"></i>
+       </div>
+       <div class="close">
+          <a href="#" onclick="hamburgerToggle()">
+
+             <i class="fas fa-times text-white"></i>
+          </a>
+       </div>
+    </div>
+    <div class="left-menu-search d-none">
+       <div class="title">
+          <span>
+             En çok aranan kelimeler
+          </span>
+       </div>
+       <div class="search-content">
+          <ul>
+             <li>
+                <a href="">Otel Temizliği</a>
+             </li>
+             <li>
+                <a href="">Sertifika Programları</a>
+             </li>
+             <li>
+                <a href="">Şifremi unuttum</a>
+             </li>
+             <li>
+                <a href="">Sisteme nasıl üye olurum?</a>
+             </li>
+             <li>
+                <a href="">Şirket Kodu</a>
+             </li>
+             <li>
+                <a href="">Covid - 19</a>
+             </li>
+          </ul>
+       </div>
+    </div>
+    <div class="left-menu-center">
+       <div class="menu">
+          <ul>
+             <li>
+                <a href="#">Uzantan Eğitim</a>
+             </li>
+             <li>
+                <a href="#">Eğitimler</a>
+             </li>
+             <li>
+                <a href="#">Kaynaklar</a>
+             </li>
+             <li>
+                <a href="#">Ücretlendirme</a>
+             </li>
+             <li>
+                <a href="#">Uzmana Danışın</a>
+             </li>
+          </ul>
+       </div>
+       <div class="actions d-flex">
+          <a href="#" class="btn btn-signin btn-dark mr-2">GİRİŞ</a>
+          <a href="#" class="btn btn-login btn-orange ml-2">KAYIT OL</a>
+
+       </div>
+    </div>
+    <div class="left-menu-bottom">
+       <div class="mobile">
+          <div class="title">
+             <span>Mobil Uygulamamızı İndirin</span>
+          </div>
+          <div class="logos d-flex justify-content-between">
+             <a href="" class="mr-2">
+                <img src="assets/images/anasayfa/app-store.png" alt="">
+             </a>
+             <a href="" class="ml-2">
+                <img src="assets/images/anasayfa/play-store.png" alt="">
+
+             </a>
+          </div>
+       </div>
+       <div class="footer d-flex justify-content-between align-items-center">
+          <div class="language">
+             <a href="">
+                <span>TÜRKÇE</span>
+                <i class="fas fa-angle-down ml-3"></i>
+             </a>
+          </div>
+          <div class="social d-flex">
+             <ul class="d-flex align-items-center mb-0">
+                <li><a href=""><i class="fab fa-facebook fa-lg"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram fa-lg"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
+                <li><a href=""><i class="fab fa-linkedin fa-lg"></i></a></li>
+             </ul>
+          </div>
+       </div>
+    </div>
+
+ </div>
+ <!-- mobile header -->
+ <!-- header -->
+ <nav id="header" class="navbar d-flex flex-column w-100 p-0">
     <!-- notification -->
     <div class="notification d-none d-md-flex w-100">
-      <div class="text pr-3">
-        <span class="text-white">Mobil Uygulamamız ile Zamandan Kazanın Lorem ipsem dolar sit amet</span>
-      </div>
-      <div class="logos pr-3">
-        <img src="assets/images/anasayfa/app-store.png" height="30" alt="IOS">
-        <img src="assets/images/anasayfa/play-store.png" height="30" alt="ANDROID">
-      </div>
-      <div class="cross">
-        <i class="fas fa-times text-white"></i>
-      </div>
+       <div class="text pr-3">
+          <span class="text-white">Mobil Uygulamamız ile Zamandan Kazanın Lorem ipsem dolar sit amet</span>
+       </div>
+       <div class="logos pr-3">
+          <img src="assets/images/anasayfa/app-store.png" height="30" alt="IOS">
+          <img src="assets/images/anasayfa/play-store.png" height="30" alt="ANDROID">
+       </div>
+       <div class="cross">
+          <i class="fas fa-times text-white"></i>
+       </div>
     </div>
     <!-- notification -->
     <div class="navbar-content d-flex align-items-center w-100 h-100">
-      <div class="w-100 d-flex justify-content-between align-items-center w-100 h-100">
-        <div class="left d-flex align-items-center h-100">
-          <a class="navbar-brand logo" href="#">
-            <img src="assets/images/anasayfa/logo.png" alt="Logo">
-          </a>
-          <div class="title">
-            <span>UZAKTAN EĞİTİM <br /> PROGRAMI</span>
+       <div class="w-100 d-flex justify-content-between align-items-center w-100 h-100">
+          <div class="left d-flex align-items-center h-100">
+             <a class="navbar-brand logo" href="#">
+                <img src="assets/images/anasayfa/hijyen-logo.png" alt="Logo">
+             </a>
           </div>
-        </div>
-        <div class="center d-none d-md-flex align-items-center justify-content-center">
-          <ul class="main-menu d-flex align-items-center m-0">
-            <li class="main-menu-item custom-border-right">
-              <a href="" class="main-menu-item-link">
-                <span>Uzaktan Eğitim</span>
-                <i class="fas fa-angle-down"></i>
-              </a>
-              <div class="sub-menu">
-                <div class="sub-menu-content d-flex">
-                  <div class="left flex-1">
-                    <ul>
-                      <li>
-                        <a href="">Uzaktan Bilgiler</a>
-                      </li>
-                      <li>
-                        <a href="">Uzaktan Hijyeni</a>
-                      </li>
-                      <li>
-                        <a href="">Uzaktan Hijyeni</a>
-                      </li>
-                      <li>
-                        <a href="">Çamaşır Hijyeni</a>
-                      </li>
-                      <li>
-                        <a href="">Hastane Hijyeni</a>
-                      </li>
-                      <li>
-                        <a href="">Gıda Hijyeni</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="right d-flex- flex-column flex-1">
-                    <div class="menu-cart">
-                      <div class="image">
-                        <img src="assets/images/anasayfa/nav-img.png" alt="">
+          <div class="center d-none d-md-flex align-items-center justify-content-center">
+             <ul class="main-menu d-flex align-items-center m-0">
+                <li class="main-menu-item custom-border-right">
+                   <a href="" class="main-menu-item-link">
+                      <span>Uzaktan Eğitim</span>
+                      <i class="fas fa-angle-down"></i>
+                   </a>
+                   <div class="sub-menu">
+                      <div class="sub-menu-content d-flex">
+                         <div class="left flex-1">
+                            <ul>
+                               <li>
+                                  <a href="">Uzaktan Bilgiler</a>
+                               </li>
+                               <li>
+                                  <a href="">Uzaktan Hijyeni</a>
+                               </li>
+                               <li>
+                                  <a href="">Uzaktan Hijyeni</a>
+                               </li>
+                               <li>
+                                  <a href="">Çamaşır Hijyeni</a>
+                               </li>
+                               <li>
+                                  <a href="">Hastane Hijyeni</a>
+                               </li>
+                               <li>
+                                  <a href="">Gıda Hijyeni</a>
+                               </li>
+                            </ul>
+                         </div>
+                         <div class="right d-flex- flex-column flex-1">
+                            <div class="menu-cart">
+                               <div class="image">
+                                  <img src="assets/images/anasayfa/nav-img.png" alt="">
+                               </div>
+                               <div class="content d-flex flex-column">
+                                  <span class="title">Yüzey Hijyeni</span>
+                                  <span class="time">6 ders - 2sa. 55dk.</span>
+                               </div>
+                            </div>
+                            <div class="all d-flex justify-content-center">
+                               <a href="">
+                                  <span>Tüm Eğitimler</span>
+                                  <i class="fas fa-long-arrow-alt-right"></i>
+                               </a>
+                            </div>
+                         </div>
                       </div>
-                      <div class="content d-flex flex-column">
-                        <span class="title">Yüzey Hijyeni</span>
-                        <span class="time">6 ders - 2sa. 55dk.</span>
+                   </div>
+                   </a>
+                </li>
+                <li class="main-menu-item custom-border-right">
+                   <a class="main-menu-item-link" href="">
+                      <span>Eğitimler</span>
+                      <i class="fas fa-angle-down"></i>
+                   </a>
+                   <div class="sub-menu">
+                      <div class="sub-menu-content d-flex">
+                         <div class="left flex-1">
+                            <ul>
+                               <li>
+                                  <a href="">Temel Bilgiler</a>
+                               </li>
+                               <li>
+                                  <a href="">Yüzey Hijyeni</a>
+                               </li>
+                               <li>
+                                  <a href="">Mutfak Hijyeni</a>
+                               </li>
+                               <li>
+                                  <a href="">Çamaşır Hijyeni</a>
+                               </li>
+                               <li>
+                                  <a href="">Hastane Hijyeni</a>
+                               </li>
+                               <li>
+                                  <a href="">Gıda Hijyeni</a>
+                               </li>
+                            </ul>
+                         </div>
+                         <div class="right d-flex- flex-column flex-1">
+                            <div class="menu-cart">
+                               <div class="image">
+                                  <img src="assets/images/anasayfa/nav-img.png" alt="">
+                               </div>
+                               <div class="content d-flex flex-column">
+                                  <span class="title">Yüzey Hijyeni</span>
+                                  <span class="time">6 ders - 2sa. 55dk.</span>
+                               </div>
+                            </div>
+                            <div class="all d-flex justify-content-center">
+                               <a href="">
+                                  <span>Tüm Eğitimler</span>
+                                  <i class="fas fa-long-arrow-alt-right"></i>
+                               </a>
+                            </div>
+                         </div>
                       </div>
-                    </div>
-                    <div class="all d-flex justify-content-center">
-                      <a href="">
-                        <span>Tüm Eğitimler</span>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              </a>
-            </li>
-            <li class="main-menu-item custom-border-right">
-              <a class="main-menu-item-link" href="">
-                <span>Eğitimler</span>
-                <i class="fas fa-angle-down"></i>
-              </a>
-              <div class="sub-menu">
-                <div class="sub-menu-content d-flex">
-                  <div class="left flex-1">
-                    <ul>
-                      <li>
-                        <a href="">Temel Bilgiler</a>
-                      </li>
-                      <li>
-                        <a href="">Yüzey Hijyeni</a>
-                      </li>
-                      <li>
-                        <a href="">Mutfak Hijyeni</a>
-                      </li>
-                      <li>
-                        <a href="">Çamaşır Hijyeni</a>
-                      </li>
-                      <li>
-                        <a href="">Hastane Hijyeni</a>
-                      </li>
-                      <li>
-                        <a href="">Gıda Hijyeni</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="right d-flex- flex-column flex-1">
-                    <div class="menu-cart">
-                      <div class="image">
-                        <img src="assets/images/anasayfa/nav-img.png" alt="">
-                      </div>
-                      <div class="content d-flex flex-column">
-                        <span class="title">Yüzey Hijyeni</span>
-                        <span class="time">6 ders - 2sa. 55dk.</span>
-                      </div>
-                    </div>
-                    <div class="all d-flex justify-content-center">
-                      <a href="">
-                        <span>Tüm Eğitimler</span>
-                        <i class="fas fa-long-arrow-alt-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="main-menu-item custom-border-right">
-              <a class="main-menu-item-link" href="">
-                <span>Kaynaklar</span>
-                <i class="fas fa-angle-down"></i>
-              </a>
-            </li>
-            <li class="main-menu-item custom-border-right">
-              <a class="main-menu-item-link" href="">
-                <span>Ücretlendirme</span>
-              </a>
-            </li>
-            <li class="main-menu-item custom-border-right">
-              <a class="main-menu-item-link" href="">
-                <span>Uzmana Danışın</span>
-              </a>
-            </li>
-            <li class="main-menu-item search border-0">
-              <a class="main-menu-item-link" onclick="searchToggle()" href="#">
-                <i class="fas fa-search"></i>
-              </a>
-            </li>
-            <li class="main-menu-item language border-0">
-              <a class="main-menu-item-link" href="">
-                <span>TR</span>
-                <i class="fas fa-angle-down"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="right d-flex align-items-center">
-          <div class="basket">
-            <a class="btn btn-basket d-flex align-items-center justify-content-center position-relative" href="">
-              <img src="assets/images/icons/shopping-cart.png" alt="">
-              <div class="badge position-absolute text-white d-flex align-items-center justify-content-center">2</div>
-            </a>
+                   </div>
+                </li>
+                <li class="main-menu-item custom-border-right">
+                   <a class="main-menu-item-link" href="">
+                      <span>Kaynaklar</span>
+                      <i class="fas fa-angle-down"></i>
+                   </a>
+                </li>
+                <li class="main-menu-item custom-border-right">
+                   <a class="main-menu-item-link" href="">
+                      <span>Ücretlendirme</span>
+                   </a>
+                </li>
+                <li class="main-menu-item custom-border-right">
+                   <a class="main-menu-item-link" href="">
+                      <span>Uzmana Danışın</span>
+                   </a>
+                </li>
+                <li class="main-menu-item search border-0">
+                   <a class="main-menu-item-link" onclick="searchToggle()" href="#">
+                      <i class="fas fa-search"></i>
+                   </a>
+                </li>
+                <li class="main-menu-item language border-0">
+                   <a class="main-menu-item-link" href="">
+                      <span>TR</span>
+                      <i class="fas fa-angle-down"></i>
+                   </a>
+                </li>
+             </ul>
           </div>
-          <div class="actions d-none d-md-flex">
-            <a class="btn btn-white btn-sign-up" href="">Giriş Yap</a>
-            <a class="btn btn-orange btn-login" href="">Kayıt Ol</a>
+          <div class="right d-flex align-items-center">
+             <div class="basket">
+                <a class="btn btn-basket d-flex align-items-center justify-content-center position-relative" href="">
+                   <img src="assets/images/icons/shopping-cart.png" alt="">
+                   <div class="badge position-absolute text-white d-flex align-items-center justify-content-center">2
+                   </div>
+                </a>
+             </div>
+             <div class="actions d-none d-md-flex">
+                <a class="btn btn-white btn-sign-up" href="">Giriş Yap</a>
+                <a class="btn btn-orange btn-login" href="">Kayıt Ol</a>
+             </div>
+             <div class="mobile-menu d-md-none">
+                <a class="btn btn-mobile-menu" href="#" onclick="hamburgerToggle()"></a>
+             </div>
           </div>
-          <div class="mobile-menu d-md-none">
-            <a class="btn btn-mobile-menu" href=""></a>
-          </div>
-        </div>
-      </div>
+       </div>
     </div>
     </div>
-  </nav>
-  <!-- header -->
+ </nav>
+ <!-- header -->
   <div class="content contact">
     <div class="content-fix-margin"></div>
 
