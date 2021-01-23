@@ -1,6 +1,18 @@
 function hamburgerToggle() {
   var element = document.querySelector(".left-menu");
   element.classList.toggle("show-left-menu");
+  document.body.classList.toggle("hide-scroll");
+}
+
+function mobileSearch(){
+  var element = document.querySelector(".left-menu");
+  var search = document.querySelector(".left-menu-search");
+  var center = document.querySelector(".left-menu-center");
+  var bottom = document.querySelector(".left-menu-bottom");
+  element.classList.toggle("search-mode");
+  search.classList.toggle("d-none");
+  center.classList.toggle("d-none");
+  bottom.classList.toggle("d-none");
 }
 
 function leftMenutoggle() {

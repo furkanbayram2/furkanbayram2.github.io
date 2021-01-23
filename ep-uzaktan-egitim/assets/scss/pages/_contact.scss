@@ -1,0 +1,97 @@
+﻿.content.contact {
+  .contact-wrapper {
+    .widget-image {
+      img {
+        min-height: 250px;
+      }
+    }
+    .breadcrumb {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 0;
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    .widget-title {
+      margin-bottom: 25px;
+
+      span {
+        font-size: 50px;
+        font-weight: 500;
+        font-family: var(--gotham);
+        color: #000000;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .contact-content {
+      padding-bottom: 50px;
+
+      .info-wrapper {
+        padding-bottom: 15px;
+        .info {
+          .box {
+            margin-bottom: 25px;
+            .title {
+              font-size: 17px;
+              font-weight: 700;
+              color: #3c3c3c;
+            }
+            .description {
+              font-size: 17px;
+              font-weight: 300;
+              color: #3c3c3c;
+            }
+          }
+        }
+
+        .map {
+          margin-bottom: 80px;
+        }
+      }
+
+      form {
+        .form-group {
+          margin-bottom: 30px;
+        }
+        .custom-checkbox {
+          margin-bottom: 25px;
+          .custom-checkbox-label {
+            font-size: 17px;
+            color: #3c3c3c;
+            font-weight: 300;
+            a {
+              font-weight: 400;
+              text-decoration: underline;
+              color: #3c3c3c;
+            }
+          }
+        }
+        .actions {
+          margin-top: 55px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .info,
+        form {
+          width: 50%;
+        }
+        .info{
+          margin-right: 30px;
+        }
+
+        form{
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}

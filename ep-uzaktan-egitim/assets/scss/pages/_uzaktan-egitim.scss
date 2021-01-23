@@ -1,0 +1,231 @@
+.content.uzaktan {
+  .uzaktan-egitim {
+    .widget-image {
+      img {
+        min-height: 250px;
+      }
+    }
+    .breadcrumb {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      padding: 0;
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+      }
+    }
+    .widget-title {
+      margin-bottom: 25px;
+
+      span {
+        font-size: 50px;
+        font-weight: 500;
+        font-family: var(--gotham);
+        color: #000000;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 15px;
+        span {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .uzaktan-content {
+      padding-bottom: 70px;
+      .widget-title {
+        margin-bottom: 25px;
+
+        span {
+          font-size: 50px;
+          font-weight: 500;
+          font-family: var(--gotham);
+          color: #000000;
+        }
+        @media (max-width: 768px) {
+          margin-bottom: 15px;
+          span {
+            font-size: 30px;
+          }
+        }
+      }
+
+      .content-image {
+        margin: 50px 0;
+      }
+      .description {
+        span {
+          font-weight: 300;
+          font-size: 17px;
+          color: #3c3c3c;
+        }
+      }
+    }
+    .benefits {
+      border-top: 1px solid #707070;
+      .widget-title {
+        padding-top: 75px;
+        padding-bottom: 55px;
+        span {
+          font-size: 50px;
+          font-family: var(--gotham);
+          font-weight: 700;
+        }
+      }
+      .benefit-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+        margin-bottom: 80px;
+        .benefit-item {
+          .icon {
+            margin-bottom: 30px;
+            i {
+              color: var(--orange);
+            }
+          }
+          .title {
+            margin-bottom: 40px;
+            span {
+              color: #000000;
+              font-size: 24px;
+              font-family: var(--gotham);
+              font-weight: 700;
+            }
+          }
+          .description {
+            span {
+              color: #3c3c3c;
+              font-weight: 300;
+              line-height: 1.76;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    .benefits-mobile {
+      .swiper-slide {
+        width: 60% !important;
+      }
+      .widget-title {
+        padding-top: 65px;
+        padding-bottom: 35px;
+        .title {
+          font-size: 30px;
+          font-weight: 500;
+        }
+        a {
+          color: var(--text);
+          font-family: var(--source);
+          font-weight: 600;
+          text-decoration: underline;
+        }
+      }
+      .benefit-items {
+        margin-bottom: 80px;
+        .benefit-item {
+          align-items: flex-start;
+          .icon {
+            margin-bottom: 30px;
+            i {
+              color: var(--orange);
+            }
+          }
+          .title {
+            margin-bottom: 40px;
+            span {
+              color: #000000;
+              font-size: 24px;
+              font-family: var(--gotham);
+              font-weight: 700;
+            }
+          }
+          .description {
+            span {
+              color: #3c3c3c;
+              font-weight: 300;
+              line-height: 1.76;
+              margin-top: 40px;
+            }
+          }
+        }
+      }
+    }
+    .certificates {
+      .widget-title {
+        padding-top: 75px;
+        padding-bottom: 55px;
+        span {
+          font-size: 50px;
+          font-family: var(--gotham);
+          font-weight: 700;
+        }
+      }
+      .certificate-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 65px;
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+        .certificate-item {
+          .icon {
+            padding-right: 35px;
+          }
+          .description {
+            span {
+              font-weight: 300;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .action {
+        margin-bottom: 80px;
+        .btn-dark {
+          width: 360px;
+        }
+      }
+      @media (max-width: 768px) {
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .widget-title {
+          padding-top: 70px;
+          padding-bottom: 50px;
+          span {
+            font-size: 30px;
+            font-family: var(--gotham);
+            font-weight: 700;
+          }
+        }
+        .certificate-items {
+          margin-bottom: 0;
+          .certificate-item {
+            margin-bottom: 55px;
+            margin-left: 15px;
+
+            .icon {
+              padding-right: 28px;
+            }
+            .description {
+              span {
+                font-weight: 300;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+        .action {
+          margin-bottom: 80px;
+          .btn-dark {
+            width: 360px;
+          }
+        }
+      }
+    }
+  }
+}

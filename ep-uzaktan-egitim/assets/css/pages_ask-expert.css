@@ -1,0 +1,37 @@
+.content.ask-expert .ask-expert-wrapper .widget-image img {
+  min-height: 250px; }
+
+.content.ask-expert .ask-expert-wrapper .breadcrumb {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 0; }
+  @media (max-width: 768px) {
+    .content.ask-expert .ask-expert-wrapper .breadcrumb {
+      margin-bottom: 15px; } }
+
+.content.ask-expert .ask-expert-wrapper .widget-title {
+  margin-bottom: 25px; }
+  .content.ask-expert .ask-expert-wrapper .widget-title span {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: var(--gotham);
+    color: #000000; }
+  @media (max-width: 768px) {
+    .content.ask-expert .ask-expert-wrapper .widget-title {
+      margin-bottom: 15px; }
+      .content.ask-expert .ask-expert-wrapper .widget-title span {
+        font-size: 30px; } }
+
+.content.ask-expert .ask-expert-wrapper .ask-expert-content {
+  padding-bottom: 110px; }
+  .content.ask-expert .ask-expert-wrapper .ask-expert-content .info {
+    margin-right: 30px; }
+    .content.ask-expert .ask-expert-wrapper .ask-expert-content .info p {
+      font-size: 17px;
+      font-weight: 300;
+      color: #3c3c3c;
+      margin-bottom: 30px; }
+  .content.ask-expert .ask-expert-wrapper .ask-expert-content form {
+    margin-left: 30px; }
+  .content.ask-expert .ask-expert-wrapper .ask-expert-content .info, .content.ask-expert .ask-expert-wrapper .ask-expert-content form {
+    width: 50%; }
