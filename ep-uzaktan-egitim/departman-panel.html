@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departman Paneli</title>
+  <!-- fonts -->
+  <link rel="stylesheet"
+    href="https://cdn.rawgit.com/tonystar/bootstrap-float-label/v4.0.2/bootstrap-float-label.min.css" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+    integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+    crossorigin="anonymous" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+    integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+    crossorigin="anonymous" />
+
+  <!-- chart js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+    integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- search -->
+  <div class="search-wrapper">
+    <div class="container">
+      <div class="content">
+        <div class="search-input d-flex justify-content-between">
+          <input class="w-100" type="text" placeholder="Aramak istediğiniz kelimeyi yazın...">
+          <div class="close">
+            <a href="#" class="btn-close" onclick="searchToggle()">
+              <i class="fas fa-times text-white"></i>
+            </a>
+          </div>
+        </div>
+        <div class="suggestions d-flex flex-column">
+          <div class="title">
+            <span>En çok aranan kelimeler</span>
+          </div>
+          <div class="item">
+            <a href="#">Otel Temizliği</a>
+          </div>
+          <div class="item">
+            <a href="#">Sertifika Programları</a>
+          </div>
+          <div class="item">
+            <a href="#">Şifremi Unuttum</a>
+          </div>
+          <div class="item">
+            <a href="#">Sisteme nasıl üye olurum?</a>
+          </div>
+          <div class="item">
+            <a href="#">Şirket kodu</a>
+          </div>
+          <div class="item">
+            <a href="#">Covid - 19</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- search -->
+  <!-- mobile header -->
+  <div class="left-menu fixed-top">
+    <div class="top d-flex justify-content-between align-items-center">
+      <div class="search">
+        <input type="text" onclick="mobileSearch()">
+        <i class="fas fa-search fa-lg search-icon"></i>
+      </div>
+      <div class="close">
+        <a href="#" onclick="hamburgerToggle()">
+          <i class="fas fa-times text-white"></i>
+        </a>
+      </div>
+    </div>
+    <div class="left-menu-search d-none">
+      <div class="title">
+        <span>
+          En çok aranan kelimeler
+        </span>
+      </div>
+      <div class="search-content">
+        <ul>
+          <li>
+            <a href="">Otel Temizliği</a>
+          </li>
+          <li>
+            <a href="">Sertifika Programları</a>
+          </li>
+          <li>
+            <a href="">Şifremi unuttum</a>
+          </li>
+          <li>
+            <a href="">Sisteme nasıl üye olurum?</a>
+          </li>
+          <li>
+            <a href="">Şirket Kodu</a>
+          </li>
+          <li>
+            <a href="">Covid - 19</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="left-menu-center">
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#">Uzantan Eğitim</a>
+          </li>
+          <li>
+            <a href="#">Eğitimler</a>
+          </li>
+          <li>
+            <a href="#">Kaynaklar</a>
+          </li>
+          <li>
+            <a href="#">Ücretlendirme</a>
+          </li>
+          <li>
+            <a href="#">Uzmana Danışın</a>
+          </li>
+        </ul>
+      </div>
+      <div class="actions d-flex">
+        <a href="#" class="btn btn-signin btn-dark mr-2">GİRİŞ</a>
+        <a href="#" class="btn btn-login btn-orange ml-2">KAYIT OL</a>
+      </div>
+    </div>
+    <div class="left-menu-bottom">
+      <div class="mobile">
+        <div class="title">
+          <span>Mobil Uygulamamızı İndirin</span>
+        </div>
+        <div class="logos d-flex justify-content-between">
+          <a href="" class="mr-2">
+            <img src="assets/images/anasayfa/app-store.png" alt="">
+          </a>
+          <a href="" class="ml-2">
+            <img src="assets/images/anasayfa/play-store.png" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="footer d-flex justify-content-between align-items-center">
+        <div class="language">
+          <a href="">
+            <span>TÜRKÇE</span>
+            <i class="fas fa-angle-down ml-3"></i>
+          </a>
+        </div>
+        <div class="social d-flex">
+          <ul class="d-flex align-items-center mb-0">
+            <li><a href=""><i class="fab fa-facebook fa-lg"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram fa-lg"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter fa-lg"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin fa-lg"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- mobile header -->
+  <!-- header -->
+  <nav id="header" class="navbar d-flex flex-column w-100 p-0 white-header">
+    <!-- notification -->
+
+    <!-- notification -->
+    <div class="navbar-content d-flex align-items-center w-100 h-100">
+      <div class="w-100 d-flex justify-content-between align-items-center w-100 h-100">
+        <div class="left d-flex align-items-center h-100">
+          <a class="navbar-brand logo" href="#">
+            <img src="assets/images/anasayfa/hijyen-logo.png" alt="Logo">
+          </a>
+        </div>
+        <div class="center d-none d-md-flex align-items-center justify-content-center">
+          <ul class="main-menu d-flex align-items-center m-0">
+            <li class="main-menu-item custom-border-right">
+              <a href="" class="main-menu-item-link">
+                <span>Uzaktan Eğitim</span>
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-content d-flex">
+                  <div class="left flex-1">
+                    <ul>
+                      <li>
+                        <a href="">Uzaktan Bilgiler</a>
+                      </li>
+                      <li>
+                        <a href="">Uzaktan Hijyeni</a>
+                      </li>
+                      <li>
+                        <a href="">Uzaktan Hijyeni</a>
+                      </li>
+                      <li>
+                        <a href="">Çamaşır Hijyeni</a>
+                      </li>
+                      <li>
+                        <a href="">Hastane Hijyeni</a>
+                      </li>
+                      <li>
+                        <a href="">Gıda Hijyeni</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="right d-flex- flex-column flex-1">
+                    <div class="menu-cart">
+                      <div class="image">
+                        <img src="assets/images/anasayfa/nav-img.png" alt="">
+                      </div>
+                      <div class="content d-flex flex-column">
+                        <span class="title">Yüzey Hijyeni</span>
+                        <span class="time">6 ders - 2sa. 55dk.</span>
+                      </div>
+                    </div>
+                    <div class="all d-flex justify-content-center">
+                      <a href="">
+                        <span>Tüm Eğitimler</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </a>
+            </li>
+            <li class="main-menu-item custom-border-right">
+              <a class="main-menu-item-link" href="">
+                <span>Eğitimler</span>
+                <i class="fas fa-angle-down"></i>
+              </a>
+              <div class="sub-menu">
+                <div class="sub-menu-content d-flex">
+                  <div class="left flex-1">
+                    <ul>
+                      <li>
+                        <a href="">Temel Bilgiler</a>
+                      </li>
+                      <li>
+                        <a href="">Yüzey Hijyeni</a>
+                      </li>
+                      <li>
+                        <a href="">Mutfak Hijyeni</a>
+                      </li>
+                      <li>
+                        <a href="">Çamaşır Hijyeni</a>
+                      </li>
+                      <li>
+                        <a href="">Hastane Hijyeni</a>
+                      </li>
+                      <li>
+                        <a href="">Gıda Hijyeni</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="right d-flex- flex-column flex-1">
+                    <div class="menu-cart">
+                      <div class="image">
+                        <img src="assets/images/anasayfa/nav-img.png" alt="">
+                      </div>
+                      <div class="content d-flex flex-column">
+                        <span class="title">Yüzey Hijyeni</span>
+                        <span class="time">6 ders - 2sa. 55dk.</span>
+                      </div>
+                    </div>
+                    <div class="all d-flex justify-content-center">
+                      <a href="">
+                        <span>Tüm Eğitimler</span>
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="main-menu-item custom-border-right">
+              <a class="main-menu-item-link" href="">
+                <span>Kaynaklar</span>
+                <i class="fas fa-angle-down"></i>
+              </a>
+            </li>
+            <li class="main-menu-item custom-border-right">
+              <a class="main-menu-item-link" href="">
+                <span>Ücretlendirme</span>
+              </a>
+            </li>
+            <li class="main-menu-item custom-border-right">
+              <a class="main-menu-item-link" href="">
+                <span>Uzmana Danışın</span>
+              </a>
+            </li>
+            <li class="main-menu-item search border-0">
+              <a class="main-menu-item-link" onclick="searchToggle()" href="#">
+                <i class="fas fa-search"></i>
+              </a>
+            </li>
+            <li class="main-menu-item language border-0">
+              <a class="main-menu-item-link" href="">
+                <span>TR</span>
+                <i class="fas fa-angle-down"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right d-flex align-items-center">
+          <div class="basket d-flex">
+            <a class="btn-basket d-flex align-items-center justify-content-center position-relative" href="">
+              <img src="assets/images/icons/shopping-cart.png" alt="">
+              <div class="badge position-absolute text-white d-flex align-items-center justify-content-center">2
+              </div>
+            </a>
+            <div class="notify d-flex align-items-center">
+              <a class="btn-notify d-flex align-items-center justify-content-center position-relative" href="">
+                <img src="assets/images/icons/bell.png" alt="">
+                <div class="badge position-absolute text-white d-flex align-items-center justify-content-center">2
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="actions d-none d-md-flex">
+            <a class="d-none btn btn-white btn-sign-up" href="">Giriş Yap</a>
+            <a class="d-none btn btn-orange btn-login" href="">Kayıt Ol</a>
+
+            <a href="" class="user-picture">
+              <img src="assets/images/profile.png" alt="" width="48" height="48">
+            </a>
+          </div>
+          <div class="mobile-menu d-md-none">
+            <a class="btn btn-mobile-menu" href="#" onclick="hamburgerToggle()"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header -->
+  <div class="content panel">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 pl-lg-0">
+          <div class="panel-left-menu d-flex justify-content-end h-100">
+            <div class="col-lg-8 pr-0">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">Anasayfa</li>
+                  <li class="breadcrumb-item active" aria-current="page">Yönetim Paneli</li>
+                </ol>
+              </nav>
+
+              <div class="logo">
+                <picture>
+                  <img class="w-100" src="assets/images/max-royal.png" alt="">
+                </picture>
+              </div>
+              <div class="menu">
+                <ul>
+                  <li><a class="active" href="#"><i class="fas fa-tasks fa-lg mr-3"></i><span>Yönetim Paneli</span></a></li>
+                  <li><a href="#"><i class="fas fa-play mr-3"></i><span>Eğitimlerim</span></a></li>
+                  <li><a href="#"><i class="fas fa-certificate fa-lg mr-3"></i><span>Sertifikalarım</span></a></li>
+                  <li><a href="#"><i class="fas fa-bell fa-lg mr-3"></i><span>Bildirimler</span></a></li>
+                  <li><a href="#"><i class="fas fa-user fa-lg mr-3"></i><span>Profilim</span></a></li>
+                  <li><a href="#"><i class="fas fa-sign-out-alt fa-lg mr-3"></i>Çıkış Yap<span></span></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-9">
+          <div class="panel-content panel-wrapper">
+            <div class="page-title">
+              <span>Eğitim Paneli</span>
+            </div>
+            <div class="tab-header d-flex justify-content-between">
+              <ul class="nav nav-tabs d-flex justify-content-start p-0 border-0">
+                <li
+                  class="user company d-flex flex-column align-items-start justify-content-center justify-content-center">
+                  <a class="btn active" data-toggle="tab" data-target="#team">
+                    <span>Ekip eğitim Bilgileri</span>
+                  </a>
+                </li>
+                <li class="user new individual d-flex flex-column align-items-en justify-content-centerd">
+                  <a class="btn" data-toggle="tab" data-target="#individual">
+                    <div class="custom-circle-checkbox">
+                      <div class="orange"></div>
+                    </div>
+                    <span>Bireysel Eğitim Bilgileri</span>
+
+                  </a>
+                </li>
+
+              </ul>
+              <div class="company-info d-flex">
+                <div class="code d-flex align-items-center mr-2">
+                  <span class="key mr-1">Şirket Kodu:</span>
+                  <span class="value">4551126</span>
+                </div>
+                <a href="#" class="copy-button">Kopyala</a>
+              </div>
+            </div>
+            <div class="tab-content w-100">
+              <div id="team" class="tab-pane fade active show">
+                <div class="row">
+                  <div class="col-lg-7">
+                    <div class="graph">
+                      <div class="graph-header d-flex justify-content-between">
+                        <div class="title">
+                          <span>Mevcut Durum:</span>
+                        </div>
+                        <div class="filter">
+                          <a href="#">
+                            <i class="fas fa-filter mr-2"></i>
+                            <span>Filtrele</span>
+                          </a>
+
+                        </div>
+                      </div>
+                      <div class="graph-content">
+                        <div class="row mb-3">
+                          <div class="col-lg-8">
+                            <div class="custom-chart d-flex align-items-center justify-content-center h-100">
+                              <canvas id="pieChart" width="230" height="230"></canvas>
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="small-box white mb-3">
+                              <div class="image d-flex justify-content-center">
+                                <picture>
+                                  <img src="assets/images/icons/users-class.png" alt="">
+                                </picture>
+                              </div>
+                              <div class="info d-flex flex-column justify-content-center align-items-center">
+                                <span class="title">2000 Kişi</span>
+                                <span class="desc">Toplam Eğitim Alan</span>
+                              </div>
+                              <div class="actions">
+                                <a href="#" class="btn btn-small-box">
+                                  <span>Mesaj Gönder</span>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="small-box white">
+                              <div class="image d-flex justify-content-center">
+                                <picture>
+                                  <img src="assets/images/icons/users-medical.png" alt="">
+                                </picture>
+                              </div>
+                              <div class="info d-flex flex-column justify-content-center align-items-center">
+                                <span class="title">100 Kişi</span>
+                                <span class="desc">Kalan Kota</span>
+                              </div>
+
+                            </div>
+                          </div>
+
+                        </div>
+                        <div class="row">
+                          <div class="col-4">
+                            <div class="small-box blue white-mode mb-3">
+                              <div class="image d-flex justify-content-center">
+                                <picture>
+                                  <img src="assets/images/icons/check.png" alt="">
+                                </picture>
+                              </div>
+                              <div class="info d-flex flex-column justify-content-center align-items-center">
+                                <span class="title">2000 Kişi</span>
+                                <span class="desc">Toplam Eğitim Alan</span>
+                              </div>
+                              <div class="actions">
+                                <a href="#" class="btn btn-small-box">
+                                  <span>Mesaj Gönder</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="small-box yellow white-mode mb-3">
+                              <div class="image d-flex justify-content-center">
+                                <picture>
+                                  <img src="assets/images/icons/chalkboard-teacher.png" alt="">
+                                </picture>
+                              </div>
+                              <div class="info d-flex flex-column justify-content-center align-items-center">
+                                <span class="title">500 Kişi</span>
+                                <span class="desc">Eğitim Alıyor</span>
+                              </div>
+                              <div class="actions">
+                                <a href="#" class="btn btn-small-box">
+                                  <span>Mesaj Gönder</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="small-box purple white-mode mb-3">
+                              <div class="image d-flex justify-content-center">
+                                <picture>
+                                  <img src="assets/images/icons/users.png" alt="">
+                                </picture>
+                              </div>
+                              <div class="info d-flex flex-column justify-content-center align-items-center">
+                                <span class="title">1000 Kişi</span>
+                                <span class="desc">Eğitime Başlamadı</span>
+                              </div>
+                              <div class="actions">
+                                <a href="#" class="btn btn-small-box">
+                                  <span>Mesaj Gönder</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="list">
+                      <div class="list-header d-flex justify-content-end">
+                        <div class="download">
+                          <a href="#">
+                            <i class="fas fa-download mr-2"></i>
+                            <span>Raporu İndir</span>
+                          </a>
+
+                        </div>
+                      </div>
+                      <div class="list-content">
+                        <div class="list-search form-group has-float-label">
+                          <input type="text" class="form-control" placeholder="Personel Arayın">
+                          <span class="form-span">Personel Arayın</span>
+
+                        </div>
+                        <div class="list-content-header d-flex justify-content-between">
+                          <div class="title">
+                            <span>Departmanlar:</span>
+                          </div>
+                          <div class="filter">
+                            <a href="#">
+                              <i class="fas fa-plus mr-2"></i>
+                              <span>Departman Ekle</span>
+                            </a>
+
+                          </div>
+                        </div>
+                        <div class="trainings">
+                          <div class="training-cart d-flex justify-content-between">
+                            <div class="left d-flex flex-column">
+                              <div class="title">
+                                <span>Mutfak</span>
+                              </div>
+                              <div class="subtitle">
+                                <span class="d-block">
+                                  Eğitim: Temel Bilgiler, Mutfak Hijyeni
+                                </span>
+                                <span class="d-block">
+                                  Ekip Lideri: Feyyaz Şahbaz
+                                </span>
+                              </div>
+                              <div class="desc d-flex align-items-center">
+                                <picture>
+                                  <img src="assets/images/icons/users-dark-small.png" alt="">
+                                </picture>
+                                <span class="ml-2">23 Personel Eğitim Alıyor</span>
+                              </div>
+                            </div>
+                            <div class="right">
+                              <div class="next">
+                                <a href="#">
+                                  <i class="fas fa-angle-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="training-cart d-flex justify-content-between">
+                            <div class="left d-flex flex-column">
+                              <div class="title">
+                                <span>Housekeeping</span>
+                              </div>
+                              <div class="subtitle">
+                                <span class="d-block">
+                                  Eğitim: Temel Bilgiler, Mutfak Hijyeni
+                                </span>
+                                <span class="d-block">
+                                  Ekip Lideri: Feyyaz Şahbaz
+                                </span>
+                              </div>
+                              <div class="desc d-flex align-items-center">
+                                <picture>
+                                  <img src="assets/images/icons/users-dark-small.png" alt="">
+                                </picture>
+                                <span class="ml-2">584 Personel Eğitim Alıyor</span>
+                              </div>
+                            </div>
+                            <div class="right">
+                              <div class="next">
+                                <a href="#">
+                                  <i class="fas fa-angle-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="training-cart d-flex justify-content-between">
+                            <div class="left d-flex flex-column">
+                              <div class="title">
+                                <span>Çamaşırhane</span>
+                              </div>
+                              <div class="subtitle">
+                                <span class="d-block">
+                                  Eğitim: Temel Bilgiler, Mutfak Hijyeni
+                                </span>
+                                <span class="d-block">
+                                  Ekip Lideri: Feyyaz Şahbaz
+                                </span>
+                              </div>
+                              <div class="desc d-flex align-items-center">
+                                <picture>
+                                  <img src="assets/images/icons/users-dark-small.png" alt="">
+                                </picture>
+                                <span class="ml-2">10 Personel Eğitim Alıyor</span>
+                              </div>
+                            </div>
+                            <div class="right">
+                              <div class="next">
+                                <a href="#">
+                                  <i class="fas fa-angle-right"></i>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div id="individual" class="tab-pane fade">
+                individual
+              </div>
+            </div>
+          </div>
+          <div class="col-11">
+            <div class="training-modules">
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider-content">
+                      <div class="image">
+                        <picture>
+                          <img src="assets/images/anasayfa/nav-img.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="top">
+                        <span>Covid-19 Önlemleri</span>
+                      </div>
+                      <div class="bottom">
+                        <span class="complete">%0 Tamamlandı</span>
+                        <i class="fas fa-lock-open"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-content">
+                      <div class="block"></div>
+                      <div class="lock">
+                        <i class="fas fa-lock text-white fa-3x"></i>
+                      </div>
+                      <div class="image">
+                        <picture>
+                          <img src="assets/images/ucretlendirme/2.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="top">
+                        <span>Çamaşır Hijyeni</span>
+                      </div>
+                      <div class="bottom">
+                        <span class="hour">6 ders - 2sa. 55dk.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-content">
+                      <div class="block"></div>
+                      <div class="lock">
+                        <i class="fas fa-lock text-white fa-3x"></i>
+                      </div>
+                      <div class="image">
+                        <picture>
+                          <img src="assets/images/ucretlendirme/3.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="top">
+                        <span>Yüzey Hijyeni</span>
+                      </div>
+                      <div class="bottom">
+                        <span class="hour">6 ders - 2sa. 55dk.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-content">
+                      <div class="block"></div>
+                      <div class="lock">
+                        <i class="fas fa-lock text-white fa-3x"></i>
+                      </div>
+                      <div class="image">
+                        <picture>
+                          <img src="assets/images/ucretlendirme/4.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="top">
+                        <span>Gıda Hijyeni</span>
+                      </div>
+                      <div class="bottom">
+                        <span class="hour">6 ders - 2sa. 55dk.</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider-content">
+                      <div class="block"></div>
+                      <div class="lock">
+                        <i class="fas fa-lock text-white fa-3x"></i>
+                      </div>
+                      <div class="image">
+                        <picture>
+                          <img src="assets/images/ucretlendirme/2.png" alt="">
+                        </picture>
+                      </div>
+                      <div class="top">
+                        <span>Çamaşır Hijyeni</span>
+                      </div>
+                      <div class="bottom">
+                        <span class="hour">6 ders - 2sa. 55dk.</span>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+                <!-- Add Pagination -->
+
+              </div>
+              <div class="pagination">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer  -->
+  <footer class="d-none d-md-flex">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="top d-flex w-100 justify-content-between">
+          <ul>
+            <a class="title" href="">UZAKTAN EĞİTİM</a>
+            <li>
+              <a href="">Neden Uzak Eğitim?</a>
+            </li>
+            <li>
+              <a href="">Sıkça Sorulan Sorular</a>
+            </li>
+            <li>
+              <a href="">Hakkımızda</a>
+            </li>
+          </ul>
+          <ul>
+            <a class="title" href="">EĞİTİMLER</a>
+            <li>
+              <a href="">Temel Bilgiler</a>
+            </li>
+            <li>
+              <a href="">Yüz Hijyeni</a>
+            </li>
+            <li>
+              <a href="">Mutfak Hijyeni</a>
+            </li>
+            <li>
+              <a href="">Çamaşır Hijyeni</a>
+            </li>
+            <li>
+              <a href="">Hastane Hijyeni</a>
+            </li>
+            <li>
+              <a href="">Gıda Hijyeni</a>
+            </li>
+          </ul>
+          <ul>
+            <a class="title" href="">KAYNAKLAR</a>
+            <li>
+              <a href="">Teknik Bilgiler</a>
+            </li>
+            <li>
+              <a href="">Bize Ulaşın</a>
+            </li>
+          </ul>
+          <ul>
+            <a class="title" href="">BİZE ULAŞIN</a>
+            <li>
+              <a href="">İletişim</a>
+            </li>
+            <li>
+              <a href="">Uzmana Danışın</a>
+            </li>
+            <li>
+              <a href="">+90 (850) 228 4689</a>
+            </li>
+          </ul>
+        </div>
+        <div class="center d-flex align-items-end justify-content-between">
+          <div class="e-logo">
+            <img src="assets/images/anasayfa/e-logo.png" alt="">
+          </div>
+          <div class="apps">
+            <div class="title">
+              <span>Mobil Uygulamamızı İndirin</span>
+            </div>
+            <div class="stores">
+              <img class="pr-4" src="assets/images/anasayfa/app-store.png" height="40" alt="">
+              <img src="assets/images/anasayfa/play-store.png" height="40" alt="">
+            </div>
+            <div class="brand">
+              <img src="assets/images/anasayfa/e-prof.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="bottom d-flex justify-content-between">
+          <div class="left d-flex">
+            <span class="d-flex align-items-center pr-5">© Tüm hakları
+              saklıdır. 2021 Eczacıbaşı
+              Tüketim
+              Ürünleri</span>
+            <ul class="d-flex mb-0">
+              <li>
+                <a class="px-2" href="">Kişisel Hakların Korunması</a>
+              </li>
+              <li>
+                <a class="px-2" href="">Bilgi Toplumu Hizmetleri</a>
+              </li>
+              <li>
+                <a class="px-2" href="">Kullanım Koşulları</a>
+              </li>
+              <li>
+                <a class="px-2" href="">Çerez Politikası</a>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <div class="social">
+              <ul class="d-flex mb-0">
+                <li>
+                  <a class="px-2" href="">
+                    <img src="assets/images/icons/facebook.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a class="px-2" href="">
+                    <img src="assets/images/icons/instagram.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a class="px-2" href="">
+                    <img src="assets/images/icons/twitter.png" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a class="px-2" href="">
+                    <img src="assets/images/icons/linkedin.png" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+  <!-- mobile footer  -->
+  <footer class="d-flex d-md-none">
+    <div class="footer-mobile-wrapper w-100">
+      <div class="top">
+        <div class="accordion" id="accordionMobileMenu">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link d-flex justify-content-between w-100" type="button" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <span>UZAKTAN EĞİTİM</span>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse mobileCollapse show" aria-labelledby="headingOne"
+              data-parent="#accordionMobileMenu">
+              <div class="card-body">
+                <ul>
+                  <li>
+                    <a href="">Neden Uzak Eğitim?</a>
+                  </li>
+                  <li>
+                    <a href="">Sıkça Sorulan Sorular</a>
+                  </li>
+                  <li>
+                    <a href="">Hakkımızda</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed d-flex justify-content-between w-100" type="button"
+                  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <span> Eğitimler</span>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse mobileCollapse" aria-labelledby="headingTwo"
+              data-parent="#accordionMobileMenu">
+              <div class="card-body">
+                <ul>
+                  <li>
+                    <a href="">Temel Bilgiler</a>
+                  </li>
+                  <li>
+                    <a href="">Yüz Hijyeni</a>
+                  </li>
+                  <li>
+                    <a href="">Mutfak Hijyeni</a>
+                  </li>
+                  <li>
+                    <a href="">Çamaşır Hijyeni</a>
+                  </li>
+                  <li>
+                    <a href="">Hastane Hijyeni</a>
+                  </li>
+                  <li>
+                    <a href="">Gıda Hijyeni</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed d-flex justify-content-between w-100" type="button"
+                  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  <span>Kaynaklar</span>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse mobileCollapse" aria-labelledby="headingThree"
+              data-parent="#accordionMobileMenu">
+              <div class="card-body">
+                <ul>
+                  <li>
+                    <a href="">Teknik Bilgiler</a>
+                  </li>
+                  <li>
+                    <a href="">Bize Ulaşın</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card bg-white">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed d-flex justify-content-between w-100" type="button"
+                  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  <span>Bize Ulaşın</span>
+                  <i class="fas fa-minus"></i>
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse mobileCollapse" aria-labelledby="headingFour"
+              data-parent="#accordionMobileMenu">
+              <div class="card-body">
+                <ul>
+                  <li>
+                    <a href="">İletişim</a>
+                  </li>
+                  <li>
+                    <a href="">Uzmana Danışın</a>
+                  </li>
+                  <li>
+                    <a href="">+90 (850) 228 4689</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center">
+        <div class="apps">
+          <div class="title">
+            <span>Mobil Uygulamamızı İndirin</span>
+          </div>
+          <div class="stores">
+            <img class="pr-2" src="assets/images/anasayfa/app-store.png" height="40" alt="">
+            <img src="assets/images/anasayfa/play-store.png" height="40" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="social">
+          <ul class="d-flex mb-0">
+            <li>
+              <a href="">
+                <img src="assets/images/icons/facebook.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="assets/images/icons/instagram.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="assets/images/icons/twitter.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <img src="assets/images/icons/linkedin.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu">
+          <ul class=" mb-0">
+            <li>
+              <a class="px-2" href="">Kişisel Hakların Korunması</a>
+            </li>
+            <li>
+              <a class="px-2" href="">Bilgi Toplumu Hizmetleri</a>
+            </li>
+            <li>
+              <a class="px-2" href="">Kullanım Koşulları</a>
+            </li>
+            <li>
+              <a class="px-2" href="">Çerez Politikası</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logos d-flex justify-content-between">
+          <img src="assets/images/anasayfa/e-logo.png" alt="E-logo">
+          <img src="assets/images/anasayfa/e-prof.png" alt="Eczacıbaşı Profesyonel">
+        </div>
+        <div class="copyright">
+          <span>© Tüm hakları saklıdır. 2021 Eczacıbaşı Tüketim Ürünleri</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- mobile footer -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+    <div class="modal-dialog px750" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0 d-flex justify-content-center">
+          <span>İşleme devam edebilmek için üye girişi yapın!</span>
+        </div>
+        <div class="modal-footer d-flex align-items-center justify-content-center">
+          <button type="button" class="btn btn-orange" data-dismiss="modal">
+            <span>KAYIT OL</span>
+          </button>
+          <button type="button" class="btn btn-outline">
+            <span>GİRİŞ YAP</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="noAnswerModal" tabindex="-1" role="dialog" aria-labelledby="noAnswerModal"
+    aria-hidden="true">
+    <div class="modal-dialog px750" role="document">
+      <div class="modal-content">
+        <div class="modal-body p-0 d-flex justify-content-center">
+          <span>Cevaplamadığın sorular bulunuyor!</span>
+        </div>
+        <div class="modal-footer d-flex align-items-center justify-content-center">
+          <button type="button" class="btn btn-full-white" data-dismiss="modal">
+            <i class="fas fa-long-arrow-alt-left"></i>
+            <span>TESTE GERİ DÖN</span>
+          </button>
+          <button type="button" class="btn btn-full-green">
+            <span>TESTİ TAMAMLA</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-dark d-none"></div>
+  <!-- cookie popup -->
+  <!-- <dim class="cookie d-none d-md-flex">
+      <div class="content position-relative d-flex">
+        <a onclick="closeCookie()" id="close-cookie" href="#">
+          <img src="assets/images/icons/close.svg" alt="">
+        </a>
+        <div class="left">
+          <div class="image">
+            <img src="assets/images/cookie.svg" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <div class="title">
+            <span>Daha İyi Bir Deneyim İçin</span>
+          </div>
+          <div class="sub-title">
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec tristique libero, Duis
+              venenatis, sapien sed suscipit porttitor, erat nibh posuere nibh, vitae sagittis eros eros sed nulla.</span>
+          </div>
+        </div>
+      </div>
+
+      </dim> -->
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    data = {
+      datasets: [{
+        data: [50, 25, 25],
+        backgroundColor: [
+          '#92278f',
+          '#0079c2',
+          '#fecd57',
+
+        ],
+      }],
+      labels: [
+        'Purple',
+
+        'Blue',
+        'Yellow',
+
+      ]
+    };
+    var ctx = document.getElementById('pieChart');
+    var myPieChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: data,
+    });
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      options: {
+        responsive: true,
+      }
+    });
+
+  </script>
+</body>
+
+</html>
+<!-- cookie popup -->
