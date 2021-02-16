@@ -12,8 +12,6 @@ I am professionally working on the Frontend Web Development by using HTML5, CSS3
 
 I worked as a Frontend Developer in [Alegra Digital](https://alegra.io){:target="\_blank"} which are few well-known companies in Turkey. for 14 months (2018-2020).
 
-After Alegra Digital, I worked for a year at [CDEV Global](http://cdev.global/){:target="\_blank"}, a Canadian base company that provides software support to clients in Latin America. (2020-2021)
-
 After Alegra Digital, I worked for a year at Canada-based [CDEV Global](http://cdev.global/){:target="\_blank"}, which provides software support to customers in Latin America. (2021-2021)
 
 And now am working as a software developer at [Kariyer.net](https://www.kariyer.net/){:target="\_blank"} since January 2021.
