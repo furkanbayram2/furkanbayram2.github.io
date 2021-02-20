@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Hi, I am Furkan and i am 23 years old. I graduated from Computer Technology and Information Systems at [Mersin University](http://www.mersin.edu.tr/){:target="\_blank"} in 2018.
+Hi, I am Furkan and i am 25 years old. I graduated from Computer Technology and Information Systems at [Mersin University](http://www.mersin.edu.tr/){:target="\_blank"} in 2018.
 
 After my graduated i went to Estonia for Erasmus+ Internship program for 3 months.
 
